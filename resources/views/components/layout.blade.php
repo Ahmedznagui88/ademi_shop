@@ -9,6 +9,7 @@
 </head>
 <body>
     <x-nav/>
+
     <div class="min-vh-100">
         
         {{$slot}}
