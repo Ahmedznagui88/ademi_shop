@@ -15,8 +15,9 @@ use App\Http\Controllers\PublicController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+//Rotte Public//
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
-
+//rotte ad//
 Route::get('/ad/create', [AdController::class, 'create'])->name('ad.create');
 
 

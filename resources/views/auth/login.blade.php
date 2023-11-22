@@ -5,14 +5,6 @@
                 <form action="{{ route('login') }}" method="POST" class="p-5">
                     @csrf
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nome utente</label>
-                        <input type="text" class="form-control" id="name" name="name"
-                            value="{{ old('name') }}">
-                    </div>
-                    @error('name')
-                        <div class="text-danger">{{ $message }}</div>
-                    @enderror
-                    <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email"
                             value="{{ old('email') }}">
