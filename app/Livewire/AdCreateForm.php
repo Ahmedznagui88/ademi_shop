@@ -16,26 +16,44 @@ class AdCreateForm extends Component
     public $image;
     public $price;
 
-public function store () {
+    protected $rules = [
 
-    ad::create([
-       'title' => $this->title,
-       'brand' => $this->brand,
-       'description' => $this->description,
-       'image' => $this->image->store('public/ads'),
-       'price' => $this->price,
-    ]);
+        'title' => 'required|min:3|max:100',
+        'brand' => 'required|min:3|max:100',
+        'description' => 'required|min:10|max:10000',
+        'image' => 'required|image|mimes:webp,png,jpeg,jpg',
 
-    session()->flash('message', 'Hai inserito un annuncio correttamente');
-    
-    $this->reset();
+    ];
 
-}
+    protected $messages = [
+
+        'required' => 'Il campo deve essere compilato',
+        'min' => 'Il campo deve contenere minimo :min caratteri',
+        'max' => 'Il campo deve contenere massimo :max caratteri',
+        'image' => 'Il file deve essere un\'immagine',
+        'mimes' => 'Le estensioni devono essere :values',
+
+
+    ];
+
+    public function store()
+    {
+        $this->validate();
+        ad::create([
+            'title' => $this->title,
+            'brand' => $this->brand,
+            'description' => $this->description,
+            'image' => $this->image->store('public/ads'),
+            'price' => $this->price,
+        ]);
+
+        session()->flash('message', 'Hai inserito un annuncio correttamente');
+
+        $this->reset();
+    }
 
     public function render()
     {
         return view('livewire.ad-create-form');
     }
-
-
 }
