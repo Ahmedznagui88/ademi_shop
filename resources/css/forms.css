@@ -7,6 +7,11 @@ form{
    background: #ED7C31; 
    border: none;
    border-radius: 0%;
+   transition: 0.5s;
+}
+.btn:hover{
+
+    background: #ba4c02;     
 }
 
 input:hover{

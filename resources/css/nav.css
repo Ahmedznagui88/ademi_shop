@@ -1,7 +1,8 @@
 /* *navbar */
 
+
 .navbar{
-    background-color: #F6F1EE;
+    background-color: #6C5E5A;
     height: 50px;
     
 }
@@ -11,6 +12,12 @@
     
 }
 
+.nav-link{
+    color: aliceblue;
+    transition: 0.9s;
+}
 
-
+.nav-link:hover{
+    color: #ED7C31;
+}
 /** end navbar  */

@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: #F6F1EE;
     margin: 0;
     font-family: 'League Spartan', sans-serif;
 }
@@ -8,13 +8,10 @@ body{
 
 .text-1{
     font-size: 260px;
-    color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
 }
 
 .texthome{
     font-weight: lighter;
 }
 
-p{
-    
-}

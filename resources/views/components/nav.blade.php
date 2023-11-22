@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/logo.png" class="logo" alt="">
@@ -10,8 +10,8 @@
         <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
             <ul class="navbar-nav d-flex align-items-center">
                 @auth
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="">{{ Auth::user()->name }}</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="">{{ Auth::user()->name }}</a>
                     </li>
                     {{-- <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ route('homepage') }}">Home</a>

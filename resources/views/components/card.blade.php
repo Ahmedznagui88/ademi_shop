@@ -4,7 +4,10 @@
         <h5 class="card-title">{{ $ad->title }}</h5>
         <p>{{ $ad->brand }}</p>
         <p class="card-text">{{ $ad->description }}</p>
-        <p class="fs-2">{{ $ad->price }}</p>
-        <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-75">Mostra</a>
+        <p class="fs-2 price">${{ $ad->price }}</p>
+        <div>
+            <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-75">Mostra</a>
+            <i class="fa-regular fa-heart fa-xl mx-3 "></i>
+        </div>
     </div>
 </div>
