@@ -20,6 +20,9 @@
                         <a class="nav-link" href="{{ Route('ad.create') }}">Inserisci annuncio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ Route('ad.index') }}">Annunci</a>
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Logout</a>
                       <form action="{{ route('logout') }}" method="POST" id="form-logout">
                         @csrf
