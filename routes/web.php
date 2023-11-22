@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdController;
+use App\Http\Controllers\PublicController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
+
+Route::get('/ad/create', [AdController::class, 'create'])->name('ad.create');
+
+
