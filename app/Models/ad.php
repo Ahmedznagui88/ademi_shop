@@ -16,7 +16,6 @@ class Ad extends Model
         'description',
         'price',
         'image',
-        
         ];
 
 public function user(){
