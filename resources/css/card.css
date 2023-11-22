@@ -3,6 +3,20 @@
     font-weight: 600;
 }
 
-i{
-    color: ;
+.out{
+    transition: 0.4s;
+    
+    width: 18rem;
+}
+.out:hover{
+    background-color: #ec9255;
+    transform: translateX(-9px);
+}
+
+.card{
+ transition: 0.5s;
+}
+
+.card:hover{
+    transform: translateX(20px);
 }
