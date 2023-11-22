@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/** title */
+
+.text-1{
+    font-size: 260px;
+    color: rgb(245, 245, 245);
+}
+
+.texthome{
+    font-weight: lighter;
+}
+
+p{
+    
+}

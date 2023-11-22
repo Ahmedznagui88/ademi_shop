@@ -1,26 +1,28 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
-        <a href="/">
-            <img src="./media/logo.png" class="logo" alt="">
+        <a href="{{ route('homepage') }}" class="">
+            <img src="/media/logo.png" class="logo" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+        </button> 
+        <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
+            <ul class="navbar-nav d-flex align-items-center">
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="°">{{ Auth::user()->name }}</a>
+                        <a class="nav-link" aria-current="page" href="">{{ Auth::user()->name }}</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ route('homepage') }}">Home</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ Route('ad.create') }}">Inserisci annuncio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ Route('ad.index') }}">Annunci</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
                       <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Logout</a>
                       <form action="{{ route('logout') }}" method="POST" id="form-logout">
                         @csrf
