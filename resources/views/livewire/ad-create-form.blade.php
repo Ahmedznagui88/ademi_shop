@@ -33,6 +33,12 @@
             <label for="image" class="form-label">Inserisci una immagine nitida dell'oggetto</label>
             <input type="file" wire:model="image" class="form-control" id="image">
         </div>
+        @if ($image)
+            <div class="m-3">
+                <label for="">Preview immagine</label>
+                <img src="{{ $image->temporaryUrl() }}" alt="" class="img-fluid">
+            </div>
+        @endif
         @error('image')
             <p class="text-dark">{{ $message }}</p>
         @enderror
