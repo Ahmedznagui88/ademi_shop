@@ -10,14 +10,14 @@
                             value="{{ old('email') }}">
                     </div>
                     @error('email')
-                        <div class="text-danger">{{ $message }}</div>
+                        <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control rounded-0 bg-transparent text-light" id="password" name="password">
                     </div>
                     @error('password')
-                        <div class="text-danger">{{ $message }}</div>
+                        <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror
                   <div class="mb-3">
                     <input type="checkbox" class="form-check-label " name="remember" id="remember" name="remember">

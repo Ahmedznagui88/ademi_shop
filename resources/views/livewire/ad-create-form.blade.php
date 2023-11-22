@@ -12,14 +12,14 @@
             <input type="text" wire:model="title" class="form-control rounded-0" id="title">
         </div>
         @error('title')
-            <p class="text-danger">{{ $message }}</p>
+            <p class="text-danger fst-italic">{{ $message }}</p>
         @enderror
         <div class="mb-3">
             <label for="brand" class="form-label">Marchio</label>
             <input type="text" wire:model="brand" class="form-control rounded-0" id="brand">
         </div>
         @error('brand')
-            <p class="text-danger">{{ $message }}</p>
+            <p class="text-danger fst-italic">{{ $message }}</p>
         @enderror
         <div class="mb-3">
             <label for="description" class="form-label">Descrizione</label>
@@ -27,7 +27,7 @@
 
         </div>
         @error('description')
-            <p class="text-danger">{{ $message }}</p>
+            <p class="text-danger fst-italic">{{ $message }}</p>
         @enderror
         <div class="mb-3">
             <label for="image" class="form-label">Inserisci una immagine nitida dell'oggetto</label>
@@ -36,11 +36,11 @@
         @if ($image)
             <div class="m-3">
                 <label for="">Preview immagine</label>
-                <img src="{{ $image->temporaryUrl() }}" alt="" class="img-fluid">
+                <img src="{{ $image->temporaryUrl() }}" alt="" class="img-fluid w-25 rounded-0">
             </div>
         @endif
         @error('image')
-            <p class="text-danger">{{ $message }}</p>
+            <p class="text-danger fst-italic">{{ $message }}</p>
         @enderror
         <div class="mb-3">
             <label for="price" class="form-label ">Prezzo</label>

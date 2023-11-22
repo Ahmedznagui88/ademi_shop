@@ -8,3 +8,7 @@ form{
    border: none;
    border-radius: 0%;
 }
+
+input:hover{
+    border: solid 1px #ED7C31;
+}
