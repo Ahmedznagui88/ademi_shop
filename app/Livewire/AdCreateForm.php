@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\ad;
 use Livewire\Component;
+use App\Models\Category;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class AdCreateForm extends Component
@@ -15,6 +16,7 @@ class AdCreateForm extends Component
     public $description;
     public $image;
     public $price;
+    public $category_id;
 
     protected $rules = [
 
@@ -45,6 +47,7 @@ class AdCreateForm extends Component
             'description' => $this->description,
             'image' => $this->image->store('public/ads'),
             'price' => $this->price,
+            'category_id' => $this->category_id,
         ]);
 
         session()->flash('message', 'Hai inserito un annuncio correttamente');
@@ -54,6 +57,7 @@ class AdCreateForm extends Component
 
     public function render()
     {
-        return view('livewire.ad-create-form');
+        $categories = Category::all();
+        return view('livewire.ad-create-form', compact('categories'));
     }
 }
