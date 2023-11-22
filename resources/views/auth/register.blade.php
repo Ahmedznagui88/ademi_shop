@@ -1,27 +1,38 @@
 <x-layout>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <form action="{{ route('register') }}" method="POST" class="p-5">
+                    @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome utente</label>
                         <input type="text" class="form-control" id="name" name="name"
-                            aria-describedby="emailHelp">
+                            value="{{ old('name') }}">
                     </div>
+                    @error('name')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                     <div class="mb-3">
-                        <label for="email" class="form-label">Nome utente</label>
+                        <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email"
-                            aria-describedby="emailHelp">
+                            value="{{ old('email') }}">
                     </div>
+                    @error('email')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password">
+                        <input type="password" class="form-control" id="password" name="password">
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="password" class="form-check-input" id="password_confirmation">
-                        <label class="form-check-label" for="password_confirmation">Check me out</label>
+                    @error('password')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
+                    <div class="mb-3">
+                        <label class="form-labe" for="password_confirmation">Conferma password</label>
+                        <input type="password" class="form-control" id="password_confirmation"
+                            name="password_confirmation">
                     </div>
-                    <button type="submit" class="btn btn-primary">registrati</button>
+                    <button type="submit" class="btn btn-primary">Registrati</button>
                 </form>
 
             </div>
