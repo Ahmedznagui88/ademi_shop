@@ -20,5 +20,7 @@ Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 //rotte ad//
 Route::get('/ad/create', [AdController::class, 'create'])->name('ad.create');
 Route::get('/ad/index', [AdController::class, 'index'])->name('ad.index');
+Route::get('/ad/show/{ad}', [AdController::class, 'show'])->name('ad.show');
+
 
 

@@ -12,7 +12,9 @@ class AdController extends Controller
      */
     public function index()
     {
+
         $ads = Ad::all();
+        $ads = Ad::orderby('created_at', 'desc')->get();
         return view('Ad.index', compact('ads'));
     }
 
@@ -37,7 +39,7 @@ class AdController extends Controller
      */
     public function show(ad $ad)
     {
-        //
+        return view('Ad.show', compact('ad'));
     }
 
     /**
