@@ -1,4 +1,5 @@
 @import 'bootstrap';
 @import './nav';
 @import './body';
-@import './forms.css'
+@import './forms.css';
+@import './card.css';
