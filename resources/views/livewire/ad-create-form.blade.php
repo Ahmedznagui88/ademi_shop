@@ -12,14 +12,14 @@
             <input type="text" wire:model="title" class="form-control rounded-0" id="title">
         </div>
         @error('title')
-            <p class="text-dark">{{ $message }}</p>
+            <p class="text-danger">{{ $message }}</p>
         @enderror
         <div class="mb-3">
             <label for="brand" class="form-label">Marchio</label>
             <input type="text" wire:model="brand" class="form-control rounded-0" id="brand">
         </div>
         @error('brand')
-            <p class="text-dark">{{ $message }}</p>
+            <p class="text-danger">{{ $message }}</p>
         @enderror
         <div class="mb-3">
             <label for="description" class="form-label">Descrizione</label>
@@ -27,7 +27,7 @@
 
         </div>
         @error('description')
-            <p class="text-dark">{{ $message }}</p>
+            <p class="text-danger">{{ $message }}</p>
         @enderror
         <div class="mb-3">
             <label for="image" class="form-label">Inserisci una immagine nitida dell'oggetto</label>
@@ -40,14 +40,14 @@
             </div>
         @endif
         @error('image')
-            <p class="text-dark">{{ $message }}</p>
+            <p class="text-danger">{{ $message }}</p>
         @enderror
         <div class="mb-3">
             <label for="price" class="form-label ">Prezzo</label>
             <input type="float" wire:model="price" class="form-control rounded-0" id="price">
         </div>
         @error('price')
-            <p class="text-dark">{{ $message }}</p>
+            <p class="text-danger">{{ $message }}</p>
         @enderror
         <button type="submit" class="btn btn-primary">Inserisci annuncio</button>
 
