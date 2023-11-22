@@ -4,14 +4,16 @@ namespace App\Livewire;
 
 use App\Models\ad;
 use Livewire\Component;
-
+use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class AdCreateForm extends Component
 {
+use WithFileUploads;
 
     public $title;
     public $brand;
     public $description;
+    public $image;
     public $price;
 
 public function store () {
@@ -20,6 +22,7 @@ public function store () {
        'title' => $this->title,
        'brand' => $this->brand,
        'description' => $this->description,
+       'image' => $this->image->store('public/ads'),
        'price' => $this->price,
     ]);
 
