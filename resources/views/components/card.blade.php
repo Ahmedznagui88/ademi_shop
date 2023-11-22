@@ -5,6 +5,6 @@
         <p>{{ $ad->brand }}</p>
         <p class="card-text">{{ $ad->description }}</p>
         <p class="fs-2">{{ $ad->price }}</p>
-        <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary">Mostra</a>
+        <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-75">Mostra</a>
     </div>
 </div>
