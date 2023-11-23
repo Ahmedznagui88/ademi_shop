@@ -4,11 +4,14 @@
 }
 
 .carousel-control-prev , .carousel-control-next {
-    background-color: rgba(200, 106, 51, 0.503);
-    border-radius: 10px;
+    background-color: rgba(190, 190, 190, 0.324);
 }
 
 .cs{
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 900px;
 } 
+
+.img-c{
+    
+}
