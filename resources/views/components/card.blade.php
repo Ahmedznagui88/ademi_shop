@@ -9,7 +9,7 @@
             <p class="fs-2 price">${{ $ad->price }}</p>
             <div class=" d-flex align-items-center justify-content-between">
                 <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-50">Mostra</a>
-                <i class="fa-regular fa-heart fa-xl mx-5 "></i>
+                <i class="fa-regular fa-heart fa-xl mx-5"></i>
             </div>
         </div>
     </div>

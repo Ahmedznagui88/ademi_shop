@@ -25,7 +25,7 @@ class AdCreateForm extends Component
         'title' => 'required|min:3|max:100',
         'brand' => 'required|min:3|max:100',
         'description' => 'required|min:10|max:10000',
-        
+
 
     ];
 
@@ -34,7 +34,7 @@ class AdCreateForm extends Component
         'required' => 'Il campo deve essere compilato',
         'min' => 'Il campo deve contenere minimo :min caratteri',
         'max' => 'Il campo deve contenere massimo :max caratteri',
-       
+
         'mimes' => 'Le estensioni devono essere :values',
 
 
@@ -43,21 +43,14 @@ class AdCreateForm extends Component
 
 
     public function store()
-    {  
-         $this->validate();
+    {
+        $this->validate();
 
-      if($this->image){
-        $image = $this->image->store('public/ads');
-      } else {
-        $image = 'public/media/default-img.jpg';
-      }
-       
-    
         Auth::user()->ads()->create([
             'title' => $this->title,
             'brand' => $this->brand,
             'description' => $this->description,
-            'image' => $image,
+            'image' =>  $this->image->store('public/ads'),
             'price' => $this->price,
             'category_id' => $this->category_id,
             'user_id' => $this->user_id,
