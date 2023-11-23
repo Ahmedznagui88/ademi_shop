@@ -8,17 +8,22 @@ body{
 
 .text-1{
     margin-top: 50px;
-    font-size: 210px;
+    font-size: 250px;
     color: rgb(0, 0, 0);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    line-height: 20rem;
+    
+    margin: 0;
+    
 }
 
 .texthome{
     font-weight: lighter;
 }
 
+
+
 .char{
-    transform: translateY(-280px);
+    transform: transition .5s;
+    transform: translateY(300px);
     
-}
+} 

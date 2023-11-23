@@ -10,7 +10,7 @@
     <title>Ademi</title>
     
 </head>
-<body>
+<body class="homepage">
     <x-nav/>
 
     <div class="min-vh-100">
