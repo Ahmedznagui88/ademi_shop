@@ -4,13 +4,14 @@ let text = new SplitType("#ademi");
 
 gsap.from('.char',{
     opacity: 0,
-
+    ease: 'power2.out',
 });
 
 gsap.to('.char',{
     y: 0,
-    stagger: 0.01,
-    duration: 0.3,
+    
+    stagger: 0.02,
+    duration: 0.6,
 });
 
 //*outline/cursor

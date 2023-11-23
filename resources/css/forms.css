@@ -7,7 +7,13 @@ form{
    background: #ED7C31; 
    border: none;
    border-radius: 0%;
-   transition: 0.5s;
+   transition: 1.6s;
+   transform: translateY(0);
+    transform-origin: bottom;
+}
+html.is-animating .btn{
+   
+    transform: translateY(100px);
 }
 .btn:hover{
 
@@ -21,3 +27,4 @@ input:hover{
 .form-control, .form-label{
     background: transparent;
 }
+

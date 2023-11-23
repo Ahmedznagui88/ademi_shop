@@ -14,7 +14,7 @@
                     @enderror
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control  rounded-0 text-light" id="email" name="email"
+                        <input type="email" class="form-control  rounded-0 " id="email" name="email"
                             value="{{ old('email') }}">
                     </div>
                     @error('email')

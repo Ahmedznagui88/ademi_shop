@@ -77,3 +77,25 @@ html.is-animating .transition-fade{
     border: none;
 }
 /*! cursor/outlinne  */
+
+.btn-1{
+	width: 110px;
+	height: 50px;
+	border: none;
+	background-color:#000000;
+	border-radius: 100px;
+	transition: 1.6s;
+    transform: translateY(0);
+    transform-origin: bottom;
+	
+}
+
+html.is-animating .btn-1{
+   
+    transform: translateY(100px);
+}
+
+.text-btn{
+	color: aliceblue;
+	text-decoration: none;
+}
