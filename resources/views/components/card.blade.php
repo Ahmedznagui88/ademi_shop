@@ -8,6 +8,7 @@
             <p>{{ $ad->brand }}</p>
             <p class="card-text">{{ $ad->description }}</p>
             <p class="fs-2 price">${{ $ad->price }}</p>
+            <small>{{$ad->category->name ?? 'Categoria non specificata'}}</small>
             <div class=" d-flex align-items-center justify-content-between">
                 <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-50">Mostra</a>
                 <i class="fa-regular fa-heart fa-xl mx-5"></i>

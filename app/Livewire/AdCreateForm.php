@@ -24,6 +24,7 @@ class AdCreateForm extends Component
 
         'title' => 'required|min:3|max:100',
         'brand' => 'required|min:3|max:100',
+        'image' => 'required|image|mimes:webp,png,jpeg,jpg', 
         'description' => 'required|min:10|max:10000',
 
 
@@ -35,7 +36,7 @@ class AdCreateForm extends Component
         'required' => 'Il campo deve essere compilato',
         'min' => 'Il campo deve contenere minimo :min caratteri',
         'max' => 'Il campo deve contenere massimo :max caratteri',
-
+        'image' => 'Il file deve essere un\'immagine',
         'mimes' => 'Le estensioni devono essere :values',
 
 
@@ -64,7 +65,6 @@ class AdCreateForm extends Component
 
     public function render()
     {
-        $categories = Category::all();
-        return view('livewire.ad-create-form', compact('categories'));
+        return view('livewire.ad-create-form');
     }
 }
