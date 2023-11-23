@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Models\ad;
+
 use Livewire\Component;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +18,6 @@ class AdCreateForm extends Component
     public $image;
     public $price;
     public $category_id;
-
     public $user_id;
 
     protected $rules = [
@@ -26,7 +25,7 @@ class AdCreateForm extends Component
         'title' => 'required|min:3|max:100',
         'brand' => 'required|min:3|max:100',
         'description' => 'required|min:10|max:10000',
-        'image' => 'required|image|mimes:webp,png,jpeg,jpg',
+        
 
     ];
 
@@ -35,20 +34,30 @@ class AdCreateForm extends Component
         'required' => 'Il campo deve essere compilato',
         'min' => 'Il campo deve contenere minimo :min caratteri',
         'max' => 'Il campo deve contenere massimo :max caratteri',
-        'image' => 'Il file deve essere un\'immagine',
+       
         'mimes' => 'Le estensioni devono essere :values',
 
 
     ];
 
+
+
     public function store()
-    {
-        $this->validate();
+    {  
+         $this->validate();
+
+      if($this->image){
+        $image = $this->image->store('public/ads');
+      } else {
+        $image = 'public/media/default-img.jpg';
+      }
+       
+    
         Auth::user()->ads()->create([
             'title' => $this->title,
             'brand' => $this->brand,
             'description' => $this->description,
-            'image' => $this->image->store('public/ads'),
+            'image' => $image,
             'price' => $this->price,
             'category_id' => $this->category_id,
             'user_id' => $this->user_id,

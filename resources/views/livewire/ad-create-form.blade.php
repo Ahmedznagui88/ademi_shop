@@ -22,8 +22,8 @@
         <p class="text-danger fst-italic">{{ $message }}</p>
         @enderror
         <div class="mb-3">
-            <label class="form-label" for="">Categoria</label>
-            <select class="form-select" name="" id="" wire:model="category_id">
+            <label class="form-label">Categoria</label>
+            <select class="form-select" wire:model="category_id">
                 @foreach ($categories as $category)
                 <option value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
