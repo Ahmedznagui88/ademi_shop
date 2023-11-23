@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\ad;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class AdController extends Controller
@@ -18,8 +19,8 @@ class AdController extends Controller
         $ads = ad::orderby('created_at', 'desc')->get();
         return view('Ad.index', compact('ads'));
     }
-    public function indexCategory(){
-        return view('Ad.indexCategory');
+    public function indexCategory(Category $category){
+        return view('Ad.indexCategory', compact('category'));
     }
     /**
      * Show the form for creating a new resource.

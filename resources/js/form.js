@@ -1,8 +1,5 @@
 //* success message
 
-
-
-
 setTimeout(function() {
 
     let message = document.getElementById('message');
@@ -14,5 +11,5 @@ setTimeout(function() {
    let form = document.getElementById('form');
     form.style.transition = "6.8s"
     form.style.transform = "translateY(-74px)";
-}, 8000);
+}, 6000);
 //!end message
