@@ -7,11 +7,17 @@ body{
 /** title */
 
 .text-1{
-    font-size: 260px;
+    font-size: 210px;
     color: rgb(0, 0, 0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 20rem;
 }
 
 .texthome{
     font-weight: lighter;
 }
 
+.char{
+    transform: translateY(280px);
+    
+}

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 namespace App\Models;
@@ -24,5 +23,3 @@ class Ad extends Model
         return $this->belongsTo(User::class);
     }
 }
-=======
->>>>>>> d6f751c48a343e9faa0f768ec2214f53963a78c6
