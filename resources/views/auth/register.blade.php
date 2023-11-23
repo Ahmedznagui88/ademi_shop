@@ -22,16 +22,16 @@
                     @enderror
                     <div class="mb-3">
                         
-                        <label for="password" class="form-label">Password</label>
-                        {{-- <img src="./media/view.png" class="w-25" alt=""> --}}
-                        <input type="password" class="form-control rounded-0 text-light" id="password" name="password">
+                        <label for="password" class="form-label ">Password</label>
+                        
+                        <input type="password" class="form-control rounded-0 " id="password" name="password">
                     </div>
                     @error('password')
                         <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror
                     <div class="mb-3">
                         <label class="form-labe" for="password_confirmation">Conferma password</label>
-                        <input type="password" class="form-control rounded-0 text-light" id="password_confirmation"
+                        <input type="password" class="form-control rounded-0 " id="password_confirmation"
                             name="password_confirmation">
                     </div>
                     <button type="submit" class="btn btn-primary">Registrati</button>

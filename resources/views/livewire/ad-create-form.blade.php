@@ -47,8 +47,7 @@
             @if ($image)
             <div class="m-3">
                 <label for="">Preview immagine</label>
-                {{-- <img src="{{ $image->temporaryUrl() }}" alt="" class="img-fluid w-25 rounded-0"> --}}
-                <img src="https://images.unsplash.com/photo-1700587085844-b96c27958df2?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-25" alt="">
+                <img src="{{ $image->temporaryUrl() }}" alt="" class="img-fluid w-25 rounded-0"> 
             </div>
             @endif
     
