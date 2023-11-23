@@ -21,7 +21,7 @@ body{
 .char{
     transform: translateY(300px); 
 } 
-/** end title  */
+/*! end title  */
 
 /**animation change page  */
 
@@ -36,3 +36,41 @@ html.is-animating .transition-fade{
     opacity: 0;
     /* transform: translateY(100%);  */
 }
+/*! end animation change page   */
+
+/** cursor/outlinne  */
+.outline{
+	width: 64px;
+	height: 64px;
+	
+	border-radius: 100%;
+	border: solid 1px #ffffff;
+	
+	position: fixed;
+	top: 0px; left: 0px;
+	z-index: 9999999;
+	mix-blend-mode: difference;
+	transform: translate(-64px, -64px);
+	transition: all 0.3s cubic-bezier(.255, .61, .355, 1);
+	pointer-events: none;
+}
+
+.cursor{
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background: #ffffff;
+	position: fixed;
+	top: 0px; left: 0px;
+	z-index: 999999;
+	transform: translate(-8px, -8px);
+	pointer-events: none;
+    
+} 
+
+.outline.hover{
+	background: rgb(243, 152, 232);
+	zoom: 10px;
+    border: none;
+}
+/*! cursor/outlinne  */

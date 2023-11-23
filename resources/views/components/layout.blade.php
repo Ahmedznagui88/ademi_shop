@@ -14,6 +14,8 @@
 <body class="homepage" >
 
     <x-nav/>
+    <div class="outline"></div>
+    <div class="cursor"></div>
 
     <main id="swup" class="transition-fade">
         <div class="min-vh-100">  

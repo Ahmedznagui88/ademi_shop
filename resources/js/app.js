@@ -1,4 +1,5 @@
 import './bootstrap';
 import 'bootstrap';
 import './script';
-import './auth'
+import './auth';
+import './form';
