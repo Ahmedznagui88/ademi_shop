@@ -9,8 +9,8 @@ gsap.from('.char',{
 
 gsap.to('.char',{
     y: 0,
-    stagger: 0.02,
-    duration: 0.9,
+    stagger: 0.01,
+    duration: 0.3,
 });
 
 //*outline/cursor
