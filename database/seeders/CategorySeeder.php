@@ -15,10 +15,16 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            'Watches',
-            'Home',
-            'Music',
-            'Parfumes',
+            'Orologeria',
+            'Elettronica',
+            'Vinili',
+            'Profumi',
+            'Arredamento',
+            'Illuminazione',
+            'Oggettistica',
+            'Arte',
+            'Vini',
+            'Liquori',
 
         ];
 
