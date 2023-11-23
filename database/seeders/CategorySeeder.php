@@ -15,14 +15,14 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-'Watches',
-'Home',
-'Music',
-'Parfumes',
+            'Watches',
+            'Home',
+            'Music',
+            'Parfumes',
 
         ];
 
-        foreach($categories as $category){
+        foreach ($categories as $category) {
             DB::table('categories')->insert([
                 'name' => $category,
                 'created_at' => Carbon::now(),

@@ -17,12 +17,17 @@ return new class extends Migration
             $table->string('brand');
             $table->text('description');
             $table->float('price');
-            $table->timestamps();
+            $table->string('image');
 
-            
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->unsignedBigInteger('category_id')->nullable();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('SET NULL');
+            $table->timestamps();
         });
     }
-    
+
     /**
      * Reverse the migrations.
      */

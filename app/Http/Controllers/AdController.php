@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Ad;
+
+use App\Models\ad;
 use Illuminate\Http\Request;
 
 class AdController extends Controller
@@ -13,8 +14,8 @@ class AdController extends Controller
     public function index()
     {
 
-        $ads = Ad::all();
-        $ads = Ad::orderby('created_at', 'desc')->get();
+        $ads = ad::all();
+        $ads = ad::orderby('created_at', 'desc')->get();
         return view('Ad.index', compact('ads'));
     }
 
