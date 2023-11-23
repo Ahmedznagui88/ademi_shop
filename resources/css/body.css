@@ -7,7 +7,7 @@ body{
 /** title */
 
 .text-1{
-    margin-top: 50px;
+    
     font-size: 250px;
     color: rgb(0, 0, 0);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -19,7 +19,7 @@ body{
 }
 
 .char{
-    transform: translateY(300px); 
+    transform: translateY(290px); 
 } 
 /*! end title  */
 
@@ -42,10 +42,9 @@ html.is-animating .transition-fade{
 .outline{
 	width: 64px;
 	height: 64px;
-	
 	border-radius: 100%;
 	border: solid 1px #ffffff;
-	
+	transition: 0.4s;
 	position: fixed;
 	top: 0px; left: 0px;
 	z-index: 9999999;
@@ -59,7 +58,7 @@ html.is-animating .transition-fade{
 	width: 8px;
 	height: 8px;
 	border-radius: 100%;
-	background: #ffffff;
+	background: #e0a1a1;
 	position: fixed;
 	top: 0px; left: 0px;
 	z-index: 999999;
@@ -69,7 +68,7 @@ html.is-animating .transition-fade{
 } 
 
 .outline.hover{
-	background: rgb(243, 152, 232);
+	background: rgb(171, 14, 223);
 	zoom: 10px;
     border: none;
 }

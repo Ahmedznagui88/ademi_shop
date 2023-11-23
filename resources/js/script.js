@@ -1,30 +1,21 @@
 const swup = new Swup();
 
+let text = new SplitType("#ademi");
 
-window.animationHome = function (){
+gsap.from('.char',{
+    opacity: 0,
 
-    if (document.readyState !== 'loading') {
+});
 
-            let text = new SplitType("#ademi");
+gsap.to('.char',{
+    y: 0,
+    stagger: 0.02,
+    duration: 0.9,
+});
 
-            gsap.from('.char' ,  {
-                opacity: 0,
+//*outline/cursor
 
-            });
-
-            gsap.to('.char' ,  {
-                y: 0,
-                stagger: 0.05,
-                duration: 4,
-            });
-
-        return;
-      }
-    };
-
-    //*outline/cursor
-
-    let outline = document.querySelector('.outline');
+let outline = document.querySelector('.outline');
 let cursor = document.querySelector('.cursor');
 let links = document.querySelectorAll(' a');
 
@@ -38,13 +29,15 @@ document.addEventListener('mousemove', function(e) {
 });
 
 links.forEach((link) => {
+    
     link.addEventListener('mouseover', () => {
         cursor.classList.add('hover');
         outline.classList.add('hover');
     });
     link.addEventListener('mouseleave', () => {
-        cursor.classList.remove('hover');
-        cursor.classList.remove('hover');
+        cursor.classList.style.background = "none"
+       /*  cursor.classList.remove('hover');
+        cursor.classList.remove('hover'); */
     });
 });
  //!outline/cursor
