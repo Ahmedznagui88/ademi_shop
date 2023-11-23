@@ -17,5 +17,4 @@ class Category extends Model
         return $this->hasMany(Ad::class);
     }
 
- 
 }

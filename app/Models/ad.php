@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Ad extends Model
 {
-    protected $fillable = ['title', 'brand', 'description', 'price', 'image'];
+    protected $fillable = ['title', 'brand', 'description', 'price', 'image','category_id'];
 
     use HasFactory;
 
@@ -17,5 +17,4 @@ class Ad extends Model
         return $this->belongsTo(Category::class);
     }
 
-   
 }

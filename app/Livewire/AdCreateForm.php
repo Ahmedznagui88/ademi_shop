@@ -27,6 +27,7 @@ class AdCreateForm extends Component
         'description' => 'required|min:10|max:10000',
 
 
+
     ];
 
     protected $messages = [

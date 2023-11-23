@@ -17,3 +17,7 @@ form{
 input:hover{
     border: solid 1px #ED7C31;
 }
+
+.form-control, .form-label{
+    background: transparent;
+}

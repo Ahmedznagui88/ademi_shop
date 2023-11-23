@@ -1,4 +1,5 @@
 <div class="out d-flex justify-content-end">
+    <a href="{{ route('ad.show', $ad) }}" class="text-decoration-none text-black ">
 
     <div class="card rounded-0" style="width: 18rem;">
         <img src="{{ Storage::url($ad->image) }}" class="card-img-top" alt="{{ $ad->title }}">
