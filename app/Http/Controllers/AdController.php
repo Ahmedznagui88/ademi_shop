@@ -18,7 +18,9 @@ class AdController extends Controller
         $ads = ad::orderby('created_at', 'desc')->get();
         return view('Ad.index', compact('ads'));
     }
-
+    public function indexCategory(){
+        return view('Ad.indexCategory');
+    }
     /**
      * Show the form for creating a new resource.
      */

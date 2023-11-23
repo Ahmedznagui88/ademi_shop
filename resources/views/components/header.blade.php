@@ -1,13 +1,13 @@
 <header class="d-flex flex-column justify-content-center">
     <article class="container-fluid ">
-           <div class="row">
-               <div  class="col-12 text-center">
-                   <p id="ademi" class="text-1 "><strong>Ademi</strong><span class="texthome">Home</span></p>
-               </div>
-           </div>
-   </article>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p id="ademi" class="text-1 "><strong>Ademi</strong><span class="texthome">Home</span></p>
+            </div>
+        </div>
+    </article>
 
-  <div class="container-fluid d-flex justify-content-center">
+    <div class="container-fluid d-flex justify-content-center">
 
     <div id="carouselExample" class="carousel slide">
       <div class="carousel-inner">
