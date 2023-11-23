@@ -21,7 +21,9 @@
                         <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror
                     <div class="mb-3">
+                        
                         <label for="password" class="form-label">Password</label>
+                        {{-- <img src="./media/view.png" class="w-25" alt=""> --}}
                         <input type="password" class="form-control rounded-0 bg-transparent text-light" id="password" name="password">
                     </div>
                     @error('password')

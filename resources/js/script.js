@@ -1,39 +1,23 @@
-
-let text = new SplitType("#ademi");
-
+const swup = new Swup();
 
 
-gsap.from('.char' ,  {
-    opacity: 0,
-    
-});
+window.animationHome = function (){
 
-gsap.to('.char' ,  {
-   
-    y: 0,
-    stagger: 0.02,
-    duration: 2,
-}); 
+    if (document.readyState !== 'loading') {
 
-/* let text = new SplitType(".text-1");
+            let text = new SplitType("#ademi");
 
-let texts = gsap.utils.toArray(".text-1");
-let tl = gsap.timeline();
-let splitText = new SplitType(texts);
+            gsap.from('.char' ,  {
+                opacity: 0,
 
-texts.forEach(() => {
-    
-   tl
-   .from(splitText.chars,  {
-       opacity: 0,
-       
+            });
 
-   }, "<")
-    
-   .to(splitText.chars, {
-       opacity: 0,
+            gsap.to('.char' ,  {
+                y: 0,
+                stagger: 0.05,
+                duration: 4,
+            });
 
-   }, "<1")
-   
-});
- */
+        return;
+      }
+    };
