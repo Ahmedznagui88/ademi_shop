@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Models\ad;
+
 use Livewire\Component;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +18,6 @@ class AdCreateForm extends Component
     public $image;
     public $price;
     public $category_id;
-
     public $user_id;
 
     protected $rules = [
