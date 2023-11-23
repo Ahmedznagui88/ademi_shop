@@ -52,7 +52,7 @@ class AdCreateForm extends Component
             'title' => $this->title,
             'brand' => $this->brand,
             'description' => $this->description,
-            /* 'image' =>  $this->image->store('public/ads'), */
+            'image' =>  $this->image->store('public/ads'),
             'price' => $this->price,
             'category_id' => $this->category_id,
             'user_id' => $this->user_id,
