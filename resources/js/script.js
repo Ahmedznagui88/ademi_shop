@@ -35,9 +35,9 @@ links.forEach((link) => {
         outline.classList.add('hover');
     });
     link.addEventListener('mouseleave', () => {
-        cursor.classList.style.background = "none"
-       /*  cursor.classList.remove('hover');
-        cursor.classList.remove('hover'); */
+        
+        cursor.classList.remove('hover');
+        cursor.classList.remove('hover');
     });
 });
  //!outline/cursor

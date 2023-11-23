@@ -18,6 +18,7 @@
 
     <main id="swup" class="transition-fade">
         <div class="min-vh-100">  
+            
             {{$slot}}
         </div>
     </main>
