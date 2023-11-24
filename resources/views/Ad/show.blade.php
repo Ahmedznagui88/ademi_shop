@@ -44,7 +44,7 @@
         </div>
        
        <div class="mt-5">
-        <a href="{{ url()->previous()}}">Torna indietro</a>
+        <a href="{{url()->previous()}}">Torna indietro</a>
        </div>
     </article>
 </x-layout>
