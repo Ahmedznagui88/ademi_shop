@@ -31,12 +31,17 @@
                         <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror
                     <div class="mb-3">
-                        <label class="form-labe" for="password_confirmation">Conferma password</label>
+                        <label class="form-labe mb-2" for="password_confirmation">Conferma password</label>
                         <input type="password" class="form-control rounded-0 " id="password_confirmation"
                             name="password_confirmation">
                              {{-- showPassword 
                             <input class="mt-3" type="checkbox" name="" id="show-password">
                             <label for="show-password">show password</label>--}}
+                    </div>
+                    <div class="mb-3">
+                        <span>Sei già registrato?
+                            <a href="{{ route('register') }}"> Accedi</a>
+                        </span>
                     </div>
                     <button type="submit" class="btn btn-primary">Registrati</button>
                 </form>
