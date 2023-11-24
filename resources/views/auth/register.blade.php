@@ -1,12 +1,12 @@
 <x-layout>
     <div class="container">
-        <div class="row justify-content-center text-light">
+        <div class="row justify-content-center text-dark">
             <div class="col-12 col-md-6">
                 <form action="{{ route('register') }}" method="POST" class="p-5">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome utente</label>
-                        <input type="text" class="form-control rounded-0 text-light" id="name" name="name"
+                        <input type="text" class="form-control rounded-0 text-dark" id="name" name="name"
                             value="{{ old('name') }}">
                     </div>
                     @error('name')
