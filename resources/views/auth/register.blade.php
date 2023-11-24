@@ -21,10 +21,11 @@
                         <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror
                     <div class="mb-3">
-                        
                         <label for="password" class="form-label ">Password</label>
-                        
                         <input type="password" class="form-control rounded-0 " id="password" name="password">
+                        {{-- showPassword 
+                        <input class="mt-3" type="checkbox" name="" id="toggle-password">
+                        <label for="showpassword">show password</label>--}}
                     </div>
                     @error('password')
                         <div class="text-danger fst-italic">{{ $message }}</div>
@@ -33,6 +34,9 @@
                         <label class="form-labe" for="password_confirmation">Conferma password</label>
                         <input type="password" class="form-control rounded-0 " id="password_confirmation"
                             name="password_confirmation">
+                             {{-- showPassword 
+                            <input class="mt-3" type="checkbox" name="" id="show-password">
+                            <label for="show-password">show password</label>--}}
                     </div>
                     <button type="submit" class="btn btn-primary">Registrati</button>
                 </form>

@@ -42,3 +42,41 @@ links.forEach((link) => {
     });
 });
  //!outline/cursor
+
+ //showPassword//
+
+ /*document.getElementById('toggle-password')
+.addEventListener('change', function() {
+
+    var passinput = document.getElementById('password');
+
+    if(this.checked){
+        passinput.type = "text"
+    } else {
+        passinput.type = "password"
+    }
+});
+
+document.getElementById('show-password')
+.addEventListener('change', function() {
+
+    var passinput = document.getElementById('password_confirmation');
+
+    if(this.checked){
+        passinput.type = "text"
+    } else {
+        passinput.type = "password"
+    }
+});
+
+document.getElementById('mostra-password')
+.addEventListener('change', function() {
+
+    var passinput = document.getElementById('show');
+
+    if(this.checked){
+        passinput.type = "text"
+    } else {
+        passinput.type = "password"
+    }
+});*/

@@ -15,7 +15,11 @@
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control rounded-0 " id="password" name="password">
+                          {{-- showPassword 
+                          <input class="mt-3" type="checkbox" name="" id="mostra-password">
+                          <label for="showpassword">show password</label> --}}
                     </div>
+                         
                     @error('password')
                         <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror

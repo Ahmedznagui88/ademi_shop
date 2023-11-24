@@ -11,6 +11,14 @@
          @endforeach
       
       </div>
+      
+      <div class="row my-5 cardHome">
+         @foreach ($ads as $ad )
+            <div class="col-12 col-md-3">
+               <x-card :ad="$ad" />
+            </div>
+         @endforeach
+      </div>
   </div>
 
 
