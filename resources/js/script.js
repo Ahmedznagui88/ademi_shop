@@ -45,38 +45,32 @@ links.forEach((link) => {
 
  //showPassword//
 
- /*document.getElementById('toggle-password')
-.addEventListener('change', function() {
+ window.mostrapassword = function() {
 
-    var passinput = document.getElementById('password');
-
-    if(this.checked){
-        passinput.type = "text"
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
     } else {
-        passinput.type = "password"
+      x.type = "password";
     }
-});
+  }
+  window.vedipassword = function() {
 
-document.getElementById('show-password')
-.addEventListener('change', function() {
-
-    var passinput = document.getElementById('password_confirmation');
-
-    if(this.checked){
-        passinput.type = "text"
+    var x = document.getElementById("password_confirmation");
+    if (x.type === "password") {
+      x.type = "text";
     } else {
-        passinput.type = "password"
+      x.type = "password";
     }
-});
+  }
+  
+  window.checkpassword = function() {
 
-document.getElementById('mostra-password')
-.addEventListener('change', function() {
-
-    var passinput = document.getElementById('show');
-
-    if(this.checked){
-        passinput.type = "text"
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
     } else {
-        passinput.type = "password"
+      x.type = "password";
     }
-});*/
+  }
+

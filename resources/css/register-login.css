@@ -1,0 +1,28 @@
+.divpassword {
+    position: relative;
+}
+
+.icona {
+    position: absolute;
+    left: 94%;
+    bottom: 12%;
+    cursor: pointer;
+}
+
+.divlogin-register {
+    margin-top: 5%;
+   
+}
+
+.formlogin-register {
+
+    border-radius: 25px;
+    box-shadow: 2px 3px 8px 2px #888888;
+}
+
+@media screen and (max-width: 520px) {
+    .icona {
+        position: absolute;
+      left: 90%;
+    }
+}

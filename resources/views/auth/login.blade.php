@@ -1,8 +1,8 @@
 <x-layout>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
-                <form action="{{ route('login') }}" method="POST" class="p-5">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-md-5 divlogin-register">
+                <form action="{{ route('login') }}" method="POST" class="p-5 formlogin-register">
                     @csrf
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
@@ -12,12 +12,10 @@
                     @error('email')
                         <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror
-                    <div class="mb-3">
+                    <div class="mb-3 divpassword">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control rounded-0 " id="password" name="password">
-                        {{-- showPassword 
-                          <input class="mt-3" type="checkbox" name="" id="mostra-password">
-                          <label for="showpassword">show password</label> --}}
+                        <ion-icon name="lock-closed-outline"><i class="fa-solid fa-eye icona" onclick="checkpassword()"></i></ion-icon>
                     </div>
 
                     @error('password')

@@ -93,7 +93,7 @@ html.is-animating .transition-fade{
     transform-origin: bottom;
 	
 }
-/*btn categorie welcom*/
+/*btn categorie welcome*/
 .btn-1Hover:hover{
 	transition: 500ms;
 	transform: scale(1.1);
