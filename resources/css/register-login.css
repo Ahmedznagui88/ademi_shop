@@ -22,20 +22,20 @@
 .bg-logo {
     /* background-image: url(./../../public/media/ademi\ logo\ -4.png); */
     background-size: 100%;
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    transition: 2s;
+    transition: 2s; */
 }
 
 .img-logo-register{
     margin: 10px;
     width: 100px;
 }
-
+/* 
 html.is-animating .bg-logo{
 
     opacity: 0;
-}
+} */
 
 
 @media screen and (max-width: 520px) {

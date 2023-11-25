@@ -1,16 +1,18 @@
 const swup = new Swup();
 
-let text = new SplitType("#ademi");
+let text = new SplitType("#ademi", "#bg-register-login");
 
-gsap.from('.char',{
+gsap.from('.img-logo-register' ,{
     opacity: 0,
-   
+    
 });
 
-gsap.to('.char',{
+gsap.to('.img-logo-register' ,{
     y: 0,
-    stagger: 0.02,
-    duration: 0.6,
+    stagger: 100,
+    
+    duration: 10,
+    
 });
 
 //*outline/cursor
