@@ -1,0 +1,35 @@
+.a {
+
+    animation: mymove 4s ;
+}
+
+.d {
+    animation: mymove 6s ;
+}
+
+.e {
+    animation: mymove 8s ;
+}
+
+.m {
+    animation: mymove 10s ;
+}
+
+.i {
+    animation: mymove 11s ;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+        left: 0px;
+       opacity: 0;
+       transition: 2s;
+    
+       
+    }
+
+}
+
+
+
