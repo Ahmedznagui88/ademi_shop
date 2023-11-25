@@ -17,7 +17,7 @@ gsap.to('.char',{
 
 let outline = document.querySelector('.outline');
 let cursor = document.querySelector('.cursor');
-let links = document.querySelectorAll('a');
+let links = document.querySelectorAll('button, a');
 
 document.addEventListener('mousemove', function(e) {
     let x = e.clientX;

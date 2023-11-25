@@ -6,7 +6,8 @@ form{
 .btn{
    background: #ED7C31; 
    border: none;
-   border-radius: 0%;
+   border-radius: 10px;
+   
    transition: 1.6s;
    transform: translateY(0);
     transform-origin: bottom;

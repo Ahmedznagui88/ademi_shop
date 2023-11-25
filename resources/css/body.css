@@ -76,7 +76,7 @@ html.is-animating .transition-fade{
 }  */
 
 .outline.hover{
-	background: rgb(171, 14, 223);
+	background: rgb(255, 255, 255);
 	zoom: 10px;
     border: none;
 }
@@ -106,7 +106,7 @@ html.is-animating .transition-fade{
 /*btn categorie welcome*/
 .btn-1:hover{
 	transition: 500ms;
-	background: #ED7C31; 
+	background: #e9cab6; 
 	
 }
 
