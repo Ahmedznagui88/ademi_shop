@@ -1,8 +1,12 @@
 <x-layout>
     <div class="container">
         <div class="row justify-content-end text-dark row-registerlogin">
-            <div class="col-12 col-md-7 bg-logo" id="bg-register-login">
-         
+            <div class="col-12 col-md-7 bg-logo d-flex align-items-center " id="bg-register-login">
+                <img src="./media/Group A.png" class="img-logo-register" alt="">
+                <img src="./media/Group d.png" class="img-logo-register" alt="">
+                <img src="./media/Group e.png" class="img-logo-register" alt="">
+                <img src="./media/Group m.png" class="img-logo-register" alt="">
+                <img src="./media/Group i.png" class="img-logo-register" alt="">
             </div>
             <div class="col-12 col-md-5 divlogin-register">
                 <form action="{{ route('register') }}" method="POST" class="p-5 formlogin-register">

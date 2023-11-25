@@ -2,7 +2,6 @@ body{
     background-color: #F6F1EE;
     margin: 0%;
     font-family: 'League Spartan', sans-serif;
-	
 }
 
 hr{
@@ -36,13 +35,13 @@ article{
 .transition-fade{
     opacity: 8;
     transition: 0.3s;
-   transform: translateX(0);
-    transform-origin: right;  
+	transform: translateX(0);
+	transform-origin: right;  
 }
 
 html.is-animating .transition-fade{
     opacity: 0;
-    /* transform: translateY(100%);  */
+    /* transform: translateY(100%);   */
 }
 /*! end animation change page   */
 

@@ -20,10 +20,21 @@
     box-shadow: 2px 3px 8px 2px #888888;
 }
 .bg-logo {
-    background-image: url(./../../public/media/ademi\ logo\ 2.png);
+    /* background-image: url(./../../public/media/ademi\ logo\ -4.png); */
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 2s;
+}
+
+.img-logo-register{
+    margin: 10px;
+    width: 100px;
+}
+
+html.is-animating .bg-logo{
+
+    opacity: 0;
 }
 
 

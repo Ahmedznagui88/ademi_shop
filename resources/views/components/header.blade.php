@@ -1,11 +1,11 @@
 <header class="d-flex flex-column justify-content-center mb-5 head">
-   {{--  <article class="container-fluid ">
+    <article class="container-fluid ">
         <div class="row">
             <div class="col-12 text-center">
                 <p id="ademi" class="text-1 "><strong>Ademi</strong><span class="texthome">Home</span></p>
             </div>
         </div> 
-    </article>--}}
+    </article>
 
 <div class="container-fluid d-flex justify-content-center my-5">
     <div id="carouselExample" class="carousel slide cs">
