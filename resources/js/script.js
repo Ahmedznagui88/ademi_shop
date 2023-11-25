@@ -4,12 +4,11 @@ let text = new SplitType("#ademi");
 
 gsap.from('.char',{
     opacity: 0,
-    ease: 'power2.out',
+   
 });
 
 gsap.to('.char',{
     y: 0,
-    
     stagger: 0.02,
     duration: 0.6,
 });
@@ -18,7 +17,7 @@ gsap.to('.char',{
 
 let outline = document.querySelector('.outline');
 let cursor = document.querySelector('.cursor');
-let links = document.querySelectorAll(' a');
+let links = document.querySelectorAll('a');
 
 document.addEventListener('mousemove', function(e) {
     let x = e.clientX;
@@ -30,6 +29,7 @@ document.addEventListener('mousemove', function(e) {
 });
 
 links.forEach((link) => {
+
     
     link.addEventListener('mouseover', () => {
         cursor.classList.add('hover');
@@ -38,7 +38,7 @@ links.forEach((link) => {
     link.addEventListener('mouseleave', () => {
         
         cursor.classList.remove('hover');
-        cursor.classList.remove('hover');
+        outline.classList.remove('hover');
     });
 });
  //!outline/cursor

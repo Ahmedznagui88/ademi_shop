@@ -8,10 +8,12 @@ setTimeout(function() {
     message.style.opacity = "-1";
  
 
-   let form = document.getElementById('form');
-    form.style.transition = "6.8s"
+    let form = document.getElementById('form');
+    form.style.transition = "6.8s";
     form.style.transform = "translateY(-74px)";
-}, 6000);
+
+
+}, 5000);
 
 
 //!end message
