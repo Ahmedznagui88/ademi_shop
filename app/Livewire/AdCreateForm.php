@@ -10,6 +10,7 @@ use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class AdCreateForm extends Component
 {
+  
     use WithFileUploads;
 
     public $title;

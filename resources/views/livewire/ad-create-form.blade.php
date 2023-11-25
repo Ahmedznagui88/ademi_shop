@@ -26,6 +26,7 @@
             <div class="mb-1">
                 <label class="form-label ">Categoria</label>
                 <select class="form-select rounded-0" wire:model="category_id">
+                    <option value="">Scegli una categoria</option>
                     @foreach ($categories as $category)
                     <option value="{{$category->id}}">{{$category->name}}</option>
                     @endforeach
