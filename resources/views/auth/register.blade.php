@@ -1,6 +1,9 @@
 <x-layout>
     <div class="container">
-        <div class="row justify-content-center text-dark">
+        <div class="row justify-content-end text-dark row-registerlogin">
+            <div class="col-12 col-md-7 bg-logo" id="bg-register-login">
+         
+            </div>
             <div class="col-12 col-md-5 divlogin-register">
                 <form action="{{ route('register') }}" method="POST" class="p-5 formlogin-register">
                     @csrf

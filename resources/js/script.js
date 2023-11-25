@@ -73,4 +73,13 @@ links.forEach((link) => {
       x.type = "password";
     }
   }
+//backgorund register-login//
+  let bg = window.document.getElementById('bg-register-login');
+  bg.style.opacity="0";
+  setTimeout(function (){
+
+   bg.style.opacity="1"
+   bg.style.transition="2s"
+
+  },1500)
 
