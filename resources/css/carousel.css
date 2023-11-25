@@ -5,13 +5,12 @@
 
 .carousel-control-prev , .carousel-control-next {
     background-color: rgba(190, 190, 190, 0.324);
+    border-radius: 20px 20px 20px 20px;
+    width: 100px;
 }
 
 .cs{
     height: 400px;
     width: 900px;
-} 
 
-.img-c{
-    
-}
+} 
