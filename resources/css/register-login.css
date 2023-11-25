@@ -27,7 +27,7 @@
     transition: 2s; */
 }
 
-.img-logo-register{
+.img-logo-register, .img-logo-register1, .img-logo-register2, .img-logo-register3, .img-logo-register4 {
     margin: 10px;
     width: 100px;
 }

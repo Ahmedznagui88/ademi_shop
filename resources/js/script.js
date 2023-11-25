@@ -2,18 +2,27 @@ const swup = new Swup();
 
 let text = new SplitType("#ademi", "#bg-register-login");
 
-gsap.from('.img-logo-register' ,{
+/* gsap.from('.img-logo-register' ,{
     opacity: 0,
     
-});
+}); */
 
-gsap.to('.img-logo-register' ,{
-    y: 0,
-    stagger: 100,
+
+
+
+/* gsap.registerPlugin(ScrollTrigger);
+ let images = gsap.utils.toArray("#row-registerlogin");
+
+images.forEach((image, i) => {
+  gsap.to(image, {
     
-    duration: 10,
-    
-});
+  })
+}) */
+
+
+
+
+
 
 //*outline/cursor
 
