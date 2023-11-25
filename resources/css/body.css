@@ -88,8 +88,9 @@ html.is-animating .transition-fade{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #bdbdbd; 
+	background: #bdbdbd3e; 
 	border-radius: 10px;
+	border: solid 0.5px rgb(255, 128, 0);
 }
 
 .btn-1{
@@ -107,6 +108,7 @@ html.is-animating .transition-fade{
 .btn-1:hover{
 	transition: 500ms;
 	background: #e9cab6; 
+	color: rgb(255, 128, 0);
 	
 }
 
