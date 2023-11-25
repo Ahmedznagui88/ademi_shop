@@ -2,6 +2,7 @@ body{
     background-color: #F6F1EE;
     margin: 0%;
     font-family: 'League Spartan', sans-serif;
+	
 }
 
 hr{
@@ -90,14 +91,14 @@ html.is-animating .transition-fade{
 	align-items: center;
 	background: #bdbdbd3e; 
 	border-radius: 10px;
-	border: solid 0.5px rgb(0, 0, 0);
+	box-shadow: 2px 3px 8px 2px #8888886a;
 }
 
 .btn-1{
 	width: 110px;
 	height: 50px;
 	border: none;
-	background: #686868; 
+	background: rgb(233, 148, 62);
 	border-radius: 10px;
 	transition: 1.6s;
     transform: translateY(0);
@@ -118,7 +119,7 @@ html.is-animating .btn-1{
 }
 
 .text-btn{
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	font-size: 16px;
 	text-decoration: none;
 }

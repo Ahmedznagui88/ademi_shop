@@ -2,9 +2,9 @@
 
 
 .navbar{
-    background-color: #000000;
-    height: 50px;
-    
+    background-color: rgb(255, 128, 0);
+    height: 50px;  
+    letter-spacing: 2px;
 }
 
 .logo{
@@ -14,12 +14,10 @@
 
 .nav-link{
     color: rgb(255, 255, 255);
-    transition: 0.9s;
+    
 }
 
-.nav-link:hover{
-    color: rgb(255, 128, 0);
-}
+
 
 
 /** end navbar  */
