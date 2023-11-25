@@ -1,14 +1,13 @@
 <header class="d-flex flex-column justify-content-center mb-5 head">
-    <article class="container-fluid ">
-        {{-- <div class="row">
+   {{--  <article class="container-fluid ">
+        <div class="row">
             <div class="col-12 text-center">
                 <p id="ademi" class="text-1 "><strong>Ademi</strong><span class="texthome">Home</span></p>
             </div>
-        </div> --}}
-    </article>
+        </div> 
+    </article>--}}
 
-    <div class="container-fluid d-flex justify-content-center">
-
+<div class="container-fluid d-flex justify-content-center my-5">
     <div id="carouselExample" class="carousel slide cs">
       <div class="carousel-inner mx-5">
         <div class="carousel-item active cs">
@@ -20,7 +19,6 @@
         <div class="carousel-item active cs">
           <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyZnVtZXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid" alt="...">
         </div>
-        
       </div>
       <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -31,6 +29,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div>
+</div>
 
 </header>

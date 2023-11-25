@@ -1,3 +1,21 @@
 .cardHome {
     box-shadow: 2px 3px 8px 2px #888888;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .cardHome {
+		display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1368px) and (orientation: landscape) {
+    .cardHome {
+        
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .cardHome {
+         
+        
+    }
+}

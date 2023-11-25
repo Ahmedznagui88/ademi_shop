@@ -3,3 +3,42 @@
     padding: 10px;
     box-shadow: 2px 3px 8px 2px rgb(255, 128, 0);
 }*/
+
+/* Stili di base per il carousel */
+/* .carousel {
+    width: 100%;
+} */
+
+/* .carousel-inner {
+    margin: 0 -5px;
+} */
+
+/* .carousel-item img {
+    width: 100%;
+    height: auto;
+} */
+
+/* Media query per schermi più piccoli, come dispositivi mobili */
+@media only screen and (max-width: 768px) {
+    .carousel-inner {
+        margin: 0; /* Rimuovi lo spazio ai lati per dispositivi più piccoli */
+    }
+
+    .carousel-item img {
+        height: 200px; /* Altezza delle immagini ridotta per dispositivi mobili */
+    }
+}
+
+/* Media query per tablet in modalità orizzontale */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .carousel-item img {
+        height: 300px; /* Altezza delle immagini personalizzata per tablet in modalità orizzontale */
+    }
+}
+
+/* Media query per tablet in modalità verticale */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .carousel-item img {
+        height: 250px; /* Altezza delle immagini personalizzata per tablet in modalità verticale */
+    }
+}

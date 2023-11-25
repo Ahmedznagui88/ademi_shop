@@ -90,7 +90,7 @@ html.is-animating .transition-fade{
 	align-items: center;
 	background: #bdbdbd3e; 
 	border-radius: 10px;
-	border: solid 0.5px rgb(255, 128, 0);
+	border: solid 0.5px rgb(0, 0, 0);
 }
 
 .btn-1{
@@ -121,4 +121,22 @@ html.is-animating .btn-1{
 	color: rgb(255, 255, 255);
 	font-size: 16px;
 	text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .row-category {
+		width: 375px;
+        height: 350px;  
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1368px) and (orientation: landscape) {
+    .row-category {
+        height: 260px; 
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .row-category {
+        height: 240px;  
+        
+    }
 }
