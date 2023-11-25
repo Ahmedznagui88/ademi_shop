@@ -2,7 +2,7 @@
 
 
 .navbar{
-    background-color: #ED7C31;
+    background-color: #000000;
     height: 50px;
     
 }
@@ -13,11 +13,13 @@
 }
 
 .nav-link{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: 0.9s;
 }
 
 .nav-link:hover{
-    color: #ED7C31;
+    
 }
+
+
 /** end navbar  */

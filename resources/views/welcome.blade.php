@@ -1,16 +1,17 @@
 <x-layout>
-    
+    <div class="container">
+       <div class="row row-category">
+          @foreach ($categories as $category )
+              <button class="col-12 col-md-4 btn-1 mx-2">
+                  <a href="{{ route('ad.indexCategory', $category) }}" class="text-btn">{{ $category->name }}</a>
+              </button>
+          @endforeach
+       </div>
+    </div>
    <x-header />
 <hr>
-   <div class="container my-5">
-      <div class="row justify-content-center justify-content-between">
-         @foreach ($categories as $category )
-             <button class="col-12 col-md-1 text-center btn-1 btn-1Hover ">
-                 <a href="{{ route('ad.indexCategory', $category) }}" class="text-btn ">{{ $category->name }}</a>
-             </button>
-         @endforeach
+<div class="container my-5">
       
-      </div>
       
       <div class="row my-5 cardHome">
          @foreach ($ads as $ad )
@@ -19,7 +20,7 @@
             </div>
          @endforeach
       </div>
-  </div>
+</div>
 
 
     

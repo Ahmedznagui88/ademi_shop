@@ -82,21 +82,32 @@ html.is-animating .transition-fade{
 }
 /*! cursor/outlinne  */
 
+.row-category{
+	margin-top: 30px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #bdbdbd; 
+	border-radius: 10px;
+}
+
 .btn-1{
 	width: 110px;
 	height: 50px;
 	border: none;
-	background-color:#d59265;
-	border-radius: 100px;
+	background: #686868; 
+	border-radius: 10px;
 	transition: 1.6s;
     transform: translateY(0);
     transform-origin: bottom;
 	
 }
 /*btn categorie welcome*/
-.btn-1Hover:hover{
+.btn-1:hover{
 	transition: 500ms;
-	transform: scale(1.1);
+	background: #ED7C31; 
+	
 }
 
 html.is-animating .btn-1{
@@ -105,6 +116,7 @@ html.is-animating .btn-1{
 }
 
 .text-btn{
-	color: aliceblue;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
 	text-decoration: none;
 }
