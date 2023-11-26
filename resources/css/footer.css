@@ -1,40 +1,23 @@
 
+
 footer{
     background: #e3d9d9;
     background-size: cover;
     object-fit: contain;
-    
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    height: 400px;
+}
+
+.footer-contents{
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
   text-decoration: none;
-}
-
-
-.d-flex {
-  display: flex;
-}
-.d-grid {
-  display: grid;
-
-}
-
-
-.text-align-end {
-  text-align: end;
-}
-
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.justify-content-space-around {
-  justify-content: space-around;
-}
-
-.justify-content-space-between {
-  justify-content: space-between;
+  color: #000000;
+  margin: 10px;
 }
 
 .pf-footer {
@@ -47,9 +30,3 @@ a {
   
 }
 
-.footer-contents a {
-  margin: 20px 0;
-  color: #000000;
-  font-size: 21px;
-  font-family: 'League Spartan', sans-serif;
-}

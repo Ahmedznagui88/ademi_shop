@@ -1,35 +1,27 @@
 .panel {
     max-width: 0;
-  opacity: 0;
+    opacity: 0;
     overflow: hidden;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 
-
-
-
 }
 .attiva {
- max-width: 1280px;
-opacity: 1;
+    max-width: 1280px;
+    opacity: 1;
 }
 .divrow {
     display: flex;
 }
 
 .categorie {
-   
         width: 100vw;
         height: auto;
         display: flex;
         justify-content: center;
-        align-items: center;
-    
-
+        align-items: center; 
 }
+
 .row-category-2 {
     background-color: #cacaca; 
     box-shadow: 2px 3px 8px 2px #8888886a;
-}
-.row-category-3{
-
 }
