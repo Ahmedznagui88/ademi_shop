@@ -21,6 +21,7 @@
         </div>
     </main>
 
+    <x-footer/>
 
     <div class="outline"></div>
     <div class="cursor"></div>
