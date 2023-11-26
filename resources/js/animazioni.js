@@ -17,10 +17,11 @@ elements_to_watch.forEach((element) => {
   observer.observe(element); 
 });
 
+//*categoria
 let item = document.querySelector('.toggle');
 let panel = document.querySelector('.panel');
 
-item.addEventListener("click", function() {
+/* item.addEventListener("click", function() {
 
   panel.classList.toggle('attiva');
 

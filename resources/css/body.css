@@ -95,25 +95,24 @@ html.is-animating .transition-fade{
 	justify-content: center;
 	align-items: center;
 	background-color: #cacaca; 
-	box-shadow: 2px 3px 8px 2px #8888886a;
 }
 
 .btn-1{
-	width: 110px;
+	width: 100px;
 	height: 40px;
 	border: none;
 	background-color: #f7e7c2;
 	border-radius: 4px;
-	
 	transition: 1.6s;
     transform: translateY(0);
     transform-origin: bottom;
-	
+
 }
 
 .text-btn-1{
 	color: rgb(81, 61, 61);
 	text-decoration: none;
+	font-size: small;
 }
 /*btn categorie welcome*/
 .btn-1:hover{
