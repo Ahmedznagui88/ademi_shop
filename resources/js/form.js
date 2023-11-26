@@ -4,7 +4,7 @@ setTimeout(function() {
 
     let message = document.getElementById('message');
     
-    message.style.transition = "4s";
+    message.style.transition = "3s";
     message.style.transform = "translateY(-48px)";
     message.style.opacity = "-1";
  

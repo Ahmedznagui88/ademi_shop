@@ -1,8 +1,8 @@
 <x-layout>
-    <div class="container my-5">
+    <div class="container my-5 rounded-4">
         <div class="row">
             @forelse ($ads as $ad )
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 rounded-4">
                     <x-card :ad="$ad" />
                 </div>
             @empty

@@ -6,6 +6,7 @@
 .out{
     transition: 0.4s;
     width: 18rem;
+    border-radius: 20px;
 }
 .out:hover{
     background-color: #ec9255;
@@ -14,6 +15,7 @@
 
 .card{
  transition: 0.4s;
+ border: none;
 }
 
 .card:hover{

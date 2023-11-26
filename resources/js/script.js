@@ -7,9 +7,6 @@ let text = new SplitType("#ademi", "#bg-register-login");
     
 }); */
 
-
-
-
 /* gsap.registerPlugin(ScrollTrigger);
  let images = gsap.utils.toArray("#row-registerlogin");
 
@@ -18,10 +15,6 @@ images.forEach((image, i) => {
     
   })
 }) */
-
-
-
-
 
 
 //*outline/cursor
@@ -85,7 +78,7 @@ links.forEach((link) => {
     }
   }
 //backgorund register-login//
-  let bg = window.document.getElementById('bg-register-login');
+/*   let bg = window.document.getElementById('bg-register-login');
   bg.style.opacity="0";
   setTimeout(function (){
 
@@ -94,3 +87,4 @@ links.forEach((link) => {
 
   },1500)
 
+ */

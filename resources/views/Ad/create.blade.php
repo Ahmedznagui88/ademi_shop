@@ -7,7 +7,7 @@
             </div>
         </div> --}}
     
-        <div class="row justify-content-center">
+        <div class="row justify-content-center rounded-4">
             <div class="col-12 col-md-6">
                 <livewire:ad-create-form />
             </div>

@@ -13,7 +13,7 @@
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome utente</label>
-                        <input type="text" class="form-control rounded-0 text-dark" id="name" name="name"
+                        <input type="text" class="form-control rounded-3 text-light" id="name" name="name"
                             value="{{ old('name') }}">
                     </div>
                     @error('name')
@@ -22,7 +22,7 @@
                     <div class="mb-3">
                         
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control rounded-0 " id="email" name="email"
+                        <input type="email" class="form-control rounded-3 " id="email" name="email"
                             value="{{ old('email') }}">
                     </div>
                     @error('email')
@@ -30,7 +30,7 @@
                     @enderror
                     <div class="mb-3 divpassword">
                         <label for="password" class="form-label ">Password</label>
-                        <input type="password" class="form-control rounded-0 " id="password" name="password">
+                        <input type="password" class="form-control rounded-3 " id="password" name="password">
                         <ion-icon name="lock-closed-outline"><i class="fa-solid fa-eye see icona"onclick="mostrapassword()"></i></ion-icon>
                     </div>
                     @error('password')
@@ -38,7 +38,7 @@
                     @enderror
                     <div class="mb-3  divpassword">
                         <label class="form-labe mb-2" for="password_confirmation">Conferma password</label>
-                        <input type="password" class="form-control rounded-0 " id="password_confirmation"
+                        <input type="password" class="form-control rounded-3 " id="password_confirmation"
                             name="password_confirmation">
                             <ion-icon name="lock-closed-outline"><i class="fa-solid fa-eye icona" onclick="vedipassword()"></i></ion-icon>
                     </div>
