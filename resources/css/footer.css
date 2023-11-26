@@ -3,6 +3,7 @@ footer{
     background: #e3d9d9;
     background-size: cover;
     object-fit: contain;
+    
 }
 
 a {
@@ -15,6 +16,7 @@ a {
 }
 .d-grid {
   display: grid;
+
 }
 
 
@@ -39,18 +41,15 @@ a {
   margin-top: 2rem;
 }
 
-.pf-footer h1 {
-  font-family: "Gugi", sans-serif;
-  font-size: 8rem;
-}
 
 .pf-footer .pf-line {
   width: 100%;
+  
 }
 
 .footer-contents a {
   margin: 20px 0;
   color: #000000;
-  font-size: 24px;
-  font-family: "Gugi";
+  font-size: 21px;
+  font-family: 'League Spartan', sans-serif;
 }
