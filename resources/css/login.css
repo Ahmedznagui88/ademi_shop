@@ -1,23 +1,25 @@
 .a {
-
-    animation: mymove 2s ;
+    animation: mymove 1s ;
 }
 
 .d {
-    animation: mymove 3s ;
+    animation: mymove 2s ;
+    margin-top: 13px;
 }
 
 .e {
-    animation: mymove 4s ;
+    animation: mymove 3s ;
+    margin-top: 18px;
 }
 
 .m {
-    animation: mymove 5s ;
+    animation: mymove 4s ;
+    
 }
 
 .i {
-    width: 52px;
-    animation: mymove 6s ;
+    width: 50px;
+    animation: mymove 3s ;
 }
 
 @keyframes mymove {
@@ -25,18 +27,18 @@
         top: 0px;
         left: 0px;
         opacity: 0;
-        transition: 2s;
+        
     
        
     }
 
 }
-.a, .d, .e, .m, .i {
+ .a, .d, .e, .m, .i {
 transform: scale(1.2);
-}
+} 
 .divimg {
     letter-spacing: 15px;
-    /*border-bottom: solid 1px black;*/
+    
   
 }
 

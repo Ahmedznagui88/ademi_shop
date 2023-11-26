@@ -1,9 +1,9 @@
 <x-layout>
-    <div class="container d-flex justify-content-center">
-       <div class="row row-category flex-row">
+    <div class="container-fluid d-flex justify-content-center">
+       <div class="row row-category">
           @foreach ($categories as $category )
               <button class="col-md-5 btn-1 mx-2">
-                  <a href="{{ route('ad.indexCategory', $category) }}" class="text-btn">{{ $category->name }}</a>
+                  <a href="{{ route('ad.indexCategory', $category) }}" class="text-btn-1">{{ $category->name }}</a>
               </button>
               
           @endforeach

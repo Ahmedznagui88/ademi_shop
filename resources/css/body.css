@@ -1,5 +1,5 @@
 body{
-    background-color: #F6F1EE;
+    background-color: #bebebe;
     margin: 0%;
     font-family: 'League Spartan', sans-serif;
 }
@@ -87,31 +87,37 @@ html.is-animating .transition-fade{
 /*! cursor/outlinne  */
 
 .row-category{
-	margin-top: 30px;
-	height: 70px;
+	width: 100vw;
+	height: auto;
 	display: flex;
 	justify-content: center;
+	
 	align-items: center;
-	background: #bdbdbd3e; 
-	border-radius: 10px;
+	background-color: #d8d5f3; 
 	box-shadow: 2px 3px 8px 2px #8888886a;
 }
 
 .btn-1{
 	width: 110px;
-	height: 50px;
+	height: 40px;
 	border: none;
-	background: rgb(233, 148, 62);
-	border-radius: 10px;
+	background-color: #f1f5e4;
+	border-radius: 4px;
+	
 	transition: 1.6s;
     transform: translateY(0);
     transform-origin: bottom;
 	
 }
+
+.text-btn-1{
+	color: rgb(81, 61, 61);
+	text-decoration: none;
+}
 /*btn categorie welcome*/
 .btn-1:hover{
 	transition: 500ms;
-	background: #e9cab6; 
+	background-color: #b6aff5;
 	color: rgb(255, 128, 0);
 	
 }
