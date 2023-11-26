@@ -23,7 +23,7 @@
             @error('brand')
             <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
-            <div class="mb-1">
+             <div class="mb-1">
                 <label class="form-label ">Categoria</label>
                 <select class="form-select rounded-0" wire:model="category_id">
                     <option value="">Scegli una categoria</option>
@@ -32,7 +32,6 @@
                     @endforeach
                 </select>
             </div>
-    
             <div class="mb-1">
                 <label for="description" class="form-label">Descrizione</label>
                 <textarea type="text" wire:model="description" class="form-control rounded-0" id="description" rows="5" cols="30"></textarea>

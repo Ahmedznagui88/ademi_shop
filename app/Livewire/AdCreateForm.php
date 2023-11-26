@@ -18,7 +18,7 @@ class AdCreateForm extends Component
     public $description;
     public $image;
     public $price;
-    public $category_id;
+    public $category_id = [];
     public $user_id;
 
     protected $rules = [

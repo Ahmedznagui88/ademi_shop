@@ -38,7 +38,7 @@
                 <p class="mt-5">{{ $ad->brand }}</p>
                 <p class="mt-5">{{ $ad->description }}</p>
                 <p class="fs-2 price mt-5">${{ $ad->price }}</p>
-                <span>Inserita da: {{ Auth::user()->name }}</span>
+                <span>Inserita da: {{ Auth::user()->name ?? 'Non specificato' }}</span>
                 <p>Inserita: {{ $ad->created_at->translatedFormat('l d/m/y') }}</p>
                 <p class="card-text">{{ $ad->created_at->diffForHumans() }}</p>
             </div>
