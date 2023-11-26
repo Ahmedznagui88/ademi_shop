@@ -15,9 +15,66 @@
 
 .card{
  transition: 0.4s;
- border: none;
 }
 
 .card:hover{
     transform: translateX(20px);
 }
+
+
+/**prima prova  */
+/*  .card {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+}
+
+ 
+.card:hover .btn,
+.card:hover .fa-heart {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.card .btn,
+.card .fa-heart {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-body {
+   border: solid 0.2px;
+   overflow: hidden;
+}
+
+.price {
+    margin-top: 10px;
+}
+ */
+
+/*  .card {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    
+}
+
+.card-body {
+    padding: 1.25rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+
+.card:hover .card-body {
+    opacity: 1;
+}
+.fa-heart {
+    font-size: 2rem;
+    color: red; 
+} */

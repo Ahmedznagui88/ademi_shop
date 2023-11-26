@@ -19,9 +19,10 @@
         <div class="min-vh-100">  
             {{$slot}}
         </div>
+        <x-footer/>
     </main>
 
-    <x-footer/>
+    
 
     <div class="outline"></div>
     <div class="cursor"></div>

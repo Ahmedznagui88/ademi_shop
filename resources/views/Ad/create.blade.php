@@ -1,11 +1,6 @@
 <x-layout>
 
     <div class="container">
-        {{-- <div class="row justify-content-center my-5">
-            <div class="col-12 col-md-6">
-                <h1 class="text-center">Aggiungi annuncio</h1>
-            </div>
-        </div> --}}
     
         <div class="row justify-content-center rounded-4">
             <div class="col-12 col-md-6">
