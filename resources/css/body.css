@@ -91,9 +91,8 @@ html.is-animating .transition-fade{
 	height: auto;
 	display: flex;
 	justify-content: center;
-	
 	align-items: center;
-	background-color: #d8d5f3; 
+	background-color: #cacaca; 
 	box-shadow: 2px 3px 8px 2px #8888886a;
 }
 
