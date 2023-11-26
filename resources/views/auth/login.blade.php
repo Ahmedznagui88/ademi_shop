@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center ">
             <div class="col-12 col-md-7 bg-logo d-flex align-items-center " id="bg-register-login">
-                <div class="" id="divimg">
+                <div class="divimg" id="">
                     <img src="./media/Group A.png" class="img-logo-register a" id="a" alt="">
                     <img src="./media/Group d.png" class="img-logo-register d" id="d" alt="">
                     <img src="./media/Group e.png" class="img-logo-register e" id="e" alt="">

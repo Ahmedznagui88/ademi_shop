@@ -33,11 +33,12 @@
                     </button>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column ">
+            <div class="col-12 col-md-3 d-flex flex-column align-item-center">
                 <h2>{{ $ad->title }}</h2>
                 <p class="mt-5">{{ $ad->brand }}</p>
                 <p class="mt-5">{{ $ad->description }}</p>
                 <p class="fs-2 price mt-5">${{ $ad->price }}</p>
+                <span>Inserita da: {{ Auth::user()->name }}</span>
                 <p>Inserita: {{ $ad->created_at->translatedFormat('l d/m/y') }}</p>
                 <p class="card-text">{{ $ad->created_at->diffForHumans() }}</p>
             </div>

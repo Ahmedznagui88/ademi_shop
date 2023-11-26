@@ -31,6 +31,15 @@
     }
 
 }
+.a, .d, .e, .m, .i {
+transform: scale(1.2);
+}
+.divimg {
+    letter-spacing: 15px;
+    /*border-bottom: solid 1px black;*/
+  
+}
+
 
 
 
