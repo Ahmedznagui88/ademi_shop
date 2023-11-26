@@ -4,8 +4,7 @@
 }
 
 .carousel-control-prev , .carousel-control-next {
-    /* background-color: rgba(190, 190, 190, 0.324); */
-    background-color: #d8d5f3a2; 
+    background-color: rgba(23, 23, 23, 0.12);
     border-radius: 20px 20px 20px 20px;
     width: 100px;
 }
