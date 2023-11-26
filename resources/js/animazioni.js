@@ -21,15 +21,15 @@ elements_to_watch.forEach((element) => {
 let item = document.querySelector('.toggle');
 let panel = document.querySelector('.panel');
 
-/* item.addEventListener("click", function() {
+ item.addEventListener("click", function() {
 
   panel.classList.toggle('attiva');
 
 });
 
-const links = document.querySelectorAll("ul.menu-scroll a");
+/*const links = document.querySelectorAll("ul.menu-scroll a");
 
 links.forEach((link) => {
   link.addEventListener("click", clickHandler);
-})/*
+})*/
 
