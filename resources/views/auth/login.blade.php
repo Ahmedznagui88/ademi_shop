@@ -25,7 +25,8 @@
                     <div class="mb-3 divpassword">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control rounded-3 " id="password" name="password">
-                        <ion-icon name="lock-closed-outline"><i class="fa-solid fa-eye icona" onclick="checkpassword()"></i></ion-icon>
+                        <ion-icon name="lock-closed-outline"><i class="fa-solid fa-eye icona"
+                                onclick="checkpassword()"></i></ion-icon>
                     </div>
 
                     @error('password')
@@ -44,5 +45,20 @@
                 </form>
             </div>
         </div>
+        {{-- prova animazione --}}
+        {{--  <div class="row justify-content-center">
+            <div class="col-6 section watch">
+                <h2 class="titolo text-center">titolo</h2>
+            </div>
+            <div class="col-6 section watch">
+                <h2 class="titolo text-center">titolo</h2>
+            </div>
+            <div class="col-6 section watch">
+                <h2 class="titolo text-tenter">titolo</h2>
+            </div>
+            <div class="col-6 section watch">
+                <h2 class="titolo text-center">titolo</h2>
+            </div>
+        </div> --}}
     </div>
 </x-layout>

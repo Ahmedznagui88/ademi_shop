@@ -41,6 +41,30 @@ transform: scale(1.2);
     
   
 }
+.section {
+    border: solid black 1px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+   
+display: flex;
+
+
+}
+
+/*.titolo {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.section.in-page .titolo{
+ margin-left: 80%;
+ transform: rotate(360deg);
+ transition: 4s;
+
+}*/
 
 
 
