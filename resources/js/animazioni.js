@@ -31,5 +31,5 @@ const links = document.querySelectorAll("ul.menu-scroll a");
 
 links.forEach((link) => {
   link.addEventListener("click", clickHandler);
-})
+})/*
 
