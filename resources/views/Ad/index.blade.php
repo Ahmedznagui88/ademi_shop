@@ -1,6 +1,25 @@
 <x-layout>
     <div class="container my-5 rounded-4" style="width:1100px;">
         
+        <div class="row justify-content-center mb-2">
+            <div class="col-12 text-center buttoncategorie">
+                <button class="btn-1 my-2 toggle">Categorie</button>
+            </div>
+
+            <div class="col-12 panel categorie ms-1">
+                @foreach ($categories as $category)
+                    <button class="col-md-1 btn-1 mx-2">
+                        <a href="{{ route('ad.indexCategory', $category) }}" class="text-btn-1">{{ $category->name }}</a>
+                    </button>
+                @endforeach
+            </div>
+        </div>
+        <div class="row justify-content-center rowindex">
+            <div class="col-12 col-md-6">
+             
+            </div>
+        </div>
+        
         <div class="row justify-content-center">
             @forelse ($ads as $ad )
                 <div class="col-12 col-md-3 rounded-4">
