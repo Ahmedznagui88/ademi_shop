@@ -26,8 +26,17 @@
         </div>
     </div>
     <x-header />
-    <div class="container-fluid d-flex justify-content-center ">
+    {{-- <div class="container d-flex justify-content-center ">
         <div class="row  cardHome rounded-4">
+            @foreach ($ads as $ad)
+                <div class="col-12 col-md-3 ">
+                    <x-card :ad="$ad" />
+                </div>
+            @endforeach
+        </div>
+    </div> --}}
+    <div class="container d-flex justify-content-center" style="width: 1050px">
+        <div class="row  cardHome rounded-4 p-3">
             @foreach ($ads as $ad)
                 <div class="col-12 col-md-3 ">
                     <x-card :ad="$ad" />
@@ -36,5 +45,4 @@
         </div>
     </div>
 
-    
 </x-layout>
