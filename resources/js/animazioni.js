@@ -18,6 +18,8 @@ elements_to_watch.forEach((element) => {
 });
 
 //*categoria
+
+
 let item = document.querySelector('.toggle');
 let panel = document.querySelector('.panel');
 
