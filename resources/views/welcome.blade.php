@@ -10,7 +10,7 @@
 
         <div class="row row-category">
             <div class="col-12 col-md-1 buttoncategorie">
-                <button id="" class="btn-1 my-2 toggle">Categorie</button>
+                <button class="btn-1 my-2 toggle">Categorie</button>
             </div>
 
             <div class="col-12 panel categorie ms-1">
@@ -35,7 +35,7 @@
             @endforeach
         </div>
     </div> --}}
-    <div class="container " style="width: 1050px">
+    <div class="container d-flex justify-content-center" style="width: 1050px">
         <div class="row  cardHome rounded-4 p-3">
             @foreach ($ads as $ad)
                 <div class="col-12 col-md-3 ">
@@ -43,6 +43,7 @@
                 </div>
             @endforeach
         </div>
+    
     </div>
     <div class="container mt-5">
         <div class="row row3">
