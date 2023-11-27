@@ -12,7 +12,7 @@
           </div>
           <div class="d-grid">
             <a href="">{{ Auth::User()->name ?? 'Profilo'}}</a>
-            <a href="#">Revisore</a>
+            <a href="{{ route('revisor.index') }}">Revisore</a>
             <a href="{{ Route('ad.create') }}">Inserisci annuncio</a>
             <a href="#">Contatti</a>
             
