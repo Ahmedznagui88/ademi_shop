@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\RevisorController;
 
 
 /*
@@ -23,5 +24,13 @@ Route::get('/ad/index', [AdController::class, 'index'])->name('ad.index');
 Route::get('/ad/show/{ad}', [AdController::class, 'show'])->name('ad.show');
 Route::get('/ad/index{category}', [AdController::class, 'indexCategory'])->name('ad.indexCategory');
 
+//*Home Revisor
+Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor.index');
+
+//*Accetta annuncio
+Route::patch('/accetta/annuncio/{ad}', [RevisorController::class, 'acceptAd'])->name('revisor.accept.ad');
+
+//*Rifiuta annuncio
+Route::patch('/rifiuta/annuncio/{ad}', [RevisorController::class, 'rejectAd'])->name('revisor.reject.ad');
 
 

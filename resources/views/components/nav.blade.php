@@ -10,6 +10,15 @@
         <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
             <ul class="navbar-nav d-flex align-items-center">
                 @auth
+                @if(Auth::user()->is_revisor)
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('revisor.index') }}">Revisore</a>
+                    <span class="positon-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        {{App\Models\ad::toBeRevisonedCount()}}
+                        <span class="visually-hidden">Unread messages</span>
+                    </span>
+                </li>
+                @endif
                     <li class="nav-item ">
                         <a class="nav-link " aria-current="page" href="">{{ Auth::user()->name }}</a>
                     </li>
