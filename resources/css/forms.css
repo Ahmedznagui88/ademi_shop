@@ -1,23 +1,37 @@
 form{
-    background-color: #9e9491;
     margin-top: 30px;
+    background-image: url(./../../public/media/in.avif);
+    background-size: cover;
+  
 }
 
 .btn{
-   background: #ED7C31; 
+    background:#818181;
    border: none;
-   border-radius: 0%;
-   transition: 0.5s;
+   border-radius: 10px;
+   color: rgb(243, 243, 243);
+   transition: 1.6s;
+   transform: translateY(0);
+    transform-origin: bottom;
+}
+html.is-animating .btn{
+   
+    transform: translateY(100px);
 }
 .btn:hover{
 
-    background: #ba4c02;     
+    background: #d2e693;     
 }
 
 input:hover{
     border: solid 1px #ED7C31;
 }
 
-.form-control, .form-label{
-    background: transparent;
+.form-control:focus, .form-label:focus{
+   background-color: transparent;
+
 }
+.form-control, .form-label{
+    background-color: transparent;
+    
+ }

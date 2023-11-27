@@ -1,7 +1,13 @@
 body{
-    background-color: #F6F1EE;
+    background-color: #bebebe;
     margin: 0%;
     font-family: 'League Spartan', sans-serif;
+	
+  	overflow-x: hidden;
+}
+
+hr{
+	background-color: aliceblue;
 }
 /** article */
 article{
@@ -31,17 +37,21 @@ article{
 .transition-fade{
     opacity: 8;
     transition: 0.3s;
-   transform: translateX(0);
-    transform-origin: right;  
+	transform: translateX(0);
+	transform-origin: right;  
 }
 
 html.is-animating .transition-fade{
     opacity: 0;
-    /* transform: translateY(100%);  */
+    /* transform: translateY(100%);   */
 }
 /*! end animation change page   */
 
+/** carousel */
+.carousel-1{
+	margin-top: 100px;
 
+}
 /** cursor/outlinne  */
 .outline{
 	width: 64px;
@@ -72,8 +82,71 @@ html.is-animating .transition-fade{
 }  */
 
 .outline.hover{
-	background: rgb(171, 14, 223);
+	background: rgb(255, 255, 255);
 	zoom: 10px;
     border: none;
 }
 /*! cursor/outlinne  */
+
+.row-category{
+	width: 100vw;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #cacaca; 
+}
+
+.btn-1{
+	width: 100px;
+	height: 40px;
+	border: none;
+	background-color: #f7e7c2;
+	border-radius: 4px;
+	transition: 1.6s;
+    transform: translateY(0);
+    transform-origin: bottom;
+
+}
+
+.text-btn-1{
+	color: rgb(81, 61, 61);
+	text-decoration: none;
+	font-size: small;
+}
+/*btn categorie welcome*/
+.btn-1:hover{
+	transition: 500ms;
+	background-color: #b3b3b3;
+	color: rgb(255, 128, 0);
+	
+}
+
+html.is-animating .btn-1{
+   
+    transform: translateY(100px);
+}
+
+.text-btn{
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .row-category {
+		width: 375px;
+        height: 350px;  
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1368px) and (orientation: landscape) {
+    .row-category {
+        height: 260px; 
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .row-category {
+        height: 240px;  
+        
+    }
+}

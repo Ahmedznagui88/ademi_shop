@@ -3,11 +3,14 @@
    
 }
 
-/* .btn-slider-arrow {
-    background-color: rgba(56, 49, 49, 0.232);
-} */
-/* 
-.carousel-item{
-    height: 1000px;
-    width: 2000px;
-} */
+.carousel-control-prev , .carousel-control-next {
+    background-color: rgba(23, 23, 23, 0.12);
+    border-radius: 20px 20px 20px 20px;
+    width: 100px;
+}
+
+.cs{
+    height: 400px;
+    width: 900px;
+
+} 

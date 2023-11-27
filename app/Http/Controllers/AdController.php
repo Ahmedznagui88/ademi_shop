@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class AdController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except('index', 'indexCategory', 'show');
+    }
     /**
      * Display a listing of the resource.
      */

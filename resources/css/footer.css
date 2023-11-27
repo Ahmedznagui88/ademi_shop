@@ -1,0 +1,32 @@
+
+
+footer{
+    background: #e3d9d9;
+    background-size: cover;
+    object-fit: contain;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    height: 400px;
+}
+
+.footer-contents{
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  margin: 10px;
+}
+
+.pf-footer {
+  margin-top: 2rem;
+}
+
+
+.pf-footer .pf-line {
+  width: 100%;
+  
+}
+

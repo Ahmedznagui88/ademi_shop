@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
         <a href="{{ route('homepage') }}" class="">
-            <img src="/media/logo.png" class="logo" alt="">
+            <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,9 +13,9 @@
                     <li class="nav-item ">
                         <a class="nav-link " aria-current="page" href="">{{ Auth::user()->name }}</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{ route('homepage') }}">Home</a>
-                    </li> --}}
+                     <li class="nav-item">
+                        <a class="nav-link"  aria-current="page" href="{{ route('homepage') }}">Home</a>
+                    </li> 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ Route('ad.create') }}">Inserisci annuncio</a>
                     </li>
@@ -39,4 +39,7 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav> 
+
+
+
