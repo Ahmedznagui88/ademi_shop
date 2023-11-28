@@ -1,4 +1,9 @@
 <x-layout>
+    @if(session('access.denied'))
+    <div class="alert alert-danger">
+        {{session('access.denied')}}
+    </div>
+    @endif
     <div class="container-fluid d-flex justify-content-center">
         {{--  <div class="row row-category">
             @foreach ($categories as $category)

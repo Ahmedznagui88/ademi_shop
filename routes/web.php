@@ -25,12 +25,19 @@ Route::get('/ad/show/{ad}', [AdController::class, 'show'])->name('ad.show');
 Route::get('/ad/index{category}', [AdController::class, 'indexCategory'])->name('ad.indexCategory');
 
 //*Home Revisor
-Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor.index');
+Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
 
 //*Accetta annuncio
-Route::patch('/accetta/annuncio/{ad}', [RevisorController::class, 'acceptAd'])->name('revisor.accept.ad');
+Route::patch('/accetta/annuncio/{ad}', [RevisorController::class, 'acceptAd'])->middleware('isRevisor')->name('revisor.accept.ad');
 
 //*Rifiuta annuncio
-Route::patch('/rifiuta/annuncio/{ad}', [RevisorController::class, 'rejectAd'])->name('revisor.reject.ad');
+Route::patch('/rifiuta/annuncio/{ad}', [RevisorController::class, 'rejectAd'])->middleware('isRevisor')->name('revisor.reject.ad');
+
+//*Diventa Revisore Route
+Route::get('/become/revisor', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
+
+//*Pagina Richiesta revisore Route
+Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
+
 
 
