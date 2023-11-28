@@ -29,12 +29,14 @@ class RevisorController extends Controller
     }
 
     public function becomeRevisor(){
-        Mail::to(Auth::user()->email)->send(new becomeRevisor());
+       /* Mail::to('ademi@gmail.com')->send(new BecomeRevisor(Auth::user())); */
+        Mail::to(Auth::user())->send(new BecomeRevisor(Auth::user()));
+    
         return redirect()->back()->with('message', 'Compliemnte, hai richiesto di diventare revisore');
     }
 
     public function makeRevisor(User $user){
-        Artisan::call('ademi:makeUserRevisor', ["email"=>$user->email]);
+        Artisan::call('app:makeUserRevisor', ["email"=>$user->email]);
         return redirect('/')->with('message', 'Complimenti, sei diventato uno di noi!');
 
     }
