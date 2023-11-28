@@ -2,7 +2,8 @@
 
 namespace App\Models;
 
-use App\Models\ad;
+
+
 use App\Models\User;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
@@ -30,7 +31,7 @@ class Ad extends Model
     }
 
     public static function toBeRevisionedCount(){
-        return ad::where('is_accepted', null)->count();
+        return Ad::where('is_accepted', null)->count();
     }
 
 }

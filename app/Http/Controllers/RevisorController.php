@@ -21,4 +21,6 @@ class RevisorController extends Controller
         $ad->setAccepted(false);
         return redirect()->back()->with('message', 'Complimenti, hai rifiutato l\'annuncio');
     }
+
+    
 }
