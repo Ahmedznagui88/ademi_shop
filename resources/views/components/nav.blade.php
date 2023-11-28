@@ -11,27 +11,30 @@
                 @auth
                 @if(Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('revisor.index') }}">Revisore</a>
-                    <span class="positon-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        {{ App\Models\Ad::toBeRevisionedCount() }}
-                        <span class="visually-hidden">Unread messages</span>
-                    </span>
+                    <a class="nav-link btn-outline-success btn-sm postion-relative btn-r" 
+                        aria-current="page"
+                        href="{{ route('revisor.index') }}" >Revisore
+                        <span class="badge rounded-pill bg-danger mx-2">
+                            {{ App\Models\Ad::toBeRevisionedCount() }}
+                            <span class="visually-hidden">Unread messages</span>
+                        </span>
+                    </a>
                 </li>
                 @endif
                 <li class="nav-item ">
-                    <a class="nav-link " aria-current="page" href="">{{ Auth::user()->name }}</a>
+                    <a class="nav-link text-light " aria-current="page" href="">{{ Auth::user()->name }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{ route('homepage') }}">Home</a>
+                    <a class="nav-link text-light" aria-current="page" href="{{ route('homepage') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ Route('ad.create') }}">Inserisci annuncio</a>
+                    <a class="nav-link text-light" href="{{ Route('ad.create') }}">Inserisci annuncio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ Route('ad.index') }}">Annunci</a>
+                    <a class="nav-link text-light" href="{{ Route('ad.index') }}">Annunci</a>
                 </li>
                 <li class="nav-item d-flex align-items-center">
-                    <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Logout</a>
+                    <a class="nav-link text-light" href="#" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Logout</a>
                     <form action="{{ route('logout') }}" method="POST" id="form-logout">
                         @csrf
                     </form>

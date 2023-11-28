@@ -16,7 +16,7 @@
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome utente</label>
-                        <input type="text" class="form-control rounded-3 text-light" id="name" name="name"
+                        <input type="text" class="form-control rounded-3" id="name" name="name"
                             value="{{ old('name') }}">
                     </div>
                     @error('name')
