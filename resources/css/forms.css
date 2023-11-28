@@ -7,11 +7,11 @@ form{
 
 .btn{
     background:#818181;
-   border: none;
-   border-radius: 10px;
-   color: rgb(243, 243, 243);
-   transition: 1.6s;
-   transform: translateY(0);
+    border: none;
+    border-radius: 10px;
+    color: rgb(243, 243, 243);
+    transition: 1.6s;
+    transform: translateY(0);
     transform-origin: bottom;
 }
 html.is-animating .btn{
@@ -20,7 +20,8 @@ html.is-animating .btn{
 }
 .btn:hover{
 
-    background: #d2e693;     
+    background: #d2e693;
+         
 }
 
 input:hover{

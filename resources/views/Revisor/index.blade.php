@@ -58,8 +58,9 @@
             </div>
         </div>
 
-        <div class="container ">
+        <div class="container">
             <div class="row">
+                
                 <div class="col-12 col-md-6">
                     <form action="{{ route('revisor.accept.ad' , ['ad' => $ad_to_check]) }}" method="POST" >
                         @csrf
@@ -77,6 +78,7 @@
                         <button type="submit" class="btn-1 w-25">Rifiuta</button>
                     </form>
                 </div>
+
             </div>
         </div>
                
