@@ -3,14 +3,18 @@
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a>
-        <form action="{{route('ads.search')}}" method="GET" class="d-flex" role="search">
+        {{-- <form action="{{route('ads.search')}}" method="GET" class="d-flex" role="search">
             <input  name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Cerca</button>
-        </form>
+        </form> --}}
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        
+       
         <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
+
             <ul class="navbar-nav d-flex align-items-center">
                 @auth
                 @if(Auth::user()->is_revisor)

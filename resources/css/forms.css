@@ -28,9 +28,9 @@ input:hover{
     border: solid 1px #ED7C31;
 }
 
-.form-control:focus, .form-label:focus{
-   background-color: transparent;
-
+.form-control:focus-within, .form-label:focus-within{
+   
+   border: #ED7C31;
 }
 .form-control, .form-label{
     background-color: transparent;
