@@ -9,7 +9,7 @@
     <script defer src="https://unpkg.com/swup@4"></script>
     
     @vite (['resources/css/app.css', 'resources/js/app.js'])
-    <title>Ademi</title>
+    <title>ADEMI</title>
     
 </head>
 <body class="homepage" >
