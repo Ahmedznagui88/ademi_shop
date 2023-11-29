@@ -3,6 +3,10 @@
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a>
+        <form action="{{route('ads.search')}}" method="GET" class="d-flex" role="search">
+            <input  name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Cerca</button>
+        </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,9 +15,7 @@
                 @auth
                 @if(Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="nav-link btn-outline-success btn-sm postion-relative btn-r" 
-                        aria-current="page"
-                        href="{{ route('revisor.index') }}" >Revisore
+                    <a class="nav-link btn-outline-success btn-sm postion-relative btn-r" aria-current="page" href="{{ route('revisor.index') }}">Revisore
                         <span class="badge rounded-pill bg-danger mx-2">
                             {{ App\Models\Ad::toBeRevisionedCount() }}
                             <span class="visually-hidden">Unread messages</span>
