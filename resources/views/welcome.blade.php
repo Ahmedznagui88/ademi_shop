@@ -4,6 +4,11 @@
         {{session('access.denied')}}
     </div>
     @endif
+    @if(session('message'))
+    <div class="alert alert-danger">
+        {{session('message')}}
+    </div>
+    @endif
     <div class="container-fluid d-flex justify-content-center">
         {{--  <div class="row row-category">
             @foreach ($categories as $category)
