@@ -39,5 +39,9 @@ Route::get('/become/revisor', [RevisorController::class, 'becomeRevisor'])->midd
 //*Pagina Richiesta revisore Route
 Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
+//*Ricerca per annuncio
+
+Route::get('/search/ads', [PublicController::class, 'searchAds'])->name('ads.search');
+
 
 
