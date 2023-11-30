@@ -1,16 +1,6 @@
 .price{
-    color: #4F4A45;
+    color: #ed7c5c;
     font-weight: 600;
-}
-
-.out{
-    transition: 0.4s;
-    width: 18rem;
-    border-radius: 20px;
-}
-.out:hover{
-    background-color: #ec9255;
-    transform: translateX(-9px);
 }
 
 .card-1{
@@ -19,9 +9,6 @@
  border: none;
 }
 
-.card:hover{
-    transform: translateX(20px);
-}
 
 
 .img-card-home{

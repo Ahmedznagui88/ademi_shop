@@ -37,23 +37,44 @@
   </figcaption>
 </figure> --}}
 {{-- Card orizzontale --}}
-<div class="card mb-3 card2">
-    <div class="row g-0">
-      <div class="col-md-5">
-        <img src="https://images.unsplash.com/photo-1700587085844-b96c27958df2?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid card2-img">
-      </div>
-      <div class="col-md-7">
-        <div class="card-body">
-            <h5 class="card-title">{{ $ad->title }}</h5>
-            <p>{{ $ad->brand }}</p>
-            
-            <p class="fs-2 price">${{ $ad->price }}</p>
-            <small>{{ $ad->category->name ?? 'Categoria non specificata' }}</small>
-            <div class=" d-flex align-items-center justify-content-between">
-                <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-50">Mostra</a>
-                <i class="fa-regular fa-heart fa-xl mx-5"></i>
+
+<a href="{{ route('ad.show', $ad) }}" class="decoration-none">
+
+  <div class="card mb-3 card2">
+      <div class="row g-0">
+        <div class="col-md-5 imgC">
+          <img src="https://images.unsplash.com/photo-1700587085844-b96c27958df2?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid card2-img">
+        </div>
+        <div class="col-md-7 mx-5">
+          <div class="card-body d-flex justify-content-between">
+
+            <div class=" my-2">
+              <div>
+
+                <h5 class="card-title ">{{ $ad->title }}</h5>
+              </div>
+              <div class="d-flex justify-content-between">
+
+                <p class="">{{ $ad->brand }}</p>
+                <p class="fs-2 price mx-5">${{ $ad->price }}</p>
+                
+              </div>
+              <div class="d-flex justify-content-between">
+
+                <small class="">{{ $ad->category->name ?? 'Categoria non specificata' }}</small>
+                <span>Inserita da: {{ Auth::user()->name ?? 'Non specificato' }}</span>
+              </div>
             </div>
+
+              <div class="icon-d">
+                  {{-- <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-50">Mostra</a> --}}
+                  <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
-</div>
+  </div>
+</a>
+
+
+
