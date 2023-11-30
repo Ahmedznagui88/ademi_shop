@@ -53,7 +53,7 @@
         <div class="row  cardHome rounded-4 p-3">
             @foreach ($ads as $ad)
                 <div class="col-12 col-md-3 ">
-                    <x-card :ad="$ad" />
+                    <x-card2 :ad="$ad" />
                 </div>
             @endforeach
         </div>
@@ -85,10 +85,7 @@
            
      
         </div>
-        <div class="row">
-            <input type="text" id="input">
-            <p id="output"></p>
-        </div>
+
 
     </div>
 
