@@ -39,6 +39,7 @@
     </div>
      
     <x-header />
+    <hr>
     {{-- <div class="container d-flex justify-content-center ">
         <div class="row  cardHome rounded-4">
             @foreach ($ads as $ad)
@@ -48,7 +49,7 @@
             @endforeach
         </div>
     </div> --}}
-    <div class="container d-flex justify-content-center" style="width: 1050px">
+    <div class="container" style="width: 1050px">
         <div class="row  cardHome rounded-4 p-3">
             @foreach ($ads as $ad)
                 <div class="col-12 col-md-3 ">
@@ -58,6 +59,7 @@
         </div>
     
     </div>
+    <hr>
     <div class="container mt-5">
         <div class="row row3">
             <div class="col-12 col-md-8 row3col-l">
@@ -70,6 +72,18 @@
                 </button>
             </div>
         </div>
+        
+        <div class="row mt-5 justify-content-center">
+        
+            @foreach ($categories as $category)
+                <div class="col-12 col-md-2 mx-2 ">
+                    <a href="{{ route('ad.indexCategory', $category) }}" class=" divCategorie">{{ $category->name }}</a>
+                </div>
+            @endforeach
+           
+     
+        </div>
+
     </div>
 
 </x-layout>

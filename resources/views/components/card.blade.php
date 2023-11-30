@@ -26,7 +26,7 @@
   <figcaption class="">
     <h5 class="card-title">{{ $ad->title }}</h5>
     <p>{{ $ad->brand }}</p>
-    <p class="card-text">{{ $ad->description }}</p>
+    <p class="card-text">{{Str::limit( $ad->description, '20') }}</p>
     <p class="fs-2 price">${{ $ad->price }}</p>
     <small>{{ $ad->category->name ?? 'Categoria non specificata' }}</small>
     <div class=" d-flex align-items-center justify-content-between">
