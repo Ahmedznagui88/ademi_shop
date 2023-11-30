@@ -36,8 +36,9 @@ window.addEventListener('scroll', function(e) {
   }
 });
 
+//funzione che ingetta il testo in realtime//
 
-let input = document.getElementById('input');
+/*let input = document.getElementById('input');
 let output = document.getElementById('output');
 
 input.addEventListener("keyup", function() {
@@ -45,7 +46,7 @@ input.addEventListener("keyup", function() {
   let testo = input.value;
 output.innerHTML = testo;
 
-});
+});*/
 
 
 /*const links = document.querySelectorAll("ul.menu-scroll a");

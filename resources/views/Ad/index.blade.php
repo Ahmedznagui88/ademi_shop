@@ -20,7 +20,7 @@
         
         <div class="row justify-content-center">
             @forelse ($ads as $ad)
-                <div class="col-12 col-md-3 rounded-4">
+                <div class="rounded-4">
                     <x-card :ad="$ad" />
                 </div>
             @empty
