@@ -28,6 +28,14 @@ let panel = document.querySelector('.panel');
 
 });
 
+window.addEventListener('scroll', function(e) {
+  if(window.scrollY > 750){
+    document.querySelector('.row3col-r').classList.add('scroll-down');
+  } else {
+    document.querySelector('.row3col-r').classList.remove('scroll-down');
+  }
+});
+
 /*const links = document.querySelectorAll("ul.menu-scroll a");
 
 links.forEach((link) => {
