@@ -19,7 +19,6 @@ elements_to_watch.forEach((element) => {
 
 //*categoria
 
-
 let item = document.querySelector('.toggle');
 let panel = document.querySelector('.panel');
 
@@ -28,6 +27,26 @@ let panel = document.querySelector('.panel');
   panel.classList.toggle('attiva');
 
 });
+
+window.addEventListener('scroll', function(e) {
+  if(window.scrollY > 750){
+    document.querySelector('.row3col-r').classList.add('scroll-down');
+  } else {
+    document.querySelector('.row3col-r').classList.remove('scroll-down');
+  }
+});
+
+
+let input = document.getElementById('input');
+let output = document.getElementById('output');
+
+input.addEventListener("keyup", function() {
+
+  let testo = input.value;
+output.innerHTML = testo;
+
+});
+
 
 /*const links = document.querySelectorAll("ul.menu-scroll a");
 
