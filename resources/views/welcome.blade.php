@@ -79,6 +79,7 @@
                 <div class="col-12 col-md-2 mx-2">
                     <a href="{{ route('ad.indexCategory', $category) }}" class=" divCategorie">{{ $category->name }}</a>
                 </div>
+                
             @endforeach
            
      
