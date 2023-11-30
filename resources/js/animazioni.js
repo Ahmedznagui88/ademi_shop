@@ -36,6 +36,18 @@ window.addEventListener('scroll', function(e) {
   }
 });
 
+
+let input = document.getElementById('input');
+let output = document.getElementById('output');
+
+input.addEventListener("keyup", function() {
+
+  let testo = input.value;
+output.innerHTML = testo;
+
+});
+
+
 /*const links = document.querySelectorAll("ul.menu-scroll a");
 
 links.forEach((link) => {

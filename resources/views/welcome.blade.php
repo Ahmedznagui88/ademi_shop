@@ -81,13 +81,17 @@
                    
                 </div>
              
-                
-                
             @endforeach
            
      
         </div>
+        <div class="row">
+            <input type="text" id="input">
+            <p id="output"></p>
+        </div>
 
     </div>
+
+
 
 </x-layout>
