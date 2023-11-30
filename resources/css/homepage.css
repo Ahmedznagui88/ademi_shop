@@ -67,6 +67,27 @@
     transform: scale(1.1);
 
 }
+.categorietonde {
+
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.slidediv {
+    animation: 2s slide infinite linear;
+    display: inline block;
+}
+.categorietonde:hover .slidediv {
+    animation-play-state: paused;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 
 @media screen and (max-width: 520px ) {
     .row3col-r {
