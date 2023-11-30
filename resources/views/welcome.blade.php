@@ -71,12 +71,12 @@
                     <a href="{{ route('ad.create') }}">Inserisci annuncio</a>
                 </button>
             </div>
-        </div>
+        </div> <hr class="mt-5">
         
-        <div class="row mt-5 justify-content-center">
+        <div class="row mt-5 justify-content-center categorietonde" style="width: 1000px; margin-left: 10%">
         
             @foreach ($categories as $category)
-                <div class="col-12 col-md-2 mx-2 ">
+                <div class="col-12 col-md-2 mx-2">
                     <a href="{{ route('ad.indexCategory', $category) }}" class=" divCategorie">{{ $category->name }}</a>
                 </div>
             @endforeach

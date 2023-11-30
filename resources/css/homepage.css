@@ -67,3 +67,21 @@
     transform: scale(1.1);
 
 }
+
+@media screen and (max-width: 520px ) {
+    .row3col-r {
+        width: 360px;
+        height: 300px;
+      margin-right: 0%;
+        text-align: center;
+       
+    }
+    .row3col-r.scroll-down {
+        width: 360px;
+        height: 300px;
+        margin-left: 0%;
+    }
+    .categorietonde {
+        display: none;
+    }
+}
