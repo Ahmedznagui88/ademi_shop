@@ -10,20 +10,16 @@
     </div>
     @endif
     <div class="d-flex justify-content-end ">
-
         <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
             <label for="searched" class="sr-only">Cerca prodotto</label>
             <input name="searched" id="searched" class="input-1" type="search" placeholder="Cerca prodotto" aria-label="Search">
-            
         </form>
-        
     </div>
     <div class="container-fluid d-flex justify-content-center">
         <div class="row row-category ">
             <div class="col-12 col-md-1 buttoncategorie">
                 <button class="btn-1 my-2 toggle">Categorie</button>
             </div>
-
             <div class="col-12 panel categorie">
                 @foreach ($categories as $category)
                     <button class="col-md-1 btn-1 mx-2">
@@ -31,35 +27,21 @@
                     </button>
                 @endforeach
             </div>
-            
-            {{-- <div class="col-12 col-md-1">
-                <button class="btn-1 my-2 bg-danger">Annunci</button>
-            </div> --}}
         </div>
     </div>
      
     <x-header />
-    <hr>
-    {{-- <div class="container d-flex justify-content-center ">
-        <div class="row  cardHome rounded-4">
+
+    <div class="container-fluid">
+        <div class="row cardHome">
             @foreach ($ads as $ad)
-                <div class="col-12 col-md-3 ">
-                    <x-card :ad="$ad" />
-                </div>
+            <div class="">
+                <x-card2 :ad="$ad" />
+            </div>    
             @endforeach
         </div>
-    </div> --}}
-    <div class="container" style="width: 1050px">
-        <div class="row  cardHome rounded-4 p-3">
-            @foreach ($ads as $ad)
-                <div class="col-12 col-md-3 ">
-                    <x-card2 :ad="$ad" />
-                </div>
-            @endforeach
-        </div>
-    
     </div>
-    <hr>
+
     <div class="container mt-5">
         <div class="row row3">
             <div class="col-12 col-md-8 row3col-l">
@@ -74,21 +56,12 @@
         </div> <hr class="mt-5">
         
         <div class="mt-5 justify-content-center categorietonde" style="width: 1000px; margin-left: 10%">
-        
             @foreach ($categories as $category)
                 <div class="mx-2 slidediv">
                     <a href="{{ route('ad.indexCategory', $category) }}" class=" divCategorie slide">{{ $category->name }}</a>
-                   
                 </div>
-             
             @endforeach
-           
-     
         </div>
-
-
     </div>
-
-
 
 </x-layout>

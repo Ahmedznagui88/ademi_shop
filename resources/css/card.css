@@ -13,8 +13,10 @@
     transform: translateX(-9px);
 }
 
-.card{
+.card-1{
  transition: 0.4s;
+ border-radius: 20px;
+ border: none;
 }
 
 .card:hover{
@@ -22,40 +24,10 @@
 }
 
 
-/**prima prova  */
-/*  .card {
-    position: relative;
-    overflow: hidden;
-    background: transparent;
+.img-card-home{
+    border-radius: 20px 20px 0 0 ;
     border: none;
 }
-
- 
-.card:hover .btn,
-.card:hover .fa-heart {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-
-.card .btn,
-.card .fa-heart {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.card-body {
-   border: solid 0.2px;
-   overflow: hidden;
-}
-
-.price {
-    margin-top: 10px;
-}
- */
-
  
 /*?seconda prova  */
 /*  .card {
