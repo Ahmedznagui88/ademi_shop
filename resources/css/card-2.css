@@ -1,10 +1,38 @@
 
 .card2 {
-max-width: 700px;
-   border-radius: 20px;
+    max-width: 700px;
+    height: 150px;
+    border: none;
+    background: #dedede;
+    border-radius: 30px;
 }
 
 .card2-img {
-    height: 100%;
+    height: 140px;
+    border-radius: 30px;
+   
+}
+.imgC{
+    width: auto;
+    height: 87%;
+    display: flex;
+    align-items: center;
     
+    margin-top: 2px;
+    
+}
+
+
+.icon-d{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bello{
+    width: 50px;
+    height: 50px;
+    background: #000;
 }

@@ -19,6 +19,12 @@ elements_to_watch.forEach((element) => {
 
 //*categoria
 
+/*let ricaricapagina = setTimeout(function() {
+ window.location.reload();
+
+}, 2000);
+ricaricapagina = clearTimeout(ricaricapagina)*/
+
 let item = document.querySelector('.toggle');
 let panel = document.querySelector('.panel');
 

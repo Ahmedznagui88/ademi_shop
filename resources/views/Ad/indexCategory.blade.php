@@ -1,10 +1,10 @@
 <x-layout>
 
     <div class="container my-5 ">
-        <div class="row ">
+        <div class="row justify-content-center">
 
       @forelse ($category->ads as $ad)
-      <div class="my-5">
+      <div class=" col-8 my-5">
 
           <x-card :ad="$ad"/>
       </div>

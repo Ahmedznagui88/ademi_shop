@@ -52,7 +52,7 @@
             <div class="row my-5">
                 @foreach (Auth::user()->ads as $ad)
                     <div class="col-12 col-md-3">
-                        <x-card :ad="$ad" />
+                        <x-card2 :ad="$ad" />
                     </div>
                 @endforeach
             </div>
