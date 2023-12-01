@@ -88,6 +88,11 @@
         transform: translateX(-100%);
     }
 }
+.divselecthome {
+    margin-top: 14px;
+}
+
+
 
 @media screen and (max-width: 520px ) {
     .row3col-r {

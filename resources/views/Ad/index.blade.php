@@ -1,14 +1,13 @@
 <x-layout>
 
-    
     <div class="container-fluid my-5 rounded-4">
         <div class="row">
 
-            <div class="d-flex justify-content-center mb-2">
+            <div class=" justify-content-center mb-2 mt-4">
                 <div class="col-12 text-center buttoncategorie">
                     <button class="btn-1 my-2 toggle">Categorie</button>
                 </div>
-                <div class="col-12 panel categorie ms-1">
+                <div class="col-12 panel categorie ms-5 justify-content-end">
                     @foreach ($categories as $category)
                         <button class="col-md-1 btn-1 mx-2">
                             <a href="{{ route('ad.indexCategory', $category) }}" class="text-btn-1">{{ $category->name }}</a>
@@ -22,9 +21,9 @@
                 </div>
             </div> --}}
             
-            <div class="row justify-content-center">
+            <div class="row justify-content-center ">
                 @forelse ($ads as $ad)
-                    <div class="rounded-4">
+                    <div class="col-7 ms-5 rounded-4">
                         <x-card :ad="$ad" />
                     </div>
                 @empty

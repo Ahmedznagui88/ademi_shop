@@ -40,7 +40,7 @@
 
 <a href="{{ route('ad.show', $ad) }}" class="decoration-none">
 
-  <div class="card mb-3 card2">
+  <div class="card mb-3 ms-5 card2">
       <div class="row g-0">
         <div class="col-md-5 imgC">
           <img src="https://images.unsplash.com/photo-1700587085844-b96c27958df2?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid card2-img">
