@@ -1,7 +1,7 @@
-/* const swup = new Swup();
+/* const swup = new Swup();  */
 
-let text = new SplitType("#ademi");
- */
+/* let text = new SplitType("#ademi"); */
+ 
 /* gsap.from('.img-logo-register' ,{
     opacity: 0,
     

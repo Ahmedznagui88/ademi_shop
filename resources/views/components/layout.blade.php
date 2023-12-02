@@ -12,10 +12,12 @@
 </head>
 <body class="homepage" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #F6F1EE" @endif >
 
-    <x-nav/>
+    <x-nav/> 
     
     <main id="swup" class="transition-fade">
+        
         <div class="min-vh-100">  
+            
             {{$slot}}
         </div>
         
