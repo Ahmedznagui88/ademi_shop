@@ -19,32 +19,6 @@ images.forEach((image, i) => {
 
 //*outline/cursor
 
-let outline = document.querySelector('.outline');
-let cursor = document.querySelector('.cursor');
-let links = document.querySelectorAll('button, a, .btn');
-
-document.addEventListener('mousemove', function(e) {
-    let x = e.clientX;
-    let y = e.clientY;
-    
-    outline.style.transform = `translate( calc(${x}px - 50%) , calc(${y}px - 50%) )`;
-    cursor.style.transform = `translate( calc(${x}px - 50%) , calc(${y}px - 50%) )`;  
-    
-});
-
-links.forEach((link) => {
-
-    
-    link.addEventListener('mouseover', () => {
-        cursor.classList.add('hover');
-        outline.classList.add('hover');
-    });
-    link.addEventListener('mouseleave', () => {
-        
-        cursor.classList.remove('hover');
-        outline.classList.remove('hover');
-    });
-});
  //!outline/cursor
 
  //showPassword//
@@ -77,6 +51,9 @@ links.forEach((link) => {
       x.type = "password";
     }
   }
+
+
+ 
 //backgorund register-login//
 /*   let bg = window.document.getElementById('bg-register-login');
   bg.style.opacity="0";
