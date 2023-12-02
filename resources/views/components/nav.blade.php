@@ -31,9 +31,6 @@
                     <a class="nav-link text-light " aria-current="page" href="">{{ Auth::user()->name }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" aria-current="page" href="{{ route('homepage') }}">Home</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link text-light" href="{{ Route('ad.create') }}">Inserisci annuncio</a>
                 </li>
                 <li class="nav-item">

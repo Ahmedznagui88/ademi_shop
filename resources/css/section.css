@@ -1,3 +1,77 @@
 section{
-    margin-top: 50vh;
+    margin-top: 45vh;
+}
+
+.contSec{
+    margin-top: 10%;
+}
+
+.btn-2{
+    background: #F6F1EE;
+    border: solid 0.5px black;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    transition: 1.6s;
+    transform: translateY(0);
+    transform-origin: bottom;
+}
+html.is-animating .btn{
+   
+    transform: translateY(100px);
+}
+.btn-2:hover{
+    border: solid 1px black;
+    background: #d8cfc9;
+         
+}
+
+.divSecImg{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+
+.secImg1{
+    position: relative;
+    
+    width: 900px;
+    height: 100px;
+    position: relative;
+    object-fit: cover;
+    transition: 1.2s;
+}
+
+.secImg2{
+    width: 900px;
+    height: 100px;
+    object-fit: cover;
+    transition: 1.2s;
+}
+.secImg3{
+    width: 900px;
+    height: 100px;
+    object-fit: cover;
+    transition: 1.2s;
+}
+.secImg4{
+    width: 900px;
+    height: 100px;
+    object-fit: cover;
+    transition: 1.2s;
+}
+
+
+.text-2{
+	height: 240px;
+    font-size: 120px;
+    color: rgb(0, 0, 0);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    
+}
+
+.texthome{
+    font-weight: lighter;
 }
