@@ -10,7 +10,7 @@
     <title>ADEMI</title>
     
 </head>
-<body class="homepage" >
+<body class="homepage" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #F6F1EE" @endif >
 
     <x-nav/>
     
