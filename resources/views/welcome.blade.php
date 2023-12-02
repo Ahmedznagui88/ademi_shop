@@ -1,15 +1,5 @@
 <x-layout>
-{{-- !title --}}
-    <div class="container mt-4">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-7">
-                <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
-                    <label for="searched" class="sr-only">Cerca prodotto</label>
-                    <input name="searched" id="searched" class="input-1" type="search" placeholder="Cerca prodotto" aria-label="Search">
-                </form>
-            </div>
-        </div>
-    </div>  
+{{-- !title --}}  
 
 {{-- ? categorie --}}
    {{-- <div class="container-fluid mt-4 ">

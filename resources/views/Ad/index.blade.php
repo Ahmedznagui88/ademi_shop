@@ -13,11 +13,11 @@
             
             <div class=" justify-content-center mb-2 mt-4">
                 <div class="col-12 text-center buttoncategorie">
-                    <button class="btn-2 my-2 toggle">Categorie</button>
+                    <button class="btn-index my-2 toggle">Categorie</button>
                 </div>
                 <div class="col-12 panel categorie ms-5 justify-content-end">
                     @foreach ($categories as $category)
-                        <button class="col-md-1 btn-3 mx-2">
+                        <button class="col-md-1 btn-index2 mx-2">
                             <a href="{{ route('ad.indexCategory', $category) }}"
                                 class="text-btn-2">{{ $category->name }}</a>
                         </button>

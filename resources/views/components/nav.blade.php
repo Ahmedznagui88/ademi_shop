@@ -11,7 +11,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        
+        <div class="col-12 col-md-7 Divbarradiricerca mb-5">
+            <form action="{{ route('ads.search') }}" method="GET" class="form-search-1 " role="search"> 
+                <label for="searched" class="sr-only">Cerca prodotto</label>
+                <input name="searched" id="searched" class="input-1" type="search" placeholder="Cerca prodotto" aria-label="Search">
+            </form>
+        </div>
        
         <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
 

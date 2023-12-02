@@ -51,7 +51,7 @@ top:34%;
     height: 140px;
    
 }
-.btn-2 {
+.btn-index {
     width: 100px;
 	height: 40px;
 	border: none;
@@ -61,7 +61,7 @@ top:34%;
     transform: translateY(0);
     transform-origin: bottom;
 }
-.btn-3 {
+.btn-index2 {
     width: 100px;
 	height: 40px;
 	border: none;
