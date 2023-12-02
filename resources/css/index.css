@@ -1,3 +1,85 @@
 .div-in-forelse {
     margin-left: 30px
 }
+
+.Div-img-header-index-l {
+    width: 500px;
+    height: 550px;
+}
+
+.Div-img-header-index-r {
+    width: 350px;
+    height: 400px;
+    margin-left: 15%;
+ 
+}
+.colhead-l {
+   
+    overflow: hidden
+}
+
+.colhead-r {
+   
+    overflow: hidden
+     
+}
+.divhead-center {
+    height: 60px;
+    width: 340px;
+    background-color: #ED7D31;
+    position: absolute;
+    left: 38.5%;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    
+}
+.DivimgRtext {
+width: 110px;
+height: 130px;
+position: absolute;
+right: 10%;
+top:34%;
+
+}
+.imgRtext {
+    border: solid 12px black;
+	border-radius: 48% 48% 0% 0% / 32% 32% 0% 0%;
+}
+.texthead {
+   
+    height: 140px;
+   
+}
+.btn-2 {
+    width: 100px;
+	height: 40px;
+	border: none;
+	background-color: #6C5F5B;
+	border-radius: 4px;
+	transition: 1.6s;
+    transform: translateY(0);
+    transform-origin: bottom;
+}
+.btn-3 {
+    width: 100px;
+	height: 40px;
+	border: none;
+	background-color: #ED7D31;
+	border-radius: 4px;
+	transition: 1.6s;
+    transform: translateY(0);
+    transform-origin: bottom;
+}
+.text-btn-2{
+	
+	text-decoration: none;
+	font-size: small;
+}
+.divhead-center h5 {
+   text-shadow: -1px 2px 5px rgba(0,0,0,0.6);
+
+}
+p {
+    text-shadow: -1px 2px 5px rgba(0,0,0,0.6);
+}
