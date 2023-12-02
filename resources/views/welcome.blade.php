@@ -40,9 +40,14 @@
         {{session('message')}}
     </div>
     @endif
-     
- 
+    
     <x-header />
+     
+    <div class="min-vh-100">
+        <x-section />
+    </div>
+    
+    
 
     {{-- <div class="container">
         <div class="row cardHome">
