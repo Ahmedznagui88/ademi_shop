@@ -1,25 +1,22 @@
-const swup = new Swup();
+/* const swup = new Swup();
 
-let text = new SplitType("#ademi", "#bg-register-login");
-
+let text = new SplitType("#ademi");
+ */
 /* gsap.from('.img-logo-register' ,{
     opacity: 0,
     
-}); */
+});
 
-/* gsap.registerPlugin(ScrollTrigger);
+ gsap.registerPlugin(ScrollTrigger);
  let images = gsap.utils.toArray("#row-registerlogin");
 
 images.forEach((image, i) => {
   gsap.to(image, {
     
   })
-}) */
+})  */
 
 
-//*outline/cursor
-
- //!outline/cursor
 
  //showPassword//
 

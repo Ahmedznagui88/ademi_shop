@@ -1,9 +1,8 @@
 <x-layout>
-
+{{-- !title --}}
     <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-12 col-md-7">
-                
                 <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
                     <label for="searched" class="sr-only">Cerca prodotto</label>
                     <input name="searched" id="searched" class="input-1" type="search" placeholder="Cerca prodotto" aria-label="Search">
@@ -12,8 +11,9 @@
         </div>
     </div>  
 
-   <div class="container-fluid mt-4 ">
-        <div class="row ">
+{{-- ? categorie --}}
+   {{-- <div class="container-fluid mt-4 ">
+        <div class="row">
             <div class=" justify-content-center mb-2">
                 <div class="col-12 text-center buttoncategorie">
                     <button class="btn-1 my-2 toggle">Categorie</button>
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
              
              
     @if(session('access.denied'))
@@ -41,9 +41,10 @@
     </div>
     @endif
      
+ 
     <x-header />
 
-    <div class="container">
+    {{-- <div class="container">
         <div class="row cardHome">
             @foreach ($ads as $ad)
             <div class="col-12 col-md-3">
@@ -51,10 +52,12 @@
             </div>    
             @endforeach
         </div>
-    </div>
+    </div> --}}
 
-    <div class="container mt-5">
-        <div class="row row3">
+   {{--  <div class="container mt-5">
+
+{{-- ! prova--}}    
+       {{--  <div class="row row3">
             <div class="col-12 col-md-8 row3col-l">
 
             </div>
@@ -64,7 +67,7 @@
                     <a href="{{ route('ad.create') }}">Inserisci annuncio</a>
                 </button>
             </div>
-        </div> <hr class="mt-5">
+        </div> <hr class="mt-5"> --}}
         
         {{--  <div class="mt-5 justify-content-center categorietonde" style="width: 1000px; margin-left: 10%">
             @foreach ($categories as $category)
