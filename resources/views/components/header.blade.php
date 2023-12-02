@@ -1,4 +1,4 @@
-<header class="d-flex flex-column justify-content-center mb-5 head ">
+<header class="d-flex flex-column justify-content-center mb-5 head">
      <article class="container-fluid position-relative">
         <div class="row justify-content-evenly">
             <div class="col-8 text-end">
