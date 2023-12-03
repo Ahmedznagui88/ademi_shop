@@ -16,10 +16,7 @@ body{
 	transform-origin: right;  
 }
 
-html.is-animating .transition-fade{
-    opacity: 0;
-    /* transform: translateY(100%);   */
-}
+
 /*! end animation change page   */
 
 /** carousel */
@@ -63,10 +60,6 @@ html.is-animating .transition-fade{
 	
 }
 
-html.is-animating .btn-1{
-   
-    transform: translateY(100px);
-}
 
 .text-btn{
 	color: rgb(0, 0, 0);

@@ -3,40 +3,18 @@ section{
 }
 
 .contSec{
-    margin-top: 10%;
+    margin-top: 40%;
 }
 
-.btn-2{
-    background: #F6F1EE;
-    border: solid 0.5px black;
-    border-radius: 100px;
-    color: rgb(0, 0, 0);
-    font-weight: 300;
-    transition: 1.6s;
-    transform: translateY(0);
-    transform-origin: bottom;
-}
-html.is-animating .btn{
-   
-    transform: translateY(100px);
-}
-.btn-2:hover{
-    border: solid 1px black;
-    background: #d8cfc9;
-         
-}
 
-.divSecImg{
+.divSecImg, .divSecImg2, .divSecImg3, .divSecImg4{
     display: flex;
     justify-content: center;
-   
-    
 }
 
 
 .secImg1{
     position: relative;
-    
     width: 900px;
     height: 100px;
     position: relative;

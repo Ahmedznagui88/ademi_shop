@@ -1,4 +1,6 @@
-// elements
+
+
+
 var elements_to_watch = document.querySelectorAll('.watch');
 // callback 
 var callback = function(items){
@@ -16,14 +18,6 @@ var observer = new IntersectionObserver(callback, { threshold: 0.5 } );
 elements_to_watch.forEach((element) => {
   observer.observe(element); 
 });
-
-//*categoria
-
-/* let ricaricapagina = setTimeout(function() {
- window.location.reload();
-
-}, 9000);
- */
 
 
 
@@ -44,22 +38,4 @@ window.addEventListener('scroll', function(e) {
   }
 });
 
-//funzione che ingetta il testo in realtime//
-
-/*let input = document.getElementById('input');
-let output = document.getElementById('output');
-
-input.addEventListener("keyup", function() {
-
-  let testo = input.value;
-output.innerHTML = testo;
-
-});*/
-
-
-/*const links = document.querySelectorAll("ul.menu-scroll a");
-
-links.forEach((link) => {
-  link.addEventListener("click", clickHandler);
-})*/
 

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg fixed-top" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #6C5F5B" @endif>
-    <div class="container-fluid">
+    <div class="container-fluid cont-nav">
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a>
