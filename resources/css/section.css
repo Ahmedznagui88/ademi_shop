@@ -3,42 +3,37 @@ section{
 }
 
 .contSec{
-    margin-top: 40%;
+    margin-top: 91%;
+    height: 100vh;
+    position: sticky; top: 210px;
+    background: linear-gradient(-45deg, #ED7D31 50%, #43403c 50%); 
+    background-image: url(../../public/media/home2.jpg);
+    background-size: 800px;
+    
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
-
+.catitle{
+    font-size: 100px;
+    color: #ED7D31;
+}
 .divSecImg, .divSecImg2, .divSecImg3, .divSecImg4{
     display: flex;
     justify-content: center;
+    
 }
 
 
-.secImg1{
+.secImg1, .secImg2, .secImg3, .secImg4{
     position: relative;
     width: 900px;
     height: 100px;
     position: relative;
     object-fit: cover;
     transition: 1.2s;
-}
-
-.secImg2{
-    width: 900px;
-    height: 100px;
-    object-fit: cover;
-    transition: 1.2s;
-}
-.secImg3{
-    width: 900px;
-    height: 100px;
-    object-fit: cover;
-    transition: 1.2s;
-}
-.secImg4{
-    width: 900px;
-    height: 100px;
-    object-fit: cover;
-    transition: 1.2s;
+    border-radius: 20px;
 }
 
 

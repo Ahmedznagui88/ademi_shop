@@ -1,6 +1,11 @@
 <section class="">
-    <div class="container contSec">
-        <div class="row ">
+    <div class="container-fluid contSec">
+
+        <div>
+            <h2 class="catitle text-center">Categorie</h2>
+        </div>
+        
+        <div class="row">
           <div class="col-12 divSecImg">
               <img src="/media/interior.jpg" class="secImg1" alt="">
               

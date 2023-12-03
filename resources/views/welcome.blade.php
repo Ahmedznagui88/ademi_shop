@@ -32,10 +32,8 @@
     @endif
     
     <x-header />
-     
-    <div class="min-vh-100">
-        <x-section />
-    </div>
+    <x-section />
+    
     
     
 

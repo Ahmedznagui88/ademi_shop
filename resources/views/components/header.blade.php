@@ -36,8 +36,4 @@
       </div>
 
     </article>
-
-    <div class="box">
-
-    </div>
 </header>

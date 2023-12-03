@@ -34,7 +34,6 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 //!diveHead 1
 gsap.to(".divHead",{
     x: 0,
@@ -61,6 +60,7 @@ gsap.to(".divHead",{
     }
 })
 
+
 //*diveHead 2
 gsap.to(".divHead2",{
   x: 0,
@@ -69,7 +69,7 @@ gsap.to(".divHead2",{
 
 gsap.to(".divHead2",{
   x: 800,
-    
+    scale: 1.2,
     rotateX: -60,
     scale: 1.5,
     scrollTrigger: {
@@ -88,90 +88,122 @@ gsap.to(".divHead2",{
 })
 
 //!secImg1
+gsap.from(".divSecImg",{
+  x: 1200,
+
+  delay: 1,
+})
 
 gsap.to(".divSecImg",{
-  x: 1200,
+  x: 0,
+  
+  
     duration: 20,
-    
     scrollTrigger: {
         trigger: ".divSecImg",
         start: "top 40%",
         end: "bottom 20%",
         scrub: 1,
-        duration:10, 
-        delay: 4,
-        pinSpacing: 3,
-        /* markers:{
-          startColor: "blue",
-          endColor: "red",
-        } */
-        
-    }
-})
-
-//* secImg2
-gsap.to(".divSecImg2",{
-  x: -1200,
-    delay: 1, 
-    
-    opacity: 3,
-    scrollTrigger: {
-        trigger: ".divSecImg",
-        start: "top 43%",
-        end: "bottom 22%",
-        
-        scrub: 1,
-        duration:10, 
-        delay: 4,
-        pinSpacing: 3,
-        /* markers:{
-          startColor: "blue",
-          endColor: "red",
-        } */
-        
-    }
-})
-
-//!secImg3
-gsap.to(".divSecImg3",{
-  x: 1200,
-    duration: 20,
-    
-    scrollTrigger: {
-        trigger: ".divSecImg",
-        start: "top 36%",
-        end: "bottom 23%",
-        scrub: 1,
-        duration:10, 
-        delay: 4,
-        pinSpacing: 3,
+       
+       
        /*  markers:{
           startColor: "blue",
           endColor: "red",
-        }  */
+        }, */
+     
         
+    },
+    stragger: {
+      scale: 1.2,
     }
+    
+}) 
+
+
+
+
+gsap.from(".divSecImg2",{
+  x: 1200,
+  opacity: 0,
+  delay: 3,
 })
 
-//* secImg4
-gsap.to(".divSecImg4",{
-  x: -1200,
-    delay: 1, 
-    
-    opacity: 3,
+gsap.to(".divSecImg2",{
+  x: 0,
+  
+    duration: 22,
     scrollTrigger: {
-        trigger: ".divSecImg",
-        start: "top 37%",
-        end: "bottom 22%",
-        
+        trigger: ".divSecImg2",
+        start: "top 44%",
+        end: "bottom 20%",
         scrub: 1,
-        duration:10, 
-        delay: 4,
-        pinSpacing: 3,
-        /* markers:{
+        pinSpacing: 3, 
+     /*    markers:{
           startColor: "blue",
           endColor: "red",
-        } */
+        }, */
+     
         
-    }
+    },
+    
+}) 
+
+
+
+gsap.from(".divSecImg3",{
+  x: -1200,
+  opacity: 0,
+  delay: 1,
 })
+
+gsap.to(".divSecImg3",{
+  x: 0,
+  
+    duration: 20,
+    scrollTrigger: {
+        trigger: ".divSecImg3",
+        start: "top 40%",
+        end: "bottom 20%",
+        scrub: 1,
+        pinSpacing: 3, 
+       /*  markers:{
+          startColor: "blue",
+          endColor: "red",
+        }, */
+     
+        
+    },
+    
+}) 
+
+gsap.from(".divSecImg4",{
+  x: -1200,
+  opacity: 0,
+  delay: 3,
+})
+
+gsap.to(".divSecImg4",{
+  x: 0,
+  
+    duration: 22,
+    scrollTrigger: {
+        trigger: ".divSecImg4",
+        start: "top 44%",
+        end: "bottom 20%",
+        scrub: 1,
+        pinSpacing: 3, 
+      /*   markers:{
+          startColor: "blue",
+          endColor: "red",
+        }, */
+     
+        
+    },
+    
+}) 
+
+
+
+
+
+
