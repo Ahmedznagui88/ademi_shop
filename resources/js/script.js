@@ -87,6 +87,13 @@ gsap.to(".divHead2",{
     }
 })
 
+gsap.from(".contSec",{
+  opacity: 0,
+
+  
+})
+
+
 //!secImg1
 gsap.from(".divSecImg",{
   x: 1200,
@@ -96,7 +103,7 @@ gsap.from(".divSecImg",{
 
 gsap.to(".divSecImg",{
   x: 0,
-  
+  y: 100,
   
     duration: 20,
     scrollTrigger: {
@@ -120,34 +127,33 @@ gsap.to(".divSecImg",{
 }) 
 
 
-document.addEventListener("DOMContentLoaded", function() { 
-  gsap.from(".divSecImg2",{
-    x: 1200,
-    display: "none",
-    opacity: 0,
-    ease: "power2.inOut",
-  })
-  gsap.to(".divSecImg2",{
-    x: 0,
-    
-      duration: 22,
-      scrollTrigger: {
-          trigger: ".divSecImg2",
-          start: "top 44%",
-          end: "bottom 20%",
-          scrub: 1,
-          pinSpacing: 3, 
-       /*    markers:{
-            startColor: "blue",
-            endColor: "red",
-          }, */
-       
-          
-      },
-      
-  }) 
 
+gsap.from(".divSecImg2",{
+  x: 1200,
+  opacity: 0,
+  delay: 1,
 })
+
+gsap.to(".divSecImg2",{
+  x: 0,
+  y: 100,
+    duration: 20,
+    scrollTrigger: {
+        trigger: ".divSecImg3",
+        start: "top 44%",
+        end: "bottom 20%",
+        scrub: 1,
+        pinSpacing: 3, 
+       /*  markers:{
+          startColor: "blue",
+          endColor: "red",
+        }, */
+     
+        
+    },
+    
+}) 
+
 
 
 
@@ -162,7 +168,7 @@ gsap.from(".divSecImg3",{
 
 gsap.to(".divSecImg3",{
   x: 0,
-  
+  y: 100,
     duration: 20,
     scrollTrigger: {
         trigger: ".divSecImg3",
@@ -188,7 +194,7 @@ gsap.from(".divSecImg4",{
 
 gsap.to(".divSecImg4",{
   x: 0,
-  
+  y: 100,
     duration: 22,
     scrollTrigger: {
         trigger: ".divSecImg4",
@@ -208,6 +214,27 @@ gsap.to(".divSecImg4",{
 
 
 
+gsap.to(".divtitle2",{
+  x: 0,
+  duration: 1.5,
+}) 
 
-
+gsap.to(".divtitle2",{
+  opacity: 0,
+  
+  scrollTrigger: {
+      trigger: ".divtitle2",
+      start: "top 70%",
+      end: "top 9%",
+      scrub: 1, 
+      opacity: 0,
+      pinType: "fixed",
+        pinSpacing: true,
+      /*  markers:{
+        startColor: "blue",
+        endColor: "red",
+      }  */
+      
+  }
+})
 

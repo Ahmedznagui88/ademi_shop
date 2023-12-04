@@ -19,7 +19,6 @@
               <h5>SALA DA PRANZO MODERNA</h5>
              </div>
           </div>
-          
         </div>
 
         <div class="col-6 col-md-6 d-flex align-items-center justify-content-center dicCont">
@@ -29,10 +28,11 @@
               <h5>SOGGIORNO</h5>
              </div>
           </div>
-          
         </div>
-
-       
+      </div>
+      
+      <div class="d-flex justify-content-center">
+        <img src="/media/down-arrow.png" class="arrow" alt="">
       </div>
 
     </article>
