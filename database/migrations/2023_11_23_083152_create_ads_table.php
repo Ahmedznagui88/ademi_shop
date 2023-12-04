@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('brand');
             $table->text('description');
             $table->float('price');
-            $table->string('image')->nullable();
+            
+            //$table->string('image')->nullable();
 
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

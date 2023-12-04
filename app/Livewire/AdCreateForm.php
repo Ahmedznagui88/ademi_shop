@@ -10,13 +10,14 @@ use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class AdCreateForm extends Component
 {
-  
     use WithFileUploads;
 
     public $title;
     public $brand;
     public $description;
-    public $image;
+    public $temporary_images;
+    public $images = [];
+    /* public $image; */
     public $price;
     public $category_id = [];
     public $user_id;
@@ -25,7 +26,7 @@ class AdCreateForm extends Component
 
         'title' => 'required|min:3|max:100',
         'brand' => 'required|min:3|max:100',
-        'image' => 'required|image|mimes:webp,png,jpeg,jpg', 
+        'images' => 'required|image|max:2000|mimes:webp,png,jpeg,jpg',
         'description' => 'required|min:10|max:10000',
 
 
@@ -37,9 +38,11 @@ class AdCreateForm extends Component
         'required' => 'Il campo deve essere compilato',
         'min' => 'Il campo deve contenere minimo :min caratteri',
         'max' => 'Il campo deve contenere massimo :max caratteri',
-        'image' => 'Il file deve essere un\'immagine',
+        'images.image' => 'Il file deve essere un\'immagine',
+        'images.max' => 'L\'immagine deve avere massimo 2000kb',
         'mimes' => 'Le estensioni devono essere :values',
-
+        'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 2mb',
+        'temporary_images.*.image' => 'I file devono essere immagini',
 
     ];
 
@@ -68,4 +71,23 @@ class AdCreateForm extends Component
     {
         return view('livewire.ad-create-form');
     }
+
+    public function updatedTemporaryImages()
+    {
+        if ($this->validate([
+            'temporary_images.*' => 'image|max:2000',
+        ])) {
+            foreach ($this->temporary_images as $image) {
+                $this->images[] = $image;
+            }
+        }
+    }
+    public function removeImage($key)
+    {
+        if (in_array($key, array_keys($this->images))) {
+        unset($this->images[$key]);
+        }
+    }
+
+    
 }
