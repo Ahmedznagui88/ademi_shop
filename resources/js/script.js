@@ -120,33 +120,37 @@ gsap.to(".divSecImg",{
 }) 
 
 
+document.addEventListener("DOMContentLoaded", function() { 
+  gsap.from(".divSecImg2",{
+    x: 1200,
+    display: "none",
+    opacity: 0,
+    ease: "power2.inOut",
+  })
+  gsap.to(".divSecImg2",{
+    x: 0,
+    
+      duration: 22,
+      scrollTrigger: {
+          trigger: ".divSecImg2",
+          start: "top 44%",
+          end: "bottom 20%",
+          scrub: 1,
+          pinSpacing: 3, 
+       /*    markers:{
+            startColor: "blue",
+            endColor: "red",
+          }, */
+       
+          
+      },
+      
+  }) 
 
-
-gsap.from(".divSecImg2",{
-  x: 1200,
-  opacity: 0,
-  delay: 3,
 })
 
-gsap.to(".divSecImg2",{
-  x: 0,
-  
-    duration: 22,
-    scrollTrigger: {
-        trigger: ".divSecImg2",
-        start: "top 44%",
-        end: "bottom 20%",
-        scrub: 1,
-        pinSpacing: 3, 
-     /*    markers:{
-          startColor: "blue",
-          endColor: "red",
-        }, */
-     
-        
-    },
-    
-}) 
+
+
 
 
 
