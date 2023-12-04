@@ -36,3 +36,19 @@
     height: 50px;
     background: #000;
 }
+
+@media (max-width: 767px) {
+    .card2 {
+        max-width: 100%;
+        border-radius: 15px; /* Riduci il raggio del bordo per adattarti alle dimensioni più piccole */
+    }
+
+    .card2-img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .imgC {
+        flex-direction: column;
+        padding: 5px;
+    }
+}

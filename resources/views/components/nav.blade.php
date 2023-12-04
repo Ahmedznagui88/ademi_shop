@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg fixed-top" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #6C5F5B" @endif>
+    <div class="container-fluid cont-nav">
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a>
@@ -11,7 +11,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        
+        <div class="col-12 col-md-7 Divbarradiricerca mb-5">
+            <form action="{{ route('ads.search') }}" method="GET" class="form-search-1 " role="search"> 
+                <label for="searched" class="sr-only">Cerca prodotto</label>
+                <input name="searched" id="searched" class="input-1" type="search" placeholder="Cerca prodotto" aria-label="Search">
+            </form>
+        </div>
        
         <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
 
@@ -29,9 +34,6 @@
                 @endif
                 <li class="nav-item ">
                     <a class="nav-link text-light " aria-current="page" href="">{{ Auth::user()->name }}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" aria-current="page" href="{{ route('homepage') }}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="{{ Route('ad.create') }}">Inserisci annuncio</a>

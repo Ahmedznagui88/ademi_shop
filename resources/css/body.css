@@ -1,36 +1,11 @@
 body{
-    background-color: white;
+    background-color: #999591;
     margin: 0%;
     font-family: 'League Spartan', sans-serif;
-	
   	overflow-x: hidden;
 }
 
-hr{
-	background-color: aliceblue;
-}
-/** article */
-article{
-	height: 260px;
-}
-/** title */
 
-.text-1{
-	height: 240px;
-    font-size: 230px;
-    color: rgb(0, 0, 0);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    margin: 0; 
-}
-
-.texthome{
-    font-weight: lighter;
-}
-
-.char{
-    transform: translateY(250px); 
-} 
-/*! end title  */
 
 /**animation change page  */
 
@@ -41,10 +16,7 @@ article{
 	transform-origin: right;  
 }
 
-html.is-animating .transition-fade{
-    opacity: 0;
-    /* transform: translateY(100%);   */
-}
+
 /*! end animation change page   */
 
 /** carousel */
@@ -52,41 +24,7 @@ html.is-animating .transition-fade{
 	margin-top: 100px;
 
 }
-/** cursor/outlinne  */
-.outline{
-	width: 64px;
-	height: 64px;
-	border-radius: 100%;
-	border: solid 1px rgb(255, 128, 0);
-	transition: 0.4s;
-	position: fixed;
-	top: 0px; left: 0px;
-	z-index: 9999999;
-	mix-blend-mode: difference;
-	transform: translate(-64px, -64px);
-	transition: all 0.3s cubic-bezier(.255, .61, .355, 1);
-	pointer-events: none;
-}
 
-/* .cursor{
-	width: 8px;
-	height: 8px;
-	border-radius: 100%;
-	background: #e20c0c;
-	position: fixed;
-	top: 0px; left: 0px;
-	z-index: 999999;
-	transform: translate(-8px, -8px);
-	pointer-events: none;
-    
-}  */
-
-.outline.hover{
-	background: rgb(255, 255, 255);
-	zoom: 10px;
-    border: none;
-}
-/*! cursor/outlinne  */
 
 .row-category{
 	width: 100vw;
@@ -122,10 +60,6 @@ html.is-animating .transition-fade{
 	
 }
 
-html.is-animating .btn-1{
-   
-    transform: translateY(100px);
-}
 
 .text-btn{
 	color: rgb(0, 0, 0);

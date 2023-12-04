@@ -1,0 +1,61 @@
+section{
+    position: relative;
+    margin-top: 50%;
+}
+
+.contSec{
+    margin-top: 91%;
+    height: 140vh;
+    position: sticky;
+    top: 100px;
+    background-image: url(../../public/media/home2.jpg);
+    background-size: 800px;
+    background-position: center;
+    background-attachment: fixed;
+}
+.divtitle2{
+    margin-top: 20%;
+    /* background: linear-gradient(-45deg, #eac3a9 50%, #adadad 50%); 
+    z-index: -1; */ 
+}
+
+.catitle{
+    font-size: 100px;
+    color: #ED7D31;
+}
+
+.catitle2{
+    
+    font-size: 90px;
+    color: #000000;
+}
+
+.divSecImg, .divSecImg2, .divSecImg3, .divSecImg4{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.secImg1, .secImg2, .secImg3, .secImg4{
+    position: relative;
+    width: 900px;
+    height: 100px;
+    position: relative;
+    object-fit: cover;
+    transition: 1.2s;
+    border-radius: 20px;
+}
+
+
+
+.text-2{
+	height: 240px;
+    font-size: 120px;
+    color: rgb(0, 0, 0);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    
+}
+
+.texthome{
+    font-weight: lighter;
+}
