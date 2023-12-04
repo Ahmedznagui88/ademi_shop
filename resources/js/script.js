@@ -214,14 +214,14 @@ gsap.to(".divSecImg4",{
 
 
 
-gsap.to(".divtitle2",{
+/* gsap.to(".divtitle2",{
   x: 0,
   duration: 1.5,
 }) 
 
 gsap.to(".divtitle2",{
   opacity: 0,
-  
+  rotationX: 90,
   scrollTrigger: {
       trigger: ".divtitle2",
       start: "top 70%",
@@ -229,12 +229,12 @@ gsap.to(".divtitle2",{
       scrub: 1, 
       opacity: 0,
       pinType: "fixed",
-        pinSpacing: true,
+        pinSpacing: true, */
       /*  markers:{
         startColor: "blue",
         endColor: "red",
       }  */
-      
+/*       
   }
-})
+}) */
 
