@@ -54,7 +54,7 @@ gsap.to(".divHead",{
           pinSpacing: true,
         
     }
-}) */
+}) 
 
 
 //*diveHead 2

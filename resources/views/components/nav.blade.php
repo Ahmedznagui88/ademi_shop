@@ -2,16 +2,8 @@
     <div class="container-fluid">
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
-        </a>
-        <li class="nav-item">
-            <x-_local lang='it' nation='it'/>
-        </li>
-        <li class="nav-item">
-            <x-_local lang='en' nation='gb'/>
-        </li>
-        <li class="nav-item">
-            <x-_local lang='fr' nation='fr'/>
-        </li>
+        </a> 
+        
         {{-- <form action="{{route('ads.search')}}" method="GET" class="d-flex" role="search">
             <input  name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Cerca</button>
@@ -65,6 +57,19 @@
                 </li>
                 @endauth
             </ul>
+        </div>
+        <div class="d-flex mb-5 mx-4">
+             
+            <li class="nav-item mx-1">
+                <x-_local lang='it' nation='it'/>
+            </li>
+            <li class="nav-item mx-1">
+                <x-_local lang='en' nation='gb'/>
+            </li>
+            <li class="nav-item mx-1">
+                <x-_local lang='fr' nation='fr'/>
+            </li>
+
         </div>
     </div>
 </nav>

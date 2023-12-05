@@ -1,4 +1,5 @@
 <header class="d-flex flex-column justify-content-center mb-5 head">
+  
      <article class="container position-relative position-fixed article-1">
         <div class="row justify-content-evenly rowArt">
             <div id="box" class="col-12 col-md-8 text-end divarticle ">
@@ -9,6 +10,8 @@
             </div>
         </div> 
     </article> 
+
+    
 
     <article class="container-fluid articleHeader">
       <div class="row article-2">
@@ -30,6 +33,7 @@
           </div>
         </div>
       </div>
+      
       
       <div class="d-flex justify-content-center">
         <img src="/media/down-arrow.png" class="arrow" alt="">
