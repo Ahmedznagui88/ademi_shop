@@ -4,13 +4,20 @@ article{
 }
 
 .divarticle{
-	z-index: 1;
+	z-index: 0;
+	display: flex;
+	justify-content: end;
 }
 
 .article-1{
 	margin-top: 20px;
 	
 
+}
+
+.rowArt{
+	display: flex;
+	justify-content: center;
 }
 
 .article-2{
@@ -121,6 +128,27 @@ article{
 		width: auto;
 	}
 
+	.divarticle{
+		width: 10%;
+		display: flex;
+		justify-content: center;
+	
+	}
+
+	.text-1{
+		font-size: 40px;
+	}
+	.imgUnderTitle {
+		display: none;
+		
+		
+    }
+
+
+	.divHead{
+		
+	}
+
 	
 }
 
@@ -145,20 +173,5 @@ article{
 		top: 20px;
 	}
 
-    .text-1 {
-		
-		width: 320px;
-        font-size: 60px;
-		
-    }
-
-    .imgUnderTitle {
-        
-		width: 40px;
-		height: 50px;
-		border: solid 7px black;
-		display: none;
-		object-fit: cover;
-		
-    }
+  
 } */

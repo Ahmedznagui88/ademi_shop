@@ -13,7 +13,7 @@
 
 
 
-    <div class="container-fluid contSec">
+    {{-- <div class="container-fluid contSec">
         
         <div>
             <h2 class="catitle text-center">{{__('ui.category')}}</h2>
@@ -41,5 +41,5 @@
                 </div>
             </a>
         </div>
-    </div>
+    </div> --}}
 </section>
