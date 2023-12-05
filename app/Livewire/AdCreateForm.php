@@ -80,8 +80,10 @@ class AdCreateForm extends Component
         ]);
 
         if(count($this->images)) {
+           
             foreach($this->images as $image ) {
                 $this->ad->images()->create(['path'=>$image->store('images', 'public')]);
+              
             }
         }
         session()->flash('message', 'Hai inserito un annuncio con successo, sarà pubblicato dopo la revisione');
