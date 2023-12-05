@@ -17,23 +17,23 @@
                 <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
             <div class="mb-1">
-                <label for="brand" class="form-label">Marchio</label>
+                <label for="brand" class="form-label">{{__('ui.marchio')}}</label>
                 <input type="text" wire:model="brand" class="form-control  rounded-3" id="brand">
             </div>
             @error('brand')
                 <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
             <div class="mb-1">
-                <label class="form-label ">Categoria</label>
+                <label class="form-label ">{{__('ui.category')}}</label>
                 <select class="form-select  rounded-3" wire:model="category_id">
-                    <option value="">Scegli una categoria</option>
+                    <option value="">{{__('ui.selectCategory')}}</option>
                     @foreach ($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                     @endforeach
                 </select>
             </div>
             <div class="mb-1">
-                <label for="description" class="form-label">Descrizione</label>
+                <label for="description" class="form-label">{{__('ui.description')}}</label>
                 <textarea type="text" wire:model="description" class="form-control  rounded-3" id="description" rows="5"
                     cols="30"></textarea>
 
@@ -48,7 +48,7 @@
             </div>--}}
 
             <div class="mb-1">
-                <label for="images" class="form-label">Inserisci una immagine nitida dell'oggetto</label>
+                <label for="images" class="form-label">{{__('ui.addImage')}}</label>
                 <input type="file" wire:model="temporary_images" multiple 
                     class="form-control shadow @error('temporary_images.*')is-invalid @enderror rounded-3"
                     id="images">
@@ -61,14 +61,14 @@
                 <div class="row">
                     <div class="col-12">
                         <p>
-                            Preview
+                            {{__('ui.anteprima')}}
                         </p>
                         <div class="row">
                             @foreach ($images as $key => $image)
                                 <div class="col-3">
                                     <div class="img-preview mx-auto shadow rounded"
                                         style="width:300px; height:300px; background-image:url({{ $image->temporaryUrl() }})">
-                                        <button wire:click="removeImage({{$key}})"class="btn btn-danger">Rimuovi</button>
+                                        <button wire:click="removeImage({{$key}})"class="btn btn-danger">{{__('ui.remove')}}</button>
                                     </div>
                                 </div>
                             @endforeach
@@ -86,13 +86,13 @@
                 <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
             <div class="mb-1">
-                <label for="price" class="form-label ">Prezzo</label>
+                <label for="price" class="form-label ">{{__('ui.prezzo')}}</label>
                 <input type="float" wire:model="price" class="form-control rounded-3" id="price">
             </div>
             @error('price')
                 <p class="text-danger">{{ $message }}</p>
             @enderror
-            <button type="submit" class="btn btn-primary mt-2">Inserisci annuncio</button>
+            <button type="submit" class="btn btn-primary mt-2">{{__('ui.insertAnnouncements')}}</button>
         </div>
 
     </form>

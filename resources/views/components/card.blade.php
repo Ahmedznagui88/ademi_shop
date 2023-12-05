@@ -62,7 +62,7 @@
               <div class="d-flex justify-content-between">
 
                 <small class="">{{ $ad->category->name ?? __('ui.noSpec')}}</small>
-                <span>{{__('ui.InsertBy')}} {{ Auth::user()->name ?? __('ui.noName')}}</span>
+                <span>{{__('ui.insertBy')}} {{ Auth::user()->name ?? __('ui.noName')}}</span>
               </div>
             </div>
 

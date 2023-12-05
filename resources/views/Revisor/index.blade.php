@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2>{{ $ad_to_check ? 'Ecco l\'annuncio di oggi da revisionare' : 'Non ci sono annunci da revisionare' }}
+                <h2>{{ $ad_to_check ? __('ui.newAds') : __('ui.noNewAds') }}
                 </h2>
             </div>
         </div>
@@ -54,12 +54,12 @@
                             <button class="carousel-control-prev " type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
+                                <span class="visually-hidden">{{__('ui.precedente')}}</span>
                             </button>
                             <button class="carousel-control-next " type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
+                                <span class="visually-hidden">{{__('ui.successivo')}}</span>
                             </button>
                         </div>
 
@@ -86,7 +86,7 @@
                         @csrf
 
                         @method('PATCH')
-                        <button type="submit" class="btn-1 w-25">Accetta</button>
+                        <button type="submit" class="btn-1 w-25">{{__('ui.accept')}}</button>
                     </form>
                 </div>
 
@@ -95,7 +95,7 @@
                         @csrf
 
                         @method('PATCH')
-                        <button type="submit" class="btn-1 w-25">Rifiuta</button>
+                        <button type="submit" class="btn-1 w-25">{{__('ui.reject')}}</button>
                     </form>
                 </div>
 
