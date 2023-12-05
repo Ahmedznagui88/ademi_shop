@@ -95,29 +95,24 @@ gsap.from(".contSec",{
 
 
 //!secImg1
-gsap.from(".divSecImg",{
-  x: 1200,
-
-  delay: 1,
+/* gsap.from(".divSecImg",{
+  y: 100,
+  display: "none",
+  opacity: 0,
+  rotateX: -50,
 })
 
 gsap.to(".divSecImg",{
-  x: 0,
-  y: 100,
-  
+  y: 0,
+  display: "flex",
+  opacity: 1,
     duration: 20,
+    rotateX: -5,
     scrollTrigger: {
         trigger: ".divSecImg",
         start: "top 40%",
         end: "bottom 20%",
         scrub: 1,
-       
-       
-       /*  markers:{
-          startColor: "blue",
-          endColor: "red",
-        }, */
-     
         
     },
     stragger: {
@@ -129,14 +124,17 @@ gsap.to(".divSecImg",{
 
 
 gsap.from(".divSecImg2",{
-  x: 1200,
+  y: 100,
   opacity: 0,
-  delay: 1,
+  display: "none",
+  rotateX: -50,
 })
 
 gsap.to(".divSecImg2",{
-  x: 0,
-  y: 100,
+  y: 0,
+  opacity: 1,
+  display: "flex",
+  rotateX: -5,
     duration: 20,
     scrollTrigger: {
         trigger: ".divSecImg3",
@@ -144,11 +142,6 @@ gsap.to(".divSecImg2",{
         end: "bottom 20%",
         scrub: 1,
         pinSpacing: 3, 
-       /*  markers:{
-          startColor: "blue",
-          endColor: "red",
-        }, */
-     
         
     },
     
@@ -161,14 +154,17 @@ gsap.to(".divSecImg2",{
 
 
 gsap.from(".divSecImg3",{
-  x: -1200,
+  y: 100,
   opacity: 0,
-  delay: 1,
+  display: "none",
+  rotateX: -50,
 })
 
 gsap.to(".divSecImg3",{
-  x: 0,
-  y: 100,
+  y: 0,
+  opacity: 1,
+  display: "flex",
+  rotateX: -5,
     duration: 20,
     scrollTrigger: {
         trigger: ".divSecImg3",
@@ -176,25 +172,23 @@ gsap.to(".divSecImg3",{
         end: "bottom 20%",
         scrub: 1,
         pinSpacing: 3, 
-       /*  markers:{
-          startColor: "blue",
-          endColor: "red",
-        }, */
-     
-        
+
     },
     
 }) 
 
 gsap.from(".divSecImg4",{
-  x: -1200,
+  y: 100,
   opacity: 0,
-  delay: 3,
+  display: "none",
+  rotateX: -50,
 })
 
 gsap.to(".divSecImg4",{
-  x: 0,
-  y: 100,
+  y: 0,
+  opacity: 1,
+  display: "flex",
+  rotateX: -5,
     duration: 22,
     scrollTrigger: {
         trigger: ".divSecImg4",
@@ -202,16 +196,10 @@ gsap.to(".divSecImg4",{
         end: "bottom 20%",
         scrub: 1,
         pinSpacing: 3, 
-      /*   markers:{
-          startColor: "blue",
-          endColor: "red",
-        }, */
-     
-        
     },
     
 }) 
-
+ */
 
 
 /* gsap.to(".divtitle2",{
