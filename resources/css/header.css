@@ -120,9 +120,11 @@ article{
 		justify-content: center;
 		width: auto;
 	}
+
+	
 }
 
-@media screen and (min-width: 300px) and (max-width: 789px) {
+/* @media screen and (min-width: 300px) and (max-width: 789px) {
 	.rowArt{
 		display: flex;
 		justify-content: center;
@@ -150,10 +152,6 @@ article{
 		
     }
 
-	/* .divUnderTitle{
-		display: flex;
-		justify-content: center;
-	} */
     .imgUnderTitle {
         
 		width: 40px;
@@ -163,4 +161,4 @@ article{
 		object-fit: cover;
 		
     }
-}
+} */

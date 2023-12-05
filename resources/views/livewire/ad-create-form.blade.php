@@ -41,7 +41,8 @@
             @error('description')
                 <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
-            {{--  <div class="mb-1">
+            
+            {{--<div class="mb-1">
                 <label for="image" class="form-label">Inserisci una immagine nitida dell'oggetto</label>
                 <input type="file" wire:model="image" class="form-control  rounded-3" id="image">
             </div>--}}

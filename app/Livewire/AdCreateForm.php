@@ -27,7 +27,7 @@ class AdCreateForm extends Component
 
         'title' => 'required|min:3|max:100',
         'brand' => 'required|min:3|max:100',
-        'images' => 'required|image|max:2000|mimes:webp,png,jpeg,jpg',
+        'images.*' => 'required|image|max:2000|mimes:webp,png,jpeg,jpg',
         'description' => 'required|min:10|max:10000',
 
 
@@ -39,8 +39,8 @@ class AdCreateForm extends Component
         'required' => 'Il campo deve essere compilato',
         'min' => 'Il campo deve contenere minimo :min caratteri',
         'max' => 'Il campo deve contenere massimo :max caratteri',
-        'images.image' => 'Il file deve essere un\'immagine',
-        'images.max' => 'L\'immagine deve avere massimo 2000kb',
+        'images.*.image' => 'Il file deve essere un\'immagine',
+        'images.*.max' => 'L\'immagine deve avere massimo 2000kb',
         'mimes' => 'Le estensioni devono essere :values',
         'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 2mb',
         'temporary_images.*.image' => 'I file devono essere immagini',

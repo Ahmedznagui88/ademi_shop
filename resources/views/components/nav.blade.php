@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg fixed-top" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #6C5F5B" @endif>
-    <div class="container-fluid cont-nav">
+    <div class="container-fluid">
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a>
@@ -18,7 +18,7 @@
             </form>
         </div>
        
-        <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav d-flex align-items-center">
                 @auth
@@ -59,3 +59,4 @@
         </div>
     </div>
 </nav>
+

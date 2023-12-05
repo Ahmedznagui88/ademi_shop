@@ -32,10 +32,10 @@
   }
 
 
-gsap.registerPlugin(ScrollTrigger);
+/* gsap.registerPlugin(ScrollTrigger); */
 
 //!diveHead 1
-gsap.to(".divHead",{
+/* gsap.to(".divHead",{
     x: 0,
     duration: 1.5,
 }) 
@@ -52,17 +52,13 @@ gsap.to(".divHead",{
         delay: 4,
         pinType: "fixed",
           pinSpacing: true,
-        /* markers:{
-          startColor: "blue",
-          endColor: "red",
-        } */
         
     }
-})
+}) */
 
 
 //*diveHead 2
-gsap.to(".divHead2",{
+/* gsap.to(".divHead2",{
   x: 0,
   duration: 1.5,
 })
@@ -79,11 +75,7 @@ gsap.to(".divHead2",{
         scrub: 1.4, 
         delay: 4,
         pinSpacing: 3,
-        /* markers:{
-          startColor: "blue",
-          endColor: "red",
-        } */
-        
+       
     }
 })
 
@@ -92,7 +84,7 @@ gsap.from(".contSec",{
 
   
 })
-
+ */
 
 //!secImg1
 /* gsap.from(".divSecImg",{
