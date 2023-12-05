@@ -30,12 +30,9 @@
         {{session('message')}}
     </div>
     @endif
-    
+ 
     <x-header />
     <x-section />
-    
-    
-    
 
     {{-- <div class="container">
         <div class="row cardHome">

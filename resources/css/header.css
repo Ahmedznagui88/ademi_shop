@@ -98,8 +98,9 @@ article{
 
 .arrow{
 	position: fixed;
-	top: 90%;
+	top: 65%;
 	width: 60px;
+	
 	z-index: -1;
 	animation: pulse 2s infinite; 
 }
