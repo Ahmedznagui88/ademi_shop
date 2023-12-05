@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-12 divtitle2">
             <h2 class="catitle2 text-center">
-              Tutto quello che ti serve è qui!
+              {{ __('ui.allAnnouncements')}}
             </h2>
           </div>
         </div>
