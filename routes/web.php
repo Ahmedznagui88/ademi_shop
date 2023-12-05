@@ -43,5 +43,7 @@ Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->n
 
 Route::get('/search/ads', [PublicController::class, 'searchAds'])->name('ads.search');
 
+//*Rotta Lingue
 
+Route::post('language/{lang}', [PublicController::class, 'setLanguage'])->name('set_language_local');
 

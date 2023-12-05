@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\BecomeRevisor;
 use App\Models\ad;
 use App\Models\User;
+use PharIo\Manifest\Email;
+use App\Mail\BecomeRevisor;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
-use PharIo\Manifest\Email;
+use Illuminate\Support\Facades\Artisan;
 
 class RevisorController extends Controller
 {

@@ -3,6 +3,15 @@
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a>
+        <li class="nav-item">
+            <x-_local lang='it' nation='it'/>
+        </li>
+        <li class="nav-item">
+            <x-_local lang='en' nation='gb'/>
+        </li>
+        <li class="nav-item">
+            <x-_local lang='fr' nation='fr'/>
+        </li>
         {{-- <form action="{{route('ads.search')}}" method="GET" class="d-flex" role="search">
             <input  name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Cerca</button>

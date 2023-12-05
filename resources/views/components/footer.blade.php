@@ -16,7 +16,6 @@
             <a href="{{ route('ad.create') }}">Inserisci annuncio</a>
             <a href="#">Contatti</a>
             <a href="{{ route('become.revisor')}}">Lavora con noi</a>
-            
           </div>
         </div>
       </div>

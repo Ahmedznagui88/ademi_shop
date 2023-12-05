@@ -23,4 +23,9 @@ class PublicController extends Controller
     $ads = ad::search($request->searched)->where('is_accepted', true)->paginate(10);
     return view('ad.index', compact('ads'));
   }
+
+  public function setLanguage($lang){
+    session()->put('local', $lang);
+    return redirect()->back();
+  }
 }
