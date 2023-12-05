@@ -1,5 +1,28 @@
 <?php
 
 return [
-    'allAnnouncements'=>'Everything you need is here!'
+    'allAnnouncements'=>'Ads',
+    'category'=>'Category',
+    'cercaAll'=>'Search',
+    'insertAnnouncements'=>'Insert Ad',
+    'register'=>'Sign in',
+    'logIn'=>'Log in',
+    'revisore'=>'Reviewer',
+    'profilo'=>'Profile',
+    'work'=>'Work with us',
+    'contatti'=>'Contacts',
+    'noSpec'=>'Category not specified',
+    'InsertBy'=>'Posted by:',
+    'noName'=>'Not specified:',
+    'mostra'=>'Show',
+    'domandaRegistrato'=>'Not registered yet?',
+    'ricordi'=>'Remember me',
+    'nomeUt'=>'Username',
+    'confermaPsw'=>'Confirm password',
+    'giaRegistrato'=>'Have you registered?',
+    'noAds'=>'There are no ads to add',
+    'noCategory'=>'There are no categories available for this product:',
+    'tornaIndietro'=>'Come back',
+    'titolo'=>'Title',
+    'marchio'=>'Brand',
 ];

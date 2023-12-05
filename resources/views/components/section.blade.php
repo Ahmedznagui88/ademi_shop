@@ -16,7 +16,7 @@
     {{-- <div class="container-fluid contSec">
         
         <div>
-            <h2 class="catitle text-center">Categorie</h2>
+            <h2 class="catitle text-center">{{__('ui.category')}}</h2>
         </div>
         
         <div class="row">

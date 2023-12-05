@@ -13,7 +13,7 @@
             
             <div class=" justify-content-center mb-2 mt-4">
                 <div class="col-12 text-center buttoncategorie">
-                    <button class="btn-index my-2 toggle">Categorie</button>
+                    <button class="btn-index my-2 toggle">{{__('ui.category')}}</button>
                 </div>
                 <div class="col-12 panel categorie ms-5 justify-content-end">
                     @foreach ($categories as $category)
@@ -49,7 +49,7 @@
                     <x-card :ad="$ad" />
                 </div>
             @empty
-                <h2 class="text-center my-5">Non ci sono annunci aggiungine uno<a href=" {{ route('ad.create') }}"></a>
+                <h2 class="text-center my-5">{{__('ui.noAds')}}<a href=" {{ route('ad.create') }}"></a>
                 </h2>
                 <div class="d-flex justify-content-center">
 
