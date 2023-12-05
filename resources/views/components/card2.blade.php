@@ -10,9 +10,9 @@
                 <p>{{ $ad->brand }}</p>
                {{--  <p class="card-text">{{ $ad->description }}</p> --}}
                 <p class="fs-2 price">${{ $ad->price }}</p>
-                <small>{{ $ad->category->name ?? 'Categoria non specificata' }}</small>
+                <small>{{ $ad->category->name ?? __('ui.noSpec')}}</small>
                <div class=" d-flex align-items-center justify-content-between">
-                    <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-50">Mostra</a>
+                    <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-50">{{__('ui.mostra')}}</a>
                     
                 </div> 
             </div> 

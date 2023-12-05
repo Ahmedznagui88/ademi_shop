@@ -1,5 +1,28 @@
 <?php
 
 return [
-    'allAnnouncements'=>'Tutto quello che ti serve è qui!'
+    'allAnnouncements'=>'Annunci',
+    'category'=>'Categorie',
+    'cercaAll'=>'Cerca Prodotto',
+    'insertAnnouncements'=>'Inserisci Annuncio',
+    'register'=>'Registrati',
+    'logIn'=>'Accedi',
+    'revisore'=>'Revisore',
+    'profilo'=>'Profilo',
+    'work'=>"Lavora con noi",
+    'contatti'=>'Contatti',
+    'noSpec'=>'Categoria non specificata',
+    'InsertBy'=>'Inserito da:',
+    'noName'=>'Non Specificato',
+    'mostra'=>'Mostra',
+    'domandaRegistrato'=>'Non sei ancora registrato?',
+    'ricordi'=>'Ricordami',
+    'nomeUt'=>'Nome Utente',
+    'confermaPsw'=>'Conferma Password',
+    'giaRegistrato'=>'Sei già registrato?',
+    'noAds'=>'Non ci sono annunci da aggiungere',
+    'noCategory'=>'Non sono disponibili categorie per questo prodotto:',
+    'tornaIndietro'=>'Torna Indietro',
+    'titolo'=>'Titolo',
+    'marchio'=>'Marchio',
 ];

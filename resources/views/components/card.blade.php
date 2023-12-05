@@ -61,8 +61,8 @@
               </div>
               <div class="d-flex justify-content-between">
 
-                <small class="">{{ $ad->category->name ?? 'Categoria non specificata' }}</small>
-                <span>Inserita da: {{ Auth::user()->name ?? 'Non specificato' }}</span>
+                <small class="">{{ $ad->category->name ?? __('ui.noSpec')}}</small>
+                <span>{{__('ui.InsertBy')}} {{ Auth::user()->name ?? __('ui.noName')}}</span>
               </div>
             </div>
 

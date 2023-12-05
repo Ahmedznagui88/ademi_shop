@@ -34,14 +34,14 @@
                     @enderror
                     <div class="mb-3">
                         <input type="checkbox" class="form-check-label " name="remember" id="remember" name="remember">
-                        <label for="remember" class="form-check-label ">Ricordami</label>
+                        <label for="remember" class="form-check-label ">{{__('ui.ricordi')}}</label>
                     </div>
                     <div class="mb-3">
-                        <span>Non sei ancora registrato?
-                            <a href="{{ route('register') }}"> Registrati</a>
+                        <span>{{__('ui.domandaRegistrato')}}
+                            <a href="{{ route('register') }}"> {{__('ui.register')}}</a>
                         </span>
                     </div>
-                    <button type="submit" class="btn btn-primary">Accedi</button>
+                    <button type="submit" class="btn btn-primary">{{__('ui.logIn')}}</button>
                 </form>
             </div>
         </div>

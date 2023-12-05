@@ -22,8 +22,8 @@
 
         <div class="col-12 col-md-7 Divbarradiricerca mb-5">
             <form action="{{ route('ads.search') }}" method="GET" class="form-search-1 " role="search"> 
-                <label for="searched" class="sr-only">Cerca prodotto</label>
-                <input name="searched" id="searched" class="input-1" type="search" placeholder="Cerca prodotto" aria-label="Search">
+                <label for="searched" class="sr-only">Cerca Prodotto</label>
+                <input name="searched" id="searched" class="input-1" type="search" placeholder={{__('ui.cercaAll')}} aria-label="Search">
             </form>
         </div>
        
@@ -33,7 +33,7 @@
                 @auth
                 @if(Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="nav-link btn-outline-success btn-sm postion-relative btn-r" aria-current="page" href="{{ route('revisor.index') }}">Revisore
+                    <a class="nav-link btn-outline-success btn-sm postion-relative btn-r" aria-current="page" href="{{ route('revisor.index') }}">{{__('ui.revisore')}}
                         <span class="badge rounded-pill bg-danger mx-2">
                             {{ App\Models\Ad::toBeRevisionedCount() }}
                             <span class="visually-hidden">Unread messages</span>
@@ -45,10 +45,10 @@
                     <a class="nav-link text-light " aria-current="page" href="">{{ Auth::user()->name }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="{{ Route('ad.create') }}">Inserisci annuncio</a>
+                    <a class="nav-link text-light" href="{{ Route('ad.create') }}">{{__('ui.insertAnnouncements')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="{{ Route('ad.index') }}">Annunci</a>
+                    <a class="nav-link text-light" href="{{ Route('ad.index') }}">{{__('ui.category')}}</a>
                 </li>
                 <li class="nav-item d-flex align-items-center">
                     <a class="nav-link text-light" href="#" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Logout</a>
@@ -58,10 +58,10 @@
                 </li>
                 @else
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">Registrati</a>
+                    <a class="nav-link" href="{{ route('register') }}">{{__('ui.register')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Accedi</a>
+                    <a class="nav-link" href="{{ route('login') }}">{{__('ui.logIn')}}</a>
                 </li>
                 @endauth
             </ul>

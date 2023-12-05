@@ -9,7 +9,7 @@
           <x-card :ad="$ad"/>
       </div>
       @empty
-          <h2 class="text-center my-5">Non sono disponibili categorie per questo prodotto: <a href="{{ route('ad.create') }}" class="text-decoration-none text btn fs-4 rounded-5">aggiungi prodotto</a></h2>
+          <h2 class="text-center my-5">{{__('ui.noCategory')}}<a href="{{ route('ad.create') }}" class="text-decoration-none text btn fs-4 rounded-5">{{__('ui.insertAnnouncements')}}</a></h2>
       @endforelse
         </div>
     </div>

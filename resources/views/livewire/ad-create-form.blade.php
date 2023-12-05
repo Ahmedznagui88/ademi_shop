@@ -10,7 +10,7 @@
         <div id="form">
 
             <div class="mb-1">
-                <label for="title" class="form-label">Titolo</label>
+                <label for="title" class="form-label">{{__('ui.titolo')}}</label>
                 <input type="text" wire:model="title" class="form-control  rounded-3" id="title">
             </div>
             @error('title')

@@ -15,7 +15,7 @@
                 <form action="{{ route('register') }}" method="POST" class="p-5 formlogin-register">
                     @csrf
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nome utente</label>
+                        <label for="name" class="form-label">{{__('ui.nomeUt')}}</label>
                         <input type="text" class="form-control rounded-3" id="name" name="name"
                             value="{{ old('name') }}">
                     </div>
@@ -40,17 +40,17 @@
                         <div class="text-danger fst-italic">{{ $message }}</div>
                     @enderror
                     <div class="mb-3  divpassword">
-                        <label class="form-labe mb-2" for="password_confirmation">Conferma password</label>
+                        <label class="form-labe mb-2" for="password_confirmation">{{__('ui.confermaPsw')}}</label>
                         <input type="password" class="form-control rounded-3 " id="password_confirmation"
                             name="password_confirmation">
                             <ion-icon name="lock-closed-outline"><i class="fa-solid fa-eye icona" onclick="vedipassword()"></i></ion-icon>
                     </div>
                     <div class="mb-3">
-                        <span>Sei già registrato?
-                            <a href="{{ route('register') }}"> Accedi</a>
+                        <span>{{__('ui.giaRegistrato')}}
+                            <a href="{{ route('register') }}">{{__('ui.logIn')}}</a>
                         </span>
                     </div>
-                    <button type="submit" class="btn btn-primary">Registrati</button>
+                    <button type="submit" class="btn btn-primary">{{__('ui.register')}}</button>
                 </form>
 
             </div>
