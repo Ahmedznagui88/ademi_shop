@@ -41,16 +41,16 @@
             @error('description')
                 <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
-            <div class="mb-1">
+            {{--  <div class="mb-1">
                 <label for="image" class="form-label">Inserisci una immagine nitida dell'oggetto</label>
                 <input type="file" wire:model="image" class="form-control  rounded-3" id="image">
-            </div>
+            </div>--}}
 
             <div class="mb-1">
-                <label for="image" class="form-label">Inserisci una immagine nitida dell'oggetto</label>
-                <input type="file" wire:model="temporary_images" multiple
+                <label for="images" class="form-label">Inserisci una immagine nitida dell'oggetto</label>
+                <input type="file" wire:model="temporary_images" multiple 
                     class="form-control shadow @error('temporary_images.*')is-invalid @enderror rounded-3"
-                    id="image">
+                    id="images">
                 @error('temporary_images.*')
                     <p class="text-danger mt-2">{{ $message }}</p>
                 @enderror

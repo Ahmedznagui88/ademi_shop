@@ -21,6 +21,7 @@ class AdCreateForm extends Component
     public $price;
     public $category_id = [];
     public $user_id;
+    public $ad;
 
     protected $rules = [
 
@@ -46,32 +47,6 @@ class AdCreateForm extends Component
 
     ];
 
-
-
-    public function store()
-    {
-        $this->validate();
-
-        Auth::user()->ads()->create([
-            'title' => $this->title,
-            'brand' => $this->brand,
-            'description' => $this->description,
-            'image' =>  $this->image->store('public/ads'),
-            'price' => $this->price,
-            'category_id' => $this->category_id,
-            'user_id' => $this->user_id,
-        ]);
-
-        session()->flash('message', 'Hai inserito un annuncio correttamente');
-
-        $this->reset();
-    }
-
-    public function render()
-    {
-        return view('livewire.ad-create-form');
-    }
-
     public function updatedTemporaryImages()
     {
         if ($this->validate([
@@ -88,6 +63,38 @@ class AdCreateForm extends Component
         unset($this->images[$key]);
         }
     }
+
+
+    public function store()
+    {
+        $this->validate();
+
+        $this->ad = Auth::user()->ads()->create([
+            'title' => $this->title,
+            'brand' => $this->brand,
+            'description' => $this->description,
+            //'image' =>  $this->image->store('public/ads'),//
+            'price' => $this->price,
+            'category_id' => $this->category_id,
+            'user_id' => $this->user_id,
+        ]);
+
+        if(count($this->images)) {
+            foreach($this->images as $image ) {
+                $this->ad->images()->create(['path'=>$image->store('images', 'public')]);
+            }
+        }
+        session()->flash('message', 'Hai inserito un annuncio con successo, sarà pubblicato dopo la revisione');
+
+        $this->reset();
+    }
+
+    public function render()
+    {
+        return view('livewire.ad-create-form');
+    }
+
+
 
     
 }
