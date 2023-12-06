@@ -16,7 +16,7 @@
     <div class="row">
         <div class=" justify-content-center mb-2">
             <div class="col-12 text-center buttoncategorie">
-                <button class="btn-header my-2 toggle">Categorie</button>
+                <button class="btn-header my-2 toggle">{{__('ui.category')}}</button>
             </div>
             <div class="col-12 panel categorie justify-content-center">
                 @foreach ($categories as $category)
