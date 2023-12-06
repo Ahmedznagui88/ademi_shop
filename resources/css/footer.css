@@ -1,7 +1,7 @@
 
 
 footer{
-    background: #e3d9d9;
+  background-color: #ED7D31;
     background-size: cover;
     object-fit: contain;
     font-family: 'League Spartan', sans-serif;
@@ -17,7 +17,7 @@ footer{
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   margin: 10px;
 }
 
@@ -31,3 +31,11 @@ a {
   
 }
 
+@media screen and (min-width: 375px) and (max-width: 780px) {
+	footer {
+		margin-top: 190%;
+	}
+
+
+
+}

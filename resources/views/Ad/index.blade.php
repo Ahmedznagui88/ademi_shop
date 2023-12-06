@@ -5,8 +5,8 @@
             <div class="col-12 col-md-8 text-center ">
                 <p {{-- id="ademi" --}} class="text-1 texthead mt-5"><strong class="Ademi">Ademi</strong><span>Essences</span></p>
             </div>
-            <div class="col-12 col-md-4 DivimgRtext">
-                <img src="/media/home2.jpg" class="img-fluid imgRtext" alt="">
+            <div class="col-12 col-md-4 divUnderTitle">
+                <img src="/media/home2.jpg" class="img-fluid imgUnderTitle" alt="">
             </div>
         </div> 
 
@@ -51,7 +51,7 @@
             </div>
         </div>
             
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center mt-5">
             <div class="mb-5">
                 <h4 class="text-center tutti-gli-annunci">Tutti gli annunci</h4>
             </div>
@@ -67,7 +67,7 @@
                 </h2>
                 <div class="d-flex justify-content-center">
 
-                    <img src="/media/default-img.jpg" class="w-50" alt="">
+                    <img src="/media/empty.avif" class="w-50 rounded-5 mt-3" alt="">
                 </div>
             @endforelse
             {{-- <div class="col-2 vh-100 colonna-r" id="colonnar">

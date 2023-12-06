@@ -1,5 +1,5 @@
 <div class="">
-    <form class="p-5 rounded-5 form-creat" wire:submit.prevent="store">
+    <form class="p-5 rounded-5 form-creat form" wire:submit.prevent="store">
         @csrf
         @if (session('message'))
             <div id="message" class="alert alert-success text-center rounded-3">

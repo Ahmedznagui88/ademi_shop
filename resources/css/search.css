@@ -20,11 +20,13 @@
 }
 
 .Divbarradiricerca {
-width: 350px;
-margin-left: 15%;
+  margin-top: 1%;
+width: 90%;
+margin-left: 5%;
+
 }
 
 .link-1 {
   display: none;
-  position: absolute;
+  /* position: absolute; */
 }

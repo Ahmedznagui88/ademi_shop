@@ -32,11 +32,6 @@ class ResizeImage implements ShouldQueue
         $this->h = $h;
 
 
-
-
-
-
-
     }
 
     /**

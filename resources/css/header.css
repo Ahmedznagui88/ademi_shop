@@ -36,10 +36,11 @@ article {
 	height: 40px;
 	border: none;
 	background-color: #ED7D31;
-	border-radius: 4px;
+	border-radius: 9px;
 	transition: 1.6s;
     transform: translateY(0);
     transform-origin: bottom;
+	
 }
 
 /** title */
@@ -155,7 +156,6 @@ article {
 	}
 
 	.divarticle {
-		width: 10%;
 		display: flex;
 		justify-content: center;
 
@@ -171,8 +171,17 @@ article {
 
 	}
 
+	.divHead{
+		
+	}
 
-	.divHead {}
+	.divHead2{
+		width: 100%;
+	}
+
+	.dicCont{
+		margin-top: 30px;
+	}
 
 
 }
