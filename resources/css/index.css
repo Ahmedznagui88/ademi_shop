@@ -10,19 +10,20 @@
 .Div-img-header-index-r {
     width: 350px;
     height: 400px;
-    margin-left: 15%;
- 
+
+
 }
+
 .colhead-l {
-   
+
     overflow: hidden
 }
 
 .colhead-r {
-   
+
     overflow: hidden
-     
 }
+
 .divhead-center {
     height: 60px;
     width: 340px;
@@ -32,50 +33,94 @@
     top: 20%;
     display: flex;
     align-items: center;
-    
 }
+
+.divhead-center2 {
+    height: 60px;
+    width: 340px;
+    background-color: #ED7D31;
+    position: absolute;
+    top: 550px;
+    display: flex;
+    align-items: center;
+}
+
 .DivimgRtext {
-width: 110px;
-height: 130px;
-position: absolute;
-right: 10%;
-top:34%;
+
+    height: 130px;
+    position: absolute;
+    right: -15%;
+    top: 35%;
 
 }
+
 .imgRtext {
+    position: absolute;
+    top: -10%;
     border: solid 12px black;
-	border-radius: 48% 48% 0% 0% / 32% 32% 0% 0%;
+    border-radius: 48% 48% 0% 0% / 32% 32% 0% 0%;
+    width: 110px;
+    height: 130px;
+    object-fit: cover;
 }
+
 .texthead {
-   
+
     height: 140px;
-   
+
 }
+
+.tutti-gli-annunci {
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    margin: 0;
+}
+
 .btn-index {
     width: 100px;
-	height: 40px;
-	border: none;
-	background-color: #6C5F5B;
-	border-radius: 4px;
-	transition: 1.6s;
+    height: 40px;
+    border: none;
+    background-color: #6C5F5B;
+    border-radius: 4px;
+    transition: 1.6s;
     transform: translateY(0);
     transform-origin: bottom;
 }
+
 .btn-index2 {
     width: 100px;
-	height: 40px;
-	border: none;
-	background-color: #ED7D31;
-	border-radius: 4px;
-	transition: 1.6s;
+    height: 40px;
+    border: none;
+    background-color: #ED7D31;
+    border-radius: 4px;
+    transition: 1.6s;
     transform: translateY(0);
     transform-origin: bottom;
 }
-.text-btn-2{
-	
-	text-decoration: none;
-	font-size: small;
+
+.text-btn-2 {
+
+    text-decoration: none;
+    font-size: small;
 }
+
+.colonna-l {
+    background-image: url(https://images.unsplash.com/photo-1701817822150-2d218d8610e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    
+
+}
+
+.colonna-r {
+    background-image: url(https://images.unsplash.com/photo-1701817822150-2d218d8610e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8);
+    background-size: cover;
+    background-position: center;
+
+}
+
 /* .divhead-center h5 {
    text-shadow: -1px 2px 5px rgba(0,0,0,0.6);
 

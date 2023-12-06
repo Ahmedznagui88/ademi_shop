@@ -6,8 +6,9 @@
 
 }
 .attiva {
-    max-width: 1280px;
+    max-width: 100%;
     opacity: 1;
+    
 }
 .divrow {
     display: flex;
@@ -91,6 +92,9 @@
 .divselecthome {
     margin-top: 14px;
 }
+
+
+
 
 
 

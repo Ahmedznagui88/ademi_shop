@@ -38,4 +38,12 @@ window.addEventListener('scroll', function(e) {
   }
 });
 
+document.addEventListener( 'DOMContentLoaded', function() {
+  var splide = new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 3,
+  } );
+  
+  splide.mount();
+} );
 

@@ -1,24 +1,25 @@
 
 .card2 {
-    max-width: 700px;
+    /*max-width: 700px;
     height: 150px;
     border: none;
     background: #dedede;
-    border-radius: 30px;
+    border-radius: 30px;*/
+    
 }
 
 .card2-img {
     height: 140px;
     border-radius: 30px;
-   
+    margin-left: 5px;
 }
 .imgC{
     width: auto;
     height: 87%;
     display: flex;
     align-items: center;
-    
-    margin-top: 2px;
+    margin-top: 12px;
+   
     
 }
 

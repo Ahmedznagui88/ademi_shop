@@ -1,23 +1,6 @@
 <x-layout>
 {{-- !title --}}  
 
-{{-- ? categorie --}}
-   {{-- <div class="container-fluid mt-4 ">
-        <div class="row">
-            <div class=" justify-content-center mb-2">
-                <div class="col-12 text-center buttoncategorie">
-                    <button class="btn-1 my-2 toggle">Categorie</button>
-                </div>
-                <div class="col-12 panel categorie ms-5 justify-content-end">
-                    @foreach ($categories as $category)
-                        <button class="col-md-1 btn-1 mx-2">
-                            <a href="{{ route('ad.indexCategory', $category) }}" class="text-btn-1">{{ $category->name }}</a>
-                        </button>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div> --}}
              
              
     @if(session('access.denied'))
@@ -32,7 +15,36 @@
     @endif
  
     <x-header />
+ 
     <x-section />
+    {{--  <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+    
+                <section class="splide "  data-splide='{"type":"loop","perPage":3}'>
+                    <div class="splide__slider">
+                          <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide" data-splide-interval="1000">Slide 01</li>
+                                  <li class="splide__slide" data-splide-interval="1000">Slide 02</li>
+                                  <li class="splide__slide" data-splide-interval="1000">Slide 03</li>
+                                  <li class="splide__slide" data-splide-interval="1000">Slide 01</li>
+                                  <li class="splide__slide" data-splide-interval="1000">Slide 02</li>
+                                  <li class="splide__slide" data-splide-interval="1000">Slide 03</li>
+                              </ul>
+                          </div>
+                    </div>
+                  
+                  
+                    <button class="splide__toggle" type="button">
+                        <span class="splide__toggle__play">Play</span>
+                        <span class="splide__toggle__pause">Pause</span>
+                    </button>
+                  </section>
+            </div>
+
+        </div>
+    </div> --}}
 
     {{-- <div class="container">
         <div class="row cardHome">

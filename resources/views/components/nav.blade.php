@@ -40,7 +40,7 @@
                     <a class="nav-link text-light" href="{{ Route('ad.create') }}">{{__('ui.insertAnnouncements')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="{{ Route('ad.index') }}">{{__('ui.category')}}</a>
+                    <a class="nav-link text-light" href="{{ Route('ad.index') }}">{{__('ui.allAnnouncements')}}</a>
                 </li>
                 <li class="nav-item d-flex align-items-center">
                     <a class="nav-link text-light" href="#" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Logout</a>
@@ -58,7 +58,7 @@
                 @endauth
             </ul>
         </div>
-        <div class="d-flex mb-5 mx-4">
+        <div class="d-flex mb-5 mx-4 ">
              
             <li class="nav-item mx-1">
                 <x-_local lang='it' nation='it'/>

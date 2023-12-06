@@ -1,49 +1,66 @@
 /** article 1*/
-article{
+article {
 	height: 260px;
 }
 
-.divarticle{
+.divarticle {
 	z-index: 0;
 	display: flex;
 	justify-content: end;
 }
 
-.article-1{
+.article-1 {
 	margin-top: 20px;
-	
+
 
 }
 
-.rowArt{
+.rowArt {
 	display: flex;
 	justify-content: center;
 }
 
-.article-2{
-	margin-top: 270px;
-	
+.btn-header {
+
+	width: 100px;
+	height: 40px;
+	border: none;
+	background-color: #ED7D31;
+	border-radius: 4px;
+	transition: 1.6s;
+	transform: translateY(0);
+	transform-origin: bottom;
+}
+.btn-header2 {
+    width: 100px;
+	height: 40px;
+	border: none;
+	background-color: #ED7D31;
+	border-radius: 4px;
+	transition: 1.6s;
+    transform: translateY(0);
+    transform-origin: bottom;
 }
 
 /** title */
 
-.text-1{
+.text-1 {
 	height: 240px;
-    font-size: 120px;
-    color: rgb(0, 0, 0);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    margin: 0; 
+	font-size: 120px;
+	color: rgb(0, 0, 0);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	margin: 0;
 }
 
-.texthome{
-    font-weight: lighter;
+.texthome {
+	font-weight: lighter;
 }
 
-.char{
-    transform: translateY(250px); 
-} 
+.char {
+	transform: translateY(250px);
+}
 
-.imgUnderTitle{
+.imgUnderTitle {
 	position: absolute;
 	top: 21%;
 	border: solid 12px black;
@@ -60,32 +77,33 @@ article{
 
 /** article 2 */
 
-.dicCont{
+.dicCont {
 
 	position: relative;
 }
-.divHead{
+
+.divHead {
 	width: 500px;
 	height: 510px;
 	overflow: hidden;
 	z-index: 0;
 	/* margin-left: 120px; */
-	
+
 }
 
-.divHead2{
+.divHead2 {
 	width: 400px;
 	height: 400px;
-	
+
 }
 
-.imghead{
+.imghead {
 	width: 400px;
 	height: 400px;
 	object-fit: cover;
 }
 
-.textDet{
+.textDet {
 	width: 340px;
 	height: 60px;
 	background-color: #ED7D31;
@@ -94,7 +112,7 @@ article{
 	top: 85%;
 }
 
-.textDet2{
+.textDet2 {
 	width: 340px;
 	height: 60px;
 	background-color: #ED7D31;
@@ -103,53 +121,60 @@ article{
 	top: 80%;
 }
 
-.arrow{
+.arrow {
 	position: fixed;
 	top: 65%;
 	width: 60px;
-	
+
 	z-index: -1;
-	animation: pulse 2s infinite; 
+	animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.2); }
-	100% { transform: scale(1); }
-  }
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
 
 /* ! end article 2 */
 
 
 @media screen and (min-width: 300px) and (max-width: 780px) {
-	.conterone{
+	.conterone {
 		display: flex;
 		justify-content: center;
 		width: auto;
 	}
 
-	.divarticle{
+	.divarticle {
 		width: 10%;
 		display: flex;
 		justify-content: center;
-	
+
 	}
 
-	.text-1{
+	.text-1 {
 		font-size: 40px;
 	}
+
 	.imgUnderTitle {
 		display: none;
-		
-		
-    }
 
 
-	.divHead{
-		
 	}
 
-	
+
+	.divHead {}
+
+
 }
 
 /* @media screen and (min-width: 300px) and (max-width: 789px) {

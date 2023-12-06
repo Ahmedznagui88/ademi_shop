@@ -18,8 +18,9 @@ class AdController extends Controller
      */
     public function index()
     {
-        $ads = ad::all();
-        $ads = ad::orderby('created_at', 'desc')->get();
+       /* $ads = ad::all();
+        $ads = ad::orderby('created_at', 'desc')->get();*/
+        $ads = ad::where('is_accepted', true)->latest()->get();
         return view('Ad.index', compact('ads'));
     }
     public function indexCategory(Category $category){
