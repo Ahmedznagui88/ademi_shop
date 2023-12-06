@@ -6,8 +6,8 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Category;
 use App\Jobs\ResizeImage;
-use Spatie\Backtrace\File;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class AdCreateForm extends Component
@@ -62,7 +62,7 @@ class AdCreateForm extends Component
     public function removeImage($key)
     {
         if (in_array($key, array_keys($this->images))) {
-        unset($this->images[$key]);
+            unset($this->images[$key]);
         }
     }
 
@@ -81,18 +81,16 @@ class AdCreateForm extends Component
             'user_id' => $this->user_id,
         ]);
 
-        if(count($this->images)) {
-           
-            foreach($this->images as $image ) {
-                /* $this->ad->images()->create(['path'=>$image->store('images', 'public')]); */
-                
-                $newFileName = "ads/{$this->ad->id}";
-                $newImage = $this->ad->images()->create(['path'=>$image->store($newFileName , 'public')]);
-                dispatch(new ResizeImage($newImage->path, 400 , 300));
+        if (count($this->images)) {
 
-                
+            foreach ($this->images as $image) {
+                /* $this->ad->images()->create(['path'=>$image->store('images', 'public')]); */
+
+                $newFileName = "ads/{$this->ad->id}";
+                $newImage = $this->ad->images()->create(['path' => $image->store($newFileName, 'public')]);
+                dispatch(new ResizeImage($newImage->path, 300, 300));
             }
-            
+
             File::deleteDirectory(storage_path('app/livewire-tmp'));
         }
         session()->flash('message', 'Hai inserito un annuncio con successo, sarà pubblicato dopo la revisione');
@@ -104,8 +102,4 @@ class AdCreateForm extends Component
     {
         return view('livewire.ad-create-form');
     }
-
-
-
-    
 }

@@ -43,7 +43,7 @@
   <div class="card mb-3 card2">
       <div class="row g-0">
         <div class="col-md-5 imgC">
-          <img src="{{ !$ad->images()->get()->isEmpty() ? Storage::url($ad->images()->first()->path) : '/public/media/default-img.jpg' }}" class="img-fluid card2-img">
+          <img src="{{ !$ad->images()->get()->isEmpty() ? $ad->images()->first()->getUrl(300 ,300) : '/public/media/default-img.jpg' }}" class="img-fluid card2-img">
         </div>
         <div class="col-md-7 mx-5">
           <div class="card-body d-flex justify-content-between">
