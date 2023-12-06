@@ -55,11 +55,11 @@
             <div class="mb-5">
                 <h4 class="text-center tutti-gli-annunci">Tutti gli annunci</h4>
             </div>
-            <div class="col-2 vh-100 colonna-l" id="colonnal">
+            {{-- <div class="col-2 vh-100 colonna-l" id="colonnal">
 
-            </div>
+            </div>  --}}
             @forelse ($ads as $ad)
-                <div class="col-6 rounded-4 d-flex justify-content-center">
+                <div class="col-12 rounded-4 d-flex justify-content-center">
                     <x-card :ad="$ad" />
                 </div>
             @empty
@@ -70,9 +70,9 @@
                     <img src="/media/default-img.jpg" class="w-50" alt="">
                 </div>
             @endforelse
-            <div class="col-2 vh-100 colonna-r" id="colonnar">
+            {{-- <div class="col-2 vh-100 colonna-r" id="colonnar">
 
-            </div>
+            </div>  --}}
         </div>
 
     </div>
