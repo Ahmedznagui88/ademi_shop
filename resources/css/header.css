@@ -131,6 +131,7 @@ article {
 	animation: pulse 2s infinite;
 }
 
+
 @keyframes pulse {
 	0% {
 		transform: scale(1);
@@ -173,9 +174,6 @@ article {
 
 	}
 
-	.divHead{
-		
-	}
 
 	.divHead2{
 		width: 100%;

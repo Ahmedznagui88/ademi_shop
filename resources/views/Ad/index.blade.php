@@ -2,7 +2,7 @@
 
     <div class="container-fluid my-5 rounded-4">
         <div class="row justify-content-center position-relative ">
-            <div class="col-12 col-md-8 text-center ">
+            <div class="col-12 col-md-8 ">
                 <p {{-- id="ademi" --}} class="text-1 texthead mt-5"><strong class="Ademi">Ademi</strong><span>Essences</span></p>
             </div>
             <div class="col-12 col-md-4 divUnderTitle DivimgRtext">
