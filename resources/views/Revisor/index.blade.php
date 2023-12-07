@@ -17,19 +17,20 @@
     </div>
 
     @if ($ad_to_check)
+
+
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 ">
                     {{-- ? carousel --}}
                     <div class="container-fluid d-flex justify-content-center carousel-1">
-                        <div id="showCarousel" class="carousel slide cs">
-                            @if ($ad_to_check->images)
+                        <div id="showCarousel" class="carousel ">
+                            @if (!$ad_to_check->images->isEmpty())
                                 <div class="carousel-inner">
                                     @foreach ($ad_to_check->images as $image)
                                         <div class="carousel-item @if ($loop->first) active @endif">
 
-                                            <img src="{{ Storage::url($image->path) }}" class="img-fluid"
-                                                alt="">
+                                            <img src="{{ $image->getUrl(300, 300) }}" class="img-fluid" alt="">
 
                                         </div>
                                     @endforeach
@@ -54,15 +55,14 @@
                             <button class="carousel-control-prev " type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">{{__('ui.precedente')}}</span>
+                                <span class="visually-hidden">{{ __('ui.precedente') }}</span>
                             </button>
                             <button class="carousel-control-next " type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">{{__('ui.successivo')}}</span>
+                                <span class="visually-hidden">{{ __('ui.successivo') }}</span>
                             </button>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                         @csrf
 
                         @method('PATCH')
-                        <button type="submit" class="btn-1 w-25">{{__('ui.accept')}}</button>
+                        <button type="submit" class="btn-1 w-25">{{ __('ui.accept') }}</button>
                     </form>
                 </div>
 
@@ -95,7 +95,7 @@
                         @csrf
 
                         @method('PATCH')
-                        <button type="submit" class="btn-1 w-25">{{__('ui.reject')}}</button>
+                        <button type="submit" class="btn-1 w-25">{{ __('ui.reject') }}</button>
                     </form>
                 </div>
 
