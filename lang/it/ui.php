@@ -20,7 +20,7 @@ return [
     'nomeUt'=>'Nome Utente',
     'confermaPsw'=>'Conferma Password',
     'giaRegistrato'=>'Sei già registrato?',
-    'noAds'=>'Non ci sono annunci da aggiungere',
+    'noAds'=>'Non ci sono annunci da cercare',
     'noCategory'=>'Non sono disponibili categorie per questo prodotto:',
     'tornaIndietro'=>'Torna Indietro',
     'titolo'=>'Titolo',
