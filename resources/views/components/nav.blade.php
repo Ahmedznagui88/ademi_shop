@@ -12,16 +12,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="col-12 col-md-7 Divbarradiricerca mb-5">
-            <form action="{{ route('ads.search') }}" method="GET" class="form-search-1 " role="search"> 
-                <label for="searched" class="sr-only">Cerca Prodotto</label>
-                <input name="searched" id="searched" class="input-1" type="search" placeholder={{__('ui.cercaAll')}} aria-label="Search">
-            </form>
-        </div>
        
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <ul class="navbar-nav d-flex align-items-center">
+       
+        <div class="collapse navbar-collapse justify-content-end text-end" id="navbarNav">
+            <ul class="navbar-nav">
                 @auth
                 @if(Auth::user()->is_revisor)
                 <li class="nav-item">
@@ -42,7 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-light" href="{{ Route('ad.index') }}">{{__('ui.allAnnouncements')}}</a>
                 </li>
-                <li class="nav-item d-flex align-items-center">
+                <li class="nav-item">
                     <a class="nav-link text-light" href="#" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Logout</a>
                     <form action="{{ route('logout') }}" method="POST" id="form-logout">
                         @csrf
@@ -57,20 +51,26 @@
                 </li>
                 @endauth
             </ul>
-        </div>
-        <div class="d-flex mb-5 mx-4 ">
-             
-            <li class="nav-item mx-1">
-                <x-_local lang='it' nation='it'/>
-            </li>
-            <li class="nav-item mx-1">
-                <x-_local lang='en' nation='gb'/>
-            </li>
-            <li class="nav-item mx-1">
-                <x-_local lang='fr' nation='fr'/>
-            </li>
 
+            <div class="d-flex justify-content-end">
+
+                <ul class="navbar-nav">
+                 
+                    <li class="nav-item">
+                        <x-_local lang='it' nation='it'/>
+                    </li>
+                    <li class="nav-item">
+                        <x-_local lang='en' nation='gb'/>
+                    </li>
+                    <li class="nav-item">
+                        <x-_local lang='fr' nation='fr'/>
+                    </li>
+        
+                </ul>
+           
+            </div>
         </div>
+        
     </div>
 </nav>
 

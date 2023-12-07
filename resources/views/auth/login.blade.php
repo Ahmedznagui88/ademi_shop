@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-5 divlogin-register">
-                <form action="{{ route('login') }}" method="POST" class="p-5 formlogin-register">
+                <form action="{{ route('login') }}" method="POST" class="p-5 formlogin-register form">
                     @csrf
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>

@@ -1,9 +1,8 @@
 /* *navbar */
 
-
 .navbar{
     background-color: #ED7D31;
-    height: 50px;  
+    
 
 }
 
@@ -28,12 +27,15 @@
 }
 
 
-.lang{
-    background-color: #ED7D31;
-    
-}
 
-.fi{
-    border-radius: 20%;
+
+.ulang{
+    list-style: none;
 }
 /** end navbar  */
+
+@media screen and (min-width: 375px) and (max-width: 780px) {
+	
+    
+
+}

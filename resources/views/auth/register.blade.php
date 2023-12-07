@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-5 divlogin-register">
-                <form action="{{ route('register') }}" method="POST" class="p-5 formlogin-register">
+                <form action="{{ route('register') }}" method="POST" class="p-5 formlogin-register form">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">{{__('ui.nomeUt')}}</label>
