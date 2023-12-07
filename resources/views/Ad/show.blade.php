@@ -5,14 +5,14 @@
                 {{-- <img src="{{ Storage::url($ad->image) }}" alt=""> --}}
                 {{--  <img src="https://images.unsplash.com/photo-1700587085844-b96c27958df2?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-50" alt=""> --}}
                 <div class="container-fluid d-flex justify-content-center carousel-1">
-                    <div id="showCarousel" class="carousel slide cs">
+                    <div id="showCarousel" class="carousel cs">
                         @if ($ad->images)
                             <div class="carousel-inner">
                                 @foreach ($ad->images as $image)
                                     <div class="carousel-item @if ($loop->first) active @endif">
 
-                                        <img src="{{ Storage::url($image->path) }}" class="img-fluid"
-                                            alt="">
+                                        <img src="{{$image->getUrl(300 ,300)  }}" class="img-fluid"
+                                        alt="">
 
                                     </div>
                                 @endforeach

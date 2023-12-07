@@ -15,7 +15,7 @@
             <a href="{{ route('revisor.index') }}">{{__('ui.revisore')}}</a>
             {{-- <a href="{{ route('ad.create') }}">{{__('ui.insertAnnouncements')}}</a> --}}
             <a href="#">{{__('ui.contatti')}}</a>
-            {{-- <a href="{{ route('become.revisor')}}">{{__('ui.work')}}</a> --}}
+             <a href="{{ route('become.revisor')}}">{{__('ui.work')}}</a>
           </div>
         </div>
       </div>
