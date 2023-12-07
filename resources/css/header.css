@@ -158,11 +158,13 @@ article {
 	.divarticle {
 		display: flex;
 		justify-content: center;
-
+		
 	}
 
 	.text-1 {
 		font-size: 40px;
+		position: absolute;
+		bottom: -100px;
 	}
 
 	.imgUnderTitle {
@@ -182,8 +184,16 @@ article {
 	.dicCont{
 		margin-top: 30px;
 	}
+	.article-1 {
+		height: 100px;
+	}
 
-
+	/*.btn-header {
+		font-size: 10px;
+		width: 60px;
+		height: 25px;
+	}*/
+	
 }
 
 /* @media screen and (min-width: 300px) and (max-width: 789px) {

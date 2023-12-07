@@ -5,8 +5,8 @@
             <div class="col-12 col-md-8 text-center ">
                 <p {{-- id="ademi" --}} class="text-1 texthead mt-5"><strong class="Ademi">Ademi</strong><span>Essences</span></p>
             </div>
-            <div class="col-12 col-md-4 divUnderTitle">
-                <img src="/media/home2.jpg" class="img-fluid imgUnderTitle" alt="">
+            <div class="col-12 col-md-4 divUnderTitle DivimgRtext">
+                <img src="/media/home2.jpg" class="img-fluid imgUnderTitle imgRtext" alt="">
             </div>
         </div> 
 
