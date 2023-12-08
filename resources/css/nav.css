@@ -22,7 +22,7 @@
 
 .btn-r{
     color: #000000;
-	background-color: #c8c8c8;
+    background-image: linear-gradient(#8f8e8e, #c8c8c8,#8f8e8e);
 	border-radius: 10px;
 }
 

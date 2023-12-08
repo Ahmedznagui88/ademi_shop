@@ -139,7 +139,9 @@
     object-fit: cover;
    }
 
-
+.container-card {
+    margin-top: 50px;
+}
 
 
 

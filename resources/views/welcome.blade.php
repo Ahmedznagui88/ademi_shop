@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container container-card">
         <div class="row cardHome">
             @foreach ($ads as $ad)
             <div class="col-12 col-md-3">
