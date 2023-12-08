@@ -6,15 +6,15 @@
             <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
                 <label for="searched" class="sr-only">Cerca Prodotto</label>
                 <input name="searched" id="searched" class="input-1" type="search" placeholder={{ __('ui.cercaAll') }}
-                    aria-label="Search">
+                    aria-label="Search"  @if(Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
             </form>
         </div>
 
 
         <article class="container-fluid position-relative article-1">
             <div class="row justify-content-center rowArt">
-                <div class="col-12 col-md-9 divarticle2">
-                    <p class="text-1 mt-5"><strong>Ademi</strong><span>Essences</span></p>
+                <div class="col-12 col-md-9 divarticle2 d-flex justify-content-center">
+                    <p id="text-head-index" class="text-1 mt-5 ms-xxl-5 ps-xxl-5"><strong>Ademi</strong><span>Essences</span></p>
                 </div>
                 <div class="col-12 col-md-3 divUnderTitle">
                     <img src="/media/home2.jpg" class="img-fluid imgsottoTitle" alt="">
