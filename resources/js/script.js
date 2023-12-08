@@ -35,7 +35,7 @@
 /* gsap.registerPlugin(ScrollTrigger); */
 
 //!diveHead 1
-/* gsap.to(".divHead",{
+/*  gsap.to(".divHead",{
     x: 0,
     duration: 1.5,
 }) 
@@ -58,7 +58,7 @@ gsap.to(".divHead",{
 
 
 //*diveHead 2
-/* gsap.to(".divHead2",{
+ gsap.to(".divHead2",{
   x: 0,
   duration: 1.5,
 })
@@ -77,17 +77,13 @@ gsap.to(".divHead2",{
         pinSpacing: 3,
        
     }
-})
+}) */
 
-gsap.from(".contSec",{
-  opacity: 0,
 
-  
-})
- */
+
 
 //!secImg1
-/* gsap.from(".divSecImg",{
+/*  gsap.from(".divSecImg",{
   y: 100,
   display: "none",
   opacity: 0,
@@ -191,10 +187,10 @@ gsap.to(".divSecImg4",{
     },
     
 }) 
- */
 
 
-/* gsap.to(".divtitle2",{
+
+gsap.to(".divtitle2",{
   x: 0,
   duration: 1.5,
 }) 
@@ -209,12 +205,11 @@ gsap.to(".divtitle2",{
       scrub: 1, 
       opacity: 0,
       pinType: "fixed",
-        pinSpacing: true, */
-      /*  markers:{
+        pinSpacing: true,
+     markers:{
         startColor: "blue",
         endColor: "red",
-      }  */
-/*       
+      } 
+     
   }
 }) */
-
