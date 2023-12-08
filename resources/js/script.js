@@ -2,6 +2,7 @@
 
  //showPassword//
 
+import { gsap } from 'gsap';
  window.mostrapassword = function() {
 
     var x = document.getElementById("password");
@@ -213,3 +214,4 @@ gsap.to(".divtitle2",{
      
   }
 }) */
+

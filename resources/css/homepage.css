@@ -10,9 +10,9 @@
     opacity: 1;
     
 }
-.divrow {
+/* .divrow {
     display: flex;
-}
+} */
 
 .categorie {
         width: 100vw;
@@ -118,6 +118,8 @@
 /* .slide.active {
     display: block;
 } */ 
+
+/** banner daminao */
 .contenitore-banner {
  margin-top: 20%;
 }
@@ -125,6 +127,42 @@
     font-size: 50px;
    font-family: 'Hedvig Letters Serif', serif;;
 }
+
+
+
+
+/*!banner med  */
+
+.cont-banner {
+    margin-top: 20%;
+    border: solid red;
+    background-color: #738480;
+    background-size: cover;
+   }
+   .txtB {
+       font-size: 50px;
+      
+      color: aliceblue;
+   }
+
+   .medBanner{
+    width: 30%;
+    
+    object-fit: cover;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 520px ) {
