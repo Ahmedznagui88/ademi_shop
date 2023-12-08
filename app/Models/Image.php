@@ -13,14 +13,19 @@ class Image extends Model
 
     protected $fillable = ['path'];
 
+    protected $casts = [
+        'labels' => 'array'
+    ];
+
     public function ad()
     {
 
         return $this->belongTo(ad::class);
     }
 
-    public static function getUrlByFilePath($filePath, $w = null, $h = null) {
-        if(!$w && !$h){
+    public static function getUrlByFilePath($filePath, $w = null, $h = null)
+    {
+        if (!$w && !$h) {
             return Storage::url($filePath);
         }
         $path = dirname($filePath);
@@ -33,6 +38,4 @@ class Image extends Model
     {
         return Image::getUrlByFilePath($this->path, $w, $h);
     }
-
-
 }
