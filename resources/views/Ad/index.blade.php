@@ -1,15 +1,26 @@
 <x-layout>
 
     <div class="container-fluid my-5 rounded-4">
-        <div class="row justify-content-center position-relative ">
-            <div class="col-12 col-md-8 ">
-                <p {{-- id="ademi" --}} class="text-1 texthead mt-5"><strong class="Ademi">Ademi</strong><span>Essences</span></p>
-            </div>
-            <div class="col-12 col-md-4 divUnderTitle DivimgRtext">
-                <img src="/media/home2.jpg" class="img-fluid imgUnderTitle imgRtext" alt="">
-            </div>
-        </div> 
+        
+        <div class="col-12 col-md-7 Divbarradiricerca mb-5 d-flex justify-content-center">
+            <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
+                <label for="searched" class="sr-only">Cerca Prodotto</label>
+                <input name="searched" id="searched" class="input-1" type="search" placeholder={{ __('ui.cercaAll') }}
+                    aria-label="Search">
+            </form>
+        </div>
 
+
+        <article class="container-fluid position-relative article-1">
+            <div class="row justify-content-center rowArt">
+                <div class="col-12 col-md-9 divarticle2">
+                    <p class="text-1 mt-5"><strong>Ademi</strong><span>Essences</span></p>
+                </div>
+                <div class="col-12 col-md-3 divUnderTitle">
+                    <img src="/media/home2.jpg" class="img-fluid imgsottoTitle" alt="">
+                </div>
+            </div>
+        </article>
         <div class="container mt-5">
 
             <div class="row mb-5 position-relative">

@@ -80,11 +80,11 @@ function carosello() {
         setTimeout(() => {
 
             if (indice == 1) {
-                document.getElementById("carosello").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkvMJDPvL5lBtmrViEL-7mJ1Ii_yznEdpvpRPxl6_bOkOY-hf67sNewOvEeKm3e1yqp0&usqp=CAU"
+                document.getElementById("carosello").src = "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9sZXh8ZW58MHx8MHx8fDA%3D"
             } else if (indice == 2) {
-                document.getElementById("carosello").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYEwVKC05E5Cx5ZZS55PBmskQ2Ocfb4HKFg&usqp=CAU"
+                document.getElementById("carosello").src = "https://plus.unsplash.com/premium_photo-1676748933022-e1183e997436?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHByb2Z1bW98ZW58MHx8MHx8fDA%3D"
             } else if (indice == 3) {
-                document.getElementById("carosello").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR59saMRzhRJgD3720JEtAr3j03yRU701kHcA&usqp=CAU"
+                document.getElementById("carosello").src = "https://media.istockphoto.com/id/1333060261/it/foto/design-degli-interni-del-soggiorno-moderno.webp?b=1&s=170667a&w=0&k=20&c=r1wYunIpAogug8vV5PF650VEW2Uz6FA349fJq_vlZuA="
 
                 indice = 0;
             }
@@ -92,11 +92,11 @@ function carosello() {
 
             document.getElementById("carosello").style.transition = "2s opacity"
             document.getElementById("carosello").style.opacity = "1"
-        }, 2000)
+        }, 3000)
 
         indice++
 
-    }, 4000)
+    }, 5000)
    
  
 }

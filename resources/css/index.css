@@ -49,7 +49,7 @@
 
     height: 130px;
     position: absolute;
-    right: -15%;
+    right: -9%;
     top: 35%;
 
 }
@@ -120,6 +120,20 @@
     background-position: center;
 
 }
+.imgsottoTitle {
+	position: absolute;
+	top: 21%;
+	border: solid 12px black;
+	border-radius: 48% 48% 0% 0% / 32% 32% 0% 0%;
+	width: 110px;
+	height: 130px;
+	object-fit: cover;
+}
+.divarticle2 {
+	z-index: 0;
+	display: flex;
+	justify-content: end;
+}
 
 /* .divhead-center h5 {
    text-shadow: -1px 2px 5px rgba(0,0,0,0.6);
@@ -128,3 +142,18 @@
 p {
     text-shadow: -1px 2px 5px rgba(0,0,0,0.6);
 } */
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .imgsottoTitle {
+        display: none;
+    }
+   .divarticle2 {
+    margin-top: 40px;
+   }
+   .card2 {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+   }
+ 
+}
