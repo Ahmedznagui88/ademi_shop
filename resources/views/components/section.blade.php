@@ -13,13 +13,13 @@
 
 
 
-    <div class="container-fluid contSec">
+    {{-- <div class="container-fluid contSec"> --}}
         
-        <div>
+     {{--    <div>
             <h2 class="catitle text-center">{{__('ui.category')}}</h2>
         </div>
-        
-        <div class="row rowCat">
+         --}}
+      {{--   <div class="row rowCat">
             <a href="">
                 <div class="col-12 divSecImg">
                     <img src="/media/interior.jpg" class="secImg1" alt="">
@@ -41,5 +41,5 @@
                 </div>
             </a>
         </div>
-    </div> 
+    </div>  --}}
 </section>

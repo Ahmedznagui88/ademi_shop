@@ -1,6 +1,6 @@
 /** article 1*/
-article {
-	height: 260px;
+.articleHeader {
+	height: 560px;
 }
 
 .divarticle {

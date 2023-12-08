@@ -1,6 +1,6 @@
 <header class="d-flex flex-column justify-content-center mb-5 head">
 
-    <div class="col-12 col-md-7 Divbarradiricerca mb-5 d-flex justify-content-center">
+    <div class="col-12 col-md-7 Divbarradiricerca d-flex justify-content-center my-5">
         <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
             <label for="searched" class="sr-only">Cerca Prodotto</label>
             <input name="searched" id="searched" class="input-1" type="search" placeholder={{ __('ui.cercaAll') }}

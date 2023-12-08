@@ -49,3 +49,12 @@ section{
 .texthome{
     font-weight: lighter;
 }
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+	
+    .contSec{
+        margin-top: 1000px;
+    }
+	
+}
