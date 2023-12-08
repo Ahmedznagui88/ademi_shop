@@ -1,7 +1,7 @@
 <x-layout>
     {{-- !title --}}
 
-    <div id="message" class="divmes text-center">
+    <div id="message" class="divmes text-center my-5">
         @if (session('access.denied'))
             <div class="alert alert-danger">
                 {{ session('access.denied') }}
@@ -17,7 +17,7 @@
 
     <x-header />
 
-    <x-section />
+    
 
     {{-- Carosello 2 --}}
     <div class="container contenitore-banner">

@@ -149,7 +149,7 @@ article {
 /* ! end article 2 */
 
 
-@media screen and (min-width: 300px) and (max-width: 780px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
 	.conterone {
 		display: flex;
 		justify-content: center;
@@ -163,7 +163,7 @@ article {
 	}
 
 	.text-1 {
-		font-size: 40px;
+		font-size: 90px;
 		position: absolute;
 		bottom: -100px;
 	}
@@ -186,34 +186,47 @@ article {
 		height: 100px;
 	}
 
-	/*.btn-header {
-		font-size: 10px;
-		width: 60px;
-		height: 25px;
-	}*/
 	
 }
 
-/* @media screen and (min-width: 300px) and (max-width: 789px) {
-	.rowArt{
+@media screen and (min-width: 600px) and (max-width: 999px) {
+	/* .conterone {
 		display: flex;
 		justify-content: center;
-		width: 100%;
-		height: auto;
-		position: relative;
-	}
+		width: auto;
+	} */
 
-	.divarticle{
-		width: 100%;
-		height: 30px;
+	.divarticle {
 		display: flex;
-		justify-content: center; 
-		width: 100vh;
-		height: 10%;
-		position: absolute;
-		right: 40%;
-		top: 20px;
+		justify-content: center;
+		
 	}
 
+	.article-1 {
+		display: flex;
+		justify-content: center;
+		height: 100px;
+	}
+
+	.text-1 {
+		font-size: 90px;
+		position: absolute;
+		bottom: -100px;
+	}
+
+	.imgUnderTitle {
+		display: none;
+	}
+
+
+	.divHead2{
+		width: 100%;
+	}
+
+	.dicCont{
+		margin-top: 30px;
+	}
+	
   
-} */
+} 
+
