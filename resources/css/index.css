@@ -131,8 +131,10 @@
 }
 .divarticle2 {
 	z-index: 0;
-	display: flex;
-	justify-content: end;
+    text-align: end;
+}
+#text-head-index {
+   
 }
 
 /* .divhead-center h5 {
@@ -149,11 +151,52 @@ p {
     }
    .divarticle2 {
     margin-top: 40px;
+    display: flex;
+	justify-content: center;
    }
    .card2 {
     width: 300px;
     display: flex;
     justify-content: center;
    }
- 
+   .inserito-da {
+    display: none;
+   }
+   .price {
+    display: flex;
+    flex-direction: column;
+   }
+   .card-img {
+    margin-left:74px;
+   }
+   .icon-d {
+    display: none;
+   }
+   #text-head-index{
+    font-size: 45px !important;
+    text-align: center !important;
+   }
+   
+}
+@media screen and (min-width: 600px) and (max-width: 1100px){
+    .imgsottoTitle {
+        display: none;
+    }
+    #text-head-index{
+        font-size: 80px !important;
+        text-align: end !important;
+       }
+}
+@media screen and (min-width: 200px) and (max-width: 300px){
+    .imgsottoTitle {
+        display: none;
+    }
+    #text-head-index{
+        font-size: 30px !important;
+      
+      
+    }
+    article{
+        height: 80px;
+    }
 }

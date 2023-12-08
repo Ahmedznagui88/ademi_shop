@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center">
                 <h2>{{ $ad_to_check ? __('ui.newAds') : __('ui.noNewAds') }}
@@ -29,38 +29,15 @@
                                 <div class="carousel-inner">
                                     @foreach ($ad_to_check->images as $image)
                                         <div class="carousel-item @if ($loop->first) active @endif">
-
                                             <img src="{{ $image->getUrl(300, 300) }}" class="img-fluid" alt="">
+
+                                        </div>
                                             
-{{-- LABELS TAG IA GOOGLE --}}
-                                        </div>
-                                        <div class="col-md-3 border-end">
-                                            <h5 class="tc-accent mt-3">Tags</h5>
-                                            <div class="p-2">
-                                                @if ($image->labels)
-                                                    @foreach ($image->labels as $label)
-                                                        <p class="d-inline">{{ $label }},</p>
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                        </div>
-{{-- Semafori IA GOOGLE per IMMAGINI --}}
-
-                                        <div class="col-md-3">
-                                            <div class="card-body">
-                                                <h5 class="tc-accent">Revisione Immagini</h5>
-                                                <p>Adulti:<span class="(($image->adult})"></span></p>
-                                                <p>Satira:<span class="(($image->spoof})"></span></p>
-                                                <p>Medicina:<span class="(($image->medical})"></span></p>
-                                                <p>Violenza:<span class="(($image->violence})"></span></p>
-                                                <p>Ammiccante:<span class="(($image->racy})"></span></p>
-                                            </div>
-                                        </div>
-
-                                        
                                     @endforeach
-
+                                    
                                 </div>
+{{-- LABELS TAG IA GOOGLE --}}
+
                             @else
                                 <div class="carousel-inner mx-5">
                                     <div class="carousel-item active cs">
@@ -87,6 +64,28 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">{{ __('ui.successivo') }}</span>
                             </button>
+                        </div>
+                        <div class="col-md-3 border-end">
+                            <h5 class="tc-accent mt-3">Tags</h5>
+                            <div class="p-2">
+                                @if ($image->labels)
+                                    @foreach ($image->labels as $label)
+                                        <p class="d-inline">{{ $label }},</p>
+                                    @endforeach
+                                @endif
+                            </div>
+                        </div>
+{{-- Semafori IA GOOGLE per IMMAGINI --}}
+
+                        <div class="col-md-3">
+                            <div class="card-body">
+                                <h5 class="tc-accent">Revisione Immagini</h5>
+                                <p>Adulti:<span class="(($image->adult})"></span></p>
+                                <p>Satira:<span class="(($image->spoof})"></span></p>
+                                <p>Medicina:<span class="(($image->medical})"></span></p>
+                                <p>Violenza:<span class="(($image->violence})"></span></p>
+                                <p>Ammiccante:<span class="(($image->racy})"></span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,3 +128,6 @@
 
     @endif
 </x-layout>
+                                        
+
+                                      
