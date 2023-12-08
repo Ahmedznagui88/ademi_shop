@@ -22,11 +22,11 @@
     {{-- Carosello 2 --}}
      <div class="container contenitore-banner">
         <div class="row banner">
-            <div class="col-12 col-md-3 text-center col-banner-l">
-             <h5 class="testo-h5">Tutto quello che cerchi è qui!</h5>
+            <div class="col-12 col-md-3 text-center col-banner-s">
+             <h5 class="testo-h5 text-5">Tutto quello che cerchi è qui!</h5>
             </div>
             <div class="col-12 col-md-5 col-banner-r">
-                <img src="https://plus.unsplash.com/premium_photo-1663045454409-1373d1aed56c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHZpbmlsaXxlbnwwfHwwfHx8MA%3D%3D"
+                <img src="/media/perfume2.avif"
                     alt="" class="img-fluid banner" id="carosello">
             </div>
             <div class="col-12 col-md-3 text-center col-banner-l">
@@ -51,7 +51,7 @@
 
     <div class="container container-card my-5">
         <div class="row cardHome">
-            <h4 class="testo-h5 my-4">Ultimi annunci</h4>
+            <h4 class="testo-h5 my-4 bg-transparent">Ultimi annunci</h4>
             @foreach ($ads as $ad)
             <div class="col-12 col-md-3">
                 <x-card2 :ad="$ad" />

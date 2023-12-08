@@ -5,7 +5,7 @@
                 <div class="container-fluid d-flex justify-content-center carousel-1 border border-danger">
                     <div id="showCarousel" class="carousel">
                         @if ($ad->images)
-                            <div class="carousel-inner border border-warning ">
+                            <div class="carousel-inner border border-warning mb-5">
                                 @foreach ($ad->images as $image)
                                     <div class="carousel-item @if ($loop->first) active @endif">
                                         <img src="{{$image->getUrl(300 ,300)  }}" class="img-fluid"

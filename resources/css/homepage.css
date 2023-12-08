@@ -112,60 +112,46 @@
     justify-content: space-evenly;
 }
 
-/* /*carosello 1*/
-/* .carousel {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  } */
+
 
 .contenitore-banner {
     margin-top: 20%;
+    background: linear-gradient(45deg, #ED7D31 50%, rgb(0, 0, 0) 50%);
+    background-attachment: fixed;
+    border-radius: 21px;
 }
 
 .testo-h5 {
     font-size: 30px;
-    font-family: 'Hedvig Letters Serif', serif;
+    /* font-family: 'Hedvig Letters Serif', serif; */
+    color: rgb(0, 0, 0);
     text-align: center;
     text-transform: capitalize;
+    background-color: #ED7D31;
 }
 
 .col-banner-l {
-
-
+    background-image: url(../../public/media/newpics/interior\ 1.avif);
+    background-attachment: fixed;
+    background-size: contain;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-
-
-
-/*!banner med  */
-
-.cont-banner {
-    margin-top: 20%;
-    border: solid red;
-    background-color: #738480;
-    background-size: cover;
+.col-banner-s {
+    background-image: url(../../public/media/newpics/interior\ 2.avif);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.txtB {
-    font-size: 50px;
-
-    color: aliceblue;
-}
-
-.medBanner {
-    width: 30%;
-
+.banner{
     object-fit: cover;
 }
-
-.container-card {
-    margin-top: 50px;
-}
-
 
 
 
