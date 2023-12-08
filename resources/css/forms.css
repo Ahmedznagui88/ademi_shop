@@ -40,3 +40,33 @@ input:hover{
  .form-creat{
     margin-top: 100px;
  }
+
+ .imgTemp{
+    background-size:cover;
+    background-position-y: 90%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: end;
+    border-radius: 5px 5px 6px 6px ;
+ }
+
+ .btnrmv{
+    background-color: #ede8e0;
+    color: red;
+    font-size: 15px;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    height: 24%;
+    transition: 1s;
+
+ }
+
+ .btnrmv:hover{
+    background-color: #c0beba;
+    color: red;
+    font-size: 20px;
+    
+    
+
+ }

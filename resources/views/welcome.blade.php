@@ -46,6 +46,7 @@
         </div>
     </div>
 
+
     <div class="container">
         <div class="row cardHome">
             @foreach ($ads as $ad)
@@ -56,6 +57,7 @@
         </div>
     </div> 
 
+   
 
     {{--  <div class="container">
         <div class="row">

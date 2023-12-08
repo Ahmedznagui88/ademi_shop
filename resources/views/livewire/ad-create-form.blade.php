@@ -65,10 +65,10 @@
                         </p>
                         <div class="row">
                             @foreach ($images as $key => $image)
-                                <div class="col-3">
-                                    <div class="img-preview mx-auto shadow rounded"
-                                        style="width:300px; height:300px; background-image:url({{ $image->temporaryUrl() }})">
-                                        <button wire:click="removeImage({{$key}})"class="btn btn-danger">{{__('ui.remove')}}</button>
+                                <div class="col-3 mx-2">
+                                    <div class="img-preview mx-auto shadow imgTemp"
+                                        style="background-image:url({{ $image->temporaryUrl() }})">
+                                        <button wire:click="removeImage({{$key}})"class="btn btnrmv">{{__('ui.remove')}}</button>
                                     </div>
                                 </div>
                             @endforeach
