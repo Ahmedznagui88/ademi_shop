@@ -23,7 +23,6 @@ body{
 /** carousel */
 .carousel-1{
 	margin-top: 100px;
-
 }
 
 
@@ -45,7 +44,6 @@ body{
 	transition: 1.6s;
     transform: translateY(0);
     transform-origin: bottom;
-
 }
 
 .text-btn-1{
@@ -53,12 +51,11 @@ body{
 	text-decoration: none;
 	font-size: small;
 }
-/*btn categorie welcome*/
+/**btn categorie welcome*/
 .btn-1:hover{
 	transition: 500ms;
 	background-color: #b3b3b3;
 	color: rgb(255, 128, 0);
-	
 }
 
 

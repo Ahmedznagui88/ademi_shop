@@ -33,7 +33,7 @@
         </div>
     </div>  --}}
 
-    <div class="container cont-banner">
+   {{--  <div class="container cont-banner">
         <div class="row banner" style="align-items: center">
             <div class="col-12 col-md-6 text-center col-banner-l">
              <h5 class="txtB">Tutto quello che cerchi è qui!</h5>
@@ -44,10 +44,10 @@
             </div>
 
         </div>
-    </div>
+    </div> --}}
 
 
-    <div class="container container-card">
+    <div class="container container-card my-5">
         <div class="row cardHome">
             @foreach ($ads as $ad)
             <div class="col-12 col-md-3">
