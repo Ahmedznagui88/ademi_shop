@@ -44,30 +44,19 @@
             </div>
 
         </div>
+    </div>
+
+    <div class="container">
+        <div class="row cardHome">
+            @foreach ($ads as $ad)
+            <div class="col-12 col-md-3">
+                <x-card2 :ad="$ad" />
+            </div>    
+            @endforeach
+        </div>
     </div> 
 
-    <x-section />    
-        {{-- Carosello 
-        <div class="container container-banner">
-            <div class="row justify-content-center ">
-                <div class="col-12 col-md-8 banner mt-5 col-banner" id="banner">
-                    <div class="carousel">
-                        <div class="slide">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkvMJDPvL5lBtmrViEL-7mJ1Ii_yznEdpvpRPxl6_bOkOY-hf67sNewOvEeKm3e1yqp0&usqp=CAU" alt="" class="img-fluid banner">
-                        </div>
-                        <div class="slide">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYEwVKC05E5Cx5ZZS55PBmskQ2Ocfb4HKFg&usqp=CAU" alt="" class="img-fluid banner">
-                        </div>
-                        <div class="slide">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR59saMRzhRJgD3720JEtAr3j03yRU701kHcA&usqp=CAU" alt="" class="img-fluid banner">
-                        </div>
-                        <div class="slide">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFeXR0CA6b0dmc5sRXZO6HW7WdLHJCfPJF9A&usqp=CAU" alt="" class="img-fluid banner">
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div> --}}
+
     {{--  <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
@@ -97,15 +86,6 @@
         </div>
     </div> --}}
 
-    {{-- <div class="container">
-        <div class="row cardHome">
-            @foreach ($ads as $ad)
-            <div class="col-12 col-md-3">
-                <x-card2 :ad="$ad" />
-            </div>    
-            @endforeach
-        </div>
-    </div> --}}
 
     {{--  <div class="container mt-5">
         
