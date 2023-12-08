@@ -9,7 +9,11 @@
  border: none;
 }
 
-
+.card-img {
+    height: 140px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
 
 .img-card-home{
     border-radius: 20px 20px 0 0 ;
