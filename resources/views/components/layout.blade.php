@@ -9,7 +9,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="/media/low.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-MC79ACCQ+1F0J3QC3TSDMYWBcfkKc9CD56C5Ml5OgNBGIJg23VmeW8+Uq0Fow2IM" crossorigin="anonymous">
+
+    {{-- <link rel="stylesheet" href-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IROOHhonpyAIVpjry1PvoDwiPUiKdWk5t3Pyo11cOd4DSEOGa+ri4AuTrOPR5aQvXU9XC6q0PnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/> --}}
 
     @vite (['resources/css/app.css', 'resources/js/app.js'])
     <title>ADEMI</title>
@@ -22,10 +25,8 @@
 
     
     {{ $slot }}
- 
     
 
-   
     <x-footer />
 
 
