@@ -24,8 +24,8 @@
         <div class="container mt-5">
 
             <div class="row mb-5 position-relative">
-                <div class="col-12 col-md-6 d-flex justify-content-center colhead-l" style="">
-                    <div class="Div-img-header-index-l ">
+                <div class="col-12 col-md-6 d-flex justify-content-center colhead-l">
+                    <div class="Div-img-header-index-l">
                         <img src="/media/perfume.avif" class="img-fluid  " alt="">
                     </div>
                    {{--   <div class="divhead-center">
@@ -39,7 +39,7 @@
     
                 </div>
             </div>
-            <div class="row justify-content-center rowtext">
+            <div class="row justify-content-center rowtext" style="font-family: 'Cinzel', serif;">
                 <div class="divhead-center2">
                     <h5 class="text-center ">Per la casa, per i tuoi luoghi preferiti!</h5>
                 </div>

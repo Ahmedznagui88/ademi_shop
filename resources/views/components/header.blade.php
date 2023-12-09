@@ -1,6 +1,14 @@
-<header class="d-flex flex-column justify-content-center mb-5 head">
+<header class="d-flex flex-column justify-content-center head">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 txt-offer">
+                <p class="my-2">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI, coperte invernali e altri must di stagione!</p>
+            </div>
+        </div>
+    </div>
 
-    <div class="col-12 col-md-7 Divbarradiricerca d-flex justify-content-center my-5">
+
+    <div class="col-12 col-md-7 Divbarradiricerca d-flex justify-content-center">
         <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
             <label for="searched" class="sr-only">Cerca Prodotto</label>
             <input name="searched" id="searched" class="input-1" type="search" placeholder={{ __('ui.cercaAll') }}
@@ -8,11 +16,9 @@
         </form>
     </div>
 
-
-
     <article class="container-fluid position-relative article-1">
         <div class="row justify-content-center rowArt">
-            <div id="box" class="col-12 col-md-8 divarticle">
+            <div class="col-12 col-md-8 divarticle">
                 <p class="text-1 mt-5"><strong>Ademi</strong><span class="texthome">Home</span></p>
             </div>
             <div class="col-12 col-md-4 divUnderTitle">

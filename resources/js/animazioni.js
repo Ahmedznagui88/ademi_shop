@@ -80,11 +80,13 @@ function carosello() {
         setTimeout(() => {
 
             if (indice == 1) {
-                document.getElementById("carosello").src = "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9sZXh8ZW58MHx8MHx8fDA%3D"
+                document.getElementById("carosello").src = "./media/vinyl.avif"
             } else if (indice == 2) {
-                document.getElementById("carosello").src = "https://plus.unsplash.com/premium_photo-1676748933022-e1183e997436?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHByb2Z1bW98ZW58MHx8MHx8fDA%3D"
+                document.getElementById("carosello").src = "./media/homegreen.jpeg"
             } else if (indice == 3) {
-                document.getElementById("carosello").src = "https://media.istockphoto.com/id/1333060261/it/foto/design-degli-interni-del-soggiorno-moderno.webp?b=1&s=170667a&w=0&k=20&c=r1wYunIpAogug8vV5PF650VEW2Uz6FA349fJq_vlZuA="
+                document.getElementById("carosello").src = "./media/orologio 1.avif"
+            } else if (indice == 4) {
+                document.getElementById("carosello").src = "./media/perfume2.avif"    
 
                 indice = 0;
             }

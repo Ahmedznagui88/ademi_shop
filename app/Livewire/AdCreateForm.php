@@ -89,7 +89,7 @@ class AdCreateForm extends Component
 
                 $newFileName = "ads/{$this->ad->id}";
                 $newImage = $this->ad->images()->create(['path' => $image->store($newFileName, 'public')]);
-                dispatch(new ResizeImage($newImage->path, 300, 300));
+                dispatch(new ResizeImage($newImage->path, 800, 450));
                 dispatch(new GoogleVisionSafeSearch($newImage->id));
                 dispatch(new GoogleVisionLabelImage($newImage->id));
             }

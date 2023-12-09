@@ -1,13 +1,57 @@
-.rowCarousel{
-    margin-top: 10%;
+.contCarous{
+   
+    margin-top: 100px;
+    height: 660px;
+   
 }
 
+.rowCarousel{
+   
+    
+}
+
+.carousss{
+    
+}
 
 .showdescrizioni {
+    margin-top: 120px;
+   text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Cinzel', serif;
+ }
+
+
+.carousel-control-prev, .carousel-control-next{
+    background: #ecb18a66;
     
-    border: solid ;
-    color: white;
+
+} 
+
+.outBack{
+   
+}
+
+ .arow{
+    width: 20px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    transition: 0.90s;
  }
 
 
 
+ .arow:hover{
+    scale: 1.6;
+ }
+
+
+
+ @media screen and (min-width: 200px) and (max-width: 765px){
+
+    .outBack{
+        display: flex;
+        justify-content: center;
+        
+    }
+ } 

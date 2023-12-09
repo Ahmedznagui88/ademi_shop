@@ -1,20 +1,20 @@
 <x-layout>
-    <article class="container my-5">
-        <div class="row justify-content-center rowCarousel border border-primary">
+    <article class="container contCarous">
+        <div class="row justify-content-center rowCarousel">
             <div class="col-12 col-md-8">
-                <div class="container-fluid d-flex justify-content-center carousel-1 border border-danger">
+                <div class="container-fluid d-flex justify-content-center  carousel-1">
                     <div id="showCarousel" class="carousel">
                         @if ($ad->images)
-                            <div class="carousel-inner border border-warning mb-5">
+                            <div class="carousel-inner carousss">
                                 @foreach ($ad->images as $image)
                                     <div class="carousel-item @if ($loop->first) active @endif">
-                                        <img src="{{$image->getUrl(300 ,300)  }}" class="img-fluid"
+                                        <img src="{{$image->getUrl(800 , 450)  }}" class="img-fluid"
                                         alt="image">
                                     </div>
                                 @endforeach
                             </div>
                         @endif
-                        <button class="carousel-control-prev " type="button" data-bs-target="#showCarousel"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -29,21 +29,26 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 showdescrizioni">
-                <h2 class="border-bottom border-dark-subtle">{{ $ad->title }}</h2>
-                <p class="mt-5">{{ $ad->brand }}</p>
-                <p class="mt-5">{{ $ad->description }}</p>
-                <p class="fs-2 price mt-5">${{ $ad->price }}</p>
+                <h2 class="border-bottom border-dark">{{ $ad->title }}</h2>
+                <p class="">{{ $ad->brand }}</p>
+                <p class="">{{ $ad->description }}</p>
+                <p class="fs-2 price ">${{ $ad->price }}</p>
                 <span>{{__('ui.insertBy')}} {{ Auth::user()->name ?? __('ui.noName')}}</span>
                 {{-- <p>{{__('ui.insertBy')}} {{ $ad->created_at->translatedFormat('D d/m/y') }}</p> --}}
                 <p class="card-text">{{ $ad->created_at->diffForHumans() }}</p>
             </div>
         </div>
 
-        <div class="mt-5">
-            <a href="{{ url()->previous() }}" class="text-decoration-none text-dark">{{__('ui.tornaIndietro')}}</a>
+        <div class="mt-5 outBack">
+            
+            <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">
+                <img src="/media/left-chevron.png" class="img-fluid arow" alt="">{{__('ui.tornaIndietro')}}</a>
+            
         </div>
 
-        @auth
+
+
+     {{--    @auth
             <div class="row my-5">
                 @foreach (Auth::user()->ads as $ad)
                     <div class="col-12 col-md-3">
@@ -51,7 +56,7 @@
                     </div>
                 @endforeach
             </div>
-        @endauth
+        @endauth --}}
     </article>
 
 

@@ -71,14 +71,14 @@
     transform: scale(1.1);
 
 }
-
+/* 
 .categorietonde {
 
     display: flex;
     white-space: nowrap;
     overflow: hidden;
 }
-
+ */
 .slidediv {
     animation: 2s slide infinite linear;
     display: inline block;
@@ -103,7 +103,7 @@
 }
 
 .divmes {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .banner {
@@ -124,12 +124,12 @@
 }
 
 .testo-h5 {
-    font-size: 30px;
-    /* font-family: 'Hedvig Letters Serif', serif; */
-    color: rgb(0, 0, 0);
-    text-align: center;
+    font-weight: lighter;
+    font-size: 24px;
+    font-family: 'Cinzel', serif;    text-align: center;
+    color: #000;
     text-transform: capitalize;
-    background-color: #ED7D31;
+    background-color: #ed7c3190;
 }
 
 .col-banner-l {
@@ -154,15 +154,6 @@
 .banner{
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
 
 
 

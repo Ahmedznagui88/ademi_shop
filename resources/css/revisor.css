@@ -1,0 +1,23 @@
+.btnRev{
+    background:#ffffff;
+    border: none;
+    width: 120%;
+    border-radius: 30px;
+    color: rgb(53, 133, 0);
+    transition: 0.4s;
+    transform-origin: bottom;
+}
+
+.btnRevR{
+    background:#ffffff;
+    border: none;
+    width: 120%;
+    border-radius: 30px;
+    color: rgb(255, 0, 0);
+    transition: 0.9s;
+    transform-origin: bottom;
+}
+
+.btnRevR:hover{
+    background:#e39393;
+}
