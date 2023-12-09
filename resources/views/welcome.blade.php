@@ -17,10 +17,10 @@
 
        
     {{-- Carosello 2 --}}
-     <div class="container-fluid contenitore-banner">
+     <div class="container contenitore-banner">
         <div class="row banner">
             <div class="col-12 col-md-3 text-center col-banner-s">
-             <p class="testo-h5 text-5">Tutto quello che cerchi è qui!</p>
+             <p class="testo-h5">Tutto quello che cerchi è qui!</p>
             </div>
             <div class="col-12 col-md-5 col-banner-r">
                 <img src="/media/perfume2.avif"
@@ -32,5 +32,5 @@
         </div>
     </div> 
 
-    
+    <x-section />
 </x-layout>

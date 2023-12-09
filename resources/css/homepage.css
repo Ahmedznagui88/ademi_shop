@@ -115,10 +115,10 @@
 
 
 .contenitore-banner {
-   /*  margin-top: 23%; */
-   margin-top: 10px;
-   /*  background: linear-gradient(45deg, #ED7D31 50%, grey 50%);
-    background-attachment: fixed;  */
+    margin-top: 10px;
+    background: linear-gradient(45deg, #ED7D31 50%, grey 50%);
+    background-size: cover;
+    background-attachment: fixed;
     background-color:  #000000 ;
     border-radius: 21px;
 }
@@ -128,8 +128,9 @@
     font-size: 24px;
     font-family: 'Cinzel', serif;    text-align: center;
     color: #000;
-    text-transform: capitalize;
     background-color: #ed7c3190;
+    margin-top: 40px;
+
 }
 
 .col-banner-l {
@@ -139,13 +140,13 @@
     height: 100%;
     display: flex;
     align-items: center;
+    
 }
 
 .col-banner-s {
-    background-image: url(../../public/media/newpics/interior\ 2.avif);
+    background-image: url(../../public/media/interiorD.avif);
     background-attachment: fixed;
     background-size: contain;
-    background-repeat: no-repeat;
     height: 100%;
     display: flex;
     align-items: center;
@@ -159,25 +160,27 @@
 
 @media screen and (min-width: 200px) and (max-width: 765px) {
   
-
+/* 
     .categorietonde {
-        display: none;
+       
     }
-
+ */
 
     .contenitore-banner {
-        margin-top: 200%;
+        margin-top: 450px;
         display: flex;
         justify-content: center;
+        background: none;
     }
     .col-banner-l {
-        width: 95%;
-        background: #000;
+        
+        border-radius: 21px;
     }
 
     .col-banner-s {
-        width: 95%;
-        background: #000;
+        
+        border-radius: 21px;
+       
     } 
 }
 
@@ -195,12 +198,12 @@
     /* .col-banner-l {
         width: 95%;
         background: #000;
-    }
+    }*/
 
     .col-banner-s {
-        width: 95%;
+        width: 100px;
         background: #000;
-    }  */
+    } 
 
     
 }

@@ -27,14 +27,15 @@
                     </a>
                 </li>
                 @endif
-                <li class="nav-item ">
-                    <a class="nav-link text-light " aria-current="page" href="">{{ Auth::user()->name }}</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link text-light" href="{{ Route('ad.create') }}">{{__('ui.insertAnnouncements')}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="{{ Route('ad.index') }}">{{__('ui.allAnnouncements')}}</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-light " aria-current="page" href="">{{ Auth::user()->name }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Logout</a>

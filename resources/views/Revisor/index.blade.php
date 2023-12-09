@@ -6,7 +6,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center">
@@ -15,123 +15,125 @@
             </div>
         </div>
     </div>
-    
+
     @if ($ad_to_check)
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 ">
-                {{-- ? carousel --}}
-                <div class="container-fluid d-flex justify-content-center carousel-1 ">                    
-                    <div id="showCarousel" class="carousel border">
+
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center carousel-1">
+                    {{-- * carousel --}}
+                    <div id="showCarousel" class="carousel ">
                         @if (!$ad_to_check->images->isEmpty())
-                        <div class="carousel-inner">
-                            @foreach ($ad_to_check->images as $image)
-                            <div class="carousel-item @if ($loop->first) active @endif">
-                                <img src="{{ $image->getUrl(800, 450) }}" class="img-fluid" alt="">
+                            <div class="carousel-inner">
+                                @foreach ($ad_to_check->images as $image)
+                                    <div class="carousel-item @if ($loop->first) active @endif">
+                                        <img src="{{ $image->getUrl(800, 450) }}" class="img-fluid" alt="">
+                                    </div>
+                                @endforeach
                             </div>
-                            @endforeach
-                        </div>
-                        {{-- LABELS TAG IA GOOGLE --}}
-                        @else
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGludGVybiUyMGhvbWV8ZW58MHx8MHx8fDA%3D"
-                                class="img-fluid rounded-4 " alt="...">
-                            </div>
-                            <div class="carousel-item active cs">
-                                <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2F0Y2h8ZW58MHx8MHx8fDA%3D"
-                                class="img-fluid rounded-4" alt="...">
-                            </div>
-                            <div class="carousel-item active cs">
-                                <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyZnVtZXxlbnwwfHwwfHx8MA%3D%3D"
-                                class="img-fluid rounded-4" alt="...">
-                            </div>
-                        </div>
+                            {{-- LABELS TAG IA GOOGLE --}}
                         @endif
                         <button class="carousel-control-prev " type="button" data-bs-target="#showCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">{{ __('ui.precedente') }}</span>
-                    </button>
-                    <button class="carousel-control-next " type="button" data-bs-target="#showCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">{{ __('ui.successivo') }}</span>
-                </button>
-            </div>
-            
-            {{--*alert  --}}
-            <div class="container mx-5 d-flex justify-content-center">
-                <div class="row">
-                
-                <div class="col-6 col-md-3 border-end border-dark">
-                    <h5 class="tc-accent mt-3">Tags</h5>
-                    <div class="p-2">
-                        @if ($image->labels)
-                        @foreach ($image->labels as $label)
-                        <p class="d-inline">{{ $label }},</p>
-                        @endforeach
-                        @endif
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">{{ __('ui.precedente') }}</span>
+                        </button>
+                        <button class="carousel-control-next " type="button" data-bs-target="#showCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">{{ __('ui.successivo') }}</span>
+                        </button>
                     </div>
-                </div>
-                {{-- Semafori IA GOOGLE per IMMAGINI --}}
-                
-                <div class="col-6 col-md-3 mx-5">
-                    <div class="card-body">
-                        <h5 class="tc-accent">Revisione Immagini</h5>
-                        <p>Adulti: <span class="{{$image->adult}}"></span></p>
-                        <p>Satira: <span class="{{$image->spoof}}"></span></p>
-                        <p>Medicina: <span class="{{$image->medical}}"></span></p>
-                        <p>Violenza: <span class="{{$image->violence}}"></span></p>
-                        <p>Ammiccante: <span class="{{$image->racy}}"></span></p>
+                    {{-- ! end carousel --}}
+                    {{-- * alert  --}}
+
+                    <div class="row justify-content-center align-items-center rowrevs">
+                        <div class="col-md-3 borderTags">
+                            <h5 class="tc-accent mt-3">Tags</h5>
+                            <div class="p-2">
+                                @if ($image->labels)
+                                    @foreach ($image->labels as $label)
+                                        <p class="d-inline">{{ $label }},</p>
+                                    @endforeach
+                                @endif
+                            </div>
+                        </div>
+                        {{-- Semafori IA GOOGLE per IMMAGINI --}}
+
+                        <div class="col-md-3 mx-5">
+                            <div class="card-body borderTagsUno">
+                                <h5 class="tc-accent">Revisione Immagini</h5>
+                                <p>Adulti: <span class="{{ $image->adult }}"></span></p>
+                                <p>Satira: <span class="{{ $image->spoof }}"></span></p>
+                                <p>Medicina: <span class="{{ $image->medical }}"></span></p>
+                                <p>Violenza: <span class="{{ $image->violence }}"></span></p>
+                                <p>Ammiccante: <span class="{{ $image->racy }}"></span></p>
+                            </div>
+                        </div>
                     </div>
+
+                    {{-- ! end alert  --}}
+                </div>
+
+            </div>
+        </div>
+
+         <div class="container contInfo">
+            <div class="row rowinfo">
+                <div class="text-center my-2">
+                    <h5 class="card-title">{{ $ad_to_check->title }}</h5>
+                    <p>{{ $ad_to_check->body }}</p>
+                    <p>{{ $ad_to_check->created_at }}</p>
                 </div>
             </div>
+            <div class="rowbtn">
+               <div class="">
+
+                   <form action="{{ route('revisor.accept.ad', ['ad' => $ad_to_check]) }}" method="POST" class="">
+                       @csrf
+                       @method('PATCH')
+                       <button type="submit" class="btn btnRev">{{ __('ui.accept') }}</button>
+                   </form>
+               </div >
+                
+
+                <div class="">
+
+                    <form action="{{ route('revisor.reject.ad', ['ad' => $ad_to_check]) }}" method="POST">
+                        @csrf
+                        @method('PATCH')
+                        <button type="submit" class="btn btnRevR">{{ __('ui.reject') }}</button>
+                    </form>
+                </div>
+              
+
             </div>
-            {{--!alert  --}}
         </div>
-    </div>
-</div>
-</div>
 
-<div class="container ">
-    <div class="row justify-content-center">
-        <div class=" w-25 text-center mt-4">
-            <h5 class="card-title">{{ $ad_to_check->title }}</h5>
-            <p>{{ $ad_to_check->body }}</p>
-            <p>{{ $ad_to_check->created_at }}</p>
-        </div>
-    </div>
-</div>
+        {{--    <div class="container d-flex justify-content-center">
+            <div class="row justify-content-center">
 
-<div class="container d-flex justify-content-center">
-    <div class="row justify-content-center">
-        
-        <div class="col-3 col-md-3">
-            <form action="{{ route('revisor.accept.ad', ['ad' => $ad_to_check]) }}" method="POST">
-                @csrf
-                
-                @method('PATCH')
-                <button type="submit" class="btn btnRev mx-5">{{ __('ui.accept') }}</button>
-            </form>
-        </div>
-        
-        <div class="col-3 col-md-3">
-            <form action="{{ route('revisor.reject.ad', ['ad' => $ad_to_check]) }}" method="POST">
-                @csrf
-                
-                @method('PATCH')
-                <button type="submit" class="btn btnRevR mx-5">{{ __('ui.reject') }}</button>
-            </form>
-        </div>
-        
-    </div>
-</div>
+                <div class="col-3 col-md-3">
+                    <form action="{{ route('revisor.accept.ad', ['ad' => $ad_to_check]) }}" method="POST">
+                        @csrf
 
-@endif
+                        @method('PATCH')
+                        <button type="submit" class="btn btnRev mx-5">{{ __('ui.accept') }}</button>
+                    </form>
+                </div>
+
+                <div class="col-3 col-md-3">
+                    <form action="{{ route('revisor.reject.ad', ['ad' => $ad_to_check]) }}" method="POST">
+                        @csrf
+
+                        @method('PATCH')
+                        <button type="submit" class="btn btnRevR mx-5">{{ __('ui.reject') }}</button>
+                    </form>
+                </div>
+
+            </div>
+        </div> --}}
+
+    @endif
 </x-layout>
-
-
-

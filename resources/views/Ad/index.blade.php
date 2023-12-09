@@ -13,8 +13,8 @@
 
         <article class="container-fluid position-relative article-1">
             <div class="row justify-content-center rowArt">
-                <div class="col-12 col-md-9 divarticle2 d-flex justify-content-center">
-                    <p id="text-head-index" class="text-1 mt-5 ms-xxl-5 ps-xxl-5"><strong>Ademi</strong><span>Essences</span></p>
+                <div class="col-12 col-md-8 divarticle">
+                    <p class="text-1 mt-5"><strong>Ademi</strong><span class="texthome">Essence</span></p>
                 </div>
                 <div class="col-12 col-md-3 divUnderTitle">
                     <img src="/media/home2.jpg" class="img-fluid imgsottoTitle" alt="">

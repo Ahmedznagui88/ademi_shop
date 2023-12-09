@@ -5,12 +5,9 @@
     
 
 }
-
 .logo{
-    width: 100px;
-    
+    width: 100px; 
 }
-
 .nav-link{
     color: rgb(255, 255, 255);
     
@@ -19,23 +16,22 @@
     color: rgb(255, 255, 255);
     
 }
-
 .btn-r{
     color: #000000;
-    background-image: linear-gradient(#8f8e8e, #c8c8c8,#8f8e8e);
-	border-radius: 10px;
+    /* background-image: linear-gradient(#8f8e8e, #c8c8c8,#8f8e8e); */
+    background-color:#d9ece9;
+	border-radius: 20px;
 }
-
-
-
-
 .ulang{
     list-style: none;
 }
 /** end navbar  */
 
-@media screen and (min-width: 375px) and (max-width: 780px) {
-	
-    
 
+@media (max-width: 767px){
+    .btn-r {
+        float: right;
+        width: 110px;
+
+    }
 }
