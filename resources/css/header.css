@@ -47,10 +47,12 @@
 .txt-offer{
 	text-align: center;
 	width: 100vw;
+	height: 65px;
 	background-color: rgb(224, 202, 172);
 	/* background-color: rgb(227, 247, 240); */
 	color: rgb(0, 0, 0);
 	font-family: 'Cinzel', serif;
+	
 	
 }
 /* ! end offerta */
