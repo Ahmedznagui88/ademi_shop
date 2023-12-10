@@ -4,7 +4,8 @@
         <div class="container-fluid">
             <div class="row textCarousel">
                 <div class="col-12 txt-offer">
-                    <p id="textCarousel" class="my-4">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI, coperte invernali e altri must di stagione!</p>
+                    <p id="textCarousel" class="my-4">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI,
+                        coperte invernali e altri must di stagione!</p>
                 </div>
             </div>
         </div>
@@ -12,7 +13,7 @@
             <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
                 <label for="searched" class="sr-only">Cerca Prodotto</label>
                 <input name="searched" id="searched" class="input-1" type="search" placeholder={{ __('ui.cercaAll') }}
-                    aria-label="Search"  @if(Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
+                    aria-label="Search" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
             </form>
         </div>
 
@@ -34,15 +35,15 @@
                     <div class="Div-img-header-index-l">
                         <img src="/media/perfume.avif" class="img-fluid  " alt="">
                     </div>
-                   {{--   <div class="divhead-center">
+                    {{--   <div class="divhead-center">
                         <h5 class="text-center ">Per la casa, per i tuoi luoghi preferiti!</h5>
-                    </div>--}}
+                    </div> --}}
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center colhead-r">
                     <div class="Div-img-header-index-r">
                         <img src="/media/imageMe.png" class="img-fluid pt-5" alt="">
                     </div>
-    
+
                 </div>
             </div>
             <div class="row justify-content-center ggit" style="font-family: 'Cinzel', serif;">
@@ -50,12 +51,13 @@
                     <h5 class="text-center ">Per la casa, per i tuoi luoghi preferiti!</h5>
                 </div>
             </div>
-        </div> <hr class="container">
+        </div>
+        <hr class="container">
         {{-- Categorie --}}
         <div class="row">
             <div class=" justify-content-center mb-2 mt-4">
                 <div class="col-12 text-center buttoncategorie">
-                    <button class="btn-index my-2 toggle">{{__('ui.category')}}</button>
+                    <button class="btn-index my-2 toggle">{{ __('ui.category') }}</button>
                 </div>
                 <div class="col-12 panel categorie justify-content-center">
                     @foreach ($categories as $category)
@@ -67,7 +69,7 @@
                 </div>
             </div>
         </div>
-            
+
         <div class="row justify-content-center mt-5">
             <div class="mb-5">
                 <h4 class="text-center tutti-gli-annunci">Tutti gli annunci</h4>
@@ -80,7 +82,7 @@
                     <x-card :ad="$ad" />
                 </div>
             @empty
-                <h2 class="text-center my-5">{{__('ui.noAds')}}<a href=" {{ route('ad.create') }}"></a>
+                <h2 class="text-center my-5">{{ __('ui.noAds') }}<a href=" {{ route('ad.create') }}"></a>
                 </h2>
                 <div class="d-flex justify-content-center">
 

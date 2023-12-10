@@ -39,7 +39,7 @@
     {{-- Card orizzontale --}}
 
     <a href="{{ route('ad.show', $ad) }}" class="decoration-none">
-        
+
         <div class="card mb-3 card2">
             <div class="row g-0">
                 <div class="col-md-5 imgC">
@@ -63,7 +63,6 @@
                             <div class="d-flex justify-content-between">
 
                                 <small class="">{{ $ad->category->name ?? __('ui.noSpec') }}</small>
-                                <span class="inserito-da">{{ __('ui.insertBy') }} {{ Auth::user()->name ?? __('ui.noName') }}</span>
                             </div>
                         </div>
 
