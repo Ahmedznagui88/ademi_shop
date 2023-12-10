@@ -11,8 +11,10 @@
 
 .card-img {
     height: 140px;
+    width: 140px;
     border-radius: 30px;
     margin-left: 5px;
+    object-fit: cover;
 }
 
 .img-card-home{

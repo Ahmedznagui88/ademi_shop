@@ -39,7 +39,7 @@
     {{-- Card orizzontale --}}
 
     <a href="{{ route('ad.show', $ad) }}" class="decoration-none">
-
+        
         <div class="card mb-3 card2">
             <div class="row g-0">
                 <div class="col-md-5 imgC">

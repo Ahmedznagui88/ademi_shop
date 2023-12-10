@@ -70,7 +70,7 @@
 
             </div>  --}}
             @forelse ($ads as $ad)
-                <div class="col-12 rounded-4 d-flex justify-content-center">
+                <div class="col-12 col-md-6 rounded-4 d-flex justify-content-center">
                     <x-card :ad="$ad" />
                 </div>
             @empty
