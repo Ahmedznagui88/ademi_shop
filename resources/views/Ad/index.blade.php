@@ -16,11 +16,9 @@
                     aria-label="Search" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
             </form>
         </div>
-
-
         <article class="container-fluid position-relative article-1">
             <div class="row justify-content-center rowArt">
-                <div class="col-12 col-md-8 divarticle">
+                <div class="col-12 col-md-8 divarticle2">
                     <p class="text-1 mt-5"><strong>Ademi</strong><span class="texthome">Essence</span></p>
                 </div>
                 <div class="col-12 col-md-3 divUnderTitle">
@@ -28,9 +26,10 @@
                 </div>
             </div>
         </article>
+
         <div class="container mt-5">
 
-            <div class="row mb-5 position-relative">
+            <div class="row mb-5 justify-content-center position-relative">
                 <div class="col-12 col-md-6 d-flex justify-content-center colhead-l">
                     <div class="Div-img-header-index-l">
                         <img src="/media/perfume.avif" class="img-fluid  " alt="">
@@ -78,7 +77,7 @@
 
             </div>  --}}
             @forelse ($ads as $ad)
-                <div class="col-12 col-md-6 rounded-4 d-flex justify-content-center">
+                <div class="col-12 col-xl-6 rounded-4 d-flex justify-content-center">
                     <x-card :ad="$ad" />
                 </div>
             @empty

@@ -40,7 +40,7 @@
     width: 340px;
     background-color: #ED7D31;
     position: absolute;
-    top: 550px;
+    top: 800px;
     display: flex;
     align-items: center;
 }
@@ -184,10 +184,13 @@ p {
     .imgsottoTitle {
         display: none;
     }
+    .divUnderTitle {
+        display: none;
+    }
     #text-head-index{
         font-size: 80px !important;
         text-align: end !important;
-       }
+    }
 }
 @media screen and (min-width: 200px) and (max-width: 300px){
     .imgsottoTitle {
