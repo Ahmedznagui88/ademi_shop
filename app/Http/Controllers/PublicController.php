@@ -28,4 +28,8 @@ class PublicController extends Controller
     session()->put('local', $lang);
     return redirect()->back();
   }
+
+  public function profile() {
+    return view('auth.profile');
+  }
 }

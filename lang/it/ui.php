@@ -5,6 +5,7 @@ return [
     'category'=>'Categorie',
     'cercaAll'=>'Cerca Prodotto',
     'insertAnnouncements'=>'Inserisci Annuncio',
+    'editAnnounsement' => 'Modifica annuncio',
     'register'=>'Registrati',
     'logIn'=>'Accedi',
     'revisore'=>'Revisore',
