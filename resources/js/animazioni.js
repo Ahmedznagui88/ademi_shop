@@ -70,7 +70,7 @@ window.addEventListener("load", function () {
   nextSlide()
 })*/
 //carosello 2//
-function carosello() {
+function caroselloTesto() {
     let indice = 0;
     setInterval(() => {
 
@@ -103,10 +103,10 @@ function carosello() {
  
 }
 window.addEventListener("load", function () {
-  carosello()
+  caroselloTesto()
 })
 
-function carosellotesto() {
+function carosello() {
   let indice = 0;
   setInterval(() => {
 
