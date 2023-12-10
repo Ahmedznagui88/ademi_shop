@@ -74,26 +74,26 @@ function carosello() {
     let indice = 0;
     setInterval(() => {
 
-        document.getElementById("carosello").style.transition = "2s opacity"
-        document.getElementById("carosello").style.opacity = "0"
+        document.getElementById("textCarousel").style.transition = "2s opacity"
+        document.getElementById("textCarousel").style.opacity = "0"
 
         setTimeout(() => {
 
             if (indice == 1) {
-                document.getElementById("carosello").src = "./media/vinyl.avif"
+                document.getElementById("textCarousel").innerHTML = "Rendi magico il posto che ami con uno sguardo attento all' ambiente."
             } else if (indice == 2) {
-                document.getElementById("carosello").src = "./media/homegreen.jpeg"
+                document.getElementById("textCarousel").innerHTML = "Acquista in sicurezza tramite i nostri metodi di pagamento semplificati."
             } else if (indice == 3) {
-                document.getElementById("carosello").src = "./media/orologio 1.avif"
+                document.getElementById("textCarousel").innerHTML = "Compra e vendi in totale sicurezza, i nostri revisori garantiscono l'originalità del prodotto tramite il nostro programma formativo partner."
             } else if (indice == 4) {
-                document.getElementById("carosello").src = "./media/perfume2.avif"    
+                document.getElementById("textCarousel").innerHTML = "Hai un negozio? Scopri le nostre offerte riservate ai rivenditori."    
 
                 indice = 0;
             }
 
 
-            document.getElementById("carosello").style.transition = "2s opacity"
-            document.getElementById("carosello").style.opacity = "1"
+            document.getElementById("textCarousel").style.transition = "2s opacity"
+            document.getElementById("textCarousel").style.opacity = "1"
         }, 3000)
 
         indice++
@@ -104,4 +104,40 @@ function carosello() {
 }
 window.addEventListener("load", function () {
   carosello()
+})
+
+function carosellotesto() {
+  let indice = 0;
+  setInterval(() => {
+
+      document.getElementById("carosello").style.transition = "2s opacity"
+      document.getElementById("carosello").style.opacity = "0"
+
+      setTimeout(() => {
+
+          if (indice == 1) {
+              document.getElementById("carosello").src = "./media/vinyl.avif"
+          } else if (indice == 2) {
+              document.getElementById("carosello").src = "./media/homegreen.jpeg"
+          } else if (indice == 3) {
+              document.getElementById("carosello").src = "./media/orologio 1.avif"
+          } else if (indice == 4) {
+              document.getElementById("carosello").src = "./media/perfume2.avif"    
+
+              indice = 0;
+          }
+
+
+          document.getElementById("carosello").style.transition = "2s opacity"
+          document.getElementById("carosello").style.opacity = "1"
+      }, 3000)
+
+      indice++
+
+  }, 5000)
+ 
+
+}
+window.addEventListener("load", function () {
+carosello()
 })
