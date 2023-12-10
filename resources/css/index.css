@@ -75,6 +75,8 @@
     color: rgb(0, 0, 0);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     margin: 0;
+    font-family: 'Cinzel', serif;
+    border-bottom: solid 0.2px #6C5F5B;
 }
 
 .btn-index {
