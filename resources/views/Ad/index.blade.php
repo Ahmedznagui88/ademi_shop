@@ -1,14 +1,13 @@
 <x-layout>
-
-    <div class="container-fluid my-5 rounded-4">
-        <div class="container-fluid">
-            <div class="row textCarousel">
-                <div class="col-12 txt-offer">
-                    <p id="textCarousel" class="my-4">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI,
-                        coperte invernali e altri must di stagione!</p>
-                </div>
+    <div class="container-fluid">
+        <div class="row textCarousel">
+            <div class="col-12 txt-offer">
+                <p id="textCarousel" class="my-4 ">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI,
+                    coperte invernali e altri must di stagione!</p>
             </div>
         </div>
+    </div>
+    <div class="container-fluid my-5 rounded-4">
         <div class="col-12 col-md-7 Divbarradiricerca mb-5 d-flex justify-content-center">
             <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
                 <label for="searched" class="sr-only">Cerca Prodotto</label>
