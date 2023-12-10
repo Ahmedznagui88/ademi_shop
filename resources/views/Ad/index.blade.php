@@ -39,7 +39,7 @@
     
                 </div>
             </div>
-            <div class="row justify-content-center rowtext" style="font-family: 'Cinzel', serif;">
+            <div class="row justify-content-center ggit" style="font-family: 'Cinzel', serif;">
                 <div class="divhead-center2">
                     <h5 class="text-center ">Per la casa, per i tuoi luoghi preferiti!</h5>
                 </div>
