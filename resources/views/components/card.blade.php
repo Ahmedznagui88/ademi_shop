@@ -52,11 +52,11 @@
                         <div class=" my-2">
                             <div>
 
-                                <h5 class="card-title ">{{ $ad->title }}</h5>
+                                <h5 class="card-title ">{{ Str::limit($ad->title , '12') }}</h5>
                             </div>
                             <div class="d-md-flex justify-content-between">
 
-                                <p class="">{{ $ad->brand }}</p>
+                                <p class="">{{ Str::limit($ad->brand , '12') }}</p>
                                 <p class="fs-2 price mx-md-5">${{ $ad->price }}</p>
 
                             </div>

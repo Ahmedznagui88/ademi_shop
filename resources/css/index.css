@@ -133,9 +133,9 @@
 	z-index: 0;
     text-align: end;
 }
-#text-head-index {
-   
-}
+ .textCarousel {
+    margin-top: 80px;
+ }
 
 /* .divhead-center h5 {
    text-shadow: -1px 2px 5px rgba(0,0,0,0.6);
