@@ -17,7 +17,7 @@
         </div>
         <article class="container-fluid position-relative article-1">
             <div class="row justify-content-center rowArt">
-                <div class="col-12 col-md-8 divarticle2">
+                <div class="col-12 col-md-8 divarticle">
                     <p class="text-1 mt-5"><strong>Ademi</strong><span class="texthome">Essence</span></p>
                 </div>
                 <div class="col-12 col-md-3 divUnderTitle">
@@ -33,9 +33,6 @@
                     <div class="Div-img-header-index-l">
                         <img src="/media/perfume.avif" class="img-fluid  " alt="">
                     </div>
-                    {{--   <div class="divhead-center">
-                        <h5 class="text-center ">Per la casa, per i tuoi luoghi preferiti!</h5>
-                    </div> --}}
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center colhead-r">
                     <div class="Div-img-header-index-r">

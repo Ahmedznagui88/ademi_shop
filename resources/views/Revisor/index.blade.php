@@ -60,7 +60,6 @@
                             </div>
                         </div>
                         {{-- Semafori IA GOOGLE per IMMAGINI --}}
-
                         <div class="col-md-3 mx-5">
                             <div class="card-body borderTagsUno">
                                 <h5 class="tc-accent">Revisione Immagini</h5>

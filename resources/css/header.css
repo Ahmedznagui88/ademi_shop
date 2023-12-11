@@ -181,8 +181,6 @@
 
 	.imgUnderTitle {
 		display: none;
-
-
 	}
 
 
@@ -198,6 +196,9 @@
 		margin-top: 50px;
 	}
 
+	.txt-offer{
+		font-size: 10px;
+	}
 	
 }
 
