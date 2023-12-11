@@ -48,7 +48,7 @@
                     {{-- ! end carousel --}}
                     {{-- * alert  --}}
 
-                    <div class="row justify-content-center align-items-center rowrevs">
+                   {{--  <div class="row justify-content-center align-items-center rowrevs">
                         <div class="col-md-3 borderTags">
                             <h5 class="tc-accent mt-3">Tags</h5>
                             <div class="p-2">
@@ -58,9 +58,8 @@
                                     @endforeach
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
                         {{-- Semafori IA GOOGLE per IMMAGINI --}}
-
                         <div class="col-md-3 mx-5">
                             <div class="card-body borderTagsUno">
                                 <h5 class="tc-accent">Revisione Immagini</h5>
@@ -71,7 +70,7 @@
                                 <p>Ammiccante: <span class="{{ $image->racy }}"></span></p>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     {{-- ! end alert  --}}
                 </div>
