@@ -1,4 +1,4 @@
-<div class="">
+  <div class="">
     <form class="p-5 rounded-5 form-creat form" wire:submit.prevent="update">
         @csrf
         @if (session('message'))
@@ -93,4 +93,4 @@
 
     </form>
 
-</div>
+</div> 

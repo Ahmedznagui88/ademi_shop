@@ -65,6 +65,7 @@ class AdCreateForm extends Component
         if (in_array($key, array_keys($this->images))) {
             unset($this->images[$key]);
         }
+    
     }
 
 

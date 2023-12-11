@@ -20,7 +20,7 @@ class AdEdit extends Component
     public $description;
     public $temporary_images;
     public $images = [];
-    /* public $image;*/ 
+    /* public $image;*/
     public $price;
     public $category_id = [];
     public $old_image;
@@ -57,7 +57,7 @@ class AdEdit extends Component
 
             Storage::delete($this->old_image);
             foreach ($this->images as $image) {
-                /* $this->ad->images()->create(['path'=>$image->store('images', 'public')]); */
+                 $this->ad->images()->create(['path'=>$image->store('images', 'public')]); 
 
                 $newFileName = "ads/{$this->ad->id}";
                 $newImage = $this->ad->images()->create(['path' => $image->store($newFileName, 'public')]);
@@ -88,4 +88,4 @@ class AdEdit extends Component
         $categories = Category::all();
         return view('livewire.ad-edit', compact('categories'));
     }
-}
+} 
