@@ -23,8 +23,10 @@
 <body class="homepage" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #F6F1EE" @endif>
     
     <x-nav />
-    
-    {{ $slot }}
+    <div class="min-vh-100">
+
+        {{ $slot }}
+    </div>
     
     
     <x-footer />

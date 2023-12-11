@@ -56,7 +56,6 @@
                     <p class="text-danger mt-2">{{ $message }}</p>
                 @enderror
             </div>
-
             @if (!empty($images))
                 <div class="row">
                     <div class="col-12">
