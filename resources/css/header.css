@@ -169,13 +169,14 @@
 	.divarticle {
 		display: flex;
 		justify-content: center;
+		margin-top: ;
 		
 	}
 
 	.text-1 {
 		font-size: 50px;
 		position: absolute;
-		bottom: -100px;
+		bottom: -130px;
 	}
 
 	.imgUnderTitle {
