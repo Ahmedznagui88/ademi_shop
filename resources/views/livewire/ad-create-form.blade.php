@@ -68,7 +68,7 @@
                                 <div class="col-md-2 prevImg">
                                     <div class="img-preview mx-auto shadow imgTemp"
                                         style="background-image:url({{ $image->temporaryUrl() }})">
-                                        <button wire:click="removeImage({{$key}})"class="btn btnrmv">{{__('ui.remove')}}</button>
+                                        <button type="button" wire:click="removeImage({{$key}})"class="btn btnrmv">{{__('ui.remove')}}</button>
                                     </div>
                                 </div>
                             @endforeach
