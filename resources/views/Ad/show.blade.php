@@ -41,8 +41,7 @@
 
         <div class="mt-5 outBack">
             
-            <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">
-                <img src="/media/left-chevron.png" class="img-fluid arow" alt="">{{__('ui.tornaIndietro')}}</a>
+            <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">{{__('ui.tornaIndietro')}}</a>
             
         </div>
 
