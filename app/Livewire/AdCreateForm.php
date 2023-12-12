@@ -8,6 +8,7 @@ use App\Jobs\RemoveFaces;
 use App\Jobs\ResizeImage;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\WaterMarker;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
@@ -95,6 +96,7 @@ class AdCreateForm extends Component
                     new ResizeImage($newImage->path, 800, 450),
                     new GoogleVisionSafeSearch($newImage->id),
                     new GoogleVisionLabelImage($newImage->id),
+                    new WaterMarker($newImage->id),
                 ])->dispatch($newImage->id);
             }
 
