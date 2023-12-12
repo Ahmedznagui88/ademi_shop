@@ -20,11 +20,13 @@
     
 </head>
 
-<body class="homepage" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #F6F1EE" @endif>
+<body @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #F6F1EE" @endif
+                        @if (Route::CurrentRouteName() == 'ad.show') style="background-color: #F6F1EE" @endif>
     
     <x-nav />
 
     <div class="min-vh-100">
+
         {{ $slot }}
     </div>
 

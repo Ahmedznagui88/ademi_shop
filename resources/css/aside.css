@@ -1,0 +1,46 @@
+.txt-offer2{
+    margin-top: 76px;
+    text-align: center;
+	width: 100vw;
+	height: 65px;
+	background-color: rgb(224, 202, 172);
+	color: rgb(0, 0, 0);
+	font-family: 'Cinzel', serif;
+}
+
+aside{
+    
+    width: 150px;
+    height: 100vh;
+    background: #D9D9D9;
+    position: relative;
+    left: -13px;
+    z-index: 0;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+  }
+
+  .hcat{
+    font-weight: bold;
+    border-bottom: solid 0.4px ;
+  }
+
+  .div-aside{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .div-cat-aside{
+    
+    display: flex;
+    align-items: center;
+    margin: 6px;
+    color: black;
+  }
+
+  .a-aside{
+    color: black;
+    
+  }
