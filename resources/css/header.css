@@ -1,6 +1,6 @@
 /** article 1*/
-article {
-	height: 260px;
+.articleHeader {
+	height: 560px;
 }
 
 .divarticle {
@@ -43,6 +43,19 @@ article {
 	
 }
 
+/**offerta  */
+.txt-offer{
+	text-align: center;
+	width: 100vw;
+	height: 65px;
+	background-color: rgb(224, 202, 172);
+	/* background-color: rgb(227, 247, 240); */
+	color: rgb(0, 0, 0);
+	font-family: 'Cinzel', serif;
+	
+	
+}
+/* ! end offerta */
 /** title */
 
 .text-1 {
@@ -50,15 +63,11 @@ article {
 	font-size: 120px;
 	color: rgb(0, 0, 0);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-	margin: 0;
+	
 }
 
 .texthome {
 	font-weight: lighter;
-}
-
-.char {
-	transform: translateY(250px);
 }
 
 .imgUnderTitle {
@@ -108,6 +117,7 @@ article {
 	width: 340px;
 	height: 60px;
 	background-color: #ED7D31;
+	font-family: 'Cinzel', serif;   
 	z-index: 1;
 	position: absolute;
 	top: 85%;
@@ -117,20 +127,20 @@ article {
 	width: 340px;
 	height: 60px;
 	background-color: #ED7D31;
+	font-family: 'Cinzel', serif;   
 	z-index: 1;
 	position: absolute;
 	top: 80%;
 }
 
-.arrow {
+/* .arrow {
 	position: fixed;
 	top: 65%;
 	width: 60px;
-
 	z-index: -1;
 	animation: pulse 2s infinite;
 }
-
+ */
 
 @keyframes pulse {
 	0% {
@@ -149,7 +159,7 @@ article {
 /* ! end article 2 */
 
 
-@media screen and (min-width: 300px) and (max-width: 780px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
 	.conterone {
 		display: flex;
 		justify-content: center;
@@ -159,19 +169,18 @@ article {
 	.divarticle {
 		display: flex;
 		justify-content: center;
+		margin-top: ;
 		
 	}
 
 	.text-1 {
-		font-size: 40px;
+		font-size: 50px;
 		position: absolute;
-		bottom: -100px;
+		bottom: -130px;
 	}
 
 	.imgUnderTitle {
 		display: none;
-
-
 	}
 
 
@@ -184,36 +193,54 @@ article {
 	}
 	.article-1 {
 		height: 100px;
+		margin-top: 50px;
 	}
 
-	/*.btn-header {
+	.txt-offer{
 		font-size: 10px;
-		width: 60px;
-		height: 25px;
-	}*/
+	}
 	
 }
 
-/* @media screen and (min-width: 300px) and (max-width: 789px) {
-	.rowArt{
+@media screen and (min-width: 600px) and (max-width: 999px) {
+	/* .conterone {
 		display: flex;
 		justify-content: center;
-		width: 100%;
-		height: auto;
-		position: relative;
-	}
+		width: auto;
+	} */
 
-	.divarticle{
-		width: 100%;
-		height: 30px;
+	.divarticle {
 		display: flex;
-		justify-content: center; 
-		width: 100vh;
-		height: 10%;
-		position: absolute;
-		right: 40%;
-		top: 20px;
+		justify-content: center;
+		
 	}
 
+	.article-1 {
+		display: flex;
+		justify-content: center;
+		height: 100px;
+		margin-top: 50px;
+	}
+
+	.text-1 {
+		font-size: 90px;
+		position: absolute;
+		bottom: -100px;
+	}
+
+	.imgUnderTitle {
+		display: none;
+	}
+
+
+	.divHead2{
+		width: 100%;
+	}
+
+	.dicCont{
+		margin-top: 30px;
+	}
+	
   
-} */
+} 
+

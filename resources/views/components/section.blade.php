@@ -13,33 +13,36 @@
 
 
 
-    {{-- <div class="container-fluid contSec">
-        
-        <div>
-            <h2 class="catitle text-center">{{__('ui.category')}}</h2>
+    <div class="container-fluid contSec"> 
+        <div class="row row">
+
+            <div class="">
+                <h2 class=" catitle text-center">I dettagli fanno la differenza</h2>
+            </div>
         </div>
-        
-        <div class="row">
-            <a href="">
+
+
+      <div class="row rowCat">
+            
                 <div class="col-12 divSecImg">
                     <img src="/media/interior.jpg" class="secImg1" alt="">
                 </div>
-            </a>
-            <a href="">
+            
+             
                 <div class="col-12 divSecImg2">
                     <img src="/media/perfume2.avif" class="secImg2" alt="">
                 </div>
-            </a>
-            <a href="">
+            
+            
                 <div class="col-12 divSecImg3">
                     <img src="/media/watch.jpg" class="secImg3" alt="">
                 </div>
-            </a>
-            <a href="">
+            
+            
                 <div class="col-12 divSecImg4">
                     <img src="/media/vinyl.avif" class="secImg4" alt="">
                 </div>
-            </a>
+            
         </div>
-    </div> --}}
+    </div> 
 </section>

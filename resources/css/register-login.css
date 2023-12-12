@@ -14,34 +14,19 @@
    
 }
 
-
 .formlogin-register {
    
     border-radius: 25px;
-    box-shadow: 2px 3px 8px 2px #888888;
+    box-shadow: 2px 3px 8px 2px #888888; 
 }
 .bg-logo {
-    /* background-image: url(./../../public/media/ademi\ logo\ -4.png); */
     background-size: 100%;
-    /* background-position: center;
-    background-repeat: no-repeat;
-    transition: 2s; */
+   
 }
 
 .img-logo-register, .img-logo-register1, .img-logo-register2, .img-logo-register3, .img-logo-register4 {
     margin: 10px;
     width: 100px;
 }
-/* 
-html.is-animating .bg-logo{
-
-    opacity: 0;
-} */
 
 
-@media screen and (max-width: 520px) {
-    .icona {
-        position: absolute;
-      left: 90%;
-    }
-}

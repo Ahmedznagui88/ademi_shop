@@ -1,7 +1,7 @@
 <x-layout>
     <div class="container">
         <div class="row justify-content-center ">
-            <div class="col-12 col-md-7 bg-logo d-flex align-items-center " id="bg-register-login">
+            <div class="col-12 col-md-6 bg-logo d-flex align-items-center " id="bg-register-login">
                 <div class="divimg" id="">
                     <img src="./media/Group A.png" class="img-logo-register a" id="a" alt="">
                     <img src="./media/Group d.png" class="img-logo-register d" id="d" alt="">
@@ -11,7 +11,7 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-5 divlogin-register">
+            <div class="col-12 col-md-6 divlogin-register">
                 <form action="{{ route('login') }}" method="POST" class="p-5 formlogin-register form">
                     @csrf
                     <div class="mb-3">

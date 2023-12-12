@@ -70,36 +70,74 @@ window.addEventListener("load", function () {
   nextSlide()
 })*/
 //carosello 2//
-function carosello() {
+function caroselloTesto() {
     let indice = 0;
     setInterval(() => {
 
-        document.getElementById("carosello").style.transition = "2s opacity"
-        document.getElementById("carosello").style.opacity = "0"
+        document.getElementById("textCarousel").style.transition = "2s opacity"
+        document.getElementById("textCarousel").style.opacity = "0"
 
         setTimeout(() => {
 
             if (indice == 1) {
-                document.getElementById("carosello").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkvMJDPvL5lBtmrViEL-7mJ1Ii_yznEdpvpRPxl6_bOkOY-hf67sNewOvEeKm3e1yqp0&usqp=CAU"
+                document.getElementById("textCarousel").innerHTML = "Rendi magico il posto che ami con uno sguardo attento all' ambiente."
             } else if (indice == 2) {
-                document.getElementById("carosello").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYEwVKC05E5Cx5ZZS55PBmskQ2Ocfb4HKFg&usqp=CAU"
+                document.getElementById("textCarousel").innerHTML = "Acquista in sicurezza tramite i nostri metodi di pagamento semplificati."
             } else if (indice == 3) {
-                document.getElementById("carosello").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR59saMRzhRJgD3720JEtAr3j03yRU701kHcA&usqp=CAU"
+                document.getElementById("textCarousel").innerHTML = "Compra e vendi in totale sicurezza, i nostri revisori garantiscono l'originalità del prodotto tramite il nostro programma formativo partner."
+            } else if (indice == 4) {
+                document.getElementById("textCarousel").innerHTML = "Hai un negozio? Scopri le nostre offerte riservate ai rivenditori."    
 
                 indice = 0;
             }
 
 
-            document.getElementById("carosello").style.transition = "2s opacity"
-            document.getElementById("carosello").style.opacity = "1"
-        }, 2000)
+            document.getElementById("textCarousel").style.transition = "2s opacity"
+            document.getElementById("textCarousel").style.opacity = "1"
+        }, 3000)
 
         indice++
 
-    }, 4000)
+    }, 5000)
    
  
 }
 window.addEventListener("load", function () {
-  carosello()
+  caroselloTesto()
+})
+
+function carosello() {
+  let indice = 0;
+  setInterval(() => {
+
+      document.getElementById("carosello").style.transition = "2s opacity"
+      document.getElementById("carosello").style.opacity = "0"
+
+      setTimeout(() => {
+
+          if (indice == 1) {
+              document.getElementById("carosello").src = "./media/vinyl.avif"
+          } else if (indice == 2) {
+              document.getElementById("carosello").src = "./media/homegreen.jpeg"
+          } else if (indice == 3) {
+              document.getElementById("carosello").src = "./media/orologio 1.avif"
+          } else if (indice == 4) {
+              document.getElementById("carosello").src = "./media/perfume2.avif"    
+
+              indice = 0;
+          }
+
+
+          document.getElementById("carosello").style.transition = "2s opacity"
+          document.getElementById("carosello").style.opacity = "1"
+      }, 3000)
+
+      indice++
+
+  }, 5000)
+ 
+
+}
+window.addEventListener("load", function () {
+carosello()
 })

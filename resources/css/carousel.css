@@ -1,13 +1,61 @@
-
-
-.carousel-control-prev , .carousel-control-next {
-    background-color: rgba(23, 23, 23, 0.12);
-    border-radius: 20px 20px 20px 20px;
-    width: 100px;
+.contCarous{
+   
+    margin-top: 100px;
+    height: 660px;
+   
 }
 
-.cs{
-    height: 400px;
-    width: 900px;
+
+.showdescrizioni {
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Cinzel', serif;
+    border: solid antiquewhite;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+
+.carousel-control-prev, .carousel-control-next{
+    background: #ecb18a66;
+    
 
 } 
+
+.outBack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid antiquewhite;
+    border-radius: 50px;
+    width: 160px;
+    height: 40px;
+    margin-left: 80px;
+}
+
+ .arow{
+    width: 20px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    transition: 0.90s;
+ }
+
+
+
+ .arow:hover{
+    scale: 1.6;
+ }
+
+
+
+ @media screen and (min-width: 200px) and (max-width: 765px){
+
+    .outBack{
+        display: flex;
+        justify-content: center;
+        
+    }
+ } 

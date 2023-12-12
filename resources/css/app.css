@@ -15,4 +15,6 @@
 @import './show';
 @import './index';
 @import './section.css';
+@import './revisor';
+@import './profile.css';
 @import '/node_modules/flag-icons/css/flag-icons.min.css';

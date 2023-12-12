@@ -55,7 +55,7 @@ class AdController extends Controller
      */
     public function edit(ad $ad)
     {
-        //
+        return view('ad.edit', compact('ad'));
     }
 
     /**

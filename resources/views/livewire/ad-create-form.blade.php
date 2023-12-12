@@ -56,7 +56,6 @@
                     <p class="text-danger mt-2">{{ $message }}</p>
                 @enderror
             </div>
-
             @if (!empty($images))
                 <div class="row">
                     <div class="col-12">
@@ -65,21 +64,16 @@
                         </p>
                         <div class="row">
                             @foreach ($images as $key => $image)
-                                <div class="col-3">
-                                    <div class="img-preview mx-auto shadow rounded"
-                                        style="width:300px; height:300px; background-image:url({{ $image->temporaryUrl() }})">
-                                        <button wire:click="removeImage({{$key}})"class="btn btn-danger">{{__('ui.remove')}}</button>
+                                <div class="col-md-2 prevImg">
+                                    <div class="img-preview mx-auto shadow imgTemp"
+                                        style="background-image:url({{ $image->temporaryUrl() }})">
+                                        <button type="button" wire:click="removeImage({{$key}})"class="btn btnrmv">{{__('ui.remove')}}</button>
                                     </div>
                                 </div>
                             @endforeach
                         </div>
                     </div>
                 </div>
-                {{-- <div class="m-3">
-                    <label for="">Preview immagine</label>
-                    <img src="{{ $image->temporaryUrl() }}" alt="" class="img-fluid w-25  rounded-3">
-                </div> --}}
-                {{-- <img src="https://images.unsplash.com/photo-1700587085844-b96c27958df2?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-25" alt=""> --}}
             @endif
 
             @error('image')
