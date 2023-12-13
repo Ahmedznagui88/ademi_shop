@@ -42,12 +42,26 @@
                 <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
             
-            <div class="mb-1">
+            {{--  <div class="mb-1">
                 <label for="image" class="form-label">Immagine attuale</label>
+            
                 <img src="{{ !$ad->images()->get()->isEmpty()? $ad->images()->first()->getUrl(800, 450): '/public/media/default-img.jpg' }}"
                 class="img-fluid card-img">
-            </div>
+            </div>--}}
+            <div class="mb1">
 
+                <label for="image" class="form-label">Immagine attuale</label>
+            </div>
+            <div class="mb-1">
+              
+            @foreach ($old_images as $images )
+           
+             <img src="{{ Storage::url($images->path )}}"class="img-fluid card-img mb-1">
+             
+             <a href="" wire:click="deleteOldImage({{$images->id}})"><i class="fa-solid fa-circle-xmark text-danger ms-2"></i></a>
+             @endforeach
+             </div>
+          
             <div class="mb-1">
                 <label for="images" class="form-label">{{__('ui.addImage')}}</label>
                 <input type="file" wire:model="temporary_images" multiple 
@@ -58,7 +72,8 @@
                 @enderror
             </div>
 
-            @if (!empty($images))
+          @if (!empty($images))
+           
                 <div class="row">
                     <div class="col-12">
                         <p>
@@ -71,12 +86,14 @@
                                         style="background-image:url({{ $image->temporaryUrl() }})">
                                         <button wire:click="removeImage({{$key}})"class="btn btnrmv">{{__('ui.remove')}}</button>
                                     </div>
+                                    
                                 </div>
                             @endforeach
                         </div>
                     </div>
                 </div>
-            @endif
+              
+            @endif 
 
             @error('image')
                 <p class="text-danger fst-italic">{{ $message }}</p>

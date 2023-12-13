@@ -2,14 +2,15 @@
 
 namespace App\Livewire;
 
+use App\Models\Image;
 use Livewire\Component;
+use App\Models\Category;
 use App\Jobs\ResizeImage;
+use Livewire\WithFileUploads;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
-use App\Models\Category;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
-use Livewire\WithFileUploads;
 
 class AdEdit extends Component
 {
@@ -23,7 +24,7 @@ class AdEdit extends Component
     /* public $image;*/
     public $price;
     public $category_id = [];
-    public $old_image;
+    public $old_images = [];
    
     public function updatedTemporaryImages()
     {
@@ -34,6 +35,12 @@ class AdEdit extends Component
                 $this->images[] = $image;
             }
         }
+    }
+    public function deleteOldImage($id){
+
+        $images = Image::where('id', $id)->first()->get();
+        $images->delete();
+        session()->flash('message', 'Immagine eliminata con successo');
     }
     public function removeImage($key)
     {
@@ -55,7 +62,6 @@ class AdEdit extends Component
         
         if (count($this->images)) {
 
-            Storage::delete($this->old_image);
             foreach ($this->images as $image) {
                  $this->ad->images()->create(['path'=>$image->store('images', 'public')]); 
 
@@ -64,7 +70,7 @@ class AdEdit extends Component
                 dispatch(new ResizeImage($newImage->path, 800, 450));
                 dispatch(new GoogleVisionSafeSearch($newImage->id));
                 dispatch(new GoogleVisionLabelImage($newImage->id));
-                $newImage->update();
+                
             }
             
        
@@ -79,12 +85,16 @@ class AdEdit extends Component
         $this->description = $this->ad->description;
         $this->price = $this->ad->price;
         $this->category_id[] = $this->ad->category_id;
-        $this->old_image = $this->ad->images;
+        $this->old_images = Image::where('ad_id', $this->ad->id)->get();
+      
+
+        
 
     }
     
     public function render()
     {
+    
         $categories = Category::all();
         return view('livewire.ad-edit', compact('categories'));
     }
