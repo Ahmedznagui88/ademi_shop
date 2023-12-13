@@ -80,7 +80,7 @@
     
 }
 
- @media screen and (min-width: 200px) and (max-width: 765px){
+ @media screen and (min-width: 365px) and (max-width: 765px){
 
     .outBack{
         display: flex;
