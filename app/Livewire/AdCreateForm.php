@@ -99,8 +99,8 @@ class AdCreateForm extends Component
                     
                 ])->dispatch($newImage->id);
  */
-                dispatch(new ResizeImage($newImage->path, 800, 450));
                 dispatch(new WaterMarker($newImage->id));
+                dispatch(new ResizeImage($newImage->path, 800, 450));
             }
 
             File::deleteDirectory(storage_path('app/livewire-tmp'));
