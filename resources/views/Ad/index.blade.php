@@ -67,7 +67,7 @@
 
         <div class="row justify-content-center mt-5">
             <div class="mb-5">
-                <h4 class="text-center tutti-gli-annunci">Tutti gli annunci</h4>
+                <h4 class="text-center tutti-gli-annunci">{{__('ui.tuttiAds')}}</h4>
             </div>
             {{-- <div class="col-2 vh-100 colonna-l" id="colonnal">
 

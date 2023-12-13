@@ -52,4 +52,7 @@ return [
     'creatoIl'=>'Created on',
     'azione'=>'Actions',
     'modifica'=>'Edit',
+    'elimina'=>'Delete',
+    'iDett'=>'Details make the difference',
+    'tuttiAds'=>'All ads',
 ];

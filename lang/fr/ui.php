@@ -52,4 +52,7 @@ return [
     'creatoIl'=>'Créé sur',
     'azione'=>'Actions',
     'modifica'=>'Modifier',
+    'elimina'=>'Supprimer',
+    'iDett'=>'Les détails font la différence',
+    'tuttiAds'=>'Toutes les annonces',
 ];

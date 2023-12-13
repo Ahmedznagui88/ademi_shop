@@ -17,7 +17,7 @@
         <div class="row row">
 
             <div class="">
-                <h2 class=" catitle text-center">I dettagli fanno la differenza</h2>
+                <h2 class=" catitle text-center">{{__('ui.iDett')}}</h2>
             </div>
         </div>
 
