@@ -48,7 +48,7 @@
                     {{-- ! end carousel --}}
                     {{-- * alert  --}}
 
-                   <div class="row justify-content-center align-items-center rowrevs">
+                   <div class="row justify-content-center align-items-center mx-4 rowrevs">
                         <div class="col-md-3 borderTags">
                             <h5 class="tc-accent mt-3">Tags</h5>
                             <div class="p-2">

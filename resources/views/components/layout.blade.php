@@ -20,24 +20,22 @@
     
 </head>
 
-<body class="homepage" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #F6F1EE" @endif>
+<body @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #F6F1EE" @endif
+                        @if (Route::CurrentRouteName() == 'ad.show') style="background-color: #F6F1EE" @endif>
     
     <x-nav />
+
     <div class="min-vh-100">
 
         {{ $slot }}
     </div>
-    
-    
+
     <x-footer />
     
-    
-    
+        
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
-    
     
 </body>
 

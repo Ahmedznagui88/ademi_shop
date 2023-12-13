@@ -1,35 +1,51 @@
 .contCarous{
-   
-    margin-top: 100px;
     height: 660px;
-   
-}
-
-.rowCarousel{
-   
-    
-}
-
-.carousss{
-    
 }
 
 .showdescrizioni {
-    margin-top: 120px;
-   text-align: center;
+    margin-top: 100px;
+    text-align: center;
     color: rgb(0, 0, 0);
     font-family: 'Cinzel', serif;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
  }
 
-
+.img-carousel{
+    border-radius: 50px;
+}
 .carousel-control-prev, .carousel-control-next{
-    background: #ecb18a66;
-    
-
+    background: #c6ae9f89
 } 
 
+.carousel-control-prev{
+    border-radius: 50px 0px 0px 50px;
+}
+
+.carousel-control-next{
+    border-radius: 0px 50px 50px 0px;
+    
+}
+
+.descrption{
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: 'Cinzel', serif;
+}
 .outBack{
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid antiquewhite;
+    border-radius: 50px;
+    width: 160px;
+    height: 40px;
+    margin-left: 80px;
 }
 
  .arow{
@@ -45,7 +61,23 @@
     scale: 1.6;
  }
 
+/**container show  */
 
+.containerShow{
+    margin-bottom: 10px;
+
+}
+
+.divImgShow{
+    display: flex;
+    justify-content: center;
+}
+
+.ImgShow{
+    height: 130px;
+    object-fit: contain;
+    
+}
 
  @media screen and (min-width: 200px) and (max-width: 765px){
 

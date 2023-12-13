@@ -48,8 +48,13 @@
     border-right: solid 0.2px black;
 }
 
+.rowrevs{
+    border: solid 5px rgb(225, 215, 202);
+    border-radius: 50px;
+    width: 600px;
+}
 
-@media (max-width: 767px) {
+@media screen and (min-width: 200px) and (max-width: 767px) {
 
 
     .carousel-1{
@@ -61,6 +66,8 @@
         margin-top: 20px;
         background-color: rgb(225, 215, 202);
         border-radius: 30px;
+        width: 90%;
+       
     }
     .tc-accent{
         text-align: center;
@@ -107,7 +114,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .carousel-1{
         display: flex;
         flex-direction: column;
@@ -117,6 +124,7 @@
         margin-top: 20px;
         background-color: rgb(225, 215, 202);
         border-radius: 30px;
+        width: 94%;
     }
     .tc-accent{
         text-align: center;

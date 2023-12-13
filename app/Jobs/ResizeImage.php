@@ -49,8 +49,5 @@ class ResizeImage implements ShouldQueue
                         ->crop(Manipulations::CROP_CENTER , $w , $h)
                         ->save($destPath);
 
-
-
-
     }
 }

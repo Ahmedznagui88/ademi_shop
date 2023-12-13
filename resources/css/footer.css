@@ -7,6 +7,7 @@ footer{
     font-size: 20px;
     height: 400px;
     font-family: 'Cinzel', serif; 
+  
    
 }
 
@@ -30,7 +31,7 @@ a {
   width: 100%;
   
 }
-
+/* 
 @media screen and (min-width: 375px) and (max-width: 780px) {
 	footer {
 		margin-top: 190%;
@@ -38,4 +39,4 @@ a {
 
 
 
-}
+} */
