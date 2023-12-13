@@ -37,8 +37,7 @@ class RemoveFaces implements ShouldQueue
             return;
         }
 
-        $srcPath = storage_path('app/public/'
-            . $i->path);
+        $srcPath = storage_path('app/public/'. $i->path);
 
         $image = file_get_contents($srcPath);
 

@@ -35,8 +35,7 @@ class WaterMarker implements ShouldQueue
             return;
         }
 
-        $srcPath = storage_path('app/public/'
-            . $i->path);
+        $srcPath = storage_path('app/public/'. $i->path);
 
         $image = file_get_contents($srcPath);
 
@@ -44,7 +43,8 @@ class WaterMarker implements ShouldQueue
 
                 $image->watermark(base_path('resources/img/ademi.png'))
                 ->watermarkPosition(Manipulations::POSITION_CENTER)
-                ->watermarkPosition(Manipulations::POSITION_RIGHT)
+                ->width(250)
+                ->height(250)
                 ->watermarkOpacity(50)
                 ->watermarkPadding(50);
 
