@@ -1,6 +1,6 @@
 .txt-offer2{
-    margin-top: 76px;
-    text-align: center;
+  margin-top: 76px;
+  text-align: center;
 	width: 100vw;
 	height: 65px;
 	background-color: rgb(224, 202, 172);
@@ -9,15 +9,16 @@
 }
 
 aside{
-    
+  margin-top: 20px;
     width: 150px;
-    height: 100vh;
+    height: 100%;
     background: #D9D9D9;
-    position: relative;
-    left: -13px;
+    /* position: relative;
+    left: -13px; */
     z-index: 0;
     text-align: center;
     font-family: 'Cinzel', serif;
+    border-radius: 30px;
   }
 
   .hcat{
@@ -33,7 +34,6 @@ aside{
   }
 
   .div-cat-aside{
-    
     display: flex;
     align-items: center;
     margin: 6px;
@@ -44,3 +44,168 @@ aside{
     color: black;
     
   }
+
+  .containerShow{
+    margin-top: 10px;
+    border-top: solid 0.2px;
+    
+  }
+
+  .rowshow2{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-scopri{
+    text-align: center;
+    
+  }
+
+  
+  @media screen and (min-width: 200px) and (max-width: 765px) {
+
+    .hcat{
+     
+      font-size: 9px;
+      border-bottom: solid 0.4px ;
+    }
+  
+    .div-aside{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+  
+    .div-cat-aside{
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 6px;
+      color: black;
+    }
+  
+    .a-aside{
+      color: black;
+      font-size: 7px;
+      
+    }
+
+    aside{
+      margin-top: 10px;
+      width: 80px;
+      height: 100%;
+      background: #D9D9D9;
+      border-radius: 30px;
+      margin-right: 10px;
+
+      font-family: 'Cinzel', serif;
+    }
+
+    .txt-offer2{
+      height: 30px;
+      font-size: 10px;
+      margin-top: 60px;
+    }
+    .txt-banner{
+      margin-top: 6px;
+    }
+
+    .rowshow2{
+      display: flex;
+      overflow-y:scroll;
+    }
+
+    .text-scopri{
+      text-align: center;
+      font-size: 10px;
+    }
+    .containerShow{
+      border-top: solid 0.3px #a8a6a6;
+    }
+
+
+    .divImgShow{
+      width: 140px;
+    }
+
+
+
+
+
+  
+    }
+    
+
+
+    
+    @media screen and (min-width: 766px)  and (max-width: 999px){
+      
+      .hcat{
+     
+        font-size: 9px;
+        border-bottom: solid 0.4px ;
+      }
+    
+      .div-aside{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        
+      }
+    
+      .div-cat-aside{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 6px;
+        color: black;
+      }
+    
+      .a-aside{
+        color: black;
+        font-size: 7px;
+        
+      }
+  
+      aside{
+        margin-top: 10px;
+        width: 80px;
+        height: 100%;
+        background: #D9D9D9;
+        border-radius: 30px;
+        margin-right: 10px;
+  
+        font-family: 'Cinzel', serif;
+      }
+  
+      .txt-offer2{
+        height: 30px;
+        font-size: 10px;
+        margin-top: 60px;
+      }
+      .txt-banner{
+        margin-top: 6px;
+      }
+  
+      .rowshow2{
+        display: flex;
+        overflow-y:scroll;
+      }
+  
+      .text-scopri{
+        text-align: center;
+        font-size: 10px;
+      }
+      .containerShow{
+        border-top: solid 0.3px #a8a6a6;
+      }
+  
+  
+      .divImgShow{
+        width: 140px;
+      }
+        
+    }

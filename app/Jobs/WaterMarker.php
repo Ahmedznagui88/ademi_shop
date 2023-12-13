@@ -35,20 +35,22 @@ class WaterMarker implements ShouldQueue
             return;
         }
 
-        $srcPath = storage_path('app/public/'
-            . $i->path);
+        $srcPath = storage_path('app/public/' . $i->path);
 
+        /* 
         $image = file_get_contents($srcPath);
-
+ */
         $image = SpatieImage::load($srcPath);
 
-                $image->watermark(base_path('resources/img/ademi.png'))
-                ->watermarkPosition(Manipulations::POSITION_CENTER)
-                ->watermarkPosition(Manipulations::POSITION_RIGHT)
-                ->watermarkOpacity(50)
-                ->watermarkPadding(50);
+        $image->watermark(base_path('resources/img/ademi.png'))
+            ->watermarkOpacity(50)
+            ->watermarkWidth($image->getWidth()*0.15, Manipulations::UNIT_PIXELS)
+            ->watermarkHeight($image->getHeight()*0.10, Manipulations::UNIT_PIXELS)
+            ->watermarkFit(Manipulations::FIT_STRETCH)
+            ->watermarkPosition(Manipulations::POSITION_CENTER);
 
-                $image->save($srcPath);
-        
+
+
+        $image->save($srcPath);
     }
 }

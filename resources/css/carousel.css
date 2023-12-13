@@ -1,5 +1,6 @@
 .contCarous{
-    height: 660px;
+    height: 100%;
+    
 }
 
 .showdescrizioni {
@@ -84,6 +85,42 @@
     .outBack{
         display: flex;
         justify-content: center;
+        
+    }
+
+    .showdescrizioni {
+        width: 250px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: 'Cinzel', serif;
+        font-size: 10px;
+        background-color: #D9D9D9;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+     .font_title{
+        font-size: 15px;
+        margin-top: 7px;
+        border-bottom: solid 0.4px ;
+     }
+
+
+     .img-carousel{
+        border-radius: 27px;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        background: #c6ae9f89
+    } 
+    
+    .carousel-control-prev{
+        border-radius: 27px 0px 0px 27px;
+    }
+    
+    .carousel-control-next{
+        border-radius: 0px 27px 27px 0px;
         
     }
  } 
