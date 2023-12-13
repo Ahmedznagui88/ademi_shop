@@ -48,4 +48,9 @@ return [
     'arte'=>'',
     'vini'=>'',
     'liquori'=>'',
+    'revImage'=>'Revisione Immagine',
+    'imgNow'=>'Immagine attuale',
+    'creatoIl'=>'Creato il',
+    'azione'=>'Azioni',
+    'modifica'=>'Modifica',
 ];

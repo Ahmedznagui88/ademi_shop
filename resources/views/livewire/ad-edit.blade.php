@@ -43,7 +43,7 @@
             @enderror
             
             <div class="mb-1">
-                <label for="image" class="form-label">Immagine attuale</label>
+                <label for="image" class="form-label">{{__('ui.imgNow')}}</label>
                 <img src="{{ !$ad->images()->get()->isEmpty()? $ad->images()->first()->getUrl(800, 450): '/public/media/default-img.jpg' }}"
                 class="img-fluid card-img">
             </div>

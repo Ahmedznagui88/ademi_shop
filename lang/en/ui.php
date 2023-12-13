@@ -47,4 +47,9 @@ return [
     'arte'=>'Art',
     'vini'=>'Wines',
     'liquori'=>'Liqueurs',
+    'revImage'=>'Image Review',
+    'imgNow'=>'Current image',
+    'creatoIl'=>'Created on',
+    'azione'=>'Actions',
+    'modifica'=>'Edit',
 ];

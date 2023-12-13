@@ -63,7 +63,7 @@
                         {{-- Semafori IA GOOGLE per IMMAGINI --}}
                         <div class="col-md-3 mx-5">
                             <div class="card-body borderTagsUno">
-                                <h5 class="tc-accent">Revisione Immagini</h5>
+                                <h5 class="tc-accent">{{__('ui.revImage')}}</h5>
                                 <p>Adulti: <span class="{{ $image->adult }}"></span></p>
                                 <p>Satira: <span class="{{ $image->spoof }}"></span></p>
                                 <p>Medicina: <span class="{{ $image->medical }}"></span></p>

@@ -3,11 +3,11 @@
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Titolo</th>
-            <th scope="col">Prezzo</th>
-            <th scope="col">Categorie</th>
-            <th scope="col">Creato Il</th>
-            <th scope="col">Azioni</th>
+            <th scope="col">{{__('ui.titolo')}}</th>
+            <th scope="col">{{__('ui.prezzo')}}</th>
+            <th scope="col">{{__('ui.category')}}</th>
+            <th scope="col">{{__('ui.creatoIl')}}</th>
+            <th scope="col">{{__('ui.azione')}}</th>
           </tr>
         </thead>
         <tbody>
@@ -18,7 +18,7 @@
               <td>{{ $ad->price }}</td>
               <td>{{ $ad->category->name }}</td>
               <td>{{ $ad->created_at->format('y/m/d') }}</td>
-              <td><a class="btn btn-secondary" href="{{ route('ad.edit', $ad) }}">Modifica</a></td>
+              <td><a class="btn btn-secondary" href="{{ route('ad.edit', $ad) }}">{{__('ui.modifica')}}</a></td>
             </tr>
                 
             @endforeach
