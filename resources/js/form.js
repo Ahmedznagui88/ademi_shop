@@ -3,8 +3,6 @@
 setTimeout(function() {
 
     let message = document.getElementById('message');
-   
-    
     
     message.style.transform = "translateY(-48px)";
     message.style.opacity = "-1";

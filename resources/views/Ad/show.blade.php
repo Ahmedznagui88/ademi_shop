@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 txt-offer2">
-                <p id="textCarousel" class="my-4">Prima spedizione del mese gratuita!</p>
+                <p class="txt-banner">Prima spedizione del mese gratuita!</p>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
         </aside>
     
     
-        <article class="container contCarous ">
+        <article class="container contCarous">
             <div class="row justify-content-center rowCarousel">
                 <div class="col-12 col-md-8">
                     <div class="container-fluid d-flex justify-content-center  carousel-1">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-3 showdescrizioni">
-                    <h2 class="border-bottom border-dark">{{ $ad->title }}</h2>
+                    <h2 class="font_title">{{ $ad->title }}</h2>
                     <p class="">{{ $ad->brand }}</p>
                     {{-- <p class="">{{ $ad->description }}</p> --}}
                     <p class="fs-2 price ">${{ $ad->price }}</p>
@@ -68,43 +68,41 @@
                     <p class="card-text">{{ $ad->created_at->diffForHumans() }}</p>
                 </div>
             </div>
-            <div class="">
-
-                <p class="mx-5 my-5" style="font-family: 'Cinzel', serif;">scopri di più!</p>
+            
             </div>
 
+            
 
-            {{-- <div class="container my-4 mx-2 containerShow">
-                <div class="row">
-                    <div class="col-12">
-                        
-                    </div>
-                </div>--}}
 
-                <div class="row justify-content-center mt-5">
-                    <div class="col-12 col-md-3 divImgShow">
-                        <a href="">
-                            <img src="/media/lamp7.avif" class="img-fluid ImgShow" alt="image">
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-3 divImgShow">
-                        <a href="">
-                            <img src="/media/interior.jpg" class="img-fluid ImgShow" alt="image">
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-3 divImgShow">
-                        <a href="">
-                            <img src="/media/profumo1.avif" class="img-fluid ImgShow" alt="image">
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-3 divImgShow">
-                        <a href="">
-                            <img src="/media/newpics/interior 1.avif" class="img-fluid ImgShow" alt="image">
-                        </a>
-                    </div>
-                </div>
-            </div> 
+             <div class="container-fluid containerShow">
+                <div class="text-scopri">
 
+                    <p class="" style="font-family: 'Cinzel', serif;">scopri altri prodotti!</p>
+                </div> 
+              
+                 <div class="rowshow2">
+                      <div class="col-12 col-md-3 divImgShow">
+                          <a href="">
+                              <img src="/media/lamp7.avif" class="img-fluid ImgShow" alt="image">
+                          </a>
+                      </div>
+                      <div class="col-12 col-md-3 divImgShow">
+                          <a href="">
+                              <img src="/media/interior.jpg" class="img-fluid ImgShow" alt="image">
+                          </a>
+                      </div>
+                      <div class="col-12 col-md-3 divImgShow">
+                          <a href="">
+                              <img src="/media/profumo1.avif" class="img-fluid ImgShow" alt="image">
+                          </a>
+                      </div>
+                      <div class="col-12 col-md-3 divImgShow">
+                          <a href="">
+                              <img src="/media/newpics/interior 1.avif" class="img-fluid ImgShow" alt="image">
+                          </a>
+                      </div>
+                  </div>
+              </div>  
 
 
 

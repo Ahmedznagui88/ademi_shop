@@ -2,11 +2,12 @@
 
 footer{
   background-color: #ED7D31;
-    background-size: cover;
-    object-fit: contain;
-    font-size: 20px;
-    height: 400px;
-    font-family: 'Cinzel', serif; 
+  background-size: cover;
+  object-fit: contain;
+  font-size: 20px;
+  height: 400px;
+  width: 100%;
+  font-family: 'Cinzel', serif; 
   
    
 }
