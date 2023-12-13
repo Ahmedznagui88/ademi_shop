@@ -16,7 +16,7 @@ gsap.to(".testo-h5",{
 
   //*section animation
   gsap.to(".divSecImg",{
-    y: -80,
+    y: -50,
       duration: 20,
       rotateX: -5,
       scrollTrigger: {
@@ -30,7 +30,7 @@ gsap.to(".testo-h5",{
   
   
   gsap.to(".divSecImg2",{
-    y: -80,
+    y: -50,
       duration: 20,
       rotateX: -5,
       scrollTrigger: {
@@ -43,7 +43,7 @@ gsap.to(".testo-h5",{
   }) 
 
   gsap.to(".divSecImg3",{
-    y: -80,
+    y: -50,
       duration: 20,
       rotateX: -5,
       scrollTrigger: {
@@ -56,7 +56,7 @@ gsap.to(".testo-h5",{
   }) 
 
   gsap.to(".divSecImg4",{
-    y: -80,
+    y: -50,
       duration: 20,
       rotateX: -5,
       scrollTrigger: {
