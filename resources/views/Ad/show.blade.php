@@ -32,7 +32,7 @@
         <article class="container contCarous">
             <div class="row justify-content-center rowCarousel">
                 <div class="col-12 col-md-8">
-                    <div class="container-fluid d-flex justify-content-center  carousel-1">
+                    <div class="container-fluid d-flex justify-content-center carousel-1">
                         <div id="showCarousel" class="carousel">
                             @if ($ad->images)
                                 <div class="carousel-inner carousss">
