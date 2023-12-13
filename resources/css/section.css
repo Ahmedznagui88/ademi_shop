@@ -1,7 +1,7 @@
 
 .contSec{
     margin-top: 80px;
-    height: 105vh;
+    height: 99vh;
     background: linear-gradient(-45deg, #ED7D31 50%, #43403c 50%); 
     background-image: url(../../public/media/home2.jpg);
     background-size: 1300px;
@@ -11,7 +11,7 @@
     
 }
 .rowCat{
-    margin-top: 170px;
+    margin-top: 220px;
 }
 
 .catitle{
