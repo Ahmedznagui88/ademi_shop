@@ -2,12 +2,15 @@
 
 namespace App\Livewire;
 
+
+
 use App\Models\Image;
 use Livewire\Component;
 use App\Models\Category;
 use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
 use App\Jobs\GoogleVisionLabelImage;
+
 use App\Jobs\GoogleVisionSafeSearch;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -21,10 +24,13 @@ class AdEdit extends Component
     public $description;
     public $temporary_images;
     public $images = [];
-    /* public $image;*/
+    public $image;
     public $price;
     public $category_id = [];
-    public $old_images = [];
+    public $old_images;
+   
+    
+    
    
     public function updatedTemporaryImages()
     {
@@ -34,12 +40,18 @@ class AdEdit extends Component
             foreach ($this->temporary_images as $image) {
                 $this->images[] = $image;
             }
+          
+          
         }
     }
-    public function deleteOldImage($id){
+    public function deleteOldImage($key){
 
-        $images = Image::where('id', $id)->first()->get();
-        $images->delete();
+        if ($this->old_images->has($key)) {
+           $this->old_images->get($key)->delete();
+            $this->old_images->forget($key);
+        }
+     
+    
         session()->flash('message', 'Immagine eliminata con successo');
     }
     public function removeImage($key)
@@ -48,6 +60,7 @@ class AdEdit extends Component
             unset($this->images[$key]);
         }
     }
+  
     public function update() {
 
         $this->ad->update([
@@ -61,15 +74,14 @@ class AdEdit extends Component
         
         
         if (count($this->images)) {
-
+           
             foreach ($this->images as $image) {
-                 $this->ad->images()->create(['path'=>$image->store('images', 'public')]); 
 
                 $newFileName = "ads/{$this->ad->id}";
                 $newImage = $this->ad->images()->create(['path' => $image->store($newFileName, 'public')]);
                 dispatch(new ResizeImage($newImage->path, 800, 450));
-                dispatch(new GoogleVisionSafeSearch($newImage->id));
-                dispatch(new GoogleVisionLabelImage($newImage->id));
+                /*dispatch(new GoogleVisionSafeSearch($newImage->id));
+                dispatch(new GoogleVisionLabelImage($newImage->id));*/
                 
             }
             
@@ -86,10 +98,8 @@ class AdEdit extends Component
         $this->price = $this->ad->price;
         $this->category_id[] = $this->ad->category_id;
         $this->old_images = Image::where('ad_id', $this->ad->id)->get();
-      
-
-        
-
+        $this->temporary_images = $this->old_images;
+    
     }
     
     public function render()

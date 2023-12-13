@@ -18,7 +18,12 @@
               <td>{{ $ad->price }}</td>
               <td>{{ $ad->category->name }}</td>
               <td>{{ $ad->created_at->format('y/m/d') }}</td>
-              <td><a class="btn btn-secondary" href="{{ route('ad.edit', $ad) }}">Modifica</a></td>
+              <td>
+                <a class="btn btn-secondary" href="{{ route('ad.edit', $ad) }}">Modifica</a>
+                <a wire:click="destroy({{$ad}})" class="btn btn-secondary" href="">Elimina</a>
+                
+              </td>
+             
             </tr>
                 
             @endforeach
