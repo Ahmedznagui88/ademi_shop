@@ -28,7 +28,7 @@
                             <div class="carousel-inner">
                                 @foreach ($ad_to_check->images as $image)
                                     <div class="carousel-item @if ($loop->first) active @endif">
-                                        <img src="{{ $image->getUrl(800, 450) }}" class="img-fluid" alt="">
+                                        <img src="{{ $image->getUrl(800, 450) }}" class="img-fluid img-carousel" alt="">
                                     </div>
                                 @endforeach
                             </div>

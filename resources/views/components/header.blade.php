@@ -1,13 +1,14 @@
 <header class="d-flex flex-column justify-content-center head">
 
 {{-- ? categorie --}}
+
 <div class="container-fluid contCatHead">
     <div class="row rowcategr">
         <div class="justify-content-center">
-            {{-- <div class="col-12 text-center buttoncategorie ">
+            {{--  <div class="col-12 text-center buttoncategorie ">
                 <button class="btn-header my-2 toggle text-light rounded-3">{{ __('ui.category') }}</button>
-            </div> --}}
-            <div class="col-12 {{-- panel --}} categorie justify-content-center">
+            </div>  --}}
+            <div class="col-12 categorie justify-content-center">
                 @foreach ($categories as $category)
                     <div class="col-md-1 btn-header2">
                         <a href="{{ route('ad.indexCategory', $category) }}"
@@ -51,7 +52,23 @@
         </div>
     </article>
 
-    
+    <div class="container-fluid divButtonCategories">
+        <div class="row">
+            <div class="justify-content-center">
+                 <div class="col-12 text-center buttoncategorie">
+                    <button class="btn-header my-2 toggle text-light rounded-3">{{ __('ui.category') }}</button>
+                </div> 
+                <div class="col-12 panel categorie justify-content-center">
+                    @foreach ($categories as $category)
+                        <button class="col-md-1 btn-header2">
+                            <a href="{{ route('ad.indexCategory', $category) }}"
+                                class="text-btn-1">{{ $category->name }}</a>
+                        </button>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <article class="container articleHeader">
@@ -60,7 +77,7 @@
                 <div class="divHead d-flex justify-content-center">
                     <img src="/media/home1.jpg" class="img-fluid" alt="">
                     <div class="textDet text-center">
-                        <h5>SALA DA PRANZO MODERNA</h5>
+                        <h5>ELEGANZA MODERNA PER IL TUO DINING</h5>
                     </div>
                 </div>
             </div>
@@ -69,7 +86,7 @@
                 <div class="divHead2 d-flex justify-content-center">
                     <img src="/media/home.jpg" class="imghead" alt="">
                     <div class="textDet2 text-center">
-                        <h5>SOGGIORNO</h5>
+                        <h5>STILE SENZA CONFINE NEL TUO SOGGIORNO</h5>
                     </div>
                 </div>
             </div>
