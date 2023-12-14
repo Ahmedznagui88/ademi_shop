@@ -2,6 +2,9 @@
 
 return [
     'allAnnouncements'=>'Ads',
+    'province' => 'Province',
+    'age' => 'Age',
+    'city' => 'City',
     'category'=>'Category',
     'cercaAll'=>'Search',
     'insertAnnouncements'=>'Insert Ad',

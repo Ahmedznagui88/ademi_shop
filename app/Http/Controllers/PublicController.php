@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
+  public function __construct()
+  {
+      $this->middleware('auth');
+  }
   public function homepage()
   {
     /*  $ads = ad::all(); */
@@ -31,5 +35,8 @@ class PublicController extends Controller
 
   public function profile() {
     return view('auth.profile');
+  }
+  public function create() {
+    return view('auth.ProfileImagecreate');
   }
 }

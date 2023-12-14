@@ -2,6 +2,9 @@
 
 return [
     'allAnnouncements'=>'Annunci',
+    'province' => 'Provincia',
+    'age' => 'Età',
+    'city' => 'Città',
     'category'=>'Categorie',
     'cercaAll'=>'Cerca Prodotto',
     'insertAnnouncements'=>'Inserisci Annuncio',
@@ -29,6 +32,7 @@ return [
     'selectCategory'=>'Scegli una categoria',
     'description'=>'Descrizione',
     'addImage'=>'Aggiungi una immagine nitida del prodotto',
+    'imageprofile' => 'Immagine profilo',
     'remove'=>'Rimuovi',
     'prezzo'=>'Prezzo',
     'anteprima'=>'Anteprima',

@@ -17,7 +17,7 @@ footer{
   justify-content: space-between;
 }
 
-a {
+.tag-a{
   text-decoration: none;
   color: #ffffff;
   margin: 10px;

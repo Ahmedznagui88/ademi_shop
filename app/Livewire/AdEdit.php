@@ -26,9 +26,9 @@ class AdEdit extends Component
     public $images = [];
     public $image;
     public $price;
-    public $category_id = [];
+    public $category_id;
     public $old_images;
-   
+   public $is_accepted;
     
     
    
@@ -69,6 +69,7 @@ class AdEdit extends Component
             'description' => $this->description,
             'price' => $this->price,
             'category_id' => $this->category_id,
+            'is_accepted' => null,
 
         ]);
         
@@ -96,9 +97,10 @@ class AdEdit extends Component
         $this->brand = $this->ad->brand;
         $this->description = $this->ad->description;
         $this->price = $this->ad->price;
-        $this->category_id[] = $this->ad->category_id;
+        $this->category_id = $this->ad->category_id;
         $this->old_images = Image::where('ad_id', $this->ad->id)->get();
         $this->temporary_images = $this->old_images;
+        $this->is_accepted = $this->ad->is_accepted;
     
     }
     

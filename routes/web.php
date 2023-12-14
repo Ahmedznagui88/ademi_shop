@@ -19,6 +19,8 @@ use App\Http\Controllers\RevisorController;
 //Rotte Public//
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 Route::get('/profile', [PublicController::class, 'profile'])->name('profile');
+Route::get('/profile/create', [PublicController::class, 'create'])->name('profileCreate');
+
 //rotte ad//
 Route::get('/ad/create', [AdController::class, 'create'])->name('ad.create');
 Route::get('/ad/index', [AdController::class, 'index'])->name('ad.index');
