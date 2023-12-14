@@ -21,14 +21,14 @@ elements_to_watch.forEach((element) => {
 
 
 
-let item = document.querySelector('.toggle');
+/* let item = document.querySelector('.toggle');
 let panel = document.querySelector('.panel');
 
  item.addEventListener("click", function() {
 
   panel.classList.toggle('attiva');
 
-});
+}); */
 
 window.addEventListener('scroll', function(e) {
   if(window.scrollY > 750){
