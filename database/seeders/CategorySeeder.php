@@ -19,7 +19,7 @@ class CategorySeeder extends Seeder
             'Elettronica',
             'Vinili',
             'Profumi',
-            'Arredamento',
+            'Arredamenti',
             'Illuminazione',
             'Oggettistica',
             'Arte',
@@ -28,16 +28,16 @@ class CategorySeeder extends Seeder
         ];
 
         $banners = [
-            'public/imageCategories/watch.jpg',
-            'public/imageCategories/electronics.avif',
-            'public/imageCategories/vinyl.avif',
-            'public/imageCategories/perfume2.avif',
-            'public/imageCategories/salotto.avif',
-            'public/imageCategories/illuminazione.avif',
-            'public/imageCategories/oggettistica.avif',
-            'public/imageCategories/arte 3.jpg',
-            'public/imageCategories/wine.avif',
-            'public/imageCategories/liquore.webp',
+            '/media/imageCategories/watch.jpg',
+            '/media/imageCategories/electronics.avif',
+            '/media/imageCategories/vinyl.avif',
+            '/media/imageCategories/perfume2.avif',
+            '/media/imageCategories/salotto.avif',
+            '/media/imageCategories/illuminazione.avif',
+            '/media/imageCategories/oggettistica.avif',
+            '/media/imageCategories/arte 3.jpg',
+            '/media/imageCategories/wine.avif',
+            '/media/imageCategories/liquore.webp',
         ];
         
 
