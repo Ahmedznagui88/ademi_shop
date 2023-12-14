@@ -3,11 +3,13 @@
 namespace App\Livewire;
 
 use App\Models\ad;
+use App\Models\Image;
 use Livewire\Component;
 use Illuminate\Support\Facades\Storage;
 
 class AdList extends Component
 {
+
     public function destroy(ad $ad) {
        foreach($ad->images() as $image) {
         Storage::delete($image);
@@ -19,6 +21,7 @@ class AdList extends Component
     }
     public function render()
     {
+        
         $ads = ad::all();
         return view('livewire.ad-list', compact('ads'));
     }

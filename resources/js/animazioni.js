@@ -141,3 +141,26 @@ function carosello() {
 window.addEventListener("load", function () {
 carosello()
 })
+
+function openModal() {
+  // Seleziona il modale e l'immagine
+  var modal = document.getElementById("myModal");
+  var modalImage = document.getElementById("modalImage");
+  
+  // Inserisci l'URL dell'immagine che desideri mostrare nel modale
+  var imageUrl = "./../img/ademi.png";
+  
+  // Aggiungi l'immagine all'elemento HTML
+  modalImage.src = imageUrl;
+  
+  // Mostra il modale
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  // Seleziona il modale
+  var modal = document.getElementById("myModal");
+  
+  // Chiudi il modale
+  modal.style.display = "none";
+}

@@ -28,17 +28,15 @@ class AdCreateForm extends Component
     public $user_id;
     public $ad;
 
+
     protected $rules = [
 
         'title' => 'required|min:3|max:100',
         'brand' => 'required|min:3|max:100',
         'images.*' => 'required|image|max:2000|mimes:webp,png,jpeg,jpg',
         'description' => 'required|min:10|max:10000',
-
-
-
     ];
-
+        
     protected $messages = [
 
         'required' => 'Il campo deve essere compilato',
@@ -51,6 +49,10 @@ class AdCreateForm extends Component
         'temporary_images.*.image' => 'I file devono essere immagini',
 
     ];
+
+
+   
+
 
     public function updatedTemporaryImages()
     {
@@ -68,8 +70,7 @@ class AdCreateForm extends Component
             unset($this->images[$key]);
         }
     }
-
-
+    
     public function store()
     {
         $this->validate();
@@ -114,4 +115,6 @@ class AdCreateForm extends Component
     {
         return view('livewire.ad-create-form');
     }
+
+
 }
