@@ -5,7 +5,7 @@
             <div class="col-12 col-md-3 divaside">
                 <div class="row">
                  
-                    <div class=" col-12 divImg">
+                    <div class="col-12 divImg">
                         <img class="img-fluid imgprofile" src="{{ Storage::url(Auth::user()->image) ?? './../../../public/media/default-img.jpg' }}" alt="" >
                         <a href="{{ route('profileCreate') }}">
                         <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/TNtxzgU79Ci.png&quot;); background-position: 0px -22px; background-size: 22px 192px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
