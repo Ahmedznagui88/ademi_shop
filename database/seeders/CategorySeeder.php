@@ -28,9 +28,23 @@ class CategorySeeder extends Seeder
 
         ];
 
+        /* $banners = [
+            'app/stocazzo.img1.jpg',
+            'Elettronica',
+            'Vinili',
+            'Profumi',
+            'Arredamento',
+            'Illuminazione',
+            'Oggettistica',
+            'Arte',
+            'Vini',
+            'Liquori',
+        ]; */
+
         foreach ($categories as $category) {
             DB::table('categories')->insert([
                 'name' => $category,
+                /* 'path' => $banners, */
                 'created_at' => Carbon::now(),
             ]);
         }
