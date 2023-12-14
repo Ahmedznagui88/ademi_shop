@@ -40,7 +40,6 @@ class CategorySeeder extends Seeder
             '/media/imageCategories/liquore.webp',
         ];
         
-
         foreach ($categories as $key => $category) {
             DB::table('categories')->insert([
                 'name' => $category,
