@@ -47,6 +47,7 @@ class AdController extends Controller
      */
     public function show(ad $ad)
     {
+        $ad->category::all();
         return view('Ad.show', compact('ad'));
     }
 

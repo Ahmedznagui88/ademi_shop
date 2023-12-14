@@ -37,17 +37,17 @@
 	display: flex;
 	align-items: center;
 	margin: 13px;
-	/* border: none;
+	border: none;
 	background-color: #ED7D31;
 	border-radius: 9px;
 	transition: 1.6s;
     transform: translateY(0);
-    transform-origin: bottom; */
+    transform-origin: bottom;
 }
 
 .rowcategr{
-	background-color: #ED7D31;
 	
+	display: none;
 }
 
 /**offerta  */
@@ -124,7 +124,10 @@
 	font-family: 'Cinzel', serif;   
 	z-index: 1;
 	position: absolute;
-	top: 85%;
+	top: 91%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .textDet2 {
@@ -135,6 +138,9 @@
 	z-index: 1;
 	position: absolute;
 	top: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -165,8 +171,6 @@
 	.divarticle {
 		display: flex;
 		justify-content: center;
-		margin-top: ;
-		
 	}
 
 	.text-1 {
@@ -196,8 +200,14 @@
 		font-size: 10px;
 	}
 
-	.categorie{
-		overflow-y: hidden;
+	.rowcategr{
+		display: block;
+		background-color: #ED7D31;
+		overflow-y: scroll;
+	}
+
+	.divButtonCategories{
+		display: none;
 	}
 	
 }

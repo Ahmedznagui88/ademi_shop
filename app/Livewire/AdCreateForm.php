@@ -91,16 +91,18 @@ class AdCreateForm extends Component
 
                 $newFileName = "ads/{$this->ad->id}";
                 $newImage = $this->ad->images()->create(['path' => $image->store($newFileName, 'public')]);
-                /* 
+               
                 RemoveFaces::withChain([
+                    new WaterMarker($newImage->id),
                     new ResizeImage($newImage->path, 800, 450),
+
                     new GoogleVisionSafeSearch($newImage->id),
                     new GoogleVisionLabelImage($newImage->id),
                     
                 ])->dispatch($newImage->id);
- */
-                dispatch(new WaterMarker($newImage->id));
-                dispatch(new ResizeImage($newImage->path, 800, 450));
+
+                
+       
             }
 
             File::deleteDirectory(storage_path('app/livewire-tmp'));

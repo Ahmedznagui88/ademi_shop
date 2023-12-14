@@ -35,7 +35,7 @@
                     <div class="container-fluid d-flex justify-content-center carousel-1">
                         <div id="showCarousel" class="carousel">
                             @if ($ad->images)
-                                <div class="carousel-inner carousss border">
+                                <div class="carousel-inner carousss">
                                     @foreach ($ad->images as $image)
                                         <div class="carousel-item @if ($loop->first) active @endif">
                                             <img src="{{$image->getUrl(800 , 450)  }}" class="img-fluid img-carousel"
@@ -75,8 +75,8 @@
 
 
              <div class="container-fluid containerShow">
-                <div class="text-scopri">
 
+                <div class="text-scopri">
                     <p class="" style="font-family: 'Cinzel', serif;">scopri altri prodotti!</p>
                 </div> 
               
