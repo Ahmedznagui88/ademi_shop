@@ -2,31 +2,17 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Support\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class CategorySeeder extends Seeder
+class BannerSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $categories = [
-            'Orologeria',
-            'Elettronica',
-            'Vinili',
-            'Profumi',
-            'Arredamento',
-            'Illuminazione',
-            'Oggettistica',
-            'Arte',
-            'Vini',
-            'Liquori',
-        ];
-
         $banners = [
             'public/imageCategories/watch.jpg',
             'public/imageCategories/electronics.avif',
@@ -39,13 +25,9 @@ class CategorySeeder extends Seeder
             'public/imageCategories/wine.avif',
             'public/imageCategories/liquore.webp',
         ];
-        
-
-        foreach ($categories as $key => $category) {
+        foreach ($banners as $banner) {
             DB::table('categories')->insert([
-                'name' => $category,
-                'path' => $banners[$key],
-                'created_at' => Carbon::now(),
+                'path' => $banner,
             ]);
         }
     }
