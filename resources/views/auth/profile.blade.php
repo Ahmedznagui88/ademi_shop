@@ -27,7 +27,7 @@
         
         <div class="row justify-content-center rounded-4 list">
                
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-8 ms-5">
                 <livewire:ad-list />
             </div>
         </div>
