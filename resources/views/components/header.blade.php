@@ -1,4 +1,26 @@
 <header class="d-flex flex-column justify-content-center head">
+
+{{-- ? categorie --}}
+<div class="container-fluid contCatHead">
+    <div class="row rowcategr">
+        <div class="justify-content-center">
+            {{-- <div class="col-12 text-center buttoncategorie ">
+                <button class="btn-header my-2 toggle text-light rounded-3">{{ __('ui.category') }}</button>
+            </div> --}}
+            <div class="col-12 {{-- panel --}} categorie justify-content-center">
+                @foreach ($categories as $category)
+                    <div class="col-md-1 btn-header2">
+                        <a href="{{ route('ad.indexCategory', $category) }}"
+                            class="text-btn-1">{{ $category->name }}</a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 txt-offer">
@@ -16,6 +38,8 @@
         </form>
     </div>
 
+    
+
     <article class="container-fluid position-relative article-1">
         <div class="row justify-content-center rowArt">
             <div class="col-12 col-md-8 divarticle">
@@ -27,24 +51,7 @@
         </div>
     </article>
 
-    {{-- ? categorie --}}
-    <div class="container-fluid ">
-        <div class="row ">
-            <div class=" justify-content-center mb-2">
-                <div class="col-12 text-center buttoncategorie ">
-                    <button class="btn-header my-2 toggle text-light rounded-3">{{ __('ui.category') }}</button>
-                </div>
-                <div class="col-12 panel categorie justify-content-center ">
-                    @foreach ($categories as $category)
-                        <button class="col-md-1 btn-header2 mx-2 ">
-                            <a href="{{ route('ad.indexCategory', $category) }}"
-                                class="text-btn-1 ">{{ $category->name }}</a>
-                        </button>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
 
     <article class="container articleHeader">

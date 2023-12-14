@@ -8,7 +8,7 @@
             <a class="tag-a" href="{{ route('ad.index') }}">{{__('ui.allAnnouncements')}}</a>
           </div>
           <div class="w-25 mb-5">
-            <img src="/media/altLogo.png" class="img-fluid" alt="">
+            <img src="/media/altLogo.png" class="img-fluid logofooter" alt="">
           </div>
           <div class="d-grid">
             <a class="tag-a" href="">{{ Auth::User()->name ?? __('ui.profilo')}}</a>

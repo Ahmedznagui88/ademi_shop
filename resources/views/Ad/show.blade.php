@@ -30,12 +30,12 @@
     
     
         <article class="container contCarous">
-            <div class="row justify-content-center rowCarousel">
+            <div class="row rowCarousel">
                 <div class="col-12 col-md-8">
                     <div class="container-fluid d-flex justify-content-center carousel-1">
                         <div id="showCarousel" class="carousel">
                             @if ($ad->images)
-                                <div class="carousel-inner carousss">
+                                <div class="carousel-inner carousss border">
                                     @foreach ($ad->images as $image)
                                         <div class="carousel-item @if ($loop->first) active @endif">
                                             <img src="{{$image->getUrl(800 , 450)  }}" class="img-fluid img-carousel"

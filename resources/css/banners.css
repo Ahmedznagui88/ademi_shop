@@ -1,0 +1,24 @@
+.banners{
+    height: 230px;
+    border-radius: 0px 0px 60px 60px;
+    margin-top: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divBanners{
+    background-color: #ed7c31b5;
+    /* background-color: #aaaaaa74; */
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBanners{
+    font-family: 'Cinzel', serif; 
+    font-size: 40px;
+    color: black;
+}

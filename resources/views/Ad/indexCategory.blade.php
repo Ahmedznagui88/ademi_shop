@@ -1,4 +1,8 @@
 <x-layout>
+
+    <x-headerCategory :category="$category" />
+
+
     <div class="container my-5 ">
         <div class="row justify-content-center">
       @forelse ($category->ads as $ad)

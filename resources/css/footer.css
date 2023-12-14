@@ -32,12 +32,20 @@ footer{
   width: 100%;
   
 }
-/* 
-@media screen and (min-width: 375px) and (max-width: 780px) {
-	footer {
-		margin-top: 190%;
-	}
 
 
+@media screen and (min-width: 365px) and (max-width: 765px){
 
-} */
+  footer{
+    font-size: 11px;
+    height: 270px;
+    width: 100%;
+    font-family: 'Cinzel', serif;
+  }
+
+  .logofooter{
+    width: 120px;
+    margin-top: 30px;
+  }
+
+} 
