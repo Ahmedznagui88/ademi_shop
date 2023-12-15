@@ -1,4 +1,6 @@
 <x-layout>
+    {{--* category => banners css  --}}
+  
 
     <x-headerCategory :category="$category" />
 
@@ -14,4 +16,11 @@
       @endforelse
         </div>
     </div>
+
+
+    <div class="mt-5 outBack1">
+                
+        <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">{{__('ui.tornaIndietro')}}</a>
+        
+    </div> 
 </x-layout>

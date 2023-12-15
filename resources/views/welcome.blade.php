@@ -1,18 +1,20 @@
 <x-layout>
     {{-- !title --}}
 
-    <div id="message" class="divmes text-center">
-         @if (session('access.denied'))
+    <div  id="message" class="divmes text-center">
+          @if  (session('access.denied'))
             <div class="alert alert-danger">
                 {{ session('access.denied') }}
             </div>
-        @endif
-       @if(session('message'))
+         @endif 
+    @if(session('message'))
             <div class="divmes alert alert-success">
                 {{ session('message') }}
             </div>
        @endif
     </div>
+
+    
     <x-header />
 
     
@@ -21,14 +23,14 @@
      <div class="container contenitore-banner">
         <div class="row banner">
             <div class="col-12 col-md-3 text-center col-banner-s">
-             <p class="testo-h5">Tutto quello che cerchi è qui!</p>
+             <p class="testo-h5">{{__('ui.tuttoQui')}}</p>
             </div>
             <div class="col-12 col-md-5 col-banner-r">
                 <img src="/media/perfume2.avif"
-                    alt="" class="img-fluid banner" id="carosello">
+                    alt="" class="img-fluid banner " id="carosello">
             </div>
             <div class="col-12 col-md-3 text-center col-banner-l">
-                <p class="testo-h5">Per la casa e per i tuoi luoghi preferiti!</p>
+                <p class="testo-h5">{{__('ui.perCasa')}}</p>
             </div>
         </div>
     </div> 

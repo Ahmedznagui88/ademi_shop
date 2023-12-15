@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 txt-offer2">
-                <p class="txt-banner my-4">Prima spedizione del mese gratuita!</p>
+                <p class="txt-banner my-4">Arredamenti moderni, uno stile che parla il linguaggio dell'eleganza contemporanea</p>
             </div>
         </div>
     </div>
@@ -15,7 +15,7 @@
     <div class="container-fluid d-flex">
 
         <aside class="">
-            <h4 class="mt-5 hcat">Categorie</h4>
+            <h4 class="mt-5 hcat">{{__('ui.category')}}</h4>
             <div class="col-12 col-md-6 div-aside ">
                 @foreach ($categories as $category)
                     <div class="col-md-1 div-cat-aside ">
@@ -45,12 +45,12 @@
                             <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
+                                <span class="visually-hidden">{{__('ui.precedente')}}</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
+                                <span class="visually-hidden">{{__('ui.successivo')}}}</span>
                             </button>
                         </div>
                         
@@ -59,7 +59,7 @@
                 <div class="col-12 col-md-3 showdescrizioni">
                     <h2 class="font_title">{{ $ad->title }}</h2>
                     <p class="">{{ $ad->brand }}</p>
-                    {{-- <p class="">{{ $ad->description }}</p> --}}
+                    <p class="">{{ $ad->description }}</p>
                     <p class="fs-2 price ">${{ $ad->price }}</p>
                     <span>{{__('ui.insertBy')}} {{ Auth::user()->name ?? __('ui.noName')}}</span>
                     {{-- <p>{{__('ui.insertBy')}} {{ $ad->created_at->translatedFormat('D d/m/y') }}</p> --}}
@@ -69,13 +69,10 @@
             
             </div>
 
-            
-
-
              <div class="container-fluid containerShow">
 
                 <div class="text-scopri">
-                    <p class="" style="font-family: 'Cinzel', serif;">scopri altri prodotti!</p>
+                    <p class="" style="font-family: 'Cinzel', serif;">{{__('ui.textShow')}}</p>
                 </div> 
               
                  <div class="rowshow2">
@@ -112,27 +109,12 @@
 
 
 
-           {{--  <div class="mt-5 outBack">
+            <div class="mt-5 outBack">
                 
                 <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">{{__('ui.tornaIndietro')}}</a>
                 
-            </div> --}}
+            </div> 
     
-    
-    
-         {{--    @auth
-                <div class="row my-5">
-                    @foreach (Auth::user()->ads as $ad)
-                        <div class="col-12 col-md-3">
-                            <x-card2 :ad="$ad" />
-                        </div>
-                    @endforeach
-                </div>
-            @endauth --}}
         </article>
     </div>
-
-
-
-
 </x-layout>

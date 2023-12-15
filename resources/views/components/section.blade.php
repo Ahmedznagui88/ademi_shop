@@ -14,7 +14,7 @@
 
 
     <div class="container-fluid contSec"> 
-        <div class="row row">
+        <div class="row ">
 
             <div class="">
                 <h2 class=" catitle text-center">{{__('ui.iDett')}}</h2>

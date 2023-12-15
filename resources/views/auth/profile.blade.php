@@ -37,13 +37,13 @@
             <div class="col-12 col-md-1 divaside aside-phone">
                 <div class="row mt-5">
                     <div class="col-12">
-                        <p class="">Nome: {{ Auth::user()->name }}</p>
-                        <p> Provincia: {{ Auth::user()->province }}</p>
-                        <p>Città: {{ Auth::user()->city }}</p>
-                        <p>Età: {{ Auth::user()->age }}</p>
+                        <p class="">{{__('ui.nome')}}: {{ Auth::user()->name }}</p>
+                        <p>{{('ui.province')}}: {{ Auth::user()->province }}</p>
+                        <p>{{__('ui.city')}}: {{ Auth::user()->city }}</p>
+                        <p>{{__('ui.age')}}: {{ Auth::user()->age }}</p>
                     </div>
                     <div class="col-12 text-bio">
-                        <p>Biografia: {{ Auth::user()->bio }}</p>
+                        <p>{{__('ui.bio')}}: {{ Auth::user()->bio }}</p>
 
                     </div>
                 </div>

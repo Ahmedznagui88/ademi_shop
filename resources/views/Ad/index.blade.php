@@ -3,8 +3,7 @@
     <div class="container-fluid container-text-offer">
         <div class="row textCarousel">
             <div class="col-12 txt-offer">
-                <p id="textCarousel" class="my-4 ">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI,
-                    coperte invernali e altri must di stagione!</p>
+                <p id="textCarousel" class="my-4 ">{{__('saldiNatale')}}</p>
             </div>
         </div>
     </div>
@@ -16,6 +15,25 @@
                     aria-label="Search" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
             </form>
         </div>
+
+        {{--! Categorie --}}
+        <div class="row rowcategory-index">
+            <div class=" justify-content-center mb-2 mt-4">
+                <div class="col-12 text-center buttoncategorie">
+                    <button class="btn-index my-2 toggle">{{ __('ui.category') }}</button>
+                </div>
+                <div class="col-12 panel categorie justify-content-center">
+                    @foreach ($categories as $category)
+                        <button class="col-md-1 btn-index2 mx-2">
+                            <a href="{{ route('ad.indexCategory', $category) }}"
+                                class="text-btn-2">{{ $category->name }}</a>
+                        </button>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+        
         <article class="container-fluid position-relative article-1">
             <div class="row justify-content-center rowArt">
                 <div class="col-12 col-md-8 divarticle">
@@ -26,22 +44,9 @@
                 </div>
             </div>
         </article>
-             {{-- Categorie --}}
-             <div class="row rowcategory-index">
-                <div class=" justify-content-center mb-2 mt-4">
-                    <div class="col-12 text-center buttoncategorie">
-                        <button class="btn-index my-2 toggle">{{ __('ui.category') }}</button>
-                    </div>
-                    <div class="col-12 panel categorie justify-content-center">
-                        @foreach ($categories as $category)
-                            <button class="col-md-1 btn-index2 mx-2">
-                                <a href="{{ route('ad.indexCategory', $category) }}"
-                                    class="text-btn-2">{{ $category->name }}</a>
-                            </button>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
+             
+
+
         <div class="container mt-5">
 
             <div class="row mb-5 justify-content-center position-relative">
@@ -59,7 +64,7 @@
             </div>
             <div class="row justify-content-center ggit" style="font-family: 'Cinzel', serif;">
                 <div class="divhead-center2">
-                    <h5 class="text-center ">Per la casa, per i tuoi luoghi preferiti!</h5>
+                    <h5 class="text-center ">{{__('ui.textHome')}}</h5>
                 </div>
             </div>
         </div>

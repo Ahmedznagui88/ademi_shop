@@ -11,7 +11,7 @@
             <img src="/media/altLogo.png" class="img-fluid logofooter" alt="">
           </div>
           <div class="d-grid">
-            <a class="tag-a" href="">{{ Auth::User()->name ?? __('ui.profilo')}}</a>
+            <a class="tag-a text-dark " href="{{ route('profile') }}">{{ Auth::User()->name ?? __('ui.profilo')}}</a>
             <a class="tag-a" href="{{ route('revisor.index') }}">{{__('ui.revisore')}}</a>
             {{-- <a href="{{ route('ad.create') }}">{{__('ui.insertAnnouncements')}}</a> --}}
             <a class="tag-a" href="#">{{__('ui.contatti')}}</a>

@@ -38,7 +38,7 @@
                     </div>
                     <div class="mb-3">
                         <span>{{__('ui.domandaRegistrato')}}
-                            <a href="{{ route('register') }}"> {{__('ui.register')}}</a>
+                            <a class="autoLogRegis" href="{{ route('register') }}"> {{__('ui.register')}}</a>
                         </span>
                     </div>
                     <button type="submit" class="btn btn-primary">{{__('ui.logIn')}}</button>

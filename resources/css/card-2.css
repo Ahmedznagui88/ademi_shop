@@ -22,6 +22,7 @@
 .card2{
     width: 600px;
     font-family: 'Cinzel', serif;
+    text-decoration: none;
 }
 
 .imgC {
@@ -53,7 +54,6 @@
     .card2 {
         max-width: 100%;
         border-radius: 15px;
-        /* Riduci il raggio del bordo per adattarti alle dimensioni più piccole */
     }
 
     .card2-img {

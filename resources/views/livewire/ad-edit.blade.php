@@ -53,7 +53,7 @@
             </div> --}}
               <div class="mb1">
 
-                  <label for="image" class="form-label">Immagine attuale</label>
+                  <label for="image" class="form-label">{{__('ui.imgAtt')}}</label>
               </div>
               <div class="mb-1">
 
