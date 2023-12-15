@@ -6,7 +6,7 @@ return [
     'province' => 'Province',
     'age' => 'Age',
     'city' => 'City',
-    'category'=>'Categores',
+    'category'=>'Categories',
     'cercaAll'=>'Search',
     'insertAnnouncements'=>'Insert Ad',
     'register'=>'Sign in',
@@ -61,4 +61,7 @@ return [
     'tuttiAds'=>'All ads',
     'nome'=>'Name',
     'bio'=>'Biographies',
+    'textHome'=>'For the home, for your favorite places!',
+    'textShow'=>'Discover other products!',
+    'spedizione'=>'First free shipping of the month!',
 ];
