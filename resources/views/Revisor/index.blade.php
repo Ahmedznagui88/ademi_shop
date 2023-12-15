@@ -85,6 +85,7 @@
             <div class="row rowinfo">
                 <div class="text-center my-2">
                     <h5 class="card-title">{{ $ad_to_check->title }}</h5>
+                    <p class="card-text">{{ $ad_to_check->description }}</p>
                     <p>{{ $ad_to_check->body }}</p>
                     <p>{{ $ad_to_check->created_at }}</p>
                 </div>

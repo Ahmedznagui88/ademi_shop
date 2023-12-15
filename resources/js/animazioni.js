@@ -84,8 +84,6 @@ function caroselloTesto() {
             } else if (indice == 2) {
                 document.getElementById("textCarousel").innerHTML = "Acquista in sicurezza tramite i nostri metodi di pagamento semplificati."
             } else if (indice == 3) {
-                document.getElementById("textCarousel").innerHTML = "Compra e vendi in totale sicurezza, i nostri revisori garantiscono l'originalità del prodotto tramite il nostro programma formativo partner."
-            } else if (indice == 4) {
                 document.getElementById("textCarousel").innerHTML = "Hai un negozio? Scopri le nostre offerte riservate ai rivenditori."    
 
                 indice = 0;
@@ -94,11 +92,11 @@ function caroselloTesto() {
 
             document.getElementById("textCarousel").style.transition = "2s opacity"
             document.getElementById("textCarousel").style.opacity = "1"
-        }, 3000)
+        }, 2000)
 
         indice++
 
-    }, 5000)
+    }, 7000)
    
  
 }

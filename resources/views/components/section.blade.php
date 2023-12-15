@@ -40,7 +40,7 @@
             
             
                 <div class="col-12 divSecImg4">
-                    <img src="/media/vinyl.avif" class="secImg4" alt="">
+                    <img src="/media/vinyl.jpeg" class="secImg4" alt="">
                 </div>
             
         </div>

@@ -7,7 +7,7 @@
                 <div class="rounded-4 text-center">
                     <h5 class="card-title">{{ $ad->title }}</h5>
                     <p>{{ $ad->brand }}</p>
-                    {{--  <p class="card-text">{{ $ad->description }}</p> --}}
+                    {{--  <p class="card-text">{{ $ad->description }}</p>  --}}
                     <p class="fs-2 price">${{ $ad->price }}</p>
                     <small>{{ $ad->category->name ?? __('ui.noSpec') }}</small>
                     <div class=" d-flex align-items-center justify-content-between d-none">
