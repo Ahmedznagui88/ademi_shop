@@ -46,8 +46,8 @@
                     <img src="{{ !$ad->images()->get()->isEmpty()? $ad->images()->first()->getUrl(800, 450): '/public/media/default-img.jpg' }}"
                         class="img-fluid card-img">
                 </div>
-                <div class="col-md-7 mx-5">
-                    <div class="card-body d-flex justify-content-between">
+                <div class="col-md-7">
+                    <div class="card-body d-flex justify-content-between mx-5">
 
                         <div class=" my-2">
                             <div>

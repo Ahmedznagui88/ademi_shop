@@ -16,6 +16,7 @@ return new class extends Migration
             $table->float('age')->nullable()->after('name');
             $table->string('city')->nullable()->after('name');
             $table->string('province')->nullable()->after('name');
+            $table->string('bio')->nullable()->after('image');
           
         });
     }

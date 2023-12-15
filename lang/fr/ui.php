@@ -2,6 +2,7 @@
 
 return [
     'allAnnouncements'=>'Les publicités',
+    'biography' => 'Biographie',
     'category'=>'Catégories',
     'cercaAll'=>'Rechercher un produit',
     'insertAnnouncements'=>'Insérer une annonce',
