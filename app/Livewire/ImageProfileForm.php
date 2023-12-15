@@ -20,7 +20,7 @@ class ImageProfileForm extends Component
     public $age;
     public $image;
     public $bio;
-    public $old_image;
+    public $old_image; 
 
 
 
@@ -52,7 +52,7 @@ class ImageProfileForm extends Component
             'city' => $this->city,
             'age' => $this->age,
             'bio' => $this->bio,
-
+           
         ]);
         if ($this->image) {
             Storage::delete($this->old_image);
