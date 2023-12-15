@@ -47,7 +47,7 @@
                     </div>
                     <div class="mb-3">
                         <span>{{__('ui.giaRegistrato')}}
-                            <a class="autoLogRegis" href="{{ route('register') }}">{{__('ui.logIn')}}</a>
+                            <a class="autoLogRegis" href="{{ route('login') }}">{{__('ui.logIn')}}</a>
                         </span>
                     </div>
                     <button type="submit" class="btn btn-primary">{{__('ui.register')}}</button>
