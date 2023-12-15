@@ -38,7 +38,7 @@
 </figure> --}}
     {{-- Card orizzontale --}}
 
-    <a href="{{ route('ad.show', $ad) }}" class="decoration-none">
+    <a href="{{ route('ad.show', $ad) }}" class="text-decoration-none">
 
         <div class="card mb-3 card2">
             <div class="row g-0">
@@ -68,7 +68,7 @@
 
                         <div class="icon-d">
                             {{-- <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-50">Mostra</a> --}}
-                            <i class="fa-regular fa-heart fa-xl"></i>
+                            {{-- <i class="fa-regular fa-heart fa-xl"></i> --}}
                         </div>
                     </div>
                 </div>
