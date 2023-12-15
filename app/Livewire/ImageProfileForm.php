@@ -14,13 +14,13 @@ class ImageProfileForm extends Component
 
     use WithFileUploads;
 
-
+    
     public $province;
     public $city;
     public $age;
     public $image;
     public $bio;
-    public $old_image;
+   
 
 
 
@@ -52,14 +52,10 @@ class ImageProfileForm extends Component
             'city' => $this->city,
             'age' => $this->age,
             'bio' => $this->bio,
-
+            'image' => $this->image->store('public/users'),
         ]);
-        if ($this->image) {
-            Storage::delete($this->old_image);
-            Auth::user()->update([
-                'image' => $this->image->store('public/users'),
-            ]);
-        }
+     
+     
         session()->flash('message', 'Immagine caricata con successo');
     }
 
@@ -71,7 +67,7 @@ class ImageProfileForm extends Component
         $this->city = Auth::user()->city;
         $this->age = Auth::user()->age;
         $this->bio = Auth::user()->bio;
-        $this->old_image = Auth::user()->image;
+      
     }
     public function render()
     {

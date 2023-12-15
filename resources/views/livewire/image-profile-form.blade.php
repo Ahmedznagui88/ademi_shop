@@ -27,10 +27,6 @@
         @error('age')
             <p class="text-danger fst-italic">{{ $message }}</p>
         @enderror
-        <div class="mb-1">
-            <label for="image" class="form-label">Immagine attuale</label>
-            <img src="{{ Storage::url($old_image) }}" alt="" class="img-fluid imgAttuale">
-        </div>
     <div class="mb-1">
         <label for="image" class="form-label">{{ __('ui.imageprofile') }}</label>
         <input type="file" wire:model="image"

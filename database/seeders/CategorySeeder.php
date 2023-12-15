@@ -38,6 +38,7 @@ class CategorySeeder extends Seeder
             '/media/imageCategories/arte 3.jpg',
             '/media/imageCategories/wine.avif',
             '/media/imageCategories/liquore.webp',
+            
         ];
         
         foreach ($categories as $key => $category) {
