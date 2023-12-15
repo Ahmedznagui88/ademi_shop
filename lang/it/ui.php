@@ -56,5 +56,11 @@ return [
     'bio'=>'Biografia',
     'textHome'=>'Per la casa, per i tuoi luoghi preferiti!',
     'textShow'=>'Scopri altri prodotti!',
-    'spedizione'=>'',
+    'spedizione'=>'Prima spedizione del mese gratuita!',
+    'saldiNatale'=>'Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI, coperte invernali e altri must di stagione!',
+    'eleganza'=>'ELEGANZA MODERNA PER IL TUO DINING',
+    'stile'=>'STILE SENZA CONFINE NEL TUO SOGGIORNO',
+    'imgAtt'=>'immagine attuale',
+    'tuttoQui'=>'Tutto quello che cerchi è qui!',
+    'perCasa'=>'Per la casa e per i tuoi luoghi preferiti!',
 ];

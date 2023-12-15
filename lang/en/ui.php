@@ -64,4 +64,10 @@ return [
     'textHome'=>'For the home, for your favorite places!',
     'textShow'=>'Discover other products!',
     'spedizione'=>'First free shipping of the month!',
+    'saldiNatale'=>'Up to -30% in the Christmas sales use the code: XMAS-ADEMI, winter blankets and other seasonal musts!',
+    'eleganza'=>'MODERN ELEGANCE FOR YOUR DINING',
+    'stile'=>'STYLE WITHOUT BORDERS IN YOUR LIVING ROOM',
+    'imgAtt'=>'current image',
+    'tuttoQui'=>'Everything you are looking for is here!',
+    'perCasa'=>'For the home and your favorite places!',
 ];

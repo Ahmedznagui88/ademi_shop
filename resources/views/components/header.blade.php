@@ -18,7 +18,7 @@
     <div class="container-fluid container-text-offer">
         <div class="row">
             <div class="col-12 txt-offer">
-                <p id="textCarousel" class="my-3">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI, coperte invernali e altri must di stagione!</p>
+                <p id="textCarousel" class="my-3">{{__('ui.saldiNatale')}}</p>
             </div>
         </div>
     </div>
@@ -68,7 +68,7 @@
                 <div class="divHead d-flex justify-content-center">
                     <img src="/media/home1.jpg" class="img-fluid" alt="">
                     <div class="textDet text-center">
-                        <h5>ELEGANZA MODERNA PER IL TUO DINING</h5>
+                        <h5>{{__('ui.eleganza')}}</h5>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                 <div class="divHead2 d-flex justify-content-center">
                     <img src="/media/home.jpg" class="imghead" alt="">
                     <div class="textDet2 text-center">
-                        <h5>STILE SENZA CONFINE NEL TUO SOGGIORNO</h5>
+                        <h5>{{__('ui.stile')}}</h5>
                     </div>
                 </div>
             </div>
