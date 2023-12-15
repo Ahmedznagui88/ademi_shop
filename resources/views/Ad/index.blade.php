@@ -59,7 +59,7 @@
             </div>
             <div class="row justify-content-center ggit" style="font-family: 'Cinzel', serif;">
                 <div class="divhead-center2">
-                    <h5 class="text-center ">Per la casa, per i tuoi luoghi preferiti!</h5>
+                    <h5 class="text-center ">{{__('ui.textHome')}}</h5>
                 </div>
             </div>
         </div>

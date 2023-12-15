@@ -58,4 +58,7 @@ return [
     'tuttiAds'=>'Toutes les annonces',
     'nome'=>'Nom',
     'bio'=>'Biographie',
+    'textHome'=>'Pour la maison, pour vos endroits préférés!',
+    'textShow'=>'Découvrez d\'autres produits!',
+    'spedizione'=>'Première livraison gratuite du mois !',
 ];

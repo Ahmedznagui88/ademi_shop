@@ -54,4 +54,7 @@ return [
     'tuttiAds'=>'Tutti gli annunci',
     'nome'=>'Nome',
     'bio'=>'Biografia',
+    'textHome'=>'Per la casa, per i tuoi luoghi preferiti!',
+    'textShow'=>'Scopri altri prodotti!',
+    'spedizione'=>'',
 ];

@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 txt-offer2">
-                <p class="txt-banner my-4">Prima spedizione del mese gratuita!</p>
+                <p class="txt-banner my-4">{{__('ui.spedizione')}}</p>
             </div>
         </div>
     </div>
@@ -15,7 +15,7 @@
     <div class="container-fluid d-flex">
 
         <aside class="">
-            <h4 class="mt-5 hcat">Categorie</h4>
+            <h4 class="mt-5 hcat">{{__('ui.category')}}</h4>
             <div class="col-12 col-md-6 div-aside ">
                 @foreach ($categories as $category)
                     <div class="col-md-1 div-cat-aside ">
@@ -45,12 +45,12 @@
                             <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
+                                <span class="visually-hidden">{{__('ui.precedente')}}</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
+                                <span class="visually-hidden">{{__('ui.successivo')}}}</span>
                             </button>
                         </div>
                         
@@ -75,7 +75,7 @@
              <div class="container-fluid containerShow">
 
                 <div class="text-scopri">
-                    <p class="" style="font-family: 'Cinzel', serif;">scopri altri prodotti!</p>
+                    <p class="" style="font-family: 'Cinzel', serif;">{{__('ui.textShow')}}</p>
                 </div> 
               
                  <div class="rowshow2">
