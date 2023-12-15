@@ -6,7 +6,7 @@ return [
     'province' => 'Province',
     'age' => 'Age',
     'city' => 'City',
-    'category'=>'Category',
+    'category'=>'Categores',
     'cercaAll'=>'Search',
     'insertAnnouncements'=>'Insert Ad',
     'register'=>'Sign in',
@@ -59,4 +59,6 @@ return [
     'elimina'=>'Delete',
     'iDett'=>'Details make the difference',
     'tuttiAds'=>'All ads',
+    'nome'=>'Name',
+    'bio'=>'Biographies',
 ];

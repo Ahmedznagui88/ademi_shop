@@ -56,4 +56,6 @@ return [
     'elimina'=>'Supprimer',
     'iDett'=>'Les détails font la différence',
     'tuttiAds'=>'Toutes les annonces',
+    'nome'=>'Nom',
+    'bio'=>'Biographie',
 ];
