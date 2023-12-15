@@ -7,8 +7,6 @@
     background-size: 1300px;
     background-position: center;
     background-attachment: fixed;
-    
-    
 }
 .rowCat{
     margin-top: 220px;
@@ -25,7 +23,6 @@
    z-index: 1;
     display: flex;
     justify-content: center;
-    
 }
 
 
@@ -37,7 +34,6 @@
     object-fit: cover;
     transition: 1.2s;
     border-radius: 20px;
-   
 }
 
 
@@ -45,8 +41,6 @@
 	height: 240px;
     font-size: 120px;
     color: rgb(0, 0, 0);
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
-    
 }
 
 .texthome{

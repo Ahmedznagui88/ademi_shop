@@ -1,8 +1,9 @@
-<x-layout> 
+<x-layout>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 txt-offer2">
-                <p class="txt-banner">Prima spedizione del mese gratuita!</p>
+                <p class="txt-banner my-4">Prima spedizione del mese gratuita!</p>
             </div>
         </div>
     </div>
@@ -11,11 +12,8 @@
     {{--  --}}
 
 
-    
-
     <div class="container-fluid d-flex">
 
-        
         <aside class="">
             <h4 class="mt-5 hcat">Categorie</h4>
             <div class="col-12 col-md-6 div-aside ">

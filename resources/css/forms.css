@@ -2,7 +2,6 @@
     margin-top: 30px;
     background-image: url(./../../public/media/in.avif);
     background-size: cover;
-  
 }
 
 .btn{
@@ -29,12 +28,10 @@ input:hover{
 }
 
 .form-control:focus-within, .form-label:focus-within{
-   
    border: #ED7C31;
 }
 .form-control, .form-label{
     background-color: transparent;
-    
  }
 
  .form-creat{
@@ -49,12 +46,10 @@ input:hover{
     display: flex;
     align-items: end;
     border-radius: 5px 5px 6px 6px ;
-    
  }
 
  .prevImg{
     margin: 8px ;
-    
  }
 
  .btnrmv{
@@ -72,7 +67,8 @@ input:hover{
     background-color: #c0beba;
     color: red;
     font-size: 20px;
-    
-    
+ }
 
+ .autoLogRegis{
+   color: #ED7C31;
  }
