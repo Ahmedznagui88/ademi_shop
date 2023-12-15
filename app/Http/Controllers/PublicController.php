@@ -9,7 +9,7 @@ class PublicController extends Controller
 {
   public function __construct()
   {
-      $this->middleware('auth');
+      $this->middleware('auth')->except('homepage');
   }
   public function homepage()
   {
@@ -34,6 +34,7 @@ class PublicController extends Controller
   }
 
   public function profile() {
+    $ads = ad::where('is_accepted', true)->latest()->get();
     return view('auth.profile');
   }
   public function create() {

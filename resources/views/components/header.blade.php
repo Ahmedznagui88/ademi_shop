@@ -22,10 +22,10 @@
 
 
 
-    <div class="container-fluid">
+    <div class="container-fluid container-text-offer">
         <div class="row">
             <div class="col-12 txt-offer">
-                <p id="textCarousel" class="my-4">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI, coperte invernali e altri must di stagione!</p>
+                <p id="textCarousel" class="my-3">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI, coperte invernali e altri must di stagione!</p>
             </div>
         </div>
     </div>
@@ -56,11 +56,11 @@
         <div class="row">
             <div class="justify-content-center">
                  <div class="col-12 text-center buttoncategorie">
-                    <button class="btn-header my-2 toggle text-light rounded-3">{{ __('ui.category') }}</button>
+                    <button class="btn-header my-2 toggle text-light">{{ __('ui.category') }}</button>
                 </div> 
-                <div class="col-12 panel categorie justify-content-center">
+                <div class="col-12 panel categorie justify-content-center mb-2">
                     @foreach ($categories as $category)
-                        <button class="col-md-1 btn-header2">
+                        <button class="col-md-1 btn-header2 mx-2">
                             <a href="{{ route('ad.indexCategory', $category) }}"
                                 class="text-btn-1">{{ $category->name }}</a>
                         </button>

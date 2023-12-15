@@ -2,6 +2,7 @@
 
 return [
     'allAnnouncements'=>'Ads',
+    'biography' => 'biography',
     'province' => 'Province',
     'age' => 'Age',
     'city' => 'City',

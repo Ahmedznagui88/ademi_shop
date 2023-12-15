@@ -24,6 +24,7 @@ class User extends Authenticatable
         'city',
         'age',
         'image',
+        'bio',
         'email',
         'password',
         

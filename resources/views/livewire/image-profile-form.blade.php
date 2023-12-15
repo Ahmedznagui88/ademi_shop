@@ -27,14 +27,33 @@
         @error('age')
             <p class="text-danger fst-italic">{{ $message }}</p>
         @enderror
+        <div class="mb-1">
+            <label for="image" class="form-label">Immagine attuale</label>
+            <img src="{{ Storage::url($old_image) }}" alt="" class="img-fluid imgAttuale">
+        </div>
     <div class="mb-1">
         <label for="image" class="form-label">{{ __('ui.imageprofile') }}</label>
         <input type="file" wire:model="image"
-            class="form-control shadow @error('temporary_images.*')is-invalid @enderror rounded-3" id="image">
-        @error('temporary_images.*')
+            class="form-control shadow rounded-3" id="image">
+        @error('image')
             <p class="text-danger mt-2">{{ $message }}</p>
         @enderror
+        {{--  @if (Auth::User()->image)
+        <div class="mb-1">
+            <label for="image" class="form-label">Anteprima immmagine</label>
+            <img src="{{ Auth::User()->image->temporaryUrl() }}" alt="" class="img-fluid imgAttuale">
+        </div>
+        @endif
+    </div>--}}
+    <div class="mb-1">
+        <label for="bio" class="form-label">{{__('ui.biography')}}</label>
+        <textarea type="text" wire:model="bio" class="form-control text-bio rounded-3" id="bio" rows="5"
+            cols="30"></textarea>
+
     </div>
+    @error('bio')
+        <p class="text-danger fst-italic">{{ $message }}</p>
+    @enderror
 
     <button type="submit" class="btn btn-primary mt-2">{{ __('ui.insertAnnouncements') }}</button>
     </div>

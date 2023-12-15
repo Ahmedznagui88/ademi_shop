@@ -34,12 +34,9 @@
 .btn-header2 {
     width: 100px;
 	height: 40px;
-	display: flex;
-	align-items: center;
-	margin: 13px;
 	border: none;
 	background-color: #ED7D31;
-	border-radius: 9px;
+	border-radius: 4px;
 	transition: 1.6s;
     transform: translateY(0);
     transform-origin: bottom;
@@ -54,10 +51,11 @@
 .txt-offer{
 	text-align: center;
 	width: 100vw;
-	height: 65px;
+	height: 60px;
 	background-color: rgb(224, 202, 172);
 	color: rgb(0, 0, 0);
 	font-family: 'Cinzel', serif;
+	
 }
 /* ! end offerta */
 /** title */
@@ -204,9 +202,15 @@
 		display: block;
 		background-color: #ED7D31;
 		overflow-y: scroll;
+		
 	}
-
+	.btn-header2 {
+		margin:10px
+	}
 	.divButtonCategories{
+		display: none;
+	}
+	.container-text-offer {
 		display: none;
 	}
 	

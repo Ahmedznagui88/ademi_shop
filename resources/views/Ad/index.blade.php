@@ -1,5 +1,6 @@
 <x-layout>
-    <div class="container-fluid">
+    
+    <div class="container-fluid container-text-offer">
         <div class="row textCarousel">
             <div class="col-12 txt-offer">
                 <p id="textCarousel" class="my-4 ">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI,
@@ -25,7 +26,22 @@
                 </div>
             </div>
         </article>
-
+             {{-- Categorie --}}
+             <div class="row rowcategory-index">
+                <div class=" justify-content-center mb-2 mt-4">
+                    <div class="col-12 text-center buttoncategorie">
+                        <button class="btn-index my-2 toggle">{{ __('ui.category') }}</button>
+                    </div>
+                    <div class="col-12 panel categorie justify-content-center">
+                        @foreach ($categories as $category)
+                            <button class="col-md-1 btn-index2 mx-2">
+                                <a href="{{ route('ad.indexCategory', $category) }}"
+                                    class="text-btn-2">{{ $category->name }}</a>
+                            </button>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
         <div class="container mt-5">
 
             <div class="row mb-5 justify-content-center position-relative">
@@ -48,22 +64,7 @@
             </div>
         </div>
         <hr class="container">
-        {{-- Categorie --}}
-        <div class="row">
-            <div class=" justify-content-center mb-2 mt-4">
-                <div class="col-12 text-center buttoncategorie">
-                    <button class="btn-index my-2 toggle">{{ __('ui.category') }}</button>
-                </div>
-                <div class="col-12 panel categorie justify-content-center">
-                    @foreach ($categories as $category)
-                        <button class="col-md-1 btn-index2 mx-2">
-                            <a href="{{ route('ad.indexCategory', $category) }}"
-                                class="text-btn-2">{{ $category->name }}</a>
-                        </button>
-                    @endforeach
-                </div>
-            </div>
-        </div>
+   
 
         <div class="row justify-content-center mt-5">
             <div class="mb-5">
