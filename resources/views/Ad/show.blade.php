@@ -59,7 +59,7 @@
                 <div class="col-12 col-md-3 showdescrizioni">
                     <h2 class="font_title">{{ $ad->title }}</h2>
                     <p class="">{{ $ad->brand }}</p>
-                    {{-- <p class="">{{ $ad->description }}</p> --}}
+                    <p class="">{{ $ad->description }}</p>
                     <p class="fs-2 price ">${{ $ad->price }}</p>
                     <span>{{__('ui.insertBy')}} {{ Auth::user()->name ?? __('ui.noName')}}</span>
                     {{-- <p>{{__('ui.insertBy')}} {{ $ad->created_at->translatedFormat('D d/m/y') }}</p> --}}
@@ -68,9 +68,6 @@
             </div>
             
             </div>
-
-            
-
 
              <div class="container-fluid containerShow">
 
