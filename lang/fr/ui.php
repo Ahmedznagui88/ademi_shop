@@ -61,4 +61,10 @@ return [
     'textHome'=>'Pour la maison, pour vos endroits préférés!',
     'textShow'=>'Découvrez d\'autres produits!',
     'spedizione'=>'Première livraison gratuite du mois !',
+    'saldiNatale'=>'Jusqu\'à -30% sur les soldes de Noël utilisez le code : XMAS-ADEMI, couvertures d\'hiver et autres incontournables de la saison!',
+    'eleganza'=>'ÉLÉGANCE MODERNE POUR VOTRE SALLE À MANGER',
+    'stile'=>'DU STYLE SANS FRONTIÈRES DANS VOTRE SALON',
+    'imgAtt'=>'Image actuelle',
+    'tuttoQui'=>'Tout ce que vous cherchez est ici!',
+    'perCasa'=>'Pour la maison et vos endroits préférés !',
 ];

@@ -3,8 +3,7 @@
     <div class="container-fluid container-text-offer">
         <div class="row textCarousel">
             <div class="col-12 txt-offer">
-                <p id="textCarousel" class="my-4 ">Fino al -30% nei saldi di natale usa il codice: XMAS-ADEMI,
-                    coperte invernali e altri must di stagione!</p>
+                <p id="textCarousel" class="my-4 ">{{__('saldiNatale')}}</p>
             </div>
         </div>
     </div>
