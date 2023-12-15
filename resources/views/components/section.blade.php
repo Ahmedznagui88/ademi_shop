@@ -14,7 +14,7 @@
 
 
     <div class="container-fluid contSec"> 
-        <div class="row row">
+        <div class="row ">
 
             <div class="">
                 <h2 class=" catitle text-center">{{__('ui.iDett')}}</h2>
@@ -40,7 +40,7 @@
             
             
                 <div class="col-12 divSecImg4">
-                    <img src="/media/vinyl.jpeg" class="secImg4" alt="">
+                    <img src="/media/vinyl.avif" class="secImg4" alt="">
                 </div>
             
         </div>

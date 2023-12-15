@@ -74,7 +74,7 @@
                         @endif
                          @endforeach
                     </div> 
-
+                    
                     {{-- ! end alert  --}}
                 </div>
 
@@ -82,12 +82,12 @@
         </div>
 
          <div class="container contInfo">
+           
             <div class="row rowinfo">
-                <div class="text-center my-2">
-                    <h5 class="card-title">{{ $ad_to_check->title }}</h5>
-                    <p class="card-text">{{ $ad_to_check->description }}</p>
-                    <p>{{ $ad_to_check->body }}</p>
-                    <p>{{ $ad_to_check->created_at }}</p>
+                <div class="">
+                    <h5 class="cardTitle2">{{ $ad_to_check->title }}</h5>
+                    {{-- <p>{{ $ad_to_check->body }}</p> --}}
+                    <p >{{ $ad_to_check->created_at }}</p>
                 </div>
             </div>
             <div class="rowbtn">
@@ -114,29 +114,15 @@
             </div>
         </div>
 
-        {{--    <div class="container d-flex justify-content-center">
-            <div class="row justify-content-center">
-
-                <div class="col-3 col-md-3">
-                    <form action="{{ route('revisor.accept.ad', ['ad' => $ad_to_check]) }}" method="POST">
-                        @csrf
-
-                        @method('PATCH')
-                        <button type="submit" class="btn btnRev mx-5">{{ __('ui.accept') }}</button>
-                    </form>
+        <div class="container contDesc">
+            <div class="row rowDesc">
+                <div class="col-12">
+                    <p class="textDescRev">{{ $ad_to_check->description }}</p>
                 </div>
-
-                <div class="col-3 col-md-3">
-                    <form action="{{ route('revisor.reject.ad', ['ad' => $ad_to_check]) }}" method="POST">
-                        @csrf
-
-                        @method('PATCH')
-                        <button type="submit" class="btn btnRevR mx-5">{{ __('ui.reject') }}</button>
-                    </form>
-                </div>
-
             </div>
-        </div> --}}
+        </div>
+
+
 
     @endif
 </x-layout>

@@ -24,6 +24,12 @@
 .ulang{
     list-style: none;
 }
+
+.nameUser{
+    color: #000000;
+    border: solid #d9ece9;
+    border-radius: 30px;
+}
 /** end navbar  */
 
 
@@ -31,6 +37,6 @@
     .btn-r {
         float: right;
         width: 110px;
-
+        margin-top: 8px;
     }
 }

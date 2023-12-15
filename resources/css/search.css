@@ -1,5 +1,11 @@
+.Divbarradiricerca {
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 5%;
+  }
+
 .form-search-1{
-  margin-top: 50px;
+  
   border-radius: 30px;
   width: 500px;
 }
@@ -18,13 +24,10 @@
     border: 0;
 }
 
-.Divbarradiricerca {
-margin-top: 1%;
-width: 90%;
-margin-left: 5%;
-}
 
 .link-1 {
   display: none;
   /* position: absolute; */
 }
+
+

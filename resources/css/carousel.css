@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid antiquewhite;
+    border: solid rgb(105, 104, 103);
     border-radius: 50px;
     width: 160px;
     height: 40px;

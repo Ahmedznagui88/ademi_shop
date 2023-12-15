@@ -1,8 +1,9 @@
 .contInfo{
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: start;
+    
 }
 .rowinfo{
     width: 25%;
@@ -19,8 +20,8 @@
 .btnRev{
     background:#ffffff;
     border: none;
-    width: 80px;
-    border-radius: 10px;
+    width: 130px;
+    border-radius: 20px;
     color: rgb(53, 133, 0);
     transition: 0.4s;
     transform-origin: bottom;
@@ -29,8 +30,8 @@
 .btnRevR{
     background:#ffffff;
     border: none;
-    width: 80px;
-    border-radius: 10px;
+    width: 130px;
+    border-radius: 20px;
     color: rgb(255, 0, 0);
     transition: 0.9s;
     transform-origin: bottom;
@@ -50,6 +51,42 @@
     border-radius: 50px;
     width: 600px;
 }
+
+/** start descrizione  */
+
+.cardTitle2{
+    margin-top: 20px;
+
+
+}
+.contDesc{
+    
+
+}
+
+.rowDesc{
+    border-radius: 50px;
+    height: 170px;
+    width: 100%;
+    border: solid 5px rgb(225, 215, 202);
+    
+}
+
+.textDescRev{
+    font-size: 21px;
+    margin: 20px;
+}
+
+
+
+
+
+/*! end descrizione  */
+
+
+
+
+
 
 @media screen and (min-width: 200px) and (max-width: 767px) {
     .carousel-1{

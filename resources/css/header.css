@@ -10,9 +10,9 @@
 	justify-content: end;
 }
 
-.article-1 {
+/* .article-1 {
 	margin-top: 20px;
-}
+} */
 
 .rowArt {
 	display: flex;
@@ -20,7 +20,6 @@
 }
 
 .btn-header {
-	
 	width: 100px;
 	height: 40px;
 	border: none;
