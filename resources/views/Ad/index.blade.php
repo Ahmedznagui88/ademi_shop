@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <hr class="container">
+       {{--  <hr class="container"> --}}
    
 
         <div class="row justify-content-center mt-5">

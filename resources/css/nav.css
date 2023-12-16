@@ -29,6 +29,10 @@
     color: #000000;
     border: solid #d9ece9;
     border-radius: 30px;
+    float: right;
+    color: #aef0e6;
+    width: 70px;
+    text-align: center;
 }
 /** end navbar  */
 
@@ -40,3 +44,4 @@
         margin-top: 8px;
     }
 }
+

@@ -12,9 +12,6 @@
 .rowCat{
     margin-top: 190px;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: solid red;
 }
 
 .catitle{
@@ -30,7 +27,7 @@
 }
 
 .divSecImg{
-    background-image: url(../../public/media/interior.jpg);
+    background-image: url(../../public/media/salotto.avif);
     background-size: cover;
     background-position-y: 300px;
 }
@@ -53,12 +50,12 @@
     background-position: 200px;
 }
 .divSecImg,.divSecImg2, .divSecImg3, .divSecImg4{
-    border: solid green;
     height: 100px;
     width: 900px;
     border-radius: 50px;
     transition: 1s;
     text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -68,7 +65,7 @@
     z-index: 0;
 }
 
-/* .arredamenti{
+.arredamenti{
     font-size: 60px;
     margin-top: 20px;
     font-family: 'Cinzel', serif;
@@ -82,13 +79,12 @@
     font-size: 60px;
     margin-top: 5px;
     font-family: 'Cinzel', serif;
-    
     color: #000000;
     opacity: 1;
     z-index: 10;
     display: block;
 }
- */
+
 
 .secImg1, .secImg2, .secImg3, .secImg4{
     position: relative;
@@ -121,5 +117,17 @@
     .catitle{
         font-size: 20px;
     }
+
+    .arredamenti{
+    font-size: 45px;
+    color: #000000;
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+    opacity: 1;
+    transition: 1s;
+    background-color: #ed7c3184;
+    border-radius: 50px;
+    }
 	
 }
+
