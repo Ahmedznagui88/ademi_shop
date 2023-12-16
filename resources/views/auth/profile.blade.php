@@ -11,7 +11,7 @@
             </div>
             <div class="col-12 col-md-8 logo-porta">
                 <img src="./media/home2.jpg" class="img-fluid imgUnderTitle" alt="">
-            </div> --}}
+            </div>
         </div>
         <div class="row rounded-4 mt-5 ">
             <div class="col-12 aside-phone">
