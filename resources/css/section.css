@@ -10,6 +10,9 @@
 }
 .rowCat{
     margin-top: 190px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .catitle{
@@ -19,10 +22,69 @@
     background-color: #ed7c31;
     border-radius: 20px;
 }
-.divSecImg, .divSecImg2, .divSecImg3, .divSecImg4{
-   z-index: 1;
-    display: flex;
-    justify-content: center;
+
+.tag-a{
+    color: #ed7c31;
+}
+
+.divSecImg{
+    background-image: url(../../public/media/interior.jpg);
+    background-size: cover;
+    background-position-y: 300px;
+}
+
+.divSecImg2{
+    background-image: url(../../public/media/perfume2.avif);
+    background-size: cover;
+    background-position: 100px;
+}
+
+.divSecImg3{
+    background-image: url(../../public/media/watch.jpg);
+    background-size: cover;
+    background-position: 100px;
+}
+
+.divSecImg4{
+    background-image: url(../../public/media/vinyl.avif);
+    background-size: cover;
+    background-position: 200px;
+}
+.divSecImg,.divSecImg2, .divSecImg3, .divSecImg4{
+    
+    height: 100px;
+    width: 900px;
+    border-radius: 50px;
+    transition: 1s;
+    text-align: center;
+}
+
+
+
+.divSecImg,.divSecImg2, .divSecImg3, .divSecImg4:hover{
+ 
+    z-index: 0;
+}
+
+.arredamenti{
+    font-size: 60px;
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+    opacity: 0;
+    transition: 1s;
+    background-color: #ed7c3184;
+    border-radius: 50px;
+}
+
+.arredamenti:hover{
+    font-size: 60px;
+    margin-top: 5px;
+    font-family: 'Cinzel', serif;
+    
+    color: #000000;
+    opacity: 1;
+    z-index: 10;
+    display: block;
 }
 
 
@@ -34,7 +96,7 @@
     object-fit: cover;
     transition: 1.2s;
     border-radius: 20px;
-}
+} 
 
 
 .text-2{

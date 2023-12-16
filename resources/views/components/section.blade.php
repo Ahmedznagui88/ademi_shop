@@ -25,23 +25,36 @@
       <div class="row rowCat">
             
                 <div class="col-12 divSecImg">
-                    <img src="/media/interior.jpg" class="secImg1" alt="">
+                    <a class="text-decoration-none" href="http://127.0.0.1:8000/ad/index5">
+
+                      <p class="arredamenti">Arredamenti</p>
+                    </a>
                 </div>
             
              
-                <div class="col-12 divSecImg2">
-                    <img src="/media/perfume2.avif" class="secImg2" alt="">
-                </div>
+               <div class="col-12 divSecImg2">
+                <a class="text-decoration-none" href="http://127.0.0.1:8000/ad/index4">
+                 <p class="arredamenti">Essenze</p>
+                </a>
+                 </div>
+
+            
             
             
                 <div class="col-12 divSecImg3">
-                    <img src="/media/watch.jpg" class="secImg3" alt="">
+                  <a class="text-decoration-none" href="http://127.0.0.1:8000/ad/index1">
+
+                    <p class="arredamenti">Orologi</p>
+                  </a>
                 </div>
             
             
                 <div class="col-12 divSecImg4">
-                    <img src="/media/vinyl.avif" class="secImg4" alt="">
-                </div>
+                  <a class="text-decoration-none" href="http://127.0.0.1:8000/ad/index3">
+
+                    <p class="arredamenti">Vinili</p>
+                  </a>
+                </div> 
             
         </div>
     </div> 
