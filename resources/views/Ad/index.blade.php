@@ -97,7 +97,12 @@
 
             </div>  --}}
         </div>
-
+        
+        <div class="mt-5 outBack">
+                  
+            <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">{{__('ui.tornaIndietro')}}</a>
+            
+        </div> 
     </div>
 
 </x-layout>

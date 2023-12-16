@@ -99,6 +99,15 @@
                   </div>
               </div>  
 
+              <div class="mt-5 outBack">
+                  
+                  <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">{{__('ui.tornaIndietro')}}</a>
+                  
+              </div> 
+      
+          </article>
+      </div>
+  </x-layout>
 
 
 
@@ -109,12 +118,3 @@
 
 
 
-            <div class="mt-5 outBack">
-                
-                <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">{{__('ui.tornaIndietro')}}</a>
-                
-            </div> 
-    
-        </article>
-    </div>
-</x-layout>

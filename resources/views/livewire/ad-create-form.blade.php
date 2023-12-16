@@ -11,21 +11,21 @@
 
             <div class="mb-1">
                 <label for="title" class="form-label">{{__('ui.titolo')}}</label>
-                <input type="text" wire:model="title" class="form-control  rounded-3" id="title">
+                <input type="text" wire:model.live.debounce.1000="title" class="form-control  rounded-3" id="title">
             </div>
             @error('title')
                 <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
             <div class="mb-1">
                 <label for="brand" class="form-label">{{__('ui.marchio')}}</label>
-                <input type="text" wire:model="brand" class="form-control  rounded-3" id="brand">
+                <input type="text" wire:model.live.debounce.1000="brand" class="form-control  rounded-3" id="brand">
             </div>
             @error('brand')
                 <p class="text-danger fst-italic">{{ $message }}</p>
             @enderror
             <div class="mb-1">
                 <label class="form-label ">{{__('ui.category')}}</label>
-                <select class="form-select  rounded-3" wire:model="category_id">
+                <select class="form-select  rounded-3" wire:model.live.debounce.1000="category_id">
                     <option value="">{{__('ui.selectCategory')}}</option>
                     @foreach ($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -34,7 +34,7 @@
             </div>
             <div class="mb-1">
                 <label for="description" class="form-label">{{__('ui.description')}}</label>
-                <textarea type="text" wire:model="description" class="form-control  rounded-3" id="description" rows="5"
+                <textarea type="text" wire:model.live.debounce.1000="description" class="form-control  rounded-3" id="description" rows="5"
                     cols="30"></textarea>
 
             </div>
@@ -49,7 +49,7 @@
 
             <div class="mb-1">
                 <label for="images" class="form-label">{{__('ui.addImage')}}</label>
-                <input type="file" wire:model="temporary_images" multiple 
+                <input type="file" wire:model.live.debounce.1000="temporary_images" multiple 
                     class="form-control shadow @error('temporary_images.*')is-invalid @enderror rounded-3"
                     id="images">
                 @error('temporary_images.*')
@@ -81,7 +81,7 @@
             @enderror
             <div class="mb-1">
                 <label for="price" class="form-label ">{{__('ui.prezzo')}}</label>
-                <input type="float" wire:model="price" class="form-control rounded-3" id="price">
+                <input type="float" wire:model.live.debounce.1000="price" class="form-control rounded-3" id="price">
             </div>
             @error('price')
                 <p class="text-danger">{{ $message }}</p>

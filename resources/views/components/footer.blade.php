@@ -1,3 +1,4 @@
+
 <footer @if (Route::CurrentRouteName() == 'ad.index') style="background-color: #6C5F5B" @endif>
     <div class="pf-footer w-100 d-flex justify-content-center">
         <div class="footer-contents my-5">
