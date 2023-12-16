@@ -7,12 +7,14 @@
     background-size: 1300px;
     background-position: center;
     background-attachment: fixed;
+    
 }
 .rowCat{
     margin-top: 190px;
-    display: flex;
     justify-content: center;
-    
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid red;
 }
 
 .catitle{
@@ -51,7 +53,7 @@
     background-position: 200px;
 }
 .divSecImg,.divSecImg2, .divSecImg3, .divSecImg4{
-    
+    border: solid green;
     height: 100px;
     width: 900px;
     border-radius: 50px;
@@ -66,7 +68,7 @@
     z-index: 0;
 }
 
-.arredamenti{
+/* .arredamenti{
     font-size: 60px;
     margin-top: 20px;
     font-family: 'Cinzel', serif;
@@ -86,7 +88,7 @@
     z-index: 10;
     display: block;
 }
-
+ */
 
 .secImg1, .secImg2, .secImg3, .secImg4{
     position: relative;

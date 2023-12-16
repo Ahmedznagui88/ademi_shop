@@ -9,7 +9,7 @@
 .div-upaside {
     width: 150px;
     height: 150px;
-    margin-left: 85px;
+    margin-left: 80px;
 }
 .divImg {
     width: 150px;
@@ -32,6 +32,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .imgAttuale {
     width: 200px;
@@ -44,14 +45,19 @@
 }
 .rowCardProfile {
     justify-content: center;
-    
-    
 
 }
-.divCardProfile {
-    margin-left: 740px;
-}
 
+/* table{
+	background-color: rgba(211, 138, 60, 0.854);
+	color: #ffffff;
+	width: 100%;
+	border-radius: 20px;
+} */
+
+.table-roundedr{
+    border-radius: 20px;
+}
 
 #table-wrapper {
   position:relative;
@@ -91,7 +97,9 @@ tr{
     position: sticky;
     top: 0;
 }
-
+.search-profilo {
+    margin-top: 90px !important;
+}
 @media screen and (min-width: 300px)  and (max-width: 600px){
   
     .div-table-componente {

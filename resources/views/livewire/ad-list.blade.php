@@ -1,5 +1,5 @@
- <div>
-      <div id="table-wrapper">
+ <div {{-- class="rounded-5 " --}}>
+      <div id="table-wrapper" {{-- class="rounded-5 " --}}>
         <div id="table-scroll">
           <table class="table table-light table table-striped">
               <thead>
