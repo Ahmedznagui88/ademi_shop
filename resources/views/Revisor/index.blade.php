@@ -13,6 +13,12 @@
                 <h2>{{ $ad_to_check ? __('ui.newAds') : __('ui.noNewAds') }}
                 </h2>
             </div>
+            @if (!$ad_to_check)
+                
+            <div class="col-12 text-center mt-5">
+                <img class="img-gift" src="https://media.tenor.com/_BiwWBWhYucAAAAM/what-huh.gif" alt="">
+            </div>
+            @endif
         </div>
     </div>
 
