@@ -35,6 +35,7 @@ class AdCreateForm extends Component
         'brand' => 'required|min:3|max:100',
         'images.*' => 'required|image|max:2000|mimes:webp,png,jpeg,jpg',
         'description' => 'required|min:10|max:10000',
+ 
     ];
         
     protected $messages = [
@@ -47,11 +48,8 @@ class AdCreateForm extends Component
         'mimes' => 'Le estensioni devono essere :values',
         'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 2mb',
         'temporary_images.*.image' => 'I file devono essere immagini',
-
+       
     ];
-
-
-   
 
 
     public function updatedTemporaryImages()

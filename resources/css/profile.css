@@ -94,8 +94,11 @@ tr{
     font-family: 'Cinzel', serif; 
 }
 .logo-porta {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 10vh;
+    left: 85vw;
+    width: 130px;
+
 }
 .search-profilo {
     margin-top: 90px !important;

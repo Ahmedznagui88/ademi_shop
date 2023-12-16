@@ -28,6 +28,7 @@ return [
     'noAds'=>'Non ci sono annunci da cercare',
     'noCategory'=>'Non sono disponibili categorie per questo prodotto:',
     'tornaIndietro'=>'Torna Indietro',
+    'tornaIndietro'=>'Indietro',
     'titolo'=>'Titolo',
     'marchio'=>'Marchio',
     'selectCategory'=>'Scegli una categoria',

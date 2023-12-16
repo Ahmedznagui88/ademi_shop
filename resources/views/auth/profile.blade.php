@@ -9,7 +9,7 @@
                         placeholder={{ __('ui.cercaAll') }} aria-label="Search">
                 </form>
             </div>
-            {{-- <div class="col-12 col-md-8 text-end logo-porta">
+            <div class="col-12 col-md-8 logo-porta">
                 <img src="./media/home2.jpg" class="img-fluid imgUnderTitle" alt="">
             </div> --}}
         </div>
@@ -38,7 +38,7 @@
                 <div class="row mt-5">
                     <div class="col-12">
                         <p class="">{{__('ui.nome')}}: {{ Auth::user()->name }}</p>
-                        <p>{{('ui.province')}}: {{ Auth::user()->province }}</p>
+                        <p>{{__('ui.province')}}: {{ Auth::user()->province }}</p>
                         <p>{{__('ui.city')}}: {{ Auth::user()->city }}</p>
                         <p>{{__('ui.age')}}: {{ Auth::user()->age }}</p>
                     </div>
