@@ -1,11 +1,17 @@
 .txt-offer2{
   margin-top: 55px;
-  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 	width: 100vw;
 	height: 65px;
 	background-color: rgb(224, 202, 172);
 	color: rgb(0, 0, 0);
 	font-family: 'Cinzel', serif;
+}
+
+.txt-banner{
+  margin-top: 10px;
 }
 
 aside{
@@ -101,9 +107,13 @@ aside{
       height: 30px;
       font-size: 10px;
       margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .txt-banner{
-      margin-top: 6px;
+      text-align: center;
+      margin-top: 15px;
     }
 
     .rowshow2{

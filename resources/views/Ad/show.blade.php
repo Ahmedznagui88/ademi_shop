@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 txt-offer2">
-                <p class="txt-banner my-4">Arredamenti moderni, uno stile che parla il linguaggio dell'eleganza contemporanea</p>
+                <p class="txt-banner">Uno stile che parla il linguaggio dell'eleganza contemporanea</p>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
                             <button class="carousel-control-next" type="button" data-bs-target="#showCarousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">{{__('ui.successivo')}}}</span>
+                                <span class="visually-hidden">{{__('ui.successivo')}}</span>
                             </button>
                         </div>
                         
@@ -77,23 +77,23 @@
               
                  <div class="rowshow2">
                       <div class="col-12 col-md-3 divImgShow">
-                          <a href="">
+                          <a href="http://127.0.0.1:8000/ad/index6">
                               <img src="/media/lamp7.avif" class="img-fluid ImgShow" alt="image">
                           </a>
                       </div>
                       <div class="col-12 col-md-3 divImgShow">
-                          <a href="">
+                          <a href="http://127.0.0.1:8000/ad/index5">
                               <img src="/media/interior.jpg" class="img-fluid ImgShow" alt="image">
                           </a>
                       </div>
                       <div class="col-12 col-md-3 divImgShow">
-                          <a href="">
+                          <a href="http://127.0.0.1:8000/ad/index4">
                               <img src="/media/profumo1.avif" class="img-fluid ImgShow" alt="image">
                           </a>
                       </div>
                       <div class="col-12 col-md-3 divImgShow">
-                          <a href="">
-                              <img src="/media/newpics/interior 1.avif" class="img-fluid ImgShow" alt="image">
+                          <a href="http://127.0.0.1:8000/ad/index8">
+                              <img src="/media/abstract.jpg" class="img-fluid ImgShow" alt="image">
                           </a>
                       </div>
                   </div>
