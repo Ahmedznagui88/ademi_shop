@@ -1,8 +1,8 @@
 <x-layout>
     
     <div class="container-fluid container-text-offer">
-        <div class="row textCarousel">
-            <div class="col-12 txt-offer">
+        <div class="row textCarousel textCarousel2">
+            <div class="col-12 txt-offer textCarousel2">
                 <p id="textCarousel" class="my-4 ">{{__('saldiNatale')}}</p>
             </div>
         </div>

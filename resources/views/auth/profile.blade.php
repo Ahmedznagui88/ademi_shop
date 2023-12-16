@@ -2,7 +2,7 @@
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6 Divbarradiricerca search d-flex justify-content-center mt-5 ">
+            <div class="col-12 col-md-6 search-profilo d-flex justify-content-center mt-5 ">
                 <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
                     <label for="searched" class="sr-only">Cerca Prodotto</label>
                     <input name="searched" id="searched" class="input-1" type="search"
@@ -48,10 +48,13 @@
                     </div>
                 </div>
             </div>
+            @if (Auth::user()->name)
+                
             <div class="col-12 col-md-7 div-table-componente">
                 <h4 class="fs-1 d-flex justify-content-center text-h4">I tuoi annunci</h4>
                 <livewire:ad-list />
             </div>
+            @endif
         </div>
 
 
@@ -67,7 +70,7 @@
 
         <div class="row my-5 rowCardProfile ">
             @foreach (Auth::user()->ads as $ad)
-                <div class="col-12 divCardProfile">
+                <div class="col-12 col-xl-6 rounded-4 d-flex justify-content-center divCardProfile">
                     <x-card :ad="$ad" />
                 </div>
             @endforeach

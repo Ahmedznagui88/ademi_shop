@@ -48,9 +48,7 @@
     
 
 }
-.divCardProfile {
-    margin-left: 740px;
-}
+
 
 
 #table-wrapper {
@@ -91,7 +89,9 @@ tr{
     position: sticky;
     top: 0;
 }
-
+.search-profilo {
+    margin-top: 90px !important;
+}
 @media screen and (min-width: 300px)  and (max-width: 600px){
   
     .div-table-componente {
