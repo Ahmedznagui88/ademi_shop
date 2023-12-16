@@ -15,7 +15,7 @@ gsap.to(".testo-h5",{
   }) 
 
   //*section animation
-  gsap.to(".divSecImg",{
+/*   gsap.to(".divSecImg",{
     y: -50,
       duration: 20,
       rotateX: -5,
@@ -66,4 +66,4 @@ gsap.to(".testo-h5",{
           end: "bottom 10%",
           scrub: 1,
       },
-  }) 
+  })  */
