@@ -34,7 +34,7 @@
              
                <div class="col-12 divSecImg2">
                 <a class="text-decoration-none text-light" href="http://127.0.0.1:8000/ad/index4">
-                 <p class="arredamenti">Essenze</p>
+                 <p class="arredamenti">Profumi</p>
                 </a>
                  </div>
 
