@@ -21,6 +21,7 @@ footer{
   text-decoration: none;
   color: #ffffff;
   margin: 10px;
+  text-align: center;
 }
 
 .pf-footer {
@@ -33,6 +34,27 @@ footer{
   
 }
 
+.name-user-footer{
+  border: solid #d9ece9;
+    border-radius: 30px;
+    color: #d9ece9;
+  
+
+}
+.container-logo-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-logo-footer{
+  justify-content: center;
+}
+
+.logofooter{
+  width: 140px;
+  margin-bottom: 30px;
+}
 
 @media screen and (min-width: 365px) and (max-width: 765px){
 
@@ -44,8 +66,8 @@ footer{
   }
 
   .logofooter{
-    width: 120px;
-    margin-top: 30px;
+    width: 100px;
+    
   }
 
 } 
