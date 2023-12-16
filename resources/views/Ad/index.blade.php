@@ -7,13 +7,16 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid my-5 rounded-4">
-        <div class="col-12 col-md-7 Divbarradiricerca mb-5 d-flex justify-content-center">
-            <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
-                <label for="searched" class="sr-only">Cerca Prodotto</label>
-                <input name="searched" id="searched" class="input-1" type="search" placeholder={{ __('ui.cercaAll') }}
-                    aria-label="Search" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
-            </form>
+    <div class="container-fluid rounded-4">
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-4 Divbarradiricerca mb-5">
+                <form action="{{ route('ads.search') }}" method="GET" class="form-search-1d-flex justify-content-center " role="search">
+                    <label for="searched" class="sr-only">Cerca Prodotto</label>
+                    <input name="searched" id="searched" class="input-1" type="search" placeholder={{ __('ui.cercaAll') }}
+                        aria-label="Search" @if (Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
+                </form>
+            </div>
         </div>
 
         {{--! Categorie --}}
