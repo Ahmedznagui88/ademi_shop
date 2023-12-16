@@ -25,7 +25,7 @@
       <div class="row rowCat">
             
                 <div class="col-12 divSecImg">
-                    <a class="text-decoration-none" href="http://127.0.0.1:8000/ad/index5">
+                    <a class="text-decoration-none text-light" href="http://127.0.0.1:8000/ad/index5">
 
                       <p class="arredamenti">Arredamenti</p>
                     </a>
@@ -33,7 +33,7 @@
             
              
                <div class="col-12 divSecImg2">
-                <a class="text-decoration-none" href="http://127.0.0.1:8000/ad/index4">
+                <a class="text-decoration-none text-light" href="http://127.0.0.1:8000/ad/index4">
                  <p class="arredamenti">Essenze</p>
                 </a>
                  </div>
@@ -42,7 +42,7 @@
             
             
                 <div class="col-12 divSecImg3">
-                  <a class="text-decoration-none" href="http://127.0.0.1:8000/ad/index1">
+                  <a class="text-decoration-none text-light" href="http://127.0.0.1:8000/ad/index1">
 
                     <p class="arredamenti">Orologi</p>
                   </a>
@@ -50,7 +50,7 @@
             
             
                 <div class="col-12 divSecImg4">
-                  <a class="text-decoration-none" href="http://127.0.0.1:8000/ad/index3">
+                  <a class="text-decoration-none text-light" href="http://127.0.0.1:8000/ad/index3">
 
                     <p class="arredamenti">Vinili</p>
                   </a>
