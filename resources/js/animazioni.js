@@ -1,7 +1,7 @@
 
 
 
-var elements_to_watch = document.querySelectorAll('.watch');
+/* var elements_to_watch = document.querySelectorAll('.watch');
 // callback 
 var callback = function(items){
   items.forEach((item) => {
@@ -17,7 +17,7 @@ var observer = new IntersectionObserver(callback, { threshold: 0.5 } );
 // apply
 elements_to_watch.forEach((element) => {
   observer.observe(element); 
-});
+}); */
 
 
 
@@ -140,19 +140,22 @@ window.addEventListener("load", function () {
 carosello()
 })
 
-function openModal() {
+/*  function openModal() {
   // Seleziona il modale e l'immagine
-  var modal = document.getElementById("myModal");
-  var modalImage = document.getElementById("modalImage");
+  let tabella = document.getElementById("tabella-annunci");
+  
+  let logo = document.getElementById("logo-ademi-profilo");
+ 
   
   // Inserisci l'URL dell'immagine che desideri mostrare nel modale
-  var imageUrl = "./../img/ademi.png";
+ 
   
   // Aggiungi l'immagine all'elemento HTML
-  modalImage.src = imageUrl;
+ 
   
   // Mostra il modale
-  modal.style.display = "block";
+  tabella.style.opacity = "1";
+  logo.style.opacity = "0";
 }
 
 function closeModal() {
@@ -161,4 +164,13 @@ function closeModal() {
   
   // Chiudi il modale
   modal.style.display = "none";
+} 
+ */
+
+const openModal = document.getElementById('apri-modal')
+
+openModal.addEventListener("click", apriModal);
+
+function apriModal() {
+  console.log('apri modale')
 }

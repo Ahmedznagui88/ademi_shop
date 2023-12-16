@@ -13,7 +13,7 @@
                 <img src="./media/home2.jpg" class="img-fluid imgUnderTitle" alt="">
             </div>
         </div>
-        <div class="row rounded-4 mt-5 ">
+        <div class="row rounded-4 mt-5">
             <div class="col-12 aside-phone">
                 <div class="div-upaside mb-2">
 
@@ -47,6 +47,16 @@
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-md-6 sezioneIntroduzione">
+                <div class="divimg text-center divTextAdemi-profilo" >
+                    <img src="./media/Group A.png" class="img-logo-register a" id="a" alt="">
+                    <img src="./media/Group d.png" class="img-logo-register d" id="d" alt="">
+                    <img src="./media/Group e.png" class="img-logo-register e" id="e" alt="">
+                    <img src="./media/Group m.png" class="img-logo-register m" id="m" alt="">
+                    <img src="./media/Group i.png" class="img-logo-register i" id="i" alt="">
+
+                </div>
+            </div>
             @if (Auth::user()->name)
                 <div class="col-12 col-md-7 div-table-componente">
                     <h4 class="fs-1 d-flex justify-content-center text-h4">I tuoi annunci</h4>
@@ -55,12 +65,18 @@
             @endif
         </div>
 
-
         <div class="row justify-content-center rounded-4 list">
             <div class="col-12 col-md-8 text-center">
-
+                {{-- <h4 class="btn toggle">Modifica annunci</h4> --}}
+                <button class="btn apri-modale">Modifica annunci</button>
             </div>
-
+            
+        </div>
+        <div class="row justify-content-center rounded-4 list">
+            <div class="col-12 col-md-8 text-center">
+                <h4 class="text-h4 fs-1">I tuoi annunci</h4>
+            </div>
+            
         </div>
 
 

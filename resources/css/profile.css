@@ -48,12 +48,12 @@
 
 }
 
-/* table{
-	background-color: rgba(211, 138, 60, 0.854);
+table{
+    background-color: #6C5F5B;
 	color: #ffffff;
 	width: 100%;
-	border-radius: 20px;
-} */
+	
+} 
 
 .table-roundedr{
     border-radius: 20px;
@@ -65,7 +65,7 @@
  
 }
 #table-scroll {
-  height:150px;
+  height:200px;
   overflow:auto;  
   margin-top:20px;
   
@@ -85,10 +85,14 @@
 }
 tr{ 
     border-bottom: 1px solid;
-    margin-bottom: 3px !important;
+  
 }
 .div-table-componente {
     margin-left: 30px;
+   
+}
+.apri-modale:hover .div-table-componente{
+
 }
 .text-h4 {
     font-family: 'Cinzel', serif; 
@@ -103,6 +107,22 @@ tr{
 .search-profilo {
     margin-top: 90px !important;
 }
+.btn-list {
+    background-color: #ED7D31;
+}
+.sezioneIntroduzione {
+   margin-left: 60px;
+    height: 200px;
+    background-color: #6C5F5B;
+    border-radius: 25px;
+  
+}
+.divTextAdemi-profilo {
+   
+    margin-top: 32px;
+}
+
+
 @media screen and (min-width: 300px)  and (max-width: 600px){
   
     .div-table-componente {
