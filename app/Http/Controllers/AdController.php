@@ -72,6 +72,8 @@ class AdController extends Controller
      */
     public function destroy(ad $ad)
     {
-        //
+      /*   $ad->delete();
+
+        return redirect()->route('ad.index')->with('message', 'hai eliminato correttamente l\'annuncio'); */
     }
 }
