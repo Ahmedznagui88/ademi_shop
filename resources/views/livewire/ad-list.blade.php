@@ -1,7 +1,13 @@
 <div {{-- class="rounded-5 " --}}>
+
   <div id="table-wrapper" {{-- class="rounded-5 " --}}>
+    @if(session('message'))
+    <div class="divmes alert alert-success">
+        {{ session('message') }}
+    </div>
+  @endif
     <div id="table-scroll">
-      <table {{-- class="table table-light table table-striped" --}}>
+      <table class="{{-- table table-light table table-striped --}}">
           <thead>
               <tr>
                 <th scope="col">ID</th>
@@ -23,7 +29,8 @@
               <td>
                 <a class="btn btn-secondary btn-list" href="{{ route('ad.show', $ad) }}">{{__('ui.mostra')}}</a>
                 <a class="btn btn-secondary btn-list" href="{{ route('ad.edit', $ad) }}">{{__('ui.modifica')}}</a>
-                <a wire:click.prevent="destroy({{$ad}})" class="btn btn-secondary btn-list" href="">{{__('ui.elimina')}}</a>
+                <a wire:click="destroy({{$ad}})" class="btn btn-secondary btn-list" href="">{{__('ui.elimina')}}</a>
+          
               </td>
           </tr>
           @endforeach

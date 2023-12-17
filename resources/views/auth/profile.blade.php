@@ -60,14 +60,27 @@
            
         </div>
         <div class="row justify-content-center rounded-4 list">
+            <div class="wrapper my-3 col-12 col-md-4 text-center">
+                <a href="#demo-modal" class="button-modale">Modifica annunci</a>
+            </div>
+        </div>
+        <div class="row justify-content-center rounded-4 list">
             <div class="col-12 col-md-8 text-center">
                 <h4 class="text-h4 fs-1">I tuoi annunci</h4>
             </div>
-            @if (Auth::user()->name)
-            <div class="col-12 col-md-7 div-table-componente">
-                <livewire:ad-list />
+          {{-- modale --}}
+          <div id="demo-modal" class="modal container-fluid">
+            <div class="modal__content row justify-content-center">
+                @if (Auth::user()->name)
+                <div class="col-12 col-md-7 div-table-componente">
+                    <livewire:ad-list />
+                </div>
+            @endif
+
+                <a href="#" class="modal__close text-light ">&times;</a>
             </div>
-        @endif
+        </div>
+        {{-- fine modale --}}
         </div>
 
 

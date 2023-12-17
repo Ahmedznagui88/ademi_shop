@@ -35,7 +35,7 @@ class PublicController extends Controller
 
   public function profile() {
     $ads = ad::where('is_accepted', true)->latest()->get();
-    return view('auth.profile');
+    return view('auth.profile', compact('ads'));
   }
   public function create() {
     return view('auth.ProfileImagecreate');
