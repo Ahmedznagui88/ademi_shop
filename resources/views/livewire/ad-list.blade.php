@@ -23,7 +23,7 @@
               <td>
                 <a class="btn btn-secondary btn-list" href="{{ route('ad.show', $ad) }}">{{__('ui.mostra')}}</a>
                 <a class="btn btn-secondary btn-list" href="{{ route('ad.edit', $ad) }}">{{__('ui.modifica')}}</a>
-                <a wire:click="destroy({{$ad}})" class="btn btn-secondary btn-list" href="">{{__('ui.elimina')}}</a>
+                <a wire:click.prevent="destroy({{$ad}})" class="btn btn-secondary btn-list" href="">{{__('ui.elimina')}}</a>
               </td>
           </tr>
           @endforeach
