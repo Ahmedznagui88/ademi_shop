@@ -67,19 +67,6 @@
                         </div>
 
                         <div class="icon-d">
-                       {{--      @if (Auth::user() && $ad->user_id == Auth::user()->id)
-                            <form action="{{ route('ad.destroy', $ad)  }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn button buttonCard">Elimina</button>
-                            </form>
-                            @endif --}}
-                    {{--         <a class="btn btn-secondary btn-list"
-                                href="{{ route('ad.show', $ad) }}">{{ __('ui.mostra') }}</a>
-                            <a class="btn btn-secondary btn-list"
-                                href="{{ route('ad.edit', $ad) }}">{{ __('ui.modifica') }}</a>
-                            <a wire:click="destroy({{ $ad }})" class="btn btn-secondary btn-list"
-                                href="">{{ __('ui.elimina') }}</a> --}}
                             {{-- <a href="{{ route('ad.show', $ad) }}" class="btn btn-primary w-50">Mostra</a> --}}
                             {{-- <i class="fa-regular fa-heart fa-xl"></i> --}}
                         </div>
