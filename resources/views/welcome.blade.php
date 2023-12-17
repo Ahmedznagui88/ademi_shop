@@ -20,8 +20,8 @@
     
        
     {{-- Carosello 2 --}}
-     <div class="container ">
-        <div class="row banner contenitore-banner">
+     <div class="container d-flex flex-column justify-content-center">
+        <div class="row contenitore-banner">
             <div class="col-12 col-md-3 text-center col-banner-s">
              <p class="testo-h5">{{__('ui.tuttoQui')}}</p>
             </div>

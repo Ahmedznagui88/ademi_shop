@@ -3,7 +3,15 @@
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a> 
-        
+        <div class="Divbarradiricerca2 ">
+            <form action="{{ route('ads.search') }}" method="GET"
+                class="form-search-1d-flex justify-content-center " role="search">
+                <label for="searched" class="sr-only">Cerca Prodotto</label>
+                <input name="searched" id="searched" class="input-1" type="search"
+                    placeholder={{ __('ui.cercaAll') }} aria-label="Search"
+                    @if (Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
+            </form>
+        </div>
         {{-- <form action="{{route('ads.search')}}" method="GET" class="d-flex" role="search">
             <input  name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Cerca</button>
