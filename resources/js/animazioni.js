@@ -167,10 +167,5 @@ function closeModal() {
 } 
  */
 
-const openModal = document.getElementById('apri-modal')
 
-openModal.addEventListener("click", apriModal);
 
-function apriModal() {
-  console.log('apri modale')
-}
