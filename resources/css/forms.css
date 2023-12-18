@@ -30,8 +30,8 @@ input:hover{
 .form-control:focus-within, .form-label:focus-within{
    border: #ED7C31;
 }
-.form-control, .form-label{
-    background-color: transparent;
+.form-control{
+    background-color: rgba(255, 255, 255, 0.774);
  }
 
  .form-creat{

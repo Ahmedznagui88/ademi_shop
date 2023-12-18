@@ -3,7 +3,10 @@
         <a href="{{ route('homepage') }}" class="">
             <img src="/media/ademi logo 2.png" class="logo" alt="">
         </a> 
+
+        
         <div class="Divbarradiricerca2 ">
+            
             <form action="{{ route('ads.search') }}" method="GET"
                 class="form-search-1d-flex justify-content-center " role="search">
                 <label for="searched" class="sr-only">Cerca Prodotto</label>
@@ -20,8 +23,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-       
-       
         <div class="collapse navbar-collapse justify-content-end text-end" id="navbarNav">
             <ul class="navbar-nav">
                 @auth

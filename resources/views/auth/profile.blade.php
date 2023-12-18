@@ -1,17 +1,17 @@
 <x-layout>
 
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <div class="col-12 col-md-6 search-profilo d-flex justify-content-center mt-5 ">
-                <form action="{{ route('ads.search') }}" method="GET" class="form-search-1" role="search">
+                <form action="{{ route('ads.search') }}" method="GET" class="form-search-2" role="search">
                     <label for="searched" class="sr-only">Cerca Prodotto</label>
                     <input name="searched" id="searched" class="input-1" type="search"
                         placeholder={{ __('ui.cercaAll') }} aria-label="Search">
                 </form>
             </div>
-            <div class="col-12 col-md-8 logo-porta">
+             <div class="col-12 col-md-8 logo-porta">
                 <img src="./media/home2.jpg" class="img-fluid imgUnderTitle" alt="">
-            </div>
+            </div> 
         </div>
         <div class="row rounded-4">
             <div class="col-12 aside-phone">

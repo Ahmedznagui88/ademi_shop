@@ -119,6 +119,10 @@ tr {
     margin-top: 90px !important;
 }
 
+.form-search-2{
+    display: none;
+}
+
 .btn-list {
     background-color: #ED7D31;
 }
