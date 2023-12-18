@@ -33,7 +33,7 @@
                     @enderror
                     <div class="mb-3 divpassword">
                         <label for="password" class="form-label ">Password</label>
-                        <input type="password" class="form-control rounded-3 " id="password" name="password">
+                        <input type="password" class="form-control  rounded-3 " id="password" name="password">
                         <ion-icon name="lock-closed-outline"><i class="fa-solid fa-eye see icona"onclick="mostrapassword()"></i></ion-icon>
                     </div>
                     @error('password')

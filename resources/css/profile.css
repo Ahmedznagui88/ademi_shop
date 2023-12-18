@@ -119,6 +119,10 @@ tr {
     margin-top: 90px !important;
 }
 
+.form-search-2{
+    display: none;
+}
+
 .btn-list {
     background-color: #ED7D31;
 }
@@ -196,8 +200,8 @@ tr {
         margin-left: 0px;
     }
 
-    .divaside {
-        margin-left: 38px;
+    .aside-phone{
+        
     }
 
     .text-h4 {
@@ -213,7 +217,7 @@ tr {
     .div-upaside {
         width: 150px;
         height: 150px;
-        margin-left: 100px;
+        
         margin-top: 10px;
     }
 

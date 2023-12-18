@@ -1,6 +1,6 @@
 .Divbarradiricerca {
   margin-top: 20px;
-
+    display: none;
   }
 
 
@@ -28,6 +28,18 @@
 .link-1 {
   display: none;
   /* position: absolute; */
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+
+	.Divbarradiricerca {
+		display: block;
+		
+		  
+		}
+
+
+    
 }
 
 

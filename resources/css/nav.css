@@ -25,23 +25,45 @@
     list-style: none;
 }
 
-.nameUser{
+ .nameUser{
     color: #000000;
     border: solid #d9ece9;
     border-radius: 30px;
     float: right;
     color: #aef0e6;
-    width: auto;
+    width: 80px;
     text-align: center;
 }
+
+.Divbarradiricerca2 {
+
+ width: 380px;
+margin-left: 320px;
+  
+    }
 /** end navbar  */
 
 
 @media (max-width: 767px){
     .btn-r {
         float: right;
-        width: 110px;
+        width: 100px;
         margin-top: 8px;
     }
+
+    .nameUser{
+        color: #000000;
+        border: solid #d9ece9;
+        border-radius: 30px;
+        float: right;
+        color: #aef0e6;
+        width: 100px;
+        text-align: center;
+    }
+
+
+.Divbarradiricerca2 {
+    display: none;
+  }  
 }
 
