@@ -31,7 +31,7 @@ class ImageProfileForm extends Component
         'province' => 'required|min:3|max:50',
         'city' => 'required|min:3|max:20',
         'age' => 'required|integer',
-
+        'bio' => 'required|min:3|max:1000'
     ];
     protected $messages = [
 
