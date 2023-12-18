@@ -11,15 +11,15 @@ use Illuminate\Support\Facades\Storage;
 class AdList extends Component
 {
     
-    public function destroy(ad $ad) {
+    /* public function destroy(ad $ad) {
        foreach($ad->images() as $image) {
         Storage::delete($image);
         $image->delete();
        }
        $ad->delete(); 
        session()->flash('message', 'Annuncio eliminato con successo');
-       $this->render();
-    }
+       */ /* $this->render();
+    } */
     public function render()
     {
         $ads = ad::where('user_id', auth()->user()->id)->get();
