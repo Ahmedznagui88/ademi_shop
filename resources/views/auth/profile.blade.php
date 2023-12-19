@@ -76,8 +76,7 @@
                     <livewire:ad-list />
                 </div>
             @endif
-
-                <a href="#" class="modal__close text-light ">&times;</a>
+                <a class="modal__close text-light ">&times;</a>
             </div>
         </div>
         {{-- fine modale --}}

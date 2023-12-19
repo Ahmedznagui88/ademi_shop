@@ -13,15 +13,15 @@
         </div>
     </div>
 
-    <div class="container-fluid container-text-offer">
+ {{--    <div class="container-fluid container-text-offer">
         <div class="row">
             <div class="col-12 txt-offer">
                 <p id="textCarousel" class="my-3">{{ __('ui.saldiNatale') }}</p>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center"> --}}
             {{-- ! search => css search   --}}
-             <div class="col-12 col-md-4 Divbarradiricerca mb-5">
+          {{--    <div class="col-12 col-md-4 Divbarradiricerca mb-5">
                 <form action="{{ route('ads.search') }}" method="GET"
                     class="form-search-1d-flex justify-content-center " role="search">
                     <label for="searched" class="sr-only">Cerca Prodotto</label>
@@ -29,11 +29,11 @@
                         placeholder={{ __('ui.cercaAll') }} aria-label="Search"
                         @if (Route::CurrentRouteName() == 'ad.index') style="background-color: white @endif">
                 </form>
-            </div> 
+            </div>  --}}
             {{-- ! end search => css search   --}}
-      </div>
+    {{--   </div>
     </div> 
-
+ --}}
 
     <article class="container position-relative article-1">
         <div class="row justify-content-center rowArt">

@@ -1,16 +1,16 @@
-<div {{-- class="rounded-5 " --}}>
+<div class="div-table">
 
-  <div id="table-wrapper" {{-- class="rounded-5 " --}}>
+  <div id="table-wrapper" class="bg-transparent div-table">
     @if(session('message'))
     <div class="divmes alert alert-success">
         {{ session('message') }}
     </div>
   @endif
-    <div id="table-scroll">
-      <table class="{{-- table table-light table table-striped --}}">
+    <div id="table-scroll" class="">
+      <table class="">
           <thead>
               <tr>
-                <th scope="col">ID</th>
+                <th class="th1" scope="col">ID</th>
                 <th scope="col">{{__('ui.titolo')}}</th>
                 <th scope="col">{{__('ui.prezzo')}}</th>
                 <th scope="col">{{__('ui.category')}}</th>
@@ -21,7 +21,7 @@
           <tbody>
             @foreach ($ads as $ad )
             <tr>
-              <th scope="row">{{ $ad->id }}</th> 
+              <th class="th1" scope="row">{{ $ad->id }}</th> 
               <td>{{ $ad->title }}</td>
               <td>{{ $ad->price }}</td>
               <td>{{ $ad->category->name }}</td>
