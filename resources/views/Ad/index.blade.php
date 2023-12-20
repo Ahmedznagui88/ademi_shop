@@ -20,34 +20,11 @@
         </div>
 
         {{--! Categorie --}}
-        
-        <div class="row justify-content-center mt-5 border-bottom border-dark ">
-            <div class="mb-5">
-                <h4 class="text-center tutti-gli-annunci">{{__('ui.tuttiAds')}}</h4>
-            </div>
-            {{-- <div class="col-2 vh-100 colonna-l" id="colonnal"
 
-            </div --}}
-            @forelse ($ads as $ad)
-                <div class="col-12 col-xl-6 rounded-4 d-flex justify-content-center">
-                    <x-card :ad="$ad" />
-                </div>
-            @empty
-                <h2 class="text-center my-5">{{ __('ui.noAds') }}<a href=" {{ route('ad.create') }}"></a>
-                </h2>
-                <div class="d-flex justify-content-center">
-
-                    <img src="/media/empty.avif" class="w-50 rounded-5 mt-3" alt="">
-                </div>
-            @endforelse
-            {{-- <div class="col-2 vh-100 colonna-r" id="colonnar">
-
-            </div>  --}}
-        </div>
         
         <article class="container-fluid position-relative article">
             <div class="row justify-content-center rowArt">
-                <div class="col-12 col-md-8 divarticle">
+                <div class="col-12 col-md-8 divarticle mt-5">
                     <p class="text-1"><strong>Ademi</strong><span class="texthome">Essence</span></p>
                 </div>
                {{--  <div class="col-12 col-md-3 divUnderTitle">
@@ -103,7 +80,30 @@
        {{--  <hr class="container"> --}}
    
 
-        
+                
+       <div class="row justify-content-center mt-5 border-bottom border-dark ">
+        <div class="mb-5">
+            <h4 class="text-center tutti-gli-annunci">{{__('ui.tuttiAds')}}</h4>
+        </div>
+        {{-- <div class="col-2 vh-100 colonna-l" id="colonnal"
+
+        </div --}}
+        @forelse ($ads as $ad)
+            <div class="col-12 col-xl-6 rounded-4 d-flex justify-content-center">
+                <x-card :ad="$ad" />
+            </div>
+        @empty
+            <h2 class="text-center my-5">{{ __('ui.noAds') }}<a href=" {{ route('ad.create') }}"></a>
+            </h2>
+            <div class="d-flex justify-content-center">
+
+                <img src="/media/empty.avif" class="w-50 rounded-5 mt-3" alt="">
+            </div>
+        @endforelse
+        {{-- <div class="col-2 vh-100 colonna-r" id="colonnar">
+
+        </div>  --}}
+    </div>
         
         <div class="mt-5 outBack">
             <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">{{__('ui.tornaIndietro')}}</a>
