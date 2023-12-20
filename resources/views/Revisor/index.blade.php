@@ -58,6 +58,7 @@
                         <div class="col-md-3 borderTags">
                             <h5 class="tc-accent mt-3">Tags</h5>
                             <div class="p-2">
+                                
                                 @foreach($ad_to_check->images as $image)
                                 @if ($image->labels)
                                     @foreach ($image->labels as $label)

@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\ad;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdController extends Controller
 {
@@ -72,6 +73,14 @@ class AdController extends Controller
      */
     public function destroy(ad $ad)
     {
-      
+         //sono la riga 76 dell'adController//
+            foreach($ad->images() as $image) {
+             Storage::delete($image);
+             $image->delete();
+            }
+            $ad->delete(); 
+            return redirect()->back()->with('message', "hai cancellato correttamente l'\annuncio");
+            
+     
     }
 }

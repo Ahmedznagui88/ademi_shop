@@ -26,10 +26,18 @@
               <td>{{ $ad->price }}</td>
               <td>{{ $ad->category->name }}</td>
               <td>{{ $ad->created_at->format('y/m/d') }}</td>
-              <td>
+              <td class="d-flex">
                 <a class="btn btn-secondary btn-list" href="{{ route('ad.show', $ad) }}">{{__('ui.mostra')}}</a>
                 <a class="btn btn-secondary btn-list" href="{{ route('ad.edit', $ad) }}">{{__('ui.modifica')}}</a>
-                <a wire:click="destroy({{$ad}})" class="btn btn-secondary btn-list" href="">{{__('ui.elimina')}}</a>
+              {{--   <a wire:click="destroy({{$ad}})" class="btn btn-secondary btn-list" href="">{{__('ui.elimina')}}</a> --}}
+              {{-- sono la riga 33 del ad-list-blade --}}
+              @if (Auth::user() && $ad->user_id == Auth::user()->id)
+              <form action="{{ route('ad.destroy', $ad)  }}" method="POST">
+                  @csrf
+                  @method('DELETE')
+                  <button type="submit" class="btn btn-list">Elimina</button>
+              </form>
+              @endif
           
               </td>
           </tr>
