@@ -28,6 +28,7 @@ Route::get('/ad/show/{ad}', [AdController::class, 'show'])->name('ad.show');
 Route::get('/ad/index{category}', [AdController::class, 'indexCategory'])->name('ad.indexCategory');
 Route::get('/ad/edit{ad}', [AdController::class, 'edit'])->name('ad.edit');
 route::delete('ad.destroy{ad}', [AdController::class, 'destroy'])->name('ad.destroy');
+
 //*Home Revisor
 Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
 

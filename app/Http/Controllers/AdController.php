@@ -73,14 +73,11 @@ class AdController extends Controller
      */
     public function destroy(ad $ad)
     {
-         //sono la riga 76 dell'adController//
-            foreach($ad->images() as $image) {
-             Storage::delete($image);
-             $image->delete();
-            }
-            $ad->delete(); 
-            return redirect()->back()->with('message', "hai cancellato correttamente l'\annuncio");
-            
-     
+        foreach($ad->images() as $image) {
+            Storage::delete($image);
+            $image->delete();
+           }
+           $ad->delete(); 
+           return redirect()->back()->with('message', "hai cancellato correttamente l'\annuncio");
     }
 }

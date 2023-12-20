@@ -36,13 +36,14 @@
 }
 
 .divhead-center2 {
-    height: 60px;
-    width: 340px;
+    
     background-color: #ED7D31;
-    position: absolute;
-    top: 700px;
-    display: flex;
-    align-items: center;
+    height: 60px;
+    width: 280px;
+    position: relative;
+    right: 160px;
+    top: 450px;
+    
 }
 
 .DivimgRtext {
@@ -74,7 +75,7 @@
     font-size: 60px;
     color: rgb(0, 0, 0);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    margin: 0;
+    margin: 40px;
     font-family: 'Cinzel', serif;
     border-bottom: solid 0.2px #6C5F5B;
 }

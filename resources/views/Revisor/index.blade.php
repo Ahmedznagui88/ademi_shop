@@ -66,9 +66,9 @@
                                     @endforeach
                                 
                             </div>
-                        </div> 
+                        </div>
                         {{-- Semafori IA GOOGLE per IMMAGINI --}}
-                        <div class="col-md-3 mx-5">
+                         <div class="col-md-3 mx-5">
                             <div class="card-body borderTagsUno">
                                 <h5 class="tc-accent">{{__('ui.revImage')}}</h5>
                                 <p>Adulti: <span class="{{ $image->adult }}"></span></p>
@@ -80,7 +80,7 @@
                         </div>
                         @endif
                          @endforeach
-                    </div> 
+                    </div>  
                     
                     {{-- ! end alert  --}}
                 </div>

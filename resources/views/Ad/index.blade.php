@@ -1,12 +1,12 @@
 <x-layout>
     
-    <div class="container-fluid container-text-offer">
+    {{-- <div class="container-fluid container-text-offer">
         <div class="row textCarousel textCarousel2">
             <div class="col-12 txt-offer textCarousel2">
                 <p id="textCarousel" class="my-4 ">{{__('saldiNatale')}}</p>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="container-fluid rounded-4">
         <div class="row justify-content-center">
 
@@ -21,7 +21,29 @@
 
         {{--! Categorie --}}
         
+        <div class="row justify-content-center mt-5 border-bottom border-dark ">
+            <div class="mb-5">
+                <h4 class="text-center tutti-gli-annunci">{{__('ui.tuttiAds')}}</h4>
+            </div>
+            {{-- <div class="col-2 vh-100 colonna-l" id="colonnal"
 
+            </div --}}
+            @forelse ($ads as $ad)
+                <div class="col-12 col-xl-6 rounded-4 d-flex justify-content-center">
+                    <x-card :ad="$ad" />
+                </div>
+            @empty
+                <h2 class="text-center my-5">{{ __('ui.noAds') }}<a href=" {{ route('ad.create') }}"></a>
+                </h2>
+                <div class="d-flex justify-content-center">
+
+                    <img src="/media/empty.avif" class="w-50 rounded-5 mt-3" alt="">
+                </div>
+            @endforelse
+            {{-- <div class="col-2 vh-100 colonna-r" id="colonnar">
+
+            </div>  --}}
+        </div>
         
         <article class="container-fluid position-relative article">
             <div class="row justify-content-center rowArt">
@@ -53,50 +75,35 @@
         <div class="container mt-5">
 
             <div class="row mb-5 justify-content-center position-relative">
-                <div class="col-12 col-md-6 d-flex justify-content-center colhead-l">
+                <div class="col-12 col-md-4 d-flex justify-content-center colhead-l">
                     <div class="Div-img-header-index-l">
                         <img src="/media/perfume.avif" class="img-fluid" alt="">
                     </div>
+                    
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-center colhead-r">
+
+                <div class="col-12 col-md-1" style="font-family: 'Cinzel', serif;">
+                    <div class="divhead-center2">
+                        <h5 class="text-center ">{{__('ui.textHome')}}</h5>
+                    </div>
+                </div>
+                <div class="col-12  col-md-4 d-flex justify-content-center colhead-r">
                     <div class="Div-img-header-index-r">
                         <img src="/media/imageMe.png" class="img-fluid pt-5" alt="">
                     </div>
 
                 </div>
             </div>
-            <div class="row justify-content-center" style="font-family: 'Cinzel', serif;">
+            {{-- <div class="row justify-content-center border" style="font-family: 'Cinzel', serif;">
                 <div class="divhead-center2">
                     <h5 class="text-center ">{{__('ui.textHome')}}</h5>
                 </div>
-            </div>
+            </div> --}}
         </div>
        {{--  <hr class="container"> --}}
    
 
-        <div class="row justify-content-center mt-5">
-            <div class="mb-5">
-                <h4 class="text-center tutti-gli-annunci">{{__('ui.tuttiAds')}}</h4>
-            </div>
-            {{-- <div class="col-2 vh-100 colonna-l" id="colonnal"
-
-            </div --}}
-            @forelse ($ads as $ad)
-                <div class="col-12 col-xl-6 rounded-4 d-flex justify-content-center">
-                    <x-card :ad="$ad" />
-                </div>
-            @empty
-                <h2 class="text-center my-5">{{ __('ui.noAds') }}<a href=" {{ route('ad.create') }}"></a>
-                </h2>
-                <div class="d-flex justify-content-center">
-
-                    <img src="/media/empty.avif" class="w-50 rounded-5 mt-3" alt="">
-                </div>
-            @endforelse
-            {{-- <div class="col-2 vh-100 colonna-r" id="colonnar">
-
-            </div>  --}}
-        </div>
+        
         
         <div class="mt-5 outBack">
             <a href="{{ url()->previous() }}" class="text-decoration-none text-dark divarrow">{{__('ui.tornaIndietro')}}</a>
